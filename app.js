@@ -98,7 +98,6 @@ function menuScherm() {
     '<button class="groot rood" data-s="gewond">Iemand is gewond of onwel</button>' +
     '<button class="groot" data-s="gemorst">Product is gemorst of gelekt</button>' +
     '<button class="groot" data-s="brand">Brand</button>' +
-    '<button class="groot" data-s="afvoer">Opruimen en afvoeren</button>' +
     '<button class="knop" data-s="alles">Ik weet het niet</button>' +
     '<button class="knop licht" data-s="ander">Ander product scannen</button>';
   document.querySelectorAll("[data-s]").forEach((b) => {
@@ -125,15 +124,10 @@ function kies(s) {
     return toon("Gemorst of gelekt", [
       blok("1. Bescherm jezelf eerst", product.bescherming),
       blok("2. Aanpak bij lekkage", product.aanpak),
+      blok("3. Opruimen en afvoeren", product.afvoer),
     ]);
   }
   if (s === "brand") return toon("Brand", [blok("Blussen en gevaren", product.brand)]);
-  if (s === "afvoer") {
-    return toon("Opruimen en afvoeren", [
-      blok("1. Bescherm jezelf eerst", product.bescherming),
-      blok("2. Afvoer", product.afvoer),
-    ]);
-  }
   return toon("Alles in volgorde", [
     blok("1. Bescherming", product.bescherming),
     ...eersteHulpBlokken("alles", "2. Eerste hulp"),
