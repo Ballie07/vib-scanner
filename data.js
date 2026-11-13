@@ -6,6 +6,11 @@ const BHV_LIJST = [
   { naam: "Voorbeeld Twee", rol: "BHV", telefoon: "06 00 00 00 02" },
   { naam: "Voorbeeld Drie", rol: "Veiligheidsverantwoordelijke", telefoon: "06 00 00 00 03" }
 ];
+const BHV_LIJST = [
+  { naam: "Voorbeeld Een", rol: "BHV", telefoon: "06 00 00 00 01" },
+  { naam: "Voorbeeld Twee", rol: "BHV", telefoon: "06 00 00 00 02" },
+  { naam: "Voorbeeld Drie", rol: "Veiligheidsverantwoordelijke", telefoon: "06 00 00 00 03" }
+];
 const PRODUCTEN = [
   {
     naam: "W'eau overwinteringsvloeistof",
