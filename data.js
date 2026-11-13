@@ -1,5 +1,11 @@
 // Proefversie: drie voorbeeldproducten. Vul bij ean de echte barcode in, tussen aanhalingstekens,
 // bijvoorbeeld ean: ["8712345678901"]. Laat het leeg als je nog geen code hebt.
+// Proefversie: gebruik verzonnen namen en nummers zolang de site openbaar is.
+const BHV_LIJST = [
+  { naam: "Voorbeeld Een", rol: "BHV", telefoon: "06 00 00 00 01" },
+  { naam: "Voorbeeld Twee", rol: "BHV", telefoon: "06 00 00 00 02" },
+  { naam: "Voorbeeld Drie", rol: "Veiligheidsverantwoordelijke", telefoon: "06 00 00 00 03" }
+];
 const PRODUCTEN = [
   {
     naam: "W'eau overwinteringsvloeistof",
