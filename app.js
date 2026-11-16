@@ -79,10 +79,10 @@ function startScherm(melding) {
   stopScanner();
   product = null;
   app.innerHTML =
+     bhvBlok() +
     "<h1>Scan de barcode</h1>" +
     '<button class="situatie" id="scanknop"><span class="ic">📷</span><span>Scan met de camera</span></button>' +
     '<div id="lezer"></div>' +
-        bhvBlok() +
     '<label for="ean">Of typ de code in, of scan met de handscanner:</label>' +
     '<div class="rij"><input id="ean" inputmode="numeric" autocomplete="off"><button id="zoek">Zoek</button></div>' +
     '<p class="melding">' + esc(melding || "") + "</p>" +
