@@ -83,4 +83,15 @@ const PRODUCTEN = [
     brand: [
       "Blussen met water. Niet met poederblussers die ammoniumverbindingen bevatten.",
       "Kan brand bevorderen (oxiderend). Bluswater niet in riool of waterloop laten lopen.",
-      "Bij brand ontstaat chloor. Brandweer:
+            "Bij brand ontstaat chloor. Brandweer: persluchtmasker. Aan brand blootgestelde houders koelen met water."
+    ],
+    afvoer: [
+      "Product niet in riool, waterstroom of bodem. Verwijderen volgens plaatselijke voorschriften.",
+      "Verontreinigde verpakking: restant verwijderen en behandelen als ongebruikt product. Lege containers naar een erkende afvalverwerker, niet hergebruiken, het lege vat niet verbranden of met snijbrander bewerken."
+    ],
+    proef: [
+      "Rubriek 5 zegt blussen met water. Rubriek 6 zegt gemorst product niet nat laten worden. Rubriek 10.5 waarschuwt dat het product bij kleine hoeveelheden water heftig kan reageren. Laten beoordelen wat hier getoond moet worden.",
+      "Het VIB noemt geen type handschoen. Laten aanvullen."
+    ]
+  }
+];
