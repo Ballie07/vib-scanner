@@ -93,5 +93,46 @@ const PRODUCTEN = [
       "Rubriek 5 zegt blussen met water. Rubriek 6 zegt gemorst product niet nat laten worden. Rubriek 10.5 waarschuwt dat het product bij kleine hoeveelheden water heftig kan reageren. Laten beoordelen wat hier getoond moet worden.",
       "Het VIB noemt geen type handschoen. Laten aanvullen."
     ]
+  },
+    {
+    naam: "SWE Desinfectiegranulaat 65",
+    vibDatum: "21 februari 2022",
+    ean: [],
+    vib: "",
+    gevaar: "Gevaar. Kan brand bevorderen (oxiderend). Schadelijk bij inslikken. Veroorzaakt ernstige oogirritatie. Kan irritatie van de luchtwegen veroorzaken. Vormt giftig gas in contact met zuren. Niet combineren met andere producten, want er kan chloor vrijkomen. Zeer giftig voor waterleven.",
+    bescherming: [
+      "Goedsluitende veiligheidsbril met zijbescherming (EN 166) als er gevaar is voor oogcontact.",
+      "Bij grootschalige blootstelling: stofmasker type FFP1 of hoger (EN 149).",
+      "Handschoenen en kleding: bij normaal gebruik vraagt het VIB geen specifieke bescherming. Het VIB adviseert wel om deskundig advies in te winnen voor de situatie ter plekke.",
+      "Schoenen met antislipzolen (gevaar voor slippen)."
+    ],
+    eersteHulp: {
+      algemeen: [],
+      ogen: ["Uitspoelen met (lauw) water. Contactlenzen verwijderen. Een arts raadplegen."],
+      huid: ["Verontreinigde kleding uittrekken. Voordat het product opdroogt de huid afspoelen met veel water en zeep."],
+      ingeademd: ["Slachtoffer naar de frisse lucht brengen. Een arts raadplegen."],
+      ingeslikt: ["Geen braken opwekken. Mond uitspoelen. Eén glas water laten drinken. Een bewusteloze nooit iets via de mond geven. Voelt het slachtoffer zich onwel: onmiddellijk een arts raadplegen."],
+      letOp: []
+    },
+    aanpak: [
+      "Gevaar voor slippen: gemorst product onmiddellijk opruimen.",
+      "Contact met gemorst of vrijgekomen product vermijden. Stof niet inademen.",
+      "Niet in riool, oppervlakte- of grondwater laten komen. Instanties informeren als de omgeving wordt blootgesteld.",
+      "Verzamelen in containers. Geen zaagsel gebruiken.",
+      "Afvoeren naar een officieel afvalverzamelpunt.",
+      "Bevuild oppervlak reinigen met ruim water en zeep. Geen oplosmiddelen gebruiken."
+    ],
+    brand: [
+      "Blussen met een waterstraal. Alle andere blusmiddelen zijn niet geschikt.",
+      "Reageert heftig met brandbare stoffen, met kans op explosies. Bij verhitting komt zuurstof vrij, wat de brand verhevigt. Water mag gebruikt worden om vaten en containers koel te houden.",
+      "Bij brand ontstaan giftige en corrosieve dampen (fosgeen, zoutzuur) en eventueel koolmonoxide. Brandweer: adequate ademhalingsbescherming bij onvoldoende ventilatie."
+    ],
+    afvoer: [
+      "Restanten van het product en niet-lege verpakking zijn gevaarlijk afval. Lege verpakking niet met huishoudelijk afval afvoeren.",
+      "Afvoeren naar een officieel afvalverzamelpunt, volgens de plaatselijke regels."
+    ],
+    proef: [
+      "Het VIB vraagt bij normaal gebruik geen handschoenen of kleding. Een lekkage is geen normaal gebruik. Laten beoordelen."
+    ]
   }
 ];
