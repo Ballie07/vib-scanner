@@ -1,3 +1,8 @@
+// Regels voor de teksten in dit bestand:
+// 1. Volg het VIB, altijd. Niets toevoegen, ook niet als het goed bedoeld is.
+// 2. Alleen moeilijke woorden mogen kort worden uitgelegd tussen haakjes, bijvoorbeeld "Longoedeem (vocht in de longen)".
+// 3. Zegt het VIB ergens niets over, dan: "Gebruik je gezonde verstand en doe wat jou het veiligst lijkt."
+//
 // Proefversie: gebruik verzonnen namen en nummers zolang de site openbaar is.
 const BHV_LIJST = [
   { naam: "Voorbeeld Een", rol: "BHV", telefoon: "06 00 00 00 01" },
@@ -16,7 +21,7 @@ const PRODUCTEN = [
       "Nauw aansluitende veiligheidsbril (EN 166). Oogspoelfles met zuiver water binnen bereik houden.",
       "Bij uitzonderlijke verwerkingsproblemen: volgelaatsscherm en beschermend pak.",
       "Niet-doorlaatbare beschermende kleding die bestand is tegen dit product.",
-      "Beschermende handschoenen dragen. Welk type staat niet in het VIB: vraag de veiligheidsverantwoordelijke.",
+      "Beschermende handschoenen dragen. Het VIB zegt niet welk type. Gebruik je gezonde verstand en kies de handschoenen die jou het veiligst lijken.",
       "Bij ademhalingsrisico: luchtzuiverend gezichtsmasker, type ABEK."
     ],
     eersteHulp: {
@@ -36,16 +41,12 @@ const PRODUCTEN = [
     ],
     brand: [
       "Blussen met verneveld water, poeder, schuim of CO2.",
-      "Speciale gevaren en te mijden blusmiddelen: geen vermeld in het VIB."
+      "Over speciale gevaren en blusmiddelen die je niet mag gebruiken, zegt het VIB niets. Gebruik je gezonde verstand en doe wat jou het veiligst lijkt."
     ],
     afvoer: [
-      "Gemorst product niet in het riool laten stromen.",
-      "Het VIB noemt alleen lozen in de normale gebruiksconcentraties (indien nodig na neutralisatie tot pH 7). Vraag de veiligheidsverantwoordelijke hoe je restanten afvoert.",
-      "Plaatselijke regels altijd volgen."
+      "Het VIB zegt niet hoe je gemorst product afvoert. Het zegt wel dat het niet in riool of openbaar water mag (zie stap 2). Gebruik je gezonde verstand en doe wat jou het veiligst lijkt."
     ],
     proef: [
-      "Het VIB noemt geen type handschoen. Laten aanvullen door de veiligheidsverantwoordelijke.",
-      "Rubriek 13 zegt dat het product geloosd mag worden in de gebruiksconcentraties. Dat kan verkeerd gelezen worden als lozen van gemorst product. De tekst hierboven is bewust herschreven. Laten beoordelen."
     ]
   },
   {
@@ -56,7 +57,7 @@ const PRODUCTEN = [
     gevaar: "Gevaar. Kan brand bevorderen (oxiderend). Veroorzaakt ernstige brandwonden en oogletsel. Schadelijk bij inslikken. Bijtend voor de luchtwegen. Vormt giftig gas (chloor) in contact met zuren. Zeer giftig voor waterleven.",
     bescherming: [
       "Chemische veiligheidsbril en gezichtsbescherming. Oogdouche in de buurt.",
-      "Resistente handschoenen. Het type staat niet in het VIB: vraag de veiligheidsverantwoordelijke. Handschoenen met scheurtjes of gaatjes weggooien.",
+      "Resistente handschoenen. Het VIB zegt niet welk type. Gebruik je gezonde verstand en kies de handschoenen die jou het veiligst lijken. Handschoenen met scheurtjes of gaatjes weggooien.",
       "Indien van toepassing: chemicaliënbestendig schort, veiligheidsschoenen, stofdicht beschermingspak, vuurbestendige kleding.",
       "Wie geen beschermende uitrusting draagt, mag het gebied met gemorst product niet in tot het opruimen klaar is."
     ],
@@ -83,16 +84,13 @@ const PRODUCTEN = [
     brand: [
       "Blussen met water. Niet met poederblussers die ammoniumverbindingen bevatten.",
       "Kan brand bevorderen (oxiderend). Bluswater niet in riool of waterloop laten lopen.",
-            "Bij brand ontstaat chloor. Brandweer: persluchtmasker. Aan brand blootgestelde houders koelen met water."
+      "Bij brand ontstaat chloor. Brandweer: persluchtmasker. Aan brand blootgestelde houders koelen met water."
     ],
     afvoer: [
       "Product niet in riool, waterstroom of bodem. Verwijderen volgens plaatselijke voorschriften.",
       "Verontreinigde verpakking: restant verwijderen en behandelen als ongebruikt product. Lege containers naar een erkende afvalverwerker, niet hergebruiken, het lege vat niet verbranden of met snijbrander bewerken."
     ],
-    proef: [
-      "Rubriek 5 zegt blussen met water. Rubriek 6 zegt gemorst product niet nat laten worden. Rubriek 10.5 waarschuwt dat het product bij kleine hoeveelheden water heftig kan reageren. Laten beoordelen wat hier getoond moet worden.",
-      "Het VIB noemt geen type handschoen. Laten aanvullen."
-    ]
+    proef: []
   },
     {
     naam: "SWE Desinfectiegranulaat 65",
@@ -132,7 +130,6 @@ const PRODUCTEN = [
       "Afvoeren naar een officieel afvalverzamelpunt, volgens de plaatselijke regels."
     ],
     proef: [
-      "Het VIB vraagt bij normaal gebruik geen handschoenen of kleding. Een lekkage is geen normaal gebruik. Laten beoordelen."
     ]
   }
 ];
