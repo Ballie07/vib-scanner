@@ -40,3 +40,5 @@ input { width: 100%; padding: 12px; font-size: 1.1rem; border: 2px solid #999; b
 #lezer { width: 100%; border-radius: 12px; overflow: hidden; }
 .onder { margin-top: 16px; padding-top: 8px; border-top: 1px solid #c9cfd6; }
 .onder button { margin: 6px 0; padding: 12px; font-size: 1rem; }
+.situatie.midden { justify-content: space-between; text-align: center; }
+.situatie.midden > span:not(.ic) { flex: 1; }
