@@ -9,6 +9,12 @@ function esc(t) {
   return String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 }
 
+const NIETS_IN_VIB = "Het VIB zegt hier niets over. Gebruik je gezonde verstand en doe wat jou het veiligst lijkt.";
+
+function vibBlok(titel, items, klasse) {
+  return blok(titel, items && items.length ? items : [NIETS_IN_VIB], klasse);
+}
+
 function blok(titel, items, klasse) {
   if (!items || !items.length) return "";
   const punten = items.map((i) => "<li>" + esc(i) + "</li>").join("");
@@ -265,10 +271,10 @@ function menuScherm() {
     kop() +
     gevaarBlok() +
     "<h2 class='scherm'>Wat is er aan de hand?</h2>" +
-    '<button class="situatie rood" data-s="gewond"><span class="ic">🚑</span><span>Iemand is gewond of onwel</span></button>' +
-    '<button class="situatie" data-s="gemorst"><span class="ic">💧</span><span>Product is gemorst of gelekt<br><small>met opruimen en afvoeren</small></span></button>' +
-    '<button class="situatie oranje" data-s="brand"><span class="ic">🔥</span><span>Brand</span><span class="ic">🔥</span></button>' +
-    '<button class="situatie grijs" data-s="alles"><span class="ic">❓</span><span>Ik weet het niet</span></button>';
+    '<button class="situatie midden rood" data-s="gewond"><span class="ic">🚑</span><span>Iemand is gewond of onwel</span><span class="ic">🚑</span></button>' +
+    '<button class="situatie midden" data-s="gemorst"><span class="ic">💧</span><span>Product is gemorst of gelekt<br><small>met opruimen en afvoeren</small></span><span class="ic">💧</span></button>' +
+    '<button class="situatie midden oranje" data-s="brand"><span class="ic">🔥</span><span>Brand</span><span class="ic">🔥</span></button>' +
+    '<button class="situatie midden grijs" data-s="alles"><span class="ic">❓</span><span>Ik weet het niet</span><span class="ic">❓</span></button>';
   document.querySelectorAll("[data-s]").forEach((b) => {
     b.onclick = () => kies(b.dataset.s);
   });
@@ -285,7 +291,7 @@ function eersteHulpBlokken(welke, voorvoegsel) {
   const pre = voorvoegsel ? voorvoegsel + ": " : "";
   return [
     blok(voorvoegsel ? pre + "algemeen" : "Eerst", h.algemeen, "eerst"),
-    ...soorten.map((s) => blok(pre + NAMEN[s], h[s])),
+    ...soorten.map((s) => vibBlok(pre + NAMEN[s], h[s])),
     blok("Let op", h.letOp, "let-op"),
   ];
 }
@@ -294,18 +300,18 @@ function kies(s) {
   if (s === "gewond") return gewondVraag();
   if (s === "gemorst") {
     return toon("Gemorst of gelekt", [
-      blok("1. Bescherm jezelf eerst", product.bescherming),
-      blok("2. Aanpak bij lekkage", product.aanpak),
-      blok("3. Opruimen en afvoeren", product.afvoer),
+      vibBlok("1. Bescherm jezelf eerst", product.bescherming),
+      vibBlok("2. Aanpak bij lekkage", product.aanpak),
+      vibBlok("3. Opruimen en afvoeren", product.afvoer),
     ]);
   }
-  if (s === "brand") return toon("Brand", [blok("Blussen en gevaren", product.brand)]);
+  if (s === "brand") return toon("Brand", [vibBlok("Blussen en gevaren", product.brand)]);
   return toon("Alles in volgorde", [
-    blok("1. Bescherming", product.bescherming),
+    vibBlok("1. Bescherming", product.bescherming),
     ...eersteHulpBlokken("alles", "2. Eerste hulp"),
-    blok("3. Lekkage", product.aanpak),
-    blok("4. Brand", product.brand),
-    blok("5. Afvoer", product.afvoer),
+    vibBlok("3. Lekkage", product.aanpak),
+    vibBlok("4. Brand", product.brand),
+    vibBlok("5. Afvoer", product.afvoer),
   ]);
 }
 
