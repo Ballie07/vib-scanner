@@ -3,6 +3,10 @@
 // 2. Alleen moeilijke woorden mogen kort worden uitgelegd tussen haakjes, bijvoorbeeld "Longoedeem (vocht in de longen)".
 // 3. Zegt het VIB ergens niets over, dan: "Gebruik je gezonde verstand en doe wat jou het veiligst lijkt."
 //
+// Per product:
+// - stockyNaam: de naam precies zoals in Stocky. Daarop zoekt de zoekbalk.
+// - foto: een link naar de productfoto (in Stocky: rechtermuisklik op de foto, "Afbeeldingsadres kopiëren").
+//
 // Proefversie: gebruik verzonnen namen en nummers zolang de site openbaar is.
 const BHV_LIJST = [
   { naam: "Voorbeeld Een", rol: "BHV", telefoon: "06 00 00 00 01" },
@@ -13,6 +17,8 @@ const BHV_LIJST = [
 const PRODUCTEN = [
   {
     naam: "W'eau overwinteringsvloeistof",
+    stockyNaam: "W'eau overwinteringsvloeistof - 5 liter",
+    foto: "",
     vibDatum: "31 januari 2024",
     ean: ["8719326660592", "4019305657259"],
     vib: "",
@@ -51,8 +57,10 @@ const PRODUCTEN = [
   },
   {
     naam: "HTH Stick",
+    stockyNaam: "HTH Sticks chloortabletten 300 grams 4,5 kg",
+    foto: "",
     vibDatum: "7 juni 2024",
-    ean: [],
+    ean: ["3521684501128"],
     vib: "",
     gevaar: "Gevaar. Kan brand bevorderen (oxiderend). Veroorzaakt ernstige brandwonden en oogletsel. Schadelijk bij inslikken. Bijtend voor de luchtwegen. Vormt giftig gas (chloor) in contact met zuren. Zeer giftig voor waterleven.",
     bescherming: [
@@ -94,6 +102,8 @@ const PRODUCTEN = [
   },
     {
     naam: "SWE Desinfectiegranulaat 65",
+    stockyNaam: "AquaFinesse chloor granulaat",
+    foto: "",
     vibDatum: "21 februari 2022",
     ean: [],
     vib: "",
