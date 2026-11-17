@@ -28,6 +28,34 @@ function stopScanner() {
   s.stop().catch(() => {});
 }
 
+function toonNaam(p) {
+  return p.stockyNaam || p.naam;
+}
+
+function zoekOpNaam(tekst) {
+  const woorden = String(tekst || "").toLowerCase().split(/\s+/).filter(Boolean);
+  if (!woorden.length) return [];
+  return PRODUCTEN.filter((p) => {
+    const naam = String(p.stockyNaam || "").toLowerCase();
+    return naam && woorden.every((w) => naam.includes(w));
+  });
+}
+
+function trefferKnoppen(lijst) {
+  return lijst
+    .map((p) => '<button class="kaartknop" data-p="' + PRODUCTEN.indexOf(p) + '">' + miniFoto(p) + "<span>" + esc(toonNaam(p)) + "</span></button>")
+    .join("");
+}
+
+function koppelKnoppen() {
+  document.querySelectorAll("[data-p]").forEach((b) => {
+    b.onclick = () => {
+      product = PRODUCTEN[Number(b.dataset.p)];
+      bevestigScherm();
+    };
+  });
+}
+
 function miniFoto(p) {
   return p.foto
     ? `<img class="mini" src="${esc(p.foto)}" alt="" onerror="this.style.display='none'">`
@@ -39,7 +67,7 @@ function kop(groot) {
   const foto = product.foto
     ? `<img class="foto${klasse}" src="${esc(product.foto)}" alt="${esc(product.naam)}" onerror="this.style.display='none'">`
     : `<div class="foto leeg${klasse}">📦</div>`;
-  return `<div class="productkaart${groot ? " gestapeld" : ""}">${foto}<div><h1>${esc(product.naam)}</h1><p class="klein">VIB-datum: ${esc(product.vibDatum)}</p></div></div>`;
+  return `<div class="productkaart${groot ? " gestapeld" : ""}">${foto}<div><h1>${esc(toonNaam(product))}</h1>${product.stockyNaam ? `<p class="klein">Naam in het VIB: ${esc(product.naam)}</p>` : ""}<p class="klein">VIB-datum: ${esc(product.vibDatum)}</p></div></div>`;
 }
 
 function gevaarBlok() {
@@ -89,23 +117,30 @@ function startScherm(melding) {
     "<h1>Scan de barcode</h1>" +
     '<button class="situatie" id="scanknop"><span class="ic">📷</span><span>Scan met de camera</span></button>' +
     '<div id="lezer"></div>' +
-    '<label for="ean">Of typ de code in, of scan met de handscanner:</label>' +
-    '<div class="rij"><input id="ean" inputmode="numeric" autocomplete="off"><button id="zoek">Zoek</button></div>' +
+    '<label for="ean">Of zoek op barcode of op de naam zoals in Stocky:</label>' +
+    '<div class="rij"><input id="ean" type="search" enterkeyhint="search" autocomplete="off" placeholder="Barcode of naam"><button id="zoek">Zoek</button></div>' +
     '<p class="melding">' + esc(melding || "") + "</p>" +
+    '<div id="treffers"></div>' +
     "<h2>Proef: kies een voorbeeldproduct</h2>" +
-    PRODUCTEN.map((p, i) => '<button class="kaartknop" data-i="' + i + '">' + miniFoto(p) + "<span>" + esc(p.naam) + "</span></button>").join("");
+    trefferKnoppen(PRODUCTEN);
 
   document.getElementById("scanknop").onclick = startCamera;
   document.getElementById("zoek").onclick = () => zoek(document.getElementById("ean").value);
   document.getElementById("ean").onkeydown = (e) => {
     if (e.key === "Enter") zoek(e.target.value);
   };
-  document.querySelectorAll("[data-i]").forEach((b) => {
-    b.onclick = () => {
-      product = PRODUCTEN[Number(b.dataset.i)];
-      bevestigScherm();
-    };
-  });
+  document.getElementById("ean").oninput = (e) => {
+    const t = e.target.value.trim();
+    const vak = document.getElementById("treffers");
+    if (/^\d*$/.test(t) || t.length < 2) {
+      vak.innerHTML = "";
+      return;
+    }
+    const lijst = zoekOpNaam(t);
+    vak.innerHTML = lijst.length ? trefferKnoppen(lijst) : '<p class="klein">Nog geen artikel gevonden.</p>';
+    koppelKnoppen();
+  };
+  koppelKnoppen();
 }
 
 let camNummer = -1;
@@ -245,8 +280,21 @@ function startCameraOud() {
 }
 
 function zoek(code) {
-  const schoon = String(code || "").replace(/\D/g, "");
-  if (!schoon) return startScherm("Vul eerst een code in.");
+  const invoer = String(code || "").trim();
+  if (!invoer) return startScherm("Vul eerst een barcode of naam in.");
+  if (/[a-zA-Z]/.test(invoer)) {
+    const lijst = zoekOpNaam(invoer);
+    if (lijst.length === 1) {
+      product = lijst[0];
+      return bevestigScherm();
+    }
+    startScherm(lijst.length ? "" : "Geen artikel gevonden met de naam \"" + invoer + "\". Controleer de naam zoals die in Stocky staat.");
+    document.getElementById("ean").value = invoer;
+    document.getElementById("treffers").innerHTML = trefferKnoppen(lijst);
+    koppelKnoppen();
+    return;
+  }
+  const schoon = invoer.replace(/\D/g, "");
   const gevonden = PRODUCTEN.find((p) => p.ean.includes(schoon));
   if (!gevonden) return startScherm("Geen product gevonden voor code " + schoon + ". Controleer de code of kies een voorbeeldproduct.");
   product = gevonden;
@@ -260,7 +308,7 @@ function bevestigScherm() {
     gevaarBlok() +
     "<h2 class='scherm'>Klopt dit product?</h2>" +
     '<button class="situatie" id="ja"><span class="ic">✅</span><span>Ja, dit is het product</span></button>' +
-    '<button class="situatie grijs" id="nee"><span class="ic">🔄</span><span>Nee, opnieuw scannen</span></button>';
+    '<button class="situatie grijs" id="nee"><span class="ic">🔄</span><span>Nee, opnieuw zoeken</span></button>';
   document.getElementById("ja").onclick = () => menuScherm();
   document.getElementById("nee").onclick = () => startScherm();
   window.scrollTo(0, 0);
