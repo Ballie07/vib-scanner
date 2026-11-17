@@ -102,7 +102,99 @@ function startScherm(melding) {
   });
 }
 
-function startCamera() {
+let camNummer = -1;
+
+async function startCamera() {
+  if (!("BarcodeDetector" in window)) return startCameraOud();
+  stopScanner();
+  const lezer = document.getElementById("lezer");
+  let formaten = ["ean_13", "ean_8", "upc_a", "code_128"];
+  try {
+    const kan = await BarcodeDetector.getSupportedFormats();
+    formaten = formaten.filter((f) => kan.includes(f));
+  } catch (e) {}
+  if (!formaten.length) return startCameraOud();
+  const detector = new BarcodeDetector({ formats: formaten });
+
+  lezer.innerHTML =
+    '<p class="melding">Houd de barcode in beeld, op 15 tot 20 cm afstand. Wacht even tot het beeld scherp is.</p>' +
+    '<video playsinline muted autoplay style="width:100%;border-radius:12px"></video>' +
+    '<button id="wissel">🔄 Andere camera</button>' +
+    '<p class="klein" id="scaninfo">Camera starten...</p>';
+  const video = lezer.querySelector("video");
+  const info = document.getElementById("scaninfo");
+
+  let stroom = null;
+  let actief = true;
+  let tijd = null;
+  scanner = {
+    stop() {
+      actief = false;
+      clearTimeout(tijd);
+      if (stroom) stroom.getTracks().forEach((t) => t.stop());
+      return Promise.resolve();
+    },
+  };
+  const dezeScanner = scanner;
+
+  const video_eisen = { width: { ideal: 1920 }, height: { ideal: 1080 } };
+  try {
+    let cams = [];
+    if (camNummer >= 0) {
+      cams = (await navigator.mediaDevices.enumerateDevices()).filter((d) => d.kind === "videoinput");
+      video_eisen.deviceId = { exact: cams[camNummer % cams.length].deviceId };
+    } else {
+      video_eisen.facingMode = "environment";
+    }
+    stroom = await navigator.mediaDevices.getUserMedia({ video: video_eisen, audio: false });
+  } catch (e) {
+    return startScherm("Geen toegang tot de camera. Geef de browser toestemming of typ de code in.");
+  }
+  if (!actief || scanner !== dezeScanner) {
+    stroom.getTracks().forEach((t) => t.stop());
+    return;
+  }
+  video.srcObject = stroom;
+  try { await video.play(); } catch (e) {}
+
+  const spoor = stroom.getVideoTracks()[0];
+  try {
+    const mog = spoor.getCapabilities ? spoor.getCapabilities() : {};
+    const extra = {};
+    if (mog.focusMode && mog.focusMode.includes("continuous")) extra.focusMode = "continuous";
+    if (mog.zoom && mog.zoom.max >= 2) extra.zoom = 2;
+    if (Object.keys(extra).length) await spoor.applyConstraints({ advanced: [extra] });
+  } catch (e) {}
+
+  document.getElementById("wissel").onclick = async () => {
+    const cams = (await navigator.mediaDevices.enumerateDevices()).filter((d) => d.kind === "videoinput");
+    const huidig = cams.findIndex((d) => d.deviceId === spoor.getSettings().deviceId);
+    camNummer = (huidig + 1) % cams.length;
+    startCamera();
+  };
+
+  let pogingen = 0;
+  const kijk = async () => {
+    if (!actief) return;
+    pogingen++;
+    try {
+      if (video.readyState >= 2) {
+        const codes = await detector.detect(video);
+        if (actief && codes.length) {
+          stopScanner();
+          zoek(codes[0].rawValue);
+          return;
+        }
+      }
+    } catch (e) {}
+    const s = spoor.getSettings();
+    info.textContent = "Camera: " + (spoor.label || "onbekend") + " · " + (s.width || video.videoWidth) + "×" + (s.height || video.videoHeight) + " · zoeken... (" + pogingen + ")";
+    tijd = setTimeout(kijk, 150);
+  };
+  kijk();
+}
+
+function startCameraOud() {
   if (typeof Html5Qrcode === "undefined") {
     startScherm("De camera-scanner kon niet laden. Typ de code in of kies een voorbeeldproduct.");
     return;
