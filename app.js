@@ -108,6 +108,11 @@ function startCamera() {
     return;
   }
   stopScanner();
+  document.getElementById("lezer").insertAdjacentHTML(
+    "beforebegin",
+    '<p class="melding" id="scanhulp">Houd de barcode dwars in het kader, op 15 tot 20 cm afstand. Wacht even tot het beeld scherp is.</p>'
+  );
+  let klaar = false;
   scanner = new Html5Qrcode("lezer", {
     formatsToSupport: [
       Html5QrcodeSupportedFormats.EAN_13,
@@ -119,7 +124,25 @@ function startCamera() {
     verbose: false,
   });
   scanner
-    .start({ facingMode: "environment" }, { fps: 10, qrbox: { width: 280, height: 120 } }, (tekst) => zoek(tekst), () => {})
+    .start(
+      { facingMode: "environment" },
+      {
+        fps: 15,
+        qrbox: (b, h) => ({ width: Math.floor(b * 0.9), height: Math.floor(Math.min(h * 0.5, b * 0.45)) }),
+        videoConstraints: {
+          facingMode: "environment",
+          width: { ideal: 1920 },
+          height: { ideal: 1080 },
+          advanced: [{ focusMode: "continuous" }],
+        },
+      },
+      (tekst) => {
+        if (klaar) return;
+        klaar = true;
+        zoek(tekst);
+      },
+      () => {}
+    )
     .catch(() => startScherm("Geen toegang tot de camera. Geef de browser toestemming of typ de code in."));
 }
 
