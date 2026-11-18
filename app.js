@@ -62,7 +62,8 @@ function miniFoto(p) {
     : '<span class="mini leeg">📦</span>';
 }
 
-function kop(groot) {
+function kop() {
+  const groot = true;
   const klasse = groot ? " groot" : "";
   const foto = product.foto
     ? `<img class="foto${klasse}" src="${esc(product.foto)}" alt="${esc(product.naam)}" onerror="this.style.display='none'">`
