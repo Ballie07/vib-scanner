@@ -305,7 +305,6 @@ function bevestigScherm() {
   stopScanner();
   app.innerHTML =
     kop(true) +
-    gevaarBlok() +
     "<h2 class='scherm'>Klopt dit product?</h2>" +
     '<button class="situatie" id="ja"><span class="ic">✅</span><span>Ja, dit is het product</span></button>' +
     '<button class="situatie grijs" id="nee"><span class="ic">🔄</span><span>Nee, opnieuw zoeken</span></button>';
@@ -317,7 +316,6 @@ function bevestigScherm() {
 function menuScherm() {
   app.innerHTML =
     kop() +
-    gevaarBlok() +
     "<h2 class='scherm'>Wat is er aan de hand?</h2>" +
     '<button class="situatie midden rood" data-s="gewond"><span class="ic">🚑</span><span>Iemand is gewond of onwel</span><span class="ic">🚑</span></button>' +
     '<button class="situatie midden" data-s="gemorst"><span class="ic">💧</span><span>Product is gemorst of gelekt<br><small>met opruimen en afvoeren</small></span><span class="ic">💧</span></button>' +
