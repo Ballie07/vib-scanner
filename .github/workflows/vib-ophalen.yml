@@ -1,0 +1,42 @@
+name: VIB's ophalen uit Stocky
+
+on:
+  schedule:
+    - cron: "17 2 * * *"   # elke nacht om 02:17 UTC (03:17 of 04:17 Nederlandse tijd)
+  workflow_dispatch:       # ook met de hand te starten via het tabblad Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vib-ophalen
+  cancel-in-progress: false
+
+jobs:
+  ophalen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: PDF-lezer installeren
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+
+      - name: VIB's ophalen en uitlezen
+        env:
+          STOCKY_API_KEY: ${{ secrets.STOCKY_API_KEY }}
+          STOCKY_URL: https://oms.oftomorrow.eu/api/v2
+        run: python3 scripts/ophalen.py
+
+      - name: Wijzigingen opslaan
+        run: |
+          git config user.name "VIB-ophaler"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add vib-data.js
+          if [ -d vib ]; then git add -A vib; fi
+          if git diff --cached --quiet; then
+            echo "Geen wijzigingen."
+          else
+            git commit -m "VIB's bijgewerkt uit Stocky"
+            git push
+          fi
