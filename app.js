@@ -2,18 +2,23 @@ const app = document.getElementById("app");
 let product = null;
 let scanner = null;
 
-const NAMEN = { ogen: "Ogen", huid: "Huid", ingeademd: "Ingeademd", ingeslikt: "Ingeslikt" };
-const ICONEN = { ogen: "👁️", huid: "✋", ingeademd: "💨", ingeslikt: "👄" };
+// De producten en VIB-teksten komen uit vib-data.js. Dat bestand wordt elke nacht
+// automatisch gemaakt uit Stocky (zie scripts/ophalen.py). Niet met de hand aanpassen.
+const PRODUCTEN = typeof VIB_PRODUCTEN !== "undefined" ? VIB_PRODUCTEN : [];
+
+const RUBRIEK_TITEL = {
+  "8": "Bescherm jezelf",
+  "4": "Eerste hulp",
+  "6": "Aanpak bij lekkage",
+  "5": "Brand",
+  "13": "Afvoeren",
+};
 
 function esc(t) {
   return String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 }
 
 const NIETS_IN_VIB = "Het VIB zegt hier niets over. Gebruik je gezonde verstand en doe wat jou het veiligst lijkt.";
-
-function vibBlok(titel, items, klasse) {
-  return blok(titel, items && items.length ? items : [NIETS_IN_VIB], klasse);
-}
 
 function blok(titel, items, klasse) {
   if (!items || !items.length) return "";
@@ -29,14 +34,14 @@ function stopScanner() {
 }
 
 function toonNaam(p) {
-  return p.stockyNaam || p.naam;
+  return p.naam;
 }
 
 function zoekOpNaam(tekst) {
   const woorden = String(tekst || "").toLowerCase().split(/\s+/).filter(Boolean);
   if (!woorden.length) return [];
   return PRODUCTEN.filter((p) => {
-    const naam = String(p.stockyNaam || "").toLowerCase();
+    const naam = String(p.naam || "").toLowerCase();
     return naam && woorden.every((w) => naam.includes(w));
   });
 }
@@ -68,11 +73,7 @@ function kop() {
   const foto = product.foto
     ? `<img class="foto${klasse}" src="${esc(product.foto)}" alt="${esc(product.naam)}" onerror="this.style.display='none'">`
     : `<div class="foto leeg${klasse}">📦</div>`;
-  return `<div class="productkaart${groot ? " gestapeld" : ""}">${foto}<div><h1>${esc(toonNaam(product))}</h1>${product.stockyNaam ? `<p class="klein">Naam in het VIB: ${esc(product.naam)}</p>` : ""}<p class="klein">VIB-datum: ${esc(product.vibDatum)}</p></div></div>`;
-}
-
-function gevaarBlok() {
-  return '<section class="blok gevaar"><h2>⚠️ Gevaar</h2><p>' + esc(product.gevaar) + "</p></section>";
+  return `<div class="productkaart${groot ? " gestapeld" : ""}">${foto}<div><h1>${esc(toonNaam(product))}</h1><p class="klein">VIB-datum: ${esc(product.vibDatum || "onbekend")}${product.verlopen ? " (verlopen)" : ""}</p></div></div>`;
 }
 
 function bhvBlok() {
@@ -114,7 +115,7 @@ function startScherm(melding) {
   stopScanner();
   product = null;
   app.innerHTML =
-     bhvBlok() +
+    bhvBlok() +
     "<h1>Scan de barcode</h1>" +
     '<button class="situatie" id="scanknop"><span class="ic">📷</span><span>Scan met de camera</span></button>' +
     '<div id="lezer"></div>' +
@@ -122,8 +123,7 @@ function startScherm(melding) {
     '<div class="rij"><input id="ean" type="search" enterkeyhint="search" autocomplete="off" placeholder="Barcode of naam"><button id="zoek">Zoek</button></div>' +
     '<p class="melding">' + esc(melding || "") + "</p>" +
     '<div id="treffers"></div>' +
-    "<h2>Proef: kies een voorbeeldproduct</h2>" +
-    trefferKnoppen(PRODUCTEN);
+    '<p class="klein">' + (PRODUCTEN.length ? PRODUCTEN.length + " producten met een VIB." : "Er zijn nog geen VIB's opgehaald uit Stocky.") + "</p>";
 
   document.getElementById("scanknop").onclick = startCamera;
   document.getElementById("zoek").onclick = () => zoek(document.getElementById("ean").value);
@@ -238,7 +238,7 @@ async function startCamera() {
 
 function startCameraOud() {
   if (typeof Html5Qrcode === "undefined") {
-    startScherm("De camera-scanner kon niet laden. Typ de code in of kies een voorbeeldproduct.");
+    startScherm("De camera-scanner kon niet laden. Typ de barcode of de naam in.");
     return;
   }
   stopScanner();
@@ -297,7 +297,7 @@ function zoek(code) {
   }
   const schoon = invoer.replace(/\D/g, "");
   const gevonden = PRODUCTEN.find((p) => p.ean.includes(schoon));
-  if (!gevonden) return startScherm("Geen product gevonden voor code " + schoon + ". Controleer de code of kies een voorbeeldproduct.");
+  if (!gevonden) return startScherm("Geen product gevonden voor code " + schoon + ". Controleer de code, of zoek op de naam zoals in Stocky.");
   product = gevonden;
   bevestigScherm();
 }
@@ -332,63 +332,78 @@ function menuScherm() {
   window.scrollTo(0, 0);
 }
 
-function eersteHulpBlokken(welke, voorvoegsel) {
-  const h = product.eersteHulp;
-  const soorten = welke === "alles" ? Object.keys(NAMEN) : [welke];
-  const pre = voorvoegsel ? voorvoegsel + ": " : "";
-  return [
-    blok(voorvoegsel ? pre + "algemeen" : "Eerst", h.algemeen, "eerst"),
-    ...soorten.map((s) => vibBlok(pre + NAMEN[s], h[s])),
-    blok("Let op", h.letOp, "let-op"),
-  ];
+function bruikbaar(p) {
+  return p.status === "ok" && !p.verlopen;
 }
 
-function kies(s) {
-  if (s === "gewond") return gewondVraag();
-  if (s === "gemorst") {
-    return toon("Gemorst of gelekt", [
-      vibBlok("1. Bescherm jezelf eerst", product.bescherming),
-      vibBlok("2. Aanpak bij lekkage", product.aanpak),
-      vibBlok("3. Opruimen en afvoeren", product.afvoer),
-    ]);
-  }
-  if (s === "brand") return toon("Brand", [vibBlok("Blussen en gevaren", product.brand)]);
-  return toon("Alles in volgorde", [
-    vibBlok("1. Bescherming", product.bescherming),
-    ...eersteHulpBlokken("alles", "2. Eerste hulp"),
-    vibBlok("3. Lekkage", product.aanpak),
-    vibBlok("4. Brand", product.brand),
-    vibBlok("5. Afvoer", product.afvoer),
+function vibInhoud(blokken) {
+  return blokken
+    .map((b) => {
+      if (b.soort === "kop") return '<h3 class="vibkop">' + esc(b.tekst) + "</h3>";
+      if (b.soort === "veld")
+        return "<p><b>" + esc(b.kopje) + ":</b> " + (b.tekst ? esc(b.tekst) : "<i>" + esc(NIETS_IN_VIB) + "</i>") + "</p>";
+      if (b.soort === "tabel")
+        return (
+          '<table class="vibtabel">' +
+          b.rijen.map((r, i) => "<tr>" + r.map((c) => (i === 0 ? "<th>" : "<td>") + esc(c) + (i === 0 ? "</th>" : "</td>")).join("") + "</tr>").join("") +
+          "</table>"
+        );
+      const t = b.tekst || "";
+      const tussenkop = t.length < 70 && !/[.)]$/.test(t) && /^[A-ZÀ-Ý]/.test(t) && t.toLowerCase() !== "geen";
+      return tussenkop ? '<p class="tussen">' + esc(t) + "</p>" : "<p>" + esc(t) + "</p>";
+    })
+    .join("");
+}
+
+function rubriekBlok(nr, stap) {
+  const blokken = (product.rubrieken || {})[nr];
+  const titel = (stap ? stap + ". " : "") + RUBRIEK_TITEL[nr] + " (rubriek " + nr + ")";
+  const inhoud = blokken && blokken.length ? vibInhoud(blokken) : "<p>" + esc(NIETS_IN_VIB) + "</p>";
+  return '<section class="blok' + (nr === "4" ? " eerst" : "") + '"><h2>' + esc(titel) + "</h2>" + inhoud + "</section>";
+}
+
+function geenAdviesScherm(titel) {
+  const reden =
+    product.status === "geen-vib"
+      ? "Geen VIB beschikbaar."
+      : product.verlopen
+      ? "Het VIB van dit product is verlopen."
+      : "Het VIB van dit product kan niet betrouwbaar worden uitgelezen.";
+  toon(titel, [
+    '<section class="blok gevaar"><h2>⚠️ ' + esc(reden) + "</h2>" +
+      "<p>Daarom geeft deze tool hier geen advies.</p>" +
+      "<p><b>Informeer bij de teamleider en/of BHV'er.</b></p>" +
+      "<p>Volg het etiket op de verpakking" + (product.vibPdf ? " en het volledige VIB (link hieronder)." : ".") + "</p>" +
+      (product.problemen && product.problemen.length
+        ? '<p class="klein">Details: ' + esc(product.problemen.join("; ")) + "</p>"
+        : "") +
+      "</section>",
   ]);
 }
 
-function gewondVraag() {
-  app.innerHTML =
-    kop() +
-    "<h2 class='scherm'>Waar zit het letsel?</h2>" +
-    Object.keys(NAMEN)
-      .map((k) => '<button class="situatie rood" data-w="' + k + '"><span class="ic">' + ICONEN[k] + "</span><span>" + NAMEN[k] + "</span></button>")
-      .join("") +
-    '<button class="situatie grijs" data-w="alles"><span class="ic">❓</span><span>Ik weet het niet</span></button>';
-  document.querySelectorAll("[data-w]").forEach((b) => {
-    b.onclick = () =>
-      toon("Eerste hulp", eersteHulpBlokken(b.dataset.w), [{ tekst: "Ander letsel", fn: gewondVraag }, ...standaardKnoppen()]);
-  });
-  onderbalk([{ tekst: "Terug", fn: menuScherm }]);
-  window.scrollTo(0, 0);
+function kies(s) {
+  const keuzes = {
+    gewond: ["Iemand is gewond of onwel", ["4"]],
+    gemorst: ["Gemorst of gelekt", ["8", "6", "13"]],
+    brand: ["Brand", ["5"]],
+    alles: ["Alles in volgorde", ["8", "4", "6", "5", "13"]],
+  };
+  const [titel, nummers] = keuzes[s] || keuzes.alles;
+  if (!bruikbaar(product)) return geenAdviesScherm(titel);
+  toon(titel, nummers.map((nr, i) => rubriekBlok(nr, nummers.length > 1 ? i + 1 : 0)));
 }
 
 function toon(titel, blokken, knoppen) {
-  const link = product.vib
-    ? '<a href="' + esc(product.vib) + '" target="_blank" rel="noopener">Open het volledige VIB</a>'
-    : "Het volledige VIB staat in Stocky.";
+  const link = product.vibPdf
+    ? '<a href="' + esc(product.vibPdf) + '" target="_blank" rel="noopener">Open het volledige VIB (PDF)</a>'
+    : "";
+  const voet = bruikbaar(product) ? "De tekst hierboven komt letterlijk uit het VIB. " + link : link;
   app.innerHTML =
     kop() +
     "<h2 class='scherm'>" + esc(titel) + "</h2>" +
     blokken.join("") +
     bhvBlok() +
-    blok("Voor de beoordelaar (alleen in de proefversie)", product.proef, "proef") +
-    '<p class="klein">' + link + "</p>";
+    (voet ? '<p class="klein">' + voet + "</p>" : "");
   onderbalk(knoppen || standaardKnoppen());
   window.scrollTo(0, 0);
 }
