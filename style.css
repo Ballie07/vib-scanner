@@ -42,3 +42,8 @@ input { width: 100%; padding: 12px; font-size: 1.1rem; border: 2px solid #999; b
 .onder button { margin: 6px 0; padding: 12px; font-size: 1rem; }
 .situatie.midden { justify-content: space-between; text-align: center; }
 .situatie.midden > span:not(.ic) { flex: 1; }
+.vibkop { font-size: 1rem; color: #0b5cad; margin: 14px 0 4px; }
+.tussen { font-weight: 700; margin-top: 10px; }
+.vibtabel { border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 0.85rem; margin: 8px 0; }
+.vibtabel td, .vibtabel th { border: 1px solid #ccd; padding: 4px 6px; text-align: left; vertical-align: top; overflow-wrap: anywhere; hyphens: auto; }
+.vibtabel th { background: #f1f3f7; }
