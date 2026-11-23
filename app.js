@@ -122,6 +122,8 @@ function startScherm(melding) {
     bhvBlok() +
     "<h1>Scan de barcode</h1>" +
     '<button class="situatie" id="scanknop"><span class="ic">📷</span><span>Scan met de camera</span></button>' +
+    '<button class="situatie grijs" id="fotoknop"><span class="ic">📸</span><span>Lukt scannen niet? Maak een foto van de barcode</span></button>' +
+    '<input id="foto" type="file" accept="image/*" capture="environment" hidden>' +
     '<div id="lezer"></div>' +
     '<label for="ean">Of zoek op barcode of op de naam zoals in Stocky:</label>' +
     '<div class="rij"><input id="ean" type="search" enterkeyhint="search" autocomplete="off" placeholder="Barcode of naam"><button id="zoek">Zoek</button></div>' +
@@ -130,6 +132,11 @@ function startScherm(melding) {
     '<p class="klein">' + (PRODUCTEN.length ? PRODUCTEN.length + " producten met een VIB." : "Er zijn nog geen VIB's opgehaald uit Stocky.") + "</p>";
 
   document.getElementById("scanknop").onclick = startCamera;
+  document.getElementById("fotoknop").onclick = () => {
+    stopScanner();
+    document.getElementById("foto").click();
+  };
+  document.getElementById("foto").onchange = (e) => leesFoto(e.target.files[0]);
   document.getElementById("zoek").onclick = () => zoek(document.getElementById("ean").value);
   document.getElementById("ean").onkeydown = (e) => {
     if (e.key === "Enter") zoek(e.target.value);
@@ -150,11 +157,35 @@ function startScherm(melding) {
 
 let camNummer = -1;
 
+// De barcodelezer vindt een code soms alleen als die een bepaalde grootte in pixels heeft.
+// Daarom proberen we het hele beeld en uitsneden van het midden, op verschillende formaten.
+const UITSNEDEN = [
+  [1, 1280], [0.6, 1000], [0.4, 800], [1, 1920], [0.6, 1600], [0.3, 600], [1, 960], [0.4, 1200], [0.8, 1400],
+  [0.3, 1200], [0.2, 1000],
+];
+const doek = document.createElement("canvas");
+const pen = doek.getContext("2d", { willReadFrequently: true });
+
+function uitsnede(bron, w, h, deel, breedte) {
+  const sw = Math.round(w * deel), sh = Math.round(h * deel);
+  const schaal = Math.min(breedte / sw, 3);
+  doek.width = Math.max(1, Math.round(sw * schaal));
+  doek.height = Math.max(1, Math.round(sh * schaal));
+  pen.drawImage(bron, (w - sw) / 2, (h - sh) / 2, sw, sh, 0, 0, doek.width, doek.height);
+  return doek;
+}
+
+async function leesCode(detector, bron, w, h, welke) {
+  const [deel, breedte] = UITSNEDEN[welke % UITSNEDEN.length];
+  const codes = await detector.detect(uitsnede(bron, w, h, deel, breedte));
+  return codes.length ? codes[0].rawValue : null;
+}
+
 async function startCamera() {
   if (!("BarcodeDetector" in window)) return startCameraOud();
   stopScanner();
   const lezer = document.getElementById("lezer");
-  let formaten = ["ean_13", "ean_8", "upc_a", "code_128"];
+  let formaten = ["ean_13", "ean_8", "upc_a", "upc_e", "code_128", "itf"];
   try {
     const kan = await BarcodeDetector.getSupportedFormats();
     formaten = formaten.filter((f) => kan.includes(f));
@@ -165,7 +196,7 @@ async function startCamera() {
   lezer.innerHTML =
     '<p class="melding">Houd de barcode in beeld, op 15 tot 20 cm afstand. Wacht even tot het beeld scherp is.</p>' +
     '<video playsinline muted autoplay style="width:100%;border-radius:12px"></video>' +
-    '<button id="wissel">🔄 Andere camera</button>' +
+    '<div class="rij"><button id="wissel">🔄 Andere camera</button><button id="lamp" hidden>🔦 Lamp</button></div>' +
     '<p class="klein" id="scaninfo">Camera starten...</p>';
   const video = lezer.querySelector("video");
   const info = document.getElementById("scaninfo");
@@ -208,8 +239,17 @@ async function startCamera() {
     const mog = spoor.getCapabilities ? spoor.getCapabilities() : {};
     const extra = {};
     if (mog.focusMode && mog.focusMode.includes("continuous")) extra.focusMode = "continuous";
-    if (mog.zoom && mog.zoom.max >= 2) extra.zoom = 2;
+    if (mog.zoom && mog.zoom.max >= 1.5) extra.zoom = Math.min(1.5, mog.zoom.max);
     if (Object.keys(extra).length) await spoor.applyConstraints({ advanced: [extra] });
+    if (mog.torch) {
+      const lamp = document.getElementById("lamp");
+      let aan = false;
+      lamp.hidden = false;
+      lamp.onclick = async () => {
+        aan = !aan;
+        try { await spoor.applyConstraints({ advanced: [{ torch: aan }] }); } catch (e) {}
+      };
+    }
   } catch (e) {}
 
   document.getElementById("wissel").onclick = async () => {
@@ -225,19 +265,42 @@ async function startCamera() {
     pogingen++;
     try {
       if (video.readyState >= 2) {
-        const codes = await detector.detect(video);
-        if (actief && codes.length) {
+        const code = await leesCode(detector, video, video.videoWidth, video.videoHeight, pogingen);
+        if (actief && code) {
           stopScanner();
-          zoek(codes[0].rawValue);
+          zoek(code);
           return;
         }
       }
     } catch (e) {}
     const s = spoor.getSettings();
-    info.textContent = "Camera: " + (spoor.label || "onbekend") + " · " + (s.width || video.videoWidth) + "×" + (s.height || video.videoHeight) + " · zoeken... (" + pogingen + ")";
+    info.textContent = pogingen > 60
+      ? "Lukt het niet? Houd de barcode recht en dichterbij, zet de lamp aan, of typ de cijfers onder de barcode in."
+      : "Zoeken naar de barcode...";
     tijd = setTimeout(kijk, 150);
   };
   kijk();
+}
+
+// Een foto met de gewone camera-app is scherper (die stelt zelf scherp) en heeft een
+// hogere resolutie dan het videobeeld. De foto wordt op verschillende formaten gelezen.
+async function leesFoto(bestand) {
+  if (!bestand) return;
+  const melding = document.querySelector(".melding");
+  melding.textContent = "Foto wordt gelezen...";
+  try {
+    if (!("BarcodeDetector" in window)) throw new Error("geen lezer");
+    const detector = new BarcodeDetector({ formats: ["ean_13", "ean_8", "upc_a", "upc_e", "code_128", "itf"] });
+    const beeld = await createImageBitmap(bestand);
+    for (let i = 0; i < UITSNEDEN.length; i++) {
+      const code = await leesCode(detector, beeld, beeld.width, beeld.height, i);
+      if (code) return zoek(code);
+    }
+    melding.textContent =
+      "Geen barcode gevonden op de foto. Maak de foto van dichtbij, recht van voren en scherp, of typ de cijfers onder de barcode in.";
+  } catch (e) {
+    melding.textContent = "De foto kon niet worden gelezen. Typ de cijfers onder de barcode in.";
+  }
 }
 
 function startCameraOud() {

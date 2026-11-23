@@ -7,7 +7,7 @@
 // rubriek 8.2, 4, 6, 5 en 13 van het VIB. Kan een VIB niet betrouwbaar worden
 // uitgelezen, dan geeft de tool geen advies en verwijst hij naar het originele VIB.
 //
-// Proefversie: gebruik verzonnen namen en nummers zolang de site openbaar is.
+// Zolang de site openbaar is: alleen verzonnen namen en nummers invullen.
 const BHV_LIJST = [
   { naam: "Voorbeeld Een", rol: "BHV", telefoon: "06 00 00 00 01" },
   { naam: "Voorbeeld Twee", rol: "BHV", telefoon: "06 00 00 00 02" },
