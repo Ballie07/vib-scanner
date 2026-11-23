@@ -26,6 +26,7 @@ jobs:
         env:
           STOCKY_API_KEY: ${{ secrets.STOCKY_API_KEY }}
           STOCKY_URL: https://oms.oftomorrow.eu/api/v2
+          STOCKY_USER_AGENT: ${{ secrets.STOCKY_USER_AGENT }}
           STOCKY_AUTH: ${{ vars.STOCKY_AUTH }}
           STOCKY_TOKEN_PAD: ${{ vars.STOCKY_TOKEN_PAD }}
           STOCKY_TOKEN_VELD: ${{ vars.STOCKY_TOKEN_VELD }}

@@ -24,10 +24,13 @@ SLEUTEL = os.environ.get("STOCKY_API_KEY", "").strip()
 if SLEUTEL.lower().startswith("bearer "):
     SLEUTEL = SLEUTEL[7:].strip()
 ORIGIN = "{0.scheme}://{0.netloc}".format(urllib.parse.urlsplit(BASIS))
-AGENT = "Toppy-VIB-scanner/1.1"
+# Stocky laat alleen verzoeken met de afgesproken User-Agent door (GitHub-secret STOCKY_USER_AGENT).
+AGENT = os.environ.get("STOCKY_USER_AGENT", "").strip() or "Toppy-VIB-scanner/1.1"
 
 # Volgorde waarin manieren van inloggen geprobeerd worden.
+# "PAT" is de manier die Stocky nu gebruikt; eind 2026 wordt dat "Bearer".
 MANIEREN = [
+    "Authorization:PAT",
     "Authorization:Bearer",
     "X-API-KEY",
     "X-Api-Token",
@@ -64,7 +67,9 @@ def vereis_sleutel():
 
 def adres(pad):
     if pad.startswith("http"):
-        return pad
+        # De sleutel gaat nooit naar een ander adres dan Stocky: alleen het pad overnemen.
+        link = urllib.parse.urlsplit(pad)
+        return ORIGIN + link.path + ("?" + link.query if link.query else "")
     if pad.startswith("/api/"):
         return ORIGIN + pad
     return BASIS + pad
