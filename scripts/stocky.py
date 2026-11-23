@@ -40,7 +40,15 @@ MANIEREN = [
     "?token",
 ]
 
-_gekozen = {"manier": os.environ.get("STOCKY_AUTH", "").strip() or None}
+_gekozen = {"manier": os.environ.get("STOCKY_AUTH", "").strip() or None, "token": None}
+
+# Inwisselen van de API-sleutel voor een inlogtoken (JWT). Stocky gaf met
+# "Authorization: Bearer <sleutel>" de melding "Invalid JWT Token": de sleutel zelf is
+# dus geen token. Weet je het inlogadres, zet dan bijvoorbeeld:
+#   STOCKY_TOKEN_PAD="/api/v2/token"   en   STOCKY_TOKEN_VELD="apiKey"
+TOKEN_PAD = os.environ.get("STOCKY_TOKEN_PAD", "").strip()
+TOKEN_VELD = os.environ.get("STOCKY_TOKEN_VELD", "").strip()
+TOKEN_WOORDEN = ("token", "login", "auth", "apikey", "api_key", "api-key", "session")
 
 
 def vereis_sleutel():
@@ -66,6 +74,8 @@ def _verzoek(pad, manier, json_verwacht=True):
         delen = urllib.parse.urlsplit(url)
         query = urllib.parse.parse_qsl(delen.query) + [(manier[1:], SLEUTEL)]
         url = urllib.parse.urlunsplit(delen._replace(query=urllib.parse.urlencode(query)))
+    elif manier == "jwt":
+        koppen["Authorization"] = "Bearer " + _gekozen["token"]
     elif manier.startswith("Authorization:"):
         voor = manier.split(":", 1)[1].strip()
         koppen["Authorization"] = (voor + " " + SLEUTEL) if voor else SLEUTEL
@@ -76,10 +86,130 @@ def _verzoek(pad, manier, json_verwacht=True):
     return json.loads(data) if json_verwacht else data
 
 
+def _post_json(pad, inhoud):
+    verzoek = urllib.request.Request(adres(pad), data=json.dumps(inhoud).encode(), method="POST", headers={
+        "Content-Type": "application/json", "Accept": "application/json", "User-Agent": AGENT})
+    with urllib.request.urlopen(verzoek, timeout=60) as antwoord:
+        return json.loads(antwoord.read() or b"{}")
+
+
+def _token_uit(antwoord):
+    if isinstance(antwoord, dict):
+        for k in ("token", "access_token", "accessToken", "jwt", "id_token", "bearer"):
+            if isinstance(antwoord.get(k), str) and antwoord[k].count(".") == 2:
+                return antwoord[k]
+        for v in antwoord.values():
+            t = _token_uit(v)
+            if t:
+                return t
+    return None
+
+
+def wissel_in(pad, veld, uitgebreid=False):
+    """Probeert de API-sleutel bij `pad` in te wisselen voor een JWT. Geeft True als het lukt."""
+    try:
+        t = _token_uit(_post_json(pad, {veld: SLEUTEL}))
+    except urllib.error.HTTPError as fout:
+        if uitgebreid:
+            print(f"  POST {pad} {{{veld}}} -> {fout.code} {kort_antwoord(fout)}")
+        return False
+    except (urllib.error.URLError, ValueError) as fout:
+        if uitgebreid:
+            print(f"  POST {pad} {{{veld}}} -> {fout}")
+        return False
+    if not t:
+        if uitgebreid:
+            print(f"  POST {pad} {{{veld}}} -> antwoord zonder token")
+        return False
+    _gekozen["token"] = t
+    if uitgebreid:
+        print(f"  POST {pad} {{{veld}}} -> token ontvangen")
+    return True
+
+
+def docs():
+    """Haalt de (openbare) API-beschrijving van Stocky op, als die er is."""
+    for pad in ("/docs.json", "/docs.jsonopenapi", "/docs?format=json", ORIGIN + "/api/docs.json"):
+        try:
+            verzoek = urllib.request.Request(adres(pad), headers={
+                "Accept": "application/vnd.openapi+json, application/json", "User-Agent": AGENT})
+            with urllib.request.urlopen(verzoek, timeout=60) as antwoord:
+                d = json.loads(antwoord.read())
+            if isinstance(d, dict) and d.get("paths"):
+                return d
+        except Exception:
+            continue
+    return None
+
+
+def _velden(schema, d, diepte=0):
+    if not isinstance(schema, dict) or diepte > 5:
+        return []
+    if "$ref" in schema:
+        deel = d
+        for stuk in schema["$ref"].lstrip("#/").split("/"):
+            deel = deel.get(stuk, {}) if isinstance(deel, dict) else {}
+        return _velden(deel, d, diepte + 1)
+    return list((schema.get("properties") or {}).keys())
+
+
+def verken(uitgebreid=True):
+    """Leest de API-beschrijving en zoekt inlogadressen. Geeft [(pad, [velden])] terug."""
+    d = docs()
+    if not d:
+        if uitgebreid:
+            print("Geen openbare API-beschrijving van Stocky gevonden (docs.json).")
+        return []
+    print("API-beschrijving van Stocky gevonden.")
+    schemes = (d.get("components") or {}).get("securitySchemes") or {}
+    for naam, sch in schemes.items():
+        print(f"  Beveiliging '{naam}': " + ", ".join(f"{k}={v}" for k, v in sch.items() if k != "description"))
+    kandidaten = []
+    for pad, methoden in (d.get("paths") or {}).items():
+        if not any(w in pad.lower() for w in TOKEN_WOORDEN):
+            continue
+        for methode, info in methoden.items():
+            if not isinstance(info, dict):
+                continue
+            body = (((info.get("requestBody") or {}).get("content") or {}).get("application/json") or {}).get("schema")
+            velden = _velden(body, d)
+            print(f"  Inlogadres? {methode.upper()} {pad}  velden: {', '.join(velden) or '-'}  ({info.get('summary') or ''})")
+            if methode.lower() == "post":
+                kandidaten.append((pad, velden))
+    for pad in ("/products", "/product_msds"):
+        for p2, methoden in (d.get("paths") or {}).items():
+            if p2.rstrip("/").endswith(pad) and "get" in methoden:
+                namen = [x.get("name") for x in methoden["get"].get("parameters") or [] if isinstance(x, dict)]
+                print(f"  Zoekfilters {p2}: {', '.join(n for n in namen if n)}")
+    return kandidaten
+
+
+def probeer_jwt(uitgebreid=False):
+    """Probeert de API-sleutel in te wisselen voor een JWT: eerst het ingestelde adres, anders uit de docs."""
+    pogingen = []
+    if TOKEN_PAD:
+        pogingen.append((TOKEN_PAD, [TOKEN_VELD or "apiKey"]))
+    else:
+        for pad, velden in verken(uitgebreid):
+            sleutelvelden = [v for v in velden if "key" in v.lower() or "token" in v.lower()]
+            pogingen.append((pad, sleutelvelden or (["apiKey", "api_key", "key"] if not velden else [])))
+    for pad, velden in pogingen:
+        for veld in velden:
+            if wissel_in(pad if pad.startswith(("/api/", "http")) else pad, veld, uitgebreid):
+                print(f"Inloggen werkt door de sleutel in te wisselen bij {pad} (veld '{veld}'). "
+                      f"Vastzetten kan met STOCKY_TOKEN_PAD={pad} en STOCKY_TOKEN_VELD={veld}")
+                return True
+    return False
+
+
 def kies_manier(test_pad="/product_msds?itemsPerPage=1", uitgebreid=False):
     """Zoekt uit welke manier van inloggen werkt. Geeft de manier terug, of gooit de laatste fout."""
     if _gekozen["manier"]:
         return _gekozen["manier"]
+    if TOKEN_PAD or _gekozen["token"]:
+        if _gekozen["token"] or probeer_jwt(uitgebreid):
+            _gekozen["manier"] = "jwt"
+            return "jwt"
     laatste = None
     for manier in MANIEREN:
         try:
@@ -96,6 +226,18 @@ def kies_manier(test_pad="/product_msds?itemsPerPage=1", uitgebreid=False):
         _gekozen["manier"] = manier
         print(f"Inloggen bij Stocky werkt met: {manier}  (vastzetten kan met STOCKY_AUTH={manier})")
         return manier
+    # Geen enkele manier werkt met de sleutel zelf: proberen hem in te wisselen voor een token.
+    if uitgebreid:
+        print("De sleutel zelf wordt niet geaccepteerd. Inlogadres zoeken in de API-beschrijving:")
+    if probeer_jwt(uitgebreid):
+        try:
+            _verzoek(test_pad, "jwt")
+            _gekozen["manier"] = "jwt"
+            return "jwt"
+        except urllib.error.HTTPError as fout:
+            if uitgebreid:
+                print(f"  token ontvangen, maar Stocky weigert alsnog: {fout.code} {kort_antwoord(fout)}")
+            laatste = fout
     raise laatste
 
 
