@@ -76,7 +76,7 @@ function kop(groot) {
   const foto = product.foto
     ? `<img class="foto${klasse}" src="${esc(product.foto)}" alt="${esc(product.naam)}" onerror="this.style.display='none'">`
     : `<div class="foto leeg${klasse}">📦</div>`;
-  return `<div class="productkaart${groot ? " gestapeld" : ""}">${foto}<div><h1>${esc(toonNaam(product))}</h1><p class="klein">VIB-datum: ${esc(product.vibDatum || "onbekend")}${product.verlopen ? " (verlopen)" : ""}${product.taal && product.taal !== "nl" ? " · taal: " + esc(TAAL[product.taal] || product.taal) : ""}</p></div></div>`;
+  return `<div class="productkaart${groot ? " gestapeld" : ""}">${foto}<div><h1>${esc(toonNaam(product))}</h1>${product.taal && product.taal !== "nl" ? '<p class="klein">Taal van het VIB: ' + esc(TAAL[product.taal] || product.taal) + "</p>" : ""}</div></div>`;
 }
 
 function bhvBlok() {
@@ -476,11 +476,11 @@ function vibInhoud(blokken) {
 // ---- Kort en krachtig: per rubriek direct alleen het onderdeel waarmee je actie neemt. ----
 // De tekst blijft letterlijk uit het VIB. De rest staat met één tik open onder "Meer uit het VIB".
 
-// Eigen werkinstructie (komt NIET uit het VIB), altijd getoond bij rubriek 13.
-const WERKINSTRUCTIE_13 =
+// Eigen werkinstructie (komt NIET uit het VIB). Staat bovenaan zodra er opgeruimd moet worden.
+const WERKINSTRUCTIE_ADR =
   '<div class="instructie"><p class="instructie-kop">🛒 Werkinstructie (niet uit het VIB)</p>' +
-  "<p><b>Gebruik altijd de ADR-kar.</b> Pak de ADR-kar <b>voordat</b> je begint met opruimen, " +
-  "en zet hem <b>na</b> het opruimen weer terug.</p></div>";
+  "<p><b>Maak altijd gebruik van de ADR-kar.</b> Pak deze alvorens je begint met opruimen. " +
+  "En zet deze na gebruik weer terug.</p></div>";
 
 const KERN = { "8": "8.2", "4": "4.1", "6": "6.3", "5": "5.1", "13": "13.1" };
 const BESCHERMING = /(oog|ogen|gelaat|gezicht|eye|face|yeux|augen|hand|main|huid|skin|peau|haut|lichaam|body|corps|körper|adem|inhal|respir|atem|kleding|cloth|vêtement)/i;
@@ -565,7 +565,6 @@ function rubriekBlok(nr, stap, route) {
     inhoud = vibInhoud(direct) +
       (meer.length ? '<details class="meer"><summary>Meer uit rubriek ' + esc(naam) + "</summary>" + vibInhoud(meer) + "</details>" : "");
   }
-  if (nr === "13") inhoud += WERKINSTRUCTIE_13;
   return '<section class="blok' + (nr === "4" ? " eerst" : "") + '"><h2>' + esc(titel) + "</h2>" + inhoud + "</section>";
 }
 
@@ -602,7 +601,13 @@ function kies(s, route) {
   if (s === "gewond" && route === undefined) return routeScherm();
   const nummers = VOLGORDE.filter((nr) => gekozen.includes(nr)); // altijd in de vaste volgorde
   const sub = route && ROUTES[route] ? titel + ": " + ROUTES[route].tekst.toLowerCase() : titel;
-  toon(sub, [uitleesmelding()].concat(nummers.map((nr, i) => rubriekBlok(nr, nummers.length > 1 ? i + 1 : 0, route))), null, nummers.includes("13"));
+  const opruimen = nummers.includes("6") || nummers.includes("13");
+  toon(
+    sub,
+    [opruimen ? WERKINSTRUCTIE_ADR : "", uitleesmelding()].concat(nummers.map((nr, i) => rubriekBlok(nr, nummers.length > 1 ? i + 1 : 0, route))),
+    null,
+    opruimen
+  );
 }
 
 function toon(titel, blokken, knoppen, metWerkinstructie) {
