@@ -476,6 +476,12 @@ function vibInhoud(blokken) {
 // ---- Kort en krachtig: per rubriek direct alleen het onderdeel waarmee je actie neemt. ----
 // De tekst blijft letterlijk uit het VIB. De rest staat met één tik open onder "Meer uit het VIB".
 
+// Eigen werkinstructie (komt NIET uit het VIB), altijd getoond bij rubriek 13.
+const WERKINSTRUCTIE_13 =
+  '<div class="instructie"><p class="instructie-kop">🛒 Werkinstructie (niet uit het VIB)</p>' +
+  "<p><b>Gebruik altijd de ADR-kar.</b> Pak de ADR-kar <b>voordat</b> je begint met opruimen, " +
+  "en zet hem <b>na</b> het opruimen weer terug.</p></div>";
+
 const KERN = { "8": "8.2", "4": "4.1", "6": "6.3", "5": "5.1", "13": "13.1" };
 const BESCHERMING = /(oog|ogen|gelaat|gezicht|eye|face|yeux|augen|hand|main|huid|skin|peau|haut|lichaam|body|corps|körper|adem|inhal|respir|atem|kleding|cloth|vêtement)/i;
 const ROUTES = {
@@ -559,6 +565,7 @@ function rubriekBlok(nr, stap, route) {
     inhoud = vibInhoud(direct) +
       (meer.length ? '<details class="meer"><summary>Meer uit rubriek ' + esc(naam) + "</summary>" + vibInhoud(meer) + "</details>" : "");
   }
+  if (nr === "13") inhoud += WERKINSTRUCTIE_13;
   return '<section class="blok' + (nr === "4" ? " eerst" : "") + '"><h2>' + esc(titel) + "</h2>" + inhoud + "</section>";
 }
 
@@ -595,11 +602,13 @@ function kies(s, route) {
   if (s === "gewond" && route === undefined) return routeScherm();
   const nummers = VOLGORDE.filter((nr) => gekozen.includes(nr)); // altijd in de vaste volgorde
   const sub = route && ROUTES[route] ? titel + ": " + ROUTES[route].tekst.toLowerCase() : titel;
-  toon(sub, [uitleesmelding()].concat(nummers.map((nr, i) => rubriekBlok(nr, nummers.length > 1 ? i + 1 : 0, route))));
+  toon(sub, [uitleesmelding()].concat(nummers.map((nr, i) => rubriekBlok(nr, nummers.length > 1 ? i + 1 : 0, route))), null, nummers.includes("13"));
 }
 
-function toon(titel, blokken, knoppen) {
-  const voet = heeftVib(product) ? "De tekst hierboven komt letterlijk uit het VIB." : "";
+function toon(titel, blokken, knoppen, metWerkinstructie) {
+  const voet = heeftVib(product)
+    ? "De tekst hierboven komt letterlijk uit het VIB" + (metWerkinstructie ? ", behalve de werkinstructie over de ADR-kar." : ".")
+    : "";
   app.innerHTML =
     kop() +
     "<h2 class='scherm'>" + esc(titel) + "</h2>" +

@@ -56,3 +56,5 @@ input { width: 100%; padding: 12px; font-size: 1.1rem; border: 2px solid #999; b
 .productkaart:not(.gestapeld) h1 { font-size: 1.1rem; }
 .meer { margin-top: 10px; border-top: 1px solid #dde2e8; padding-top: 6px; }
 .meer summary { cursor: pointer; color: #0b5cad; font-weight: 600; padding: 6px 0; }
+.instructie { margin-top: 12px; background: #fff6e0; border: 2px solid #e69500; border-radius: 10px; padding: 8px 12px; }
+.instructie-kop { font-weight: 700; color: #7a4a00; margin: 2px 0 4px; }
