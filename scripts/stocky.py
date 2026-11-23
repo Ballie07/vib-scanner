@@ -11,6 +11,7 @@ dan STOCKY_AUTH, bijvoorbeeld:
     STOCKY_AUTH="?apiKey"              (sleutel als ?apiKey=... in het adres)
 """
 
+import base64
 import json
 import os
 import sys
@@ -35,6 +36,8 @@ MANIEREN = [
     "Authorization:ApiKey",
     "Authorization:Token",
     "Authorization:",
+    "Basic",
+    "Basic:leeg",
     "?apiKey",
     "?api_key",
     "?token",
@@ -74,6 +77,10 @@ def _verzoek(pad, manier, json_verwacht=True):
         delen = urllib.parse.urlsplit(url)
         query = urllib.parse.parse_qsl(delen.query) + [(manier[1:], SLEUTEL)]
         url = urllib.parse.urlunsplit(delen._replace(query=urllib.parse.urlencode(query)))
+    elif manier.startswith("Basic"):
+        # sleutel als "gebruiker:geheim", of als gebruiker zonder wachtwoord
+        paar = SLEUTEL if manier == "Basic" else SLEUTEL + ":"
+        koppen["Authorization"] = "Basic " + base64.b64encode(paar.encode()).decode()
     elif manier == "jwt":
         koppen["Authorization"] = "Bearer " + _gekozen["token"]
     elif manier.startswith("Authorization:"):
@@ -163,7 +170,11 @@ def verken(uitgebreid=True):
     print("API-beschrijving van Stocky gevonden.")
     schemes = (d.get("components") or {}).get("securitySchemes") or {}
     for naam, sch in schemes.items():
+        if sch.get("type") == "oauth2":
+            continue
         print(f"  Beveiliging '{naam}': " + ", ".join(f"{k}={v}" for k, v in sch.items() if k != "description"))
+        if sch.get("description"):
+            print("    uitleg: " + " ".join(str(sch["description"]).split())[:400])
     kandidaten = []
     for pad, methoden in (d.get("paths") or {}).items():
         if not any(w in pad.lower() for w in TOKEN_WOORDEN):
@@ -274,7 +285,9 @@ def sleutelvorm():
     delen = SLEUTEL.count(".") + 1
     vorm = "JWT-vorm (3 delen, begint met eyJ)" if delen == 3 and SLEUTEL.startswith("eyJ") else f"{delen} deel/delen"
     rare = any(c.isspace() or ord(c) > 126 for c in SLEUTEL)
-    return f"{len(SLEUTEL)} tekens, {vorm}" + (", BEVAT SPATIES OF VREEMDE TEKENS" if rare else "")
+    soort = "alleen hex-tekens" if all(c in "0123456789abcdefABCDEF" for c in SLEUTEL) else "letters/cijfers/tekens"
+    extra = ", bevat een dubbele punt" if ":" in SLEUTEL else ""
+    return f"{len(SLEUTEL)} tekens, {vorm}, {soort}{extra}" + (", BEVAT SPATIES OF VREEMDE TEKENS" if rare else "")
 
 
 def uitleg(fout):

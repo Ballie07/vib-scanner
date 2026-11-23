@@ -49,7 +49,7 @@ def zoek_op_naam(zoek):
     q = urllib.parse.quote(zoek)
     gezien, treffers = set(), []
     # Eerst Stocky laten filteren; negeert Stocky het filter, dan controleren we het hieronder zelf.
-    for pad in (f"/product_msds?name={q}", "/product_msds"):
+    for pad in (f"/product_msds?stockable.name={q}", f"/product_msds?stockable.sku={q}", "/product_msds"):
         try:
             for vib in stocky.lijst(pad):
                 if vib.get("id") in gezien:
@@ -66,7 +66,7 @@ def zoek_op_naam(zoek):
 
 
 def vibs_van_product(product_id):
-    for pad in (f"/product_msds?productId={product_id}", f"/product_msds?product={product_id}"):
+    for pad in (f"/product_msds?stockable.id={product_id}", f"/product_msds?productId={product_id}"):
         try:
             gevonden = [v for v in stocky.lijst(pad) if str(v.get("productId")) == str(product_id)]
         except urllib.error.HTTPError as fout:
@@ -81,7 +81,7 @@ def vibs_van_product(product_id):
 def zoek_op_barcode(code):
     varianten = barcode_varianten(code)
     # 1. Stocky laten zoeken op barcode (verschillende filternamen proberen).
-    for filter_naam in ("GTINs.barcode", "barcode", "gtin", "ean"):
+    for filter_naam in ("GTINs.barcode",):
         for v in sorted(varianten):
             try:
                 pagina = haal(f"/products?{filter_naam}={v}&itemsPerPage=30")
