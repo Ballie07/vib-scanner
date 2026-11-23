@@ -29,6 +29,8 @@ jobs:
           STOCKY_AUTH: ${{ vars.STOCKY_AUTH }}
           STOCKY_TOKEN_PAD: ${{ vars.STOCKY_TOKEN_PAD }}
           STOCKY_TOKEN_VELD: ${{ vars.STOCKY_TOKEN_VELD }}
+          STOCKY_GEBRUIKER: ${{ secrets.STOCKY_GEBRUIKER }}
+          STOCKY_WACHTWOORD: ${{ secrets.STOCKY_WACHTWOORD }}
         run: python3 scripts/ophalen.py
 
       - name: Wijzigingen opslaan

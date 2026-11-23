@@ -29,3 +29,7 @@ en maakt `vib-data.js` voor de website.
 Het script probeert zelf de gangbare manieren om de sleutel mee te sturen en zet in het logboek welke werkt.
 Test dit met *VIB zoeken in Stocky* > vinkje *Alleen het inloggen testen*, of `python3 scripts/vib_zoeken.py --test`.
 Zet de manier die werkt daarna vast als variabele `STOCKY_AUTH` (Settings > Secrets and variables > Actions > Variables).
+
+Stocky accepteert alleen een inlogtoken (`Authorization: Bearer <JWT>`). Werkt de API-sleutel niet, dan kan het ook
+met een (service)account: zet dan de secrets `STOCKY_GEBRUIKER` en `STOCKY_WACHTWOORD`. Het script haalt daarmee
+zelf een token op bij `/api/v2/jwt_token`.

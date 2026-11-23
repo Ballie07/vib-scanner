@@ -51,11 +51,14 @@ _gekozen = {"manier": os.environ.get("STOCKY_AUTH", "").strip() or None, "token"
 #   STOCKY_TOKEN_PAD="/api/v2/token"   en   STOCKY_TOKEN_VELD="apiKey"
 TOKEN_PAD = os.environ.get("STOCKY_TOKEN_PAD", "").strip()
 TOKEN_VELD = os.environ.get("STOCKY_TOKEN_VELD", "").strip()
+# Plan B: inloggen met een (service)account van Stocky, via POST /jwt_token.
+GEBRUIKER = os.environ.get("STOCKY_GEBRUIKER", "").strip()
+WACHTWOORD = os.environ.get("STOCKY_WACHTWOORD", "")
 TOKEN_WOORDEN = ("token", "login", "auth", "apikey", "api_key", "api-key", "session")
 
 
 def vereis_sleutel():
-    if not SLEUTEL:
+    if not SLEUTEL and not GEBRUIKER:
         sys.exit("STOCKY_API_KEY ontbreekt. Zet de sleutel in GitHub: Settings > Secrets and variables > Actions.")
 
 
@@ -195,8 +198,27 @@ def verken(uitgebreid=True):
     return kandidaten
 
 
+def login_met_account(uitgebreid=False):
+    try:
+        t = _token_uit(_post_json(os.environ.get("STOCKY_LOGIN_PAD", "/jwt_token"),
+                                  {"username": GEBRUIKER, "password": WACHTWOORD}))
+    except urllib.error.HTTPError as fout:
+        print(f"Inloggen met account STOCKY_GEBRUIKER mislukt: {fout.code} {kort_antwoord(fout)}")
+        return False
+    if t:
+        _gekozen["token"] = t
+        print("Inloggen bij Stocky werkt met het account (STOCKY_GEBRUIKER / STOCKY_WACHTWOORD).")
+        return True
+    print("Inloggen met account: antwoord zonder token.")
+    return False
+
+
 def probeer_jwt(uitgebreid=False):
     """Probeert de API-sleutel in te wisselen voor een JWT: eerst het ingestelde adres, anders uit de docs."""
+    if GEBRUIKER and login_met_account(uitgebreid):
+        return True
+    if not SLEUTEL:
+        return False
     pogingen = []
     if TOKEN_PAD:
         pogingen.append((TOKEN_PAD, [TOKEN_VELD or "apiKey"]))
@@ -217,7 +239,7 @@ def kies_manier(test_pad="/product_msds?itemsPerPage=1", uitgebreid=False):
     """Zoekt uit welke manier van inloggen werkt. Geeft de manier terug, of gooit de laatste fout."""
     if _gekozen["manier"]:
         return _gekozen["manier"]
-    if TOKEN_PAD or _gekozen["token"]:
+    if TOKEN_PAD or GEBRUIKER or _gekozen["token"]:
         if _gekozen["token"] or probeer_jwt(uitgebreid):
             _gekozen["manier"] = "jwt"
             return "jwt"
