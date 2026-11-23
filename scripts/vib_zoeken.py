@@ -115,43 +115,56 @@ def bestandsnaam(tekst):
     return re.sub(r"[^\w\-]+", "_", tekst).strip("_")[:80] or "vib"
 
 
+def toon_rubrieken(doel):
+    import vib_lezer
+    gelezen = vib_lezer.lees_vib(str(doel))
+    if gelezen["problemen"]:
+        print("  Opmerkingen bij het uitlezen: " + "; ".join(gelezen["problemen"]))
+    for r in gelezen["rubrieken"]:  # altijd in de vaste volgorde 8.2, 4, 6, 5, 13
+        print(f"\n  == Rubriek {r['rubriek']}: {r['titel']} ==")
+        if not r["blokken"]:
+            print("   (niet uit te lezen, zie de PDF)")
+        for b in r["blokken"]:
+            if b["soort"] == "tabel":
+                for rij in b["rijen"]:
+                    print("   | " + " | ".join(rij))
+            elif b["soort"] == "veld":
+                print(f"   {b['kopje']}: {b['tekst']}")
+            else:
+                print(f"   {b['tekst']}")
+    nummers = {r["rubriek"] for r in gelezen["rubrieken"]}
+    for nr in vib_lezer.VOLGORDE:
+        if nr not in nummers:
+            print(f"\n  == Rubriek {nr}: {vib_lezer.TITELS[nr]} ==\n   (niet gevonden in dit VIB, zie de PDF)")
+
+
 def download(vib, map_, lezen):
+    """Downloadt alle VIB-PDF's van dit artikel, ook verlopen en anderstalige."""
     import ophalen  # pas hier laden: ophalen.py heeft dezelfde helpers voor bijlagen
-    bijlage = ophalen.beste_bijlage(vib.get("attachments"))
     naam = vib.get("name") or f"product {vib.get('productId')}"
-    if not bijlage:
-        print(f"- {naam}: geen VIB (PDF) in Stocky.")
-        return None
-    pad = bijlage.get("downloadUrl") or f"/product_msds/{vib['id']}/attachments/{bijlage['id']}/download"
-    pdf = haal(pad, json_verwacht=False)
-    if not pdf.startswith(b"%PDF"):
-        print(f"- {naam}: Stocky gaf geen PDF terug.")
-        return None
-    doel = map_ / f"{bestandsnaam(naam)}_{vib.get('productId') or vib['id']}.pdf"
-    doel.write_bytes(pdf)
-    datum = ophalen.datum(bijlage.get("MSDSDate") or vib.get("latestMSDSDate"))
-    print(f"- {naam} (sku {vib.get('sku') or '?'}), VIB-datum {datum or 'onbekend'}"
-          f"{' (VERLOPEN)' if bijlage.get('expired') else ''}: opgeslagen als {doel}")
-    if lezen:
-        if not shutil.which("pdftotext"):
-            print("  (pdftotext ontbreekt; installeer poppler-utils om de tekst te tonen)")
-        else:
-            import vib_lezer
-            gelezen = vib_lezer.lees_vib(str(doel))
-            if gelezen["problemen"]:
-                print("  Let op, niet betrouwbaar uit te lezen: " + "; ".join(gelezen["problemen"]))
-                print("  Gebruik het volledige VIB (de PDF).")
-            for r in gelezen["rubrieken"]:
-                print(f"\n  == Rubriek {r['rubriek']}: {r['titel']} ==")
-                for b in r["blokken"]:
-                    if b["soort"] == "tabel":
-                        for rij in b["rijen"]:
-                            print("   | " + " | ".join(rij))
-                    elif b["soort"] == "veld":
-                        print(f"   {b['kopje']}: {b['tekst']}")
-                    else:
-                        print(f"   {b['tekst']}")
-    return doel
+    bijlagen = ophalen.pdf_bijlagen(vib.get("attachments"))
+    if not bijlagen:
+        print(f"- {naam}: GEEN VIB beschikbaar. Stop, en win informatie in bij een collega-leidinggevende.")
+        return []
+    opgeslagen = []
+    for bijlage in bijlagen:
+        pad = bijlage.get("downloadUrl") or f"/product_msds/{vib['id']}/attachments/{bijlage['id']}/download"
+        pdf = haal(pad, json_verwacht=False)
+        if not pdf.startswith(b"%PDF"):
+            print(f"- {naam}: Stocky gaf geen PDF terug voor {bijlage.get('filename') or bijlage.get('id')}.")
+            continue
+        doel = map_ / f"{bestandsnaam(naam)}_{vib.get('productId') or vib['id']}_{bijlage.get('id')}.pdf"
+        doel.write_bytes(pdf)
+        datum = ophalen.datum(bijlage.get("MSDSDate") or vib.get("latestMSDSDate"))
+        print(f"- {naam} (sku {vib.get('sku') or '?'}), VIB-datum {datum or 'onbekend'}"
+              f"{' (verlopen)' if bijlage.get('expired') else ''}: opgeslagen als {doel}")
+        if lezen:
+            if shutil.which("pdftotext"):
+                toon_rubrieken(doel)
+            else:
+                print("  (pdftotext ontbreekt; installeer poppler-utils om de tekst te tonen)")
+        opgeslagen.append(doel)
+    return opgeslagen
 
 
 def main():
@@ -176,17 +189,18 @@ def main():
     if args.barcode and args.naam:
         treffers = [v for v in treffers if woorden_passen(args.naam, v.get("name"))]
     if not treffers:
-        sys.exit("Geen VIB gevonden in Stocky voor " + (f"barcode {args.barcode}" if args.barcode else f'"{args.naam}"') + ".")
+        sys.exit("Geen VIB gevonden in Stocky voor " + (f"barcode {args.barcode}" if args.barcode else f'"{args.naam}"')
+                 + ". Stop, en win informatie in bij een collega-leidinggevende.")
 
     print(f"{len(treffers)} VIB('s) gevonden" + (f", de eerste {args.max} worden gedownload" if len(treffers) > args.max else "") + ":")
     map_ = Path(args.map)
     map_.mkdir(parents=True, exist_ok=True)
-    gelukt = [d for v in treffers[: args.max] if (d := download(v, map_, args.lezen))]
+    gelukt = [d for v in treffers[: args.max] for d in download(v, map_, args.lezen)]
     (map_ / "overzicht.json").write_text(json.dumps(
         [{"naam": v.get("name"), "sku": v.get("sku"), "productId": v.get("productId")} for v in treffers],
         ensure_ascii=False, indent=1), encoding="utf-8")
     if not gelukt:
-        sys.exit("Wel artikelen gevonden, maar geen VIB-PDF kunnen downloaden.")
+        sys.exit("Geen VIB beschikbaar. Stop, en win informatie in bij een collega-leidinggevende.")
 
 
 if __name__ == "__main__":

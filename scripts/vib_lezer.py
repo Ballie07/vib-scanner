@@ -25,7 +25,19 @@ TITELS = {
     "5": "Brand",
     "13": "Afvoeren",
 }
-RUBRIEK_KOP = re.compile(r"^\s*RUBRIEK\s+(\d{1,2})\b[\s:.]*(.*)$", re.IGNORECASE)
+# "RUBRIEK 4", ook in andere talen ("SECTION 4", "ABSCHNITT 4", ...) en met een nummer ervoor ("4 RUBRIEK 4:").
+KOPWOORDEN = r"(?:RUBRIEK|SECTIE|SECTION|ABSCHNITT|RUBRIQUE|SECCI[OÓ]N|SEZIONE|SEC[CÇ][AÃ]O|AFSNIT|AVSNITT|PUNKT|SEKCJA|ODD[IÍ]L|KOHTA|OSA)"
+RUBRIEK_KOP = re.compile(r"^\s*(?:\d{1,2}\.?\s+)?" + KOPWOORDEN + r"\s+(\d{1,2})\b\s*[:.\-–—]?\s*(.*)$", re.IGNORECASE)
+# Koppen zonder kopwoord, zoals "4 Eerstehulpmaatregelen" of "5. Brandbestrijdingsmaatregelen".
+GENUMMERDE_KOP = re.compile(r"^\s{0,6}(\d{1,2})\.?\s+([A-ZÀ-Ý][A-Za-zÀ-ÿ /,\-–()]{6,})$")
+TALEN = {
+    "nl": {"de", "het", "een", "en", "van", "niet", "met", "bij", "voor", "worden", "is", "op", "in"},
+    "en": {"the", "and", "of", "with", "not", "for", "be", "is", "on", "in", "if", "use"},
+    "de": {"der", "die", "und", "das", "mit", "nicht", "von", "für", "ist", "bei", "zu", "werden"},
+    "fr": {"le", "la", "les", "et", "des", "du", "avec", "pas", "pour", "en", "est", "une"},
+    "es": {"el", "la", "los", "las", "y", "de", "con", "no", "para", "por", "una", "en"},
+}
+TAALNAAM = {"nl": "Nederlands", "en": "Engels", "de": "Duits", "fr": "Frans", "es": "Spaans"}
 SUBKOP = re.compile(r"^\s*(\d{1,2}\.\d{1,2}(?:\.\d{1,2})?)\.?\s+(\S.*)$")
 VELD = re.compile(r"^(\s*)(\S[^:]{0,60}?)\s*:\s+(\S.*)$")
 
@@ -67,12 +79,25 @@ def schone_regels(paginas):
     return regels
 
 
+def _genummerde_koppen(regels):
+    """Zoekt koppen als "4 Eerstehulpmaatregelen". Alleen bruikbaar als ze netjes oplopen (1, 2, 3, ...)."""
+    gevonden, verwacht = {}, 1
+    for i, r in enumerate(regels):
+        m = GENUMMERDE_KOP.match(r)
+        if m and int(m.group(1)) == verwacht and not re.search(r"\s{3,}\S", r.strip()):
+            gevonden[i] = str(verwacht)
+            verwacht += 1
+    return gevonden if verwacht > 13 else {}
+
+
 def knip_rubrieken(regels):
     rubrieken, huidig = {}, None
-    for r in regels:
-        m = RUBRIEK_KOP.match(r)
-        if m:
-            huidig = m.group(1).lstrip("0")
+    koppen = {i: m.group(1).lstrip("0") for i, r in enumerate(regels) if (m := RUBRIEK_KOP.match(r))}
+    if len(set(koppen.values())) < 8:
+        koppen = _genummerde_koppen(regels) or koppen
+    for i, r in enumerate(regels):
+        if i in koppen:
+            huidig = koppen[i]
             rubrieken.setdefault(huidig, [])
             continue
         if huidig:
@@ -226,8 +251,13 @@ def naar_blokken(regels, twijfel):
 
     def klaar():
         if any(r.strip() for r in groep):
-            ontleed = ontleed_gecentreerd if gecentreerd(groep) else ontleed_bovenaan
-            blokken.extend(ontleed(groep, twijfel))
+            gelezen = None
+            if gecentreerd(groep):
+                eigen_twijfel = []
+                gelezen = ontleed_gecentreerd(groep, eigen_twijfel)
+                if eigen_twijfel:
+                    gelezen = None  # bij twijfel geen kopjes koppelen, maar gewone alinea's
+            blokken.extend(gelezen if gelezen is not None else ontleed_bovenaan(groep, twijfel))
         groep.clear()
 
     for r in regels:
@@ -250,6 +280,13 @@ def lijkt_nederlands(tekst):
     nl = sum(w in NL for w in woorden)
     en = sum(w in EN for w in woorden)
     return nl >= 10 and nl > 2 * en
+
+
+def taal_van(tekst):
+    woorden = re.findall(r"[a-zà-ÿ]+", tekst.lower())
+    score = {t: sum(w in s for w in woorden) for t, s in TALEN.items()}
+    beste = max(score, key=score.get)
+    return beste if score[beste] >= 10 else ""
 
 
 def leesbaar(tekst):
@@ -303,9 +340,11 @@ def lees_vib(pad):
         uit.append({"rubriek": nr, "titel": TITELS[nr], "blokken": blokken})
     if not regels or not leesbaar(alle_tekst):
         problemen.append("Tekst niet goed leesbaar")
-    if not lijkt_nederlands(alle_tekst):
-        problemen.append("VIB lijkt niet Nederlands")
+    taal = "nl" if lijkt_nederlands(alle_tekst) else taal_van(alle_tekst)
+    if taal != "nl":
+        problemen.append("VIB lijkt niet Nederlands" + (f" ({TAALNAAM[taal]})" if taal else ""))
     return {
+        "taal": taal,
         "bestand": pad.split("/")[-1],
         "status": "onbetrouwbaar" if problemen else "ok",
         "problemen": problemen,

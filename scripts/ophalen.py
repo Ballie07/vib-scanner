@@ -42,13 +42,31 @@ def datum(waarde):
         return waarde[:10]
 
 
-def beste_bijlage(bijlagen):
-    pdfs = [b for b in bijlagen or [] if "pdf" in (b.get("mimeType") or "").lower()
+def pdf_bijlagen(bijlagen):
+    return [b for b in bijlagen or [] if "pdf" in (b.get("mimeType") or "").lower()
             or (b.get("filename") or "").lower().endswith(".pdf")]
+
+
+def beste_bijlage(bijlagen):
+    pdfs = pdf_bijlagen(bijlagen)
     if not pdfs:
         return None
     # Liefst een niet-verlopen VIB, daarna de nieuwste datum.
     return sorted(pdfs, key=lambda b: (not b.get("expired"), b.get("MSDSDate") or ""))[-1]
+
+
+def lees(pdf):
+    with tempfile.NamedTemporaryFile(suffix=".pdf") as tijdelijk:
+        tijdelijk.write(pdf)
+        tijdelijk.flush()
+        return vib_lezer.lees_vib(tijdelijk.name)
+
+
+def score(v):
+    """Welk VIB tonen we? Het best leesbare; bij gelijke stand Nederlands, niet verlopen, nieuwste."""
+    gevonden = sum(1 for r in v["gelezen"]["rubrieken"] if r["blokken"])
+    return (gevonden, v["gelezen"]["status"] == "ok", v["gelezen"].get("taal") == "nl",
+            not v["verlopen"], v["sorteerdatum"])
 
 
 def verwerk(vib):
@@ -62,7 +80,9 @@ def verwerk(vib):
         "unNummers": vib.get("UNCodes") or [],
         "vibDatum": "",
         "verlopen": False,
+        "taal": "",
         "vibPdf": "",
+        "alleVibs": [],
         "status": "ok",
         "problemen": [],
         "rubrieken": {},
@@ -77,31 +97,54 @@ def verwerk(vib):
         except Exception as fout:  # product niet op te halen: VIB wel tonen, maar zonder barcode
             uit["problemen"].append(f"Productgegevens niet opgehaald ({fout})")
 
-    bijlage = beste_bijlage(vib.get("attachments"))
-    if not bijlage:
+    # Alle VIB-PDF's bewaren, ook verlopen en anderstalige.
+    versies = []
+    for bijlage in pdf_bijlagen(vib.get("attachments")):
+        download = bijlage.get("downloadUrl") or f"/product_msds/{vib['id']}/attachments/{bijlage['id']}/download"
+        try:
+            pdf = haal(download, json_verwacht=False)
+        except Exception as fout:
+            uit["problemen"].append(f"VIB {bijlage.get('filename') or bijlage.get('id')} niet te downloaden ({fout})")
+            continue
+        if not pdf.startswith(b"%PDF"):
+            uit["problemen"].append(f"VIB {bijlage.get('filename') or bijlage.get('id')}: geen PDF ontvangen")
+            continue
+        try:
+            gelezen = lees(pdf)
+        except Exception as fout:
+            gelezen = {"status": "onbetrouwbaar", "taal": "", "problemen": [f"PDF niet te lezen ({fout})"], "rubrieken": []}
+        versies.append({"bijlage": bijlage, "pdf": pdf, "gelezen": gelezen,
+                        "verlopen": bool(bijlage.get("expired")),
+                        "sorteerdatum": bijlage.get("MSDSDate") or ""})
+    if not versies:
         uit["status"] = "geen-vib"
         uit["problemen"].append("Geen VIB (PDF) in Stocky")
         return uit
 
-    uit["vibDatum"] = datum(bijlage.get("MSDSDate") or vib.get("latestMSDSDate"))
-    uit["verlopen"] = bool(bijlage.get("expired"))
-    download = bijlage.get("downloadUrl") or f"/product_msds/{vib['id']}/attachments/{bijlage['id']}/download"
-    pdf = haal(download, json_verwacht=False)
+    versies.sort(key=score, reverse=True)
+    (MAP / "vib").mkdir(exist_ok=True)
+    sleutel = product_id or vib["id"]
+    for i, v in enumerate(versies):
+        # Het VIB dat getoond wordt heet <product>.pdf, de andere <product>-<bijlage>.pdf
+        doel = MAP / "vib" / (f"{sleutel}.pdf" if i == 0 else f"{sleutel}-{v['bijlage'].get('id')}.pdf")
+        if not doel.exists() or doel.read_bytes() != v["pdf"]:
+            doel.write_bytes(v["pdf"])
+        uit["alleVibs"].append({
+            "pdf": f"vib/{doel.name}",
+            "datum": datum(v["bijlage"].get("MSDSDate")),
+            "verlopen": v["verlopen"],
+            "taal": v["gelezen"].get("taal", ""),
+        })
 
-    doel = MAP / "vib" / f"{product_id or vib['id']}.pdf"
-    doel.parent.mkdir(exist_ok=True)
-    if not doel.exists() or doel.read_bytes() != pdf:
-        doel.write_bytes(pdf)
-    uit["vibPdf"] = f"vib/{doel.name}"
-
-    with tempfile.NamedTemporaryFile(suffix=".pdf") as tijdelijk:
-        tijdelijk.write(pdf)
-        tijdelijk.flush()
-        gelezen = vib_lezer.lees_vib(tijdelijk.name)
-    uit["rubrieken"] = {r["rubriek"]: r["blokken"] for r in gelezen["rubrieken"]}
-    uit["problemen"] += gelezen["problemen"]
-    if gelezen["status"] != "ok":
-        uit["status"] = "onbetrouwbaar"
+    beste = versies[0]
+    uit["vibPdf"] = uit["alleVibs"][0]["pdf"]
+    uit["vibDatum"] = uit["alleVibs"][0]["datum"] or datum(vib.get("latestMSDSDate"))
+    uit["verlopen"] = beste["verlopen"]
+    uit["taal"] = beste["gelezen"].get("taal", "")
+    uit["rubrieken"] = {r["rubriek"]: r["blokken"] for r in beste["gelezen"]["rubrieken"]}
+    uit["problemen"] += beste["gelezen"]["problemen"]
+    if beste["gelezen"]["status"] != "ok":
+        uit["status"] = "onzeker"
     if uit["verlopen"]:
         uit["problemen"].append("VIB is verlopen")
     return uit
@@ -118,7 +161,8 @@ def main():
         except Exception as fout:
             fouten += 1
             producten.append({"productId": vib.get("productId"), "naam": vib.get("name") or "", "sku": vib.get("sku") or "",
-                              "ean": [], "foto": "", "unNummers": [], "vibDatum": "", "verlopen": False, "vibPdf": "",
+                              "ean": [], "foto": "", "unNummers": [], "vibDatum": "", "verlopen": False, "taal": "",
+                              "vibPdf": "", "alleVibs": [],
                               "status": "fout", "problemen": [f"Ophalen mislukt ({fout})"], "rubrieken": {}})
     producten.sort(key=lambda p: (p["naam"].lower(), str(p["productId"])))
 
@@ -133,7 +177,7 @@ def main():
                      "Dat lijkt op een storing; de bestaande gegevens blijven staan.")
 
     # PDF's van producten die niet meer in Stocky staan, weghalen.
-    in_gebruik = {p["vibPdf"] for p in producten if p["vibPdf"]}
+    in_gebruik = {v["pdf"] for p in producten for v in p.get("alleVibs", [])}
     for oud in (MAP / "vib").glob("*.pdf"):
         if f"vib/{oud.name}" not in in_gebruik:
             oud.unlink()

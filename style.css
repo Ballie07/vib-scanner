@@ -50,3 +50,5 @@ input { width: 100%; padding: 12px; font-size: 1.1rem; border: 2px solid #999; b
 .vibknoppen { display: flex; gap: 8px; margin: 12px 0; }
 .knoplink { flex: 1; display: block; text-align: center; padding: 14px; border-radius: 12px; background: #0a7a3d; color: #fff; font-weight: 700; text-decoration: none; }
 .knoplink.licht { background: #777; }
+.alle { margin: 4px 0 12px; font-size: 0.95rem; }
+.alle summary { cursor: pointer; color: #0b5cad; font-weight: 600; padding: 6px 0; }
