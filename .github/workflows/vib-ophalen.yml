@@ -26,6 +26,7 @@ jobs:
         env:
           STOCKY_API_KEY: ${{ secrets.STOCKY_API_KEY }}
           STOCKY_URL: https://oms.oftomorrow.eu/api/v2
+          STOCKY_AUTH: ${{ vars.STOCKY_AUTH }}
         run: python3 scripts/ophalen.py
 
       - name: Wijzigingen opslaan

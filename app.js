@@ -296,10 +296,22 @@ function zoek(code) {
     return;
   }
   const schoon = invoer.replace(/\D/g, "");
-  const gevonden = PRODUCTEN.find((p) => p.ean.includes(schoon));
+  const kern = schoon.replace(/^0+/, "");
+  const gevonden = kern && PRODUCTEN.find((p) => (p.ean || []).some((e) => String(e).replace(/\D/g, "").replace(/^0+/, "") === kern));
   if (!gevonden) return startScherm("Geen product gevonden voor code " + schoon + ". Controleer de code, of zoek op de naam zoals in Stocky.");
   product = gevonden;
   bevestigScherm();
+}
+
+function vibKnoppen() {
+  if (!product || !product.vibPdf) return '<p class="klein">Voor dit product staat geen VIB (PDF) in Stocky.</p>';
+  const bestand = (product.naam || "vib").replace(/[^\w\-]+/g, "_").slice(0, 60) + ".pdf";
+  return (
+    '<div class="vibknoppen">' +
+    '<a class="knoplink" href="' + esc(product.vibPdf) + '" target="_blank" rel="noopener">📄 VIB lezen</a>' +
+    '<a class="knoplink licht" href="' + esc(product.vibPdf) + '" download="' + esc(bestand) + '">⬇️ VIB downloaden</a>' +
+    "</div>"
+  );
 }
 
 function bevestigScherm() {
@@ -308,7 +320,8 @@ function bevestigScherm() {
     kop(true) +
     "<h2 class='scherm'>Klopt dit product?</h2>" +
     '<button class="situatie" id="ja"><span class="ic">✅</span><span>Ja, dit is het product</span></button>' +
-    '<button class="situatie grijs" id="nee"><span class="ic">🔄</span><span>Nee, opnieuw zoeken</span></button>';
+    '<button class="situatie grijs" id="nee"><span class="ic">🔄</span><span>Nee, opnieuw zoeken</span></button>' +
+    vibKnoppen();
   document.getElementById("ja").onclick = () => menuScherm();
   document.getElementById("nee").onclick = () => startScherm();
   window.scrollTo(0, 0);
@@ -325,6 +338,7 @@ function menuScherm() {
   document.querySelectorAll("[data-s]").forEach((b) => {
     b.onclick = () => kies(b.dataset.s);
   });
+  app.insertAdjacentHTML("beforeend", vibKnoppen());
   onderbalk([
     { tekst: "BHV'ers en telefoonnummers", fn: bhvScherm },
     { tekst: "Ander product scannen", fn: startScherm, klasse: "knop licht" },
@@ -395,7 +409,8 @@ function kies(s) {
 
 function toon(titel, blokken, knoppen) {
   const link = product.vibPdf
-    ? '<a href="' + esc(product.vibPdf) + '" target="_blank" rel="noopener">Open het volledige VIB (PDF)</a>'
+    ? '<a href="' + esc(product.vibPdf) + '" target="_blank" rel="noopener">Open het volledige VIB (PDF)</a> · ' +
+      '<a href="' + esc(product.vibPdf) + '" download>Download</a>'
     : "";
   const voet = bruikbaar(product) ? "De tekst hierboven komt letterlijk uit het VIB. " + link : link;
   app.innerHTML =

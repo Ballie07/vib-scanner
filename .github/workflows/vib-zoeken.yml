@@ -1,0 +1,59 @@
+name: VIB zoeken in Stocky
+
+# Met de hand te starten: tabblad Actions > "VIB zoeken in Stocky" > Run workflow.
+# Vul een naam of barcode in. De gevonden VIB's staan daarna onderaan de run
+# onder "Artifacts" als zip om te downloaden.
+
+on:
+  workflow_dispatch:
+    inputs:
+      naam:
+        description: "Artikelnaam (of een deel ervan) zoals in Stocky"
+        required: false
+      barcode:
+        description: "Barcode (EAN/GTIN)"
+        required: false
+      alleen_testen:
+        description: "Alleen het inloggen bij Stocky testen"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  zoeken:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: PDF-lezer installeren
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+
+      - name: VIB zoeken en downloaden
+        env:
+          STOCKY_API_KEY: ${{ secrets.STOCKY_API_KEY }}
+          STOCKY_URL: https://oms.oftomorrow.eu/api/v2
+          STOCKY_AUTH: ${{ vars.STOCKY_AUTH }}
+          NAAM: ${{ inputs.naam }}
+          BARCODE: ${{ inputs.barcode }}
+          TESTEN: ${{ inputs.alleen_testen }}
+        run: |
+          if [ "$TESTEN" = "true" ]; then
+            python3 scripts/vib_zoeken.py --test
+            exit 0
+          fi
+          args=()
+          [ -n "$NAAM" ] && args+=(--naam "$NAAM")
+          [ -n "$BARCODE" ] && args+=(--barcode "$BARCODE")
+          python3 scripts/vib_zoeken.py "${args[@]}" --lezen --map gedownload
+
+      - name: VIB's klaarzetten om te downloaden
+        if: ${{ !inputs.alleen_testen }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: vib-pdfs
+          path: gedownload/
+          if-no-files-found: ignore
+          retention-days: 7
