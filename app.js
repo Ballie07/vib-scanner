@@ -71,8 +71,7 @@ function miniFoto(p) {
     : '<span class="mini leeg">📦</span>';
 }
 
-function kop() {
-  const groot = true;
+function kop(groot) {
   const klasse = groot ? " groot" : "";
   const foto = product.foto
     ? `<img class="foto${klasse}" src="${esc(product.foto)}" alt="${esc(product.naam)}" onerror="this.style.display='none'">`
@@ -474,17 +473,106 @@ function vibInhoud(blokken) {
     .join("");
 }
 
-function rubriekBlok(nr, stap) {
+// ---- Kort en krachtig: per rubriek direct alleen het onderdeel waarmee je actie neemt. ----
+// De tekst blijft letterlijk uit het VIB. De rest staat met één tik open onder "Meer uit het VIB".
+
+const KERN = { "8": "8.2", "4": "4.1", "6": "6.3", "5": "5.1", "13": "13.1" };
+const BESCHERMING = /(oog|ogen|gelaat|gezicht|eye|face|yeux|augen|hand|main|huid|skin|peau|haut|lichaam|body|corps|körper|adem|inhal|respir|atem|kleding|cloth|vêtement)/i;
+const ROUTES = {
+  ogen: { tekst: "In de ogen", ic: "👁️", re: /(oog|ogen|eye|yeux|œil|oeil|auge)/i },
+  huid: { tekst: "Op de huid", ic: "✋", re: /(huid|skin|peau|haut)/i },
+  adem: { tekst: "Ingeademd", ic: "😮‍💨", re: /(inadem|ingeademd|inhal|adem|breath|einatm)/i },
+  mond: { tekst: "Ingeslikt", ic: "👄", re: /(inslik|ingeslikt|mond|swallow|ingest|oral|avaler|verschluck)/i },
+};
+const ALGEMEEN = /^(algeme|general|ehbo algemeen|eerste.?hulp)/i;
+
+function isTussenkop(t) {
+  return t.length < 70 && !/[.)]$/.test(t) && /^[A-ZÀ-Ý]/.test(t) && t.toLowerCase() !== "geen";
+}
+
+// Deelt een rubriek op in onderdelen (4.1, 4.2, ...). Blokken vóór het eerste kopje horen bij "".
+function onderdelen(blokken) {
+  const uit = [{ nr: "", blokken: [] }];
+  for (const b of blokken || []) {
+    const m = b.soort === "kop" && b.tekst.match(/^(\d+\.\d+)/);
+    if (m && m[1] !== uit[uit.length - 1].nr) uit.push({ nr: m[1], blokken: [] });
+    uit[uit.length - 1].blokken.push(b);
+  }
+  return uit.filter((o) => o.blokken.length);
+}
+
+// Groepeert blokken tot items met een kopje (bijvoorbeeld "Huidcontact" + de tekst die erbij hoort).
+function items(blokken) {
+  const uit = [];
+  let open = null;
+  for (const b of blokken) {
+    if (b.soort === "kop") { open = null; continue; }
+    if (b.soort === "veld") { uit.push({ kopje: b.kopje, blokken: [b] }); open = null; continue; }
+    if (b.soort === "alinea" && isTussenkop(b.tekst || "")) { open = { kopje: b.tekst, blokken: [b] }; uit.push(open); continue; }
+    if (open) open.blokken.push(b);
+    else uit.push({ kopje: "", blokken: [b] });
+  }
+  return uit;
+}
+
+// Waar gaat een item over: het kopje, of anders het begin van de tekst ("Inademing. De patiënt...").
+function label(i) {
+  return i.kopje || String((i.blokken[0] && i.blokken[0].tekst) || "").slice(0, 40);
+}
+
+function lengte(blokken) {
+  return JSON.stringify(blokken).length;
+}
+
+// Geeft [direct tonen, meer] voor een rubriek.
+function splits(nr, route) {
+  const delen = onderdelen((product.rubrieken || {})[nr]);
+  const kern = delen.find((o) => o.nr === KERN[nr]);
+  if (!kern) return [delen.flatMap((o) => o.blokken), []]; // geen herkenbare indeling: alles tonen
+  const rest = delen.filter((o) => o !== kern).flatMap((o) => o.blokken);
+  let toon = kern.blokken;
+  let weg = [];
+  const lijst = items(kern.blokken);
+  let keuze = null;
+  if (nr === "8") keuze = lijst.filter((i) => BESCHERMING.test(label(i)));
+  if (nr === "4" && route && ROUTES[route]) {
+    keuze = lijst.filter((i) => ROUTES[route].re.test(label(i)) || (ALGEMEEN.test(label(i)) && lengte(i.blokken) < 400));
+    if (!keuze.some((i) => ROUTES[route].re.test(label(i)))) keuze = null; // route niet te vinden: heel 4.1 tonen
+  }
+  if (keuze && keuze.length) {
+    const gekozen = new Set(keuze.flatMap((i) => i.blokken));
+    toon = kern.blokken.filter((b) => b.soort === "kop" || gekozen.has(b));
+    weg = kern.blokken.filter((b) => b.soort !== "kop" && !gekozen.has(b));
+  }
+  return [toon, weg.concat(rest)];
+}
+
+function rubriekBlok(nr, stap, route) {
   const r = product.rubrieken || {};
-  const blokken = r[nr];
-  const titel = (stap ? stap + ". " : "") + RUBRIEK_TITEL[nr] + " (rubriek " + (nr === "8" ? "8.2" : nr) + ")";
-  const inhoud =
-    blokken && blokken.length
-      ? vibInhoud(blokken)
-      : nr in r
-      ? "<p>" + esc(NIETS_IN_VIB) + "</p>"
-      : "<p><i>" + esc(NIET_GELEZEN + (nr === "8" ? "8.2" : nr) + ".") + "</i></p>";
+  const naam = nr === "8" ? "8.2" : nr;
+  const titel = (stap ? stap + ". " : "") + RUBRIEK_TITEL[nr] + " (rubriek " + naam + ")";
+  let inhoud;
+  if (!r[nr] || !r[nr].length) {
+    inhoud = nr in r ? "<p>" + esc(NIETS_IN_VIB) + "</p>" : "<p><i>" + esc(NIET_GELEZEN + naam + ".") + "</i></p>";
+  } else {
+    const [direct, meer] = splits(nr, route);
+    inhoud = vibInhoud(direct) +
+      (meer.length ? '<details class="meer"><summary>Meer uit rubriek ' + esc(naam) + "</summary>" + vibInhoud(meer) + "</details>" : "");
+  }
   return '<section class="blok' + (nr === "4" ? " eerst" : "") + '"><h2>' + esc(titel) + "</h2>" + inhoud + "</section>";
+}
+
+function routeScherm() {
+  app.innerHTML =
+    kop() +
+    "<h2 class='scherm'>Waar kwam het product?</h2>" +
+    Object.entries(ROUTES)
+      .map(([k, v]) => '<button class="situatie rood" data-route="' + k + '"><span class="ic">' + v.ic + "</span><span>" + esc(v.tekst) + "</span></button>")
+      .join("") +
+    '<button class="situatie grijs" data-route=""><span class="ic">❓</span><span>Weet ik niet / meerdere</span></button>';
+  document.querySelectorAll("[data-route]").forEach((b) => (b.onclick = () => kies("gewond", b.dataset.route || null)));
+  onderbalk([{ tekst: "Terug", fn: menuScherm, klasse: "knop licht" }]);
+  window.scrollTo(0, 0);
 }
 
 function uitleesmelding() {
@@ -495,7 +583,7 @@ function uitleesmelding() {
   return "";
 }
 
-function kies(s) {
+function kies(s, route) {
   const keuzes = {
     gewond: ["Iemand is gewond of onwel", ["4"]],
     gemorst: ["Gemorst of gelekt", ["8", "6", "13"]],
@@ -504,8 +592,10 @@ function kies(s) {
   };
   const [titel, gekozen] = keuzes[s] || keuzes.alles;
   if (!heeftVib(product)) return geenVibScherm();
+  if (s === "gewond" && route === undefined) return routeScherm();
   const nummers = VOLGORDE.filter((nr) => gekozen.includes(nr)); // altijd in de vaste volgorde
-  toon(titel, [uitleesmelding()].concat(nummers.map((nr, i) => rubriekBlok(nr, nummers.length > 1 ? i + 1 : 0))));
+  const sub = route && ROUTES[route] ? titel + ": " + ROUTES[route].tekst.toLowerCase() : titel;
+  toon(sub, [uitleesmelding()].concat(nummers.map((nr, i) => rubriekBlok(nr, nummers.length > 1 ? i + 1 : 0, route))));
 }
 
 function toon(titel, blokken, knoppen) {
