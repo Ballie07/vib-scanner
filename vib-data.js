@@ -12747,129 +12747,322 @@ const VIB_PRODUCTEN = [
   ],
   "foto": "https://storage.googleapis.com/stocky-project-production-managed/images/product/47688/careline-eucalyptus.png",
   "unNummers": [
-   "UN0000"
+   "UN1170"
   ],
-  "vibDatum": "13-04-2022",
+  "vibDatum": "18-04-2023",
   "verlopen": false,
-  "taal": "en",
+  "taal": "nl",
   "vibPdf": "vib/47688.pdf",
   "alleVibs": [
    {
     "pdf": "vib/47688.pdf",
-    "datum": "13-04-2022",
+    "datum": "18-04-2023",
     "verlopen": false,
-    "taal": "en"
+    "taal": "nl"
    }
   ],
-  "status": "onzeker",
-  "problemen": [
-   "VIB lijkt niet Nederlands (Engels)"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
    "8": [
     {
      "soort": "kop",
-     "tekst": "8.2 Exposure controls"
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
+    },
+    {
+     "soort": "kop",
+     "tekst": "8.2.1 Passende technische maatregelen"
+    },
+    {
+     "soort": "kop",
+     "tekst": "8.2.2 Persoonlijke beschermingsmiddelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Ensure efficient ventilation. Avoid contact with eyes and skin."
+     "tekst": "Persoonlijke beschermingsuitrusting: Vermijd contact met de huid, ogen of kleding. Vermijd onnodige blootstelling. Bescherming van de handen. Bescherming van de ogen. Veiligheidsbril. Handschoenen. Symbo(o)l(en) voor persoonlijke beschermingsmiddelen:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "8.2.2.1. Bescherming van de ogen en het gezicht"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ogen: Draag een oog-/gezichtsbescherming. Chemische stofbril of veiligheidsbril. Norm. ISO 16321-1. Een oogbescherming is enkel nodig wanneer vloeistof kan opspatten of verstuiven"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "8.2.2.2. Bescherming van de huid Huid en lichaam bescherming: Onder normale gebruiksomstandigheden wordt geen speciale kleding/huidbescherming aanbevolen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen: Beschermende handschoenen. Chemisch resistente handschoenen (volgens de Europese standaardnorm NF ISO 374-1 of equivalent). Bij"
+    },
+    {
+     "soort": "veld",
+     "kopje": "langdurige blootstelling",
+     "tekst": "Herbruikbare handschoenen. Blootstelling op de korte termijn. Bij het risico op het spatten van de vloeistof:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Wegwerphandschoenen / Herbruikbare handschoenen. De doorbraaktijd van het handschoenmateriaal dient in overleg met de fabrikant vastgesteld te worden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Type",
+       "Materiaal",
+       "permeatie",
+       "Dikte (mm)",
+       "Penetratie",
+       "Norm"
+      ],
+      [
+       "Herbruikbare",
+       "Nitrilrubber (NBR),",
+       "6 (> 480 minuten)",
+       ">0.35 mm (NBR);",
+       "",
+       "EN 374-3"
+      ],
+      [
+       "handschoenen",
+       "Neopreen rubber (HNBR)",
+       "",
+       ">0.7 mm (HNBR)",
+       "",
+       ""
+      ],
+      [
+       "Wegwerphandschoenen /",
+       "Nitrilrubber (NBR),",
+       "2 (> 30 minuten)",
+       "> 0.1 mm",
+       "",
+       "EN 374-3"
+      ]
+     ]
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Herbruikbare Neopreen rubber (HNBR) handschoenen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "8.2.2.3. Bescherming van de ademhalingswegen Bescherming van de ademhalingswegen: Geen speciale bescherming vereist zolang er sprake is van voldoende ventilatie"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "8.2.2.4. Thermische gevaren"
+    },
+    {
+     "soort": "kop",
+     "tekst": "8.2.3 Beperking en controle van de blootstelling van het milieu"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Overige informatie: Niet eten, drinken of roken tijdens het gebruik. De informatie in deze rubriek geldt voor het onverdunde product."
     }
    ],
    "4": [
     {
      "soort": "kop",
-     "tekst": "4.1 Description of first aid measures"
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
     },
     {
-     "soort": "alinea",
-     "tekst": "By inhalation Take the patient to fresh air. In case of nausea, contact doctor."
+     "soort": "veld",
+     "kopje": "EHBO algemeen",
+     "tekst": "Nooit bij een bewusteloze persoon iets toedienen via de mond. Bij onwel voelen een arts raadplegen (deze indien mogelijk dit etiket tonen)."
     },
     {
-     "soort": "alinea",
-     "tekst": "By skin contact Wash with abundant water and soap. In case of skin irritation, contact doctor."
+     "soort": "veld",
+     "kopje": "EHBO na inademing",
+     "tekst": "Laat de getroffen persoon frisse lucht inademen. Laat het slachtoffer rusten."
     },
     {
-     "soort": "alinea",
-     "tekst": "By eye contact Rinse cautiously with water for several minutes. Remove contact lenses, if present and easy to do. Continue rising. Contact doctor."
+     "soort": "veld",
+     "kopje": "EHBO na contact met de huid",
+     "tekst": "Huid met water afspoelen/afdouchen. Verontreinigde kleding onmiddellijk uittrekken. Met veel water/… wassen. Verontreinigde kleding wassen alvorens deze opnieuw te gebruiken. Bij huidirritatie: Een arts raadplegen."
     },
     {
-     "soort": "alinea",
-     "tekst": "By ingestion/aspiration Rinse mouth. Do NOT induce vomiting. Get medical advice/attention."
+     "soort": "veld",
+     "kopje": "EHBO na contact met de ogen",
+     "tekst": "Voorzichtig afspoelen met water gedurende een aantal minuten. Contactlenzen verwijderen, indien mogelijk. Blijven spoelen. Bij aanhoudende oogirritatie: Een arts raadplegen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "EHBO na opname door de mond",
+     "tekst": "De mond spoelen. GEEN braken opwekken. Dringend een arts raadplegen."
     },
     {
      "soort": "kop",
-     "tekst": "4.2 Most important symptoms and effects, both acute and delayed"
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
     },
     {
-     "soort": "alinea",
-     "tekst": "Eye irritating."
+     "soort": "veld",
+     "kopje": "Symptomen/effecten na inademing",
+     "tekst": "Kan een allergische huidreactie veroorzaken. Overmatige blootstelling kan leiden tot: Pijnlijke keel. Hoest."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Symptomen/effecten na contact met de huid",
+     "tekst": "Irriterend voor de huid. Roodheid."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Symptomen/effecten na contact met de ogen",
+     "tekst": "Veroorzaakt ernstige oogirritatie. Vage visie. Branderig gevoel. Tranen. Roodheid."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Symptomen/effecten na opname door de mond",
+     "tekst": "Kan brandwonden of een irritatie van de mondwand, de keel en het maag-darmkanaal veroorzaken. Kan een geringe irritatie van de mondwand, de keel en het maag-darmkanaal veroorzaken."
     },
     {
      "soort": "kop",
-     "tekst": "4.3 Indication of any immediate medical attention and special treatment needed"
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij een ongeval of indien men zich onwel voelt, onmiddellijk een arts raadplegen (indien mogelijk hem dit etiket tonen)."
     }
    ],
    "6": [
     {
      "soort": "kop",
-     "tekst": "6.1 Personal precautions, protective equipment and emergency procedures"
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
     },
     {
-     "soort": "alinea",
-     "tekst": "Use protective gloves. If the ventilation is not sufficient, use breathing protection. Avoid contact with skin, eyes and clothing. Ensure adequate ventilation."
-    },
-    {
-     "soort": "kop",
-     "tekst": "6.2 Environmental precautions"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "Avoid releasing to natural waters in bigger amounts."
+     "soort": "veld",
+     "kopje": "Algemene maatregelen",
+     "tekst": "Zie rubriek 8 voor wat betreft het gebruik van de persoonlijke beschermingsuitrusting. Gemorst product op een hard oppervlak kan een ernstig slip-/valrisico inhouden."
     },
     {
      "soort": "kop",
-     "tekst": "6.3 Methods and material for containment and cleaning up"
+     "tekst": "6.1.1 Voor andere personen dan de hulpdiensten"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Noodprocedures",
+     "tekst": "Overbodig personeel weg laten gaan."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.1.2 Voor de hulpdiensten"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Beschermingsmiddelen",
+     "tekst": "Schoonmaakpersoneel uitrusten met aangepaste bescherming."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Noodprocedures",
+     "tekst": "De ruimte ventileren."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Absorbed in proper dope. The waste is discharged according to Ch13."
+     "tekst": "Niet in het oppervlaktewater wegspoelen. Voorkom lozing in het milieu."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Reinigingsmethodes",
+     "tekst": "Op een veilige manier opruimen in overeenstemming met lokale/nationale voorschriften. Het gemorste product zo snel mogelijk opzuigen met inerte vaste stoffen zoals klei of kiezelaarde. Verwijderen conform de van toepassing zijnde plaatselijke voorschriften. Restanten wegspoelen met overvloedig water."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Zie Rubriek 8. Maatregelen ter beheersing van blootstelling en persoonlijke bescherming."
     }
    ],
    "5": [
     {
      "soort": "kop",
-     "tekst": "5.1 Extinguishin media"
+     "tekst": "5.1 Blusmiddelen"
     },
     {
-     "soort": "alinea",
-     "tekst": "Water spray, sry extinguishing powder, BC-powder, Carbon Dioxide."
+     "soort": "veld",
+     "kopje": "Geschikte blusmiddelen",
+     "tekst": "Alcoholbestendig schuim. Droog poeder. Koolstofdioxide. Verneveld water. Zand."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Ongeschikte blusmiddelen",
+     "tekst": "Gebruik geen sterke waterstraal."
     },
     {
      "soort": "kop",
-     "tekst": "5.2 Special hazards arising from the substance or mixture"
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Brandgevaar",
+     "tekst": "Licht ontvlambare vloeistof en damp. Dampen zijn zwaarder dan lucht en kunnen zich over een aanzienlijke afstand van de ontstekingsbron verspreiden, alvorens weer in de richting van de ontstekingsbron te ontbranden."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Explosiegevaar",
+     "tekst": "Kan een ontvlambaar/ontplofbaar damp-lucht mengsel vormen."
     },
     {
      "soort": "kop",
-     "tekst": "5.3 Advice for firefighters"
+     "tekst": "5.3 Advies voor brandweerlieden"
     },
     {
-     "soort": "alinea",
-     "tekst": "Depending on the magnitude of the fire it may be necessary to use full protective clothing and individual respiratory equipment. Minimum emergency facilities and equipment should be available (fire blankets, portable first aid kit…) in accordance with Directive 89/654/EC."
+     "soort": "veld",
+     "kopje": "Blusinstructies",
+     "tekst": "Koel de blootgestelde vaten af met een waternevel of mist. Wees uiterst voorzichtig bij het bestrijden van een chemische brand. Vermijd dat het bluswater in het milieu terechtkomt."
     },
     {
-     "soort": "alinea",
-     "tekst": "Additional provisions: Act in accordance with the Internal Emergency Plan and the Information Sheets on actions to take after an accident or other emergencies. Destroy any source of ignition. In case of fire, refrigerate the storage containers and tanks for products susceptible to inflammation, explosion or BLEVE as a result of high temperatures. Avoid spillage of the products used to extinguish the fire into an aqueous medium."
+     "soort": "veld",
+     "kopje": "Bescherming tijdens brandbestrijding",
+     "tekst": "Brandzone niet betreden zonder geschikte veiligheidsuitrusting, inclusief ademhalingsbescherming."
     }
    ],
    "13": [
     {
      "soort": "kop",
-     "tekst": "13.1 Waste treatment methods"
+     "tekst": "13.1 Afvalverwerkingsmethoden"
     },
     {
-     "soort": "alinea",
-     "tekst": "As under of the code and because the container has been in direct contact with the product, it will be processed the same way as the actual product."
+     "soort": "veld",
+     "kopje": "Regionale wetgeving (afval)",
+     "tekst": "Afvalverwijdering conform de wettelijke bepalingen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Aanbevelingen voor afvoer van producten/verpakkingen",
+     "tekst": "Dit product en de verpakking ervan moeten op een veilige manier verwijderd worden in overeenstemming met de lokale wetgeving. Product als zodanig: Chemisch afval, Verwijderen als gevaarlijk afval. Lege verpakkingen kunnen na reiniging als afval verwijderd worden in overeenstemming met de plaatselijke voorschriften. Recycling heeft de voorkeur boven verwijdering of verbranding. De verpakkingen volledig legen alvorens ze te verwijderen. Restanten wegspoelen met overvloedig water."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Aanvullende informatie",
+     "tekst": "Lege houders/verpakkingen voorzichtig hanteren, aangezien de achtergebleven dampen ontvlambaar zijn."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Ecologie - afvalstoffen",
+     "tekst": "Voorkom lozing in het milieu."
+    },
+    {
+     "soort": "veld",
+     "kopje": "EURAL-code",
+     "tekst": "20 01 99 - niet elders genoemde fracties"
     }
    ]
   }
@@ -12883,129 +13076,334 @@ const VIB_PRODUCTEN = [
   ],
   "foto": "https://storage.googleapis.com/stocky-project-production-managed/images/product/47685/careline-eucamint.png",
   "unNummers": [
-   "UN0000"
+   "UN1170"
   ],
-  "vibDatum": "13-04-2022",
+  "vibDatum": "01-12-2022",
   "verlopen": false,
-  "taal": "en",
+  "taal": "nl",
   "vibPdf": "vib/47685.pdf",
   "alleVibs": [
    {
     "pdf": "vib/47685.pdf",
-    "datum": "13-04-2022",
+    "datum": "01-12-2022",
     "verlopen": false,
-    "taal": "en"
+    "taal": "nl"
    }
   ],
-  "status": "onzeker",
-  "problemen": [
-   "VIB lijkt niet Nederlands (Engels)"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
    "8": [
     {
      "soort": "kop",
-     "tekst": "8.2 Exposure controls"
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
+    },
+    {
+     "soort": "kop",
+     "tekst": "8.2.1 Passende technische maatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Ensure efficient ventilation. Avoid contact with eyes and skin."
+     "tekst": "Geen aanvullende informatie beschikbaar"
+    },
+    {
+     "soort": "kop",
+     "tekst": "8.2.2 Persoonlijke beschermingsmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Persoonlijke beschermingsuitrusting: Vermijd contact met de huid, ogen of kleding. Vermijd onnodige blootstelling. Bescherming van de handen. Bescherming van de ogen. Veiligheidsbril. Handschoenen. Symbo(o)l(en) voor persoonlijke beschermingsmiddelen:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "8.2.2.1. Bescherming van de ogen en het gezicht"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ogen: Draag een oog-/gezichtsbescherming. Chemische stofbril of veiligheidsbril. Norm. EN 166. Een oogbescherming is enkel nodig wanneer vloeistof kan opspatten of verstuiven"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "8.2.2.2. Bescherming van de huid"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Huid en lichaam bescherming: Onder normale gebruiksomstandigheden wordt geen speciale kleding/huidbescherming aanbevolen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen: Beschermende handschoenen. Chemisch resistente handschoenen (volgens de Europese standaardnorm NF EN 374 of equivalent). Bij langdurige"
+    },
+    {
+     "soort": "veld",
+     "kopje": "blootstelling",
+     "tekst": "Herbruikbare handschoenen. Blootstelling op de korte termijn. Bij het risico op het spatten van de vloeistof: Wegwerphandschoenen /"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Herbruikbare handschoenen. De doorbraaktijd van het handschoenmateriaal dient in overleg met de fabrikant vastgesteld te worden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Type",
+       "Materiaal",
+       "permeatie",
+       "Dikte (mm)",
+       "Penetratie",
+       "Norm"
+      ],
+      [
+       "Herbruikbare",
+       "Nitrilrubber (NBR),",
+       "6 (> 480 minuten)",
+       ">0.35 mm (NBR);",
+       "",
+       "EN 374-3"
+      ],
+      [
+       "handschoenen",
+       "Neopreen rubber (HNBR)",
+       "",
+       ">0.7 mm (HNBR)",
+       "",
+       ""
+      ],
+      [
+       "Wegwerphandschoenen /",
+       "Nitrilrubber (NBR),",
+       "2 (> 30 minuten)",
+       "> 0.1 mm",
+       "",
+       "EN 374-3"
+      ]
+     ]
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Herbruikbare Neopreen rubber (HNBR) handschoenen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "8.2.2.3. Bescherming van de ademhalingswegen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ademhalingswegen: Geen speciale bescherming vereist zolang er sprake is van voldoende ventilatie"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "8.2.2.4. Thermische gevaren Geen aanvullende informatie beschikbaar"
+    },
+    {
+     "soort": "kop",
+     "tekst": "8.2.3 Beperking en controle van de blootstelling van het milieu"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Overige informatie: Niet eten, drinken of roken tijdens het gebruik. De informatie in deze rubriek geldt voor het onverdunde product."
     }
    ],
    "4": [
     {
      "soort": "kop",
-     "tekst": "4.1 Description of first aid measures"
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
     },
     {
-     "soort": "alinea",
-     "tekst": "By inhalation Take the patient to fresh air. In case of nausea, contact doctor."
+     "soort": "veld",
+     "kopje": "EHBO algemeen",
+     "tekst": "Nooit bij een bewusteloze persoon iets toedienen via de mond. Bij onwel voelen een arts raadplegen (deze indien mogelijk dit etiket tonen)."
     },
     {
-     "soort": "alinea",
-     "tekst": "By skin contact Wash with abundant water and soap. In case of skin irritation, contact doctor."
+     "soort": "veld",
+     "kopje": "EHBO na inademing",
+     "tekst": "Laat de getroffen persoon frisse lucht inademen. Laat het slachtoffer rusten."
     },
     {
-     "soort": "alinea",
-     "tekst": "By eye contact Rinse cautiously with water for several minutes. Remove contact lenses, if present and easy to do. Continue rising. Contact doctor."
+     "soort": "veld",
+     "kopje": "EHBO na contact met de huid",
+     "tekst": "Huid met water afspoelen/afdouchen. Verontreinigde kleding onmiddellijk uittrekken. Met veel water/… wassen. Verontreinigde kleding wassen alvorens deze opnieuw te gebruiken. Bij huidirritatie: Een arts raadplegen."
     },
     {
-     "soort": "alinea",
-     "tekst": "By ingestion/aspiration Rinse mouth. Do NOT induce vomiting. Get medical advice/attention."
+     "soort": "veld",
+     "kopje": "EHBO na contact met de ogen",
+     "tekst": "Voorzichtig afspoelen met water gedurende een aantal minuten. Contactlenzen verwijderen, indien mogelijk. Blijven spoelen. Bij aanhoudende oogirritatie: Een arts raadplegen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "EHBO na opname door de mond",
+     "tekst": "De mond spoelen. GEEN braken opwekken. Dringend een arts raadplegen."
     },
     {
      "soort": "kop",
-     "tekst": "4.2 Most important symptoms and effects, both acute and delayed"
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
     },
     {
-     "soort": "alinea",
-     "tekst": "Eye irritating."
+     "soort": "veld",
+     "kopje": "Symptomen/effecten na inademing",
+     "tekst": "Kan een allergische huidreactie veroorzaken. Overmatige blootstelling kan leiden tot: Pijnlijke keel. Hoest."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Symptomen/effecten na contact met de huid",
+     "tekst": "Irriterend voor de huid. Roodheid."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Symptomen/effecten na contact met de ogen",
+     "tekst": "Veroorzaakt ernstige oogirritatie. Vage visie. Branderig gevoel. Tranen. Roodheid."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Symptomen/effecten na opname door de mond",
+     "tekst": "Kan brandwonden of een irritatie van de mondwand, de keel en het maag-darmkanaal veroorzaken. Kan een geringe irritatie van de mondwand, de keel en het maag-darmkanaal veroorzaken."
     },
     {
      "soort": "kop",
-     "tekst": "4.3 Indication of any immediate medical attention and special treatment needed"
+     "tekst": "4.3 Vermelding van de vereiste onmiddellijke medische verzorging en speciale behandeling"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij een ongeval of indien men zich onwel voelt, onmiddellijk een arts raadplegen (indien mogelijk hem dit etiket tonen)."
     }
    ],
    "6": [
     {
      "soort": "kop",
-     "tekst": "6.1 Personal precautions, protective equipment and emergency procedures"
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
     },
     {
-     "soort": "alinea",
-     "tekst": "Use protective gloves. If the ventilation is not sufficient, use breathing protection. Avoid contact with skin, eyes and clothing. Ensure adequate ventilation."
-    },
-    {
-     "soort": "kop",
-     "tekst": "6.2 Environmental precautions"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "Avoid releasing to natural waters in bigger amounts."
+     "soort": "veld",
+     "kopje": "Algemene maatregelen",
+     "tekst": "Zie rubriek 8 voor wat betreft het gebruik van de persoonlijke beschermingsuitrusting. Gemorst product op een hard oppervlak kan een ernstig slip-/valrisico inhouden."
     },
     {
      "soort": "kop",
-     "tekst": "6.3 Methods and material for containment and cleaning up"
+     "tekst": "6.1.1 Voor andere personen dan de hulpdiensten"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Noodprocedures",
+     "tekst": "Overbodig personeel weg laten gaan."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.1.2 Voor de hulpdiensten"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Beschermingsmiddelen",
+     "tekst": "Schoonmaakpersoneel uitrusten met aangepaste bescherming."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Noodprocedures",
+     "tekst": "De ruimte ventileren."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Absorbed in proper dope. The waste is discharged according to Ch13."
+     "tekst": "Niet in het oppervlaktewater wegspoelen. Voorkom lozing in het milieu."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Reinigingsmethodes",
+     "tekst": "Reinig besmette apparatuur en gebieden waar het gelekt heeft met een ruime hoeveelheid water. Restanten wegspoelen met overvloedig water."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Zie Rubriek 8. Maatregelen ter beheersing van blootstelling en persoonlijke bescherming."
     }
    ],
    "5": [
     {
      "soort": "kop",
-     "tekst": "5.1 Extinguishin media"
+     "tekst": "5.1 Blusmiddelen"
     },
     {
-     "soort": "alinea",
-     "tekst": "Water spray, sry extinguishing powder, BC-powder, Carbon Dioxide."
+     "soort": "veld",
+     "kopje": "Geschikte blusmiddelen",
+     "tekst": "Alcoholbestendig schuim. Droog poeder. Koolstofdioxide. Verneveld water. Zand."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Ongeschikte blusmiddelen",
+     "tekst": "Gebruik geen sterke waterstraal."
     },
     {
      "soort": "kop",
-     "tekst": "5.2 Special hazards arising from the substance or mixture"
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Brandgevaar",
+     "tekst": "Licht ontvlambare vloeistof en damp. Dampen zijn zwaarder dan lucht en kunnen zich over een aanzienlijke afstand van de ontstekingsbron verspreiden, alvorens weer in de richting van de ontstekingsbron te ontbranden."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Explosiegevaar",
+     "tekst": "Kan een ontvlambaar/ontplofbaar damp-lucht mengsel vormen."
     },
     {
      "soort": "kop",
-     "tekst": "5.3 Advice for firefighters"
+     "tekst": "5.3 Advies voor brandweerlieden"
     },
     {
-     "soort": "alinea",
-     "tekst": "Depending on the magnitude of the fire it may be necessary to use full protective clothing and individual respiratory equipment. Minimum emergency facilities and equipment should be available (fire blankets, portable first aid kit…) in accordance with Directive 89/654/EC."
+     "soort": "veld",
+     "kopje": "Blusinstructies",
+     "tekst": "Koel de blootgestelde vaten af met een waternevel of mist. Wees uiterst voorzichtig bij het bestrijden van een chemische brand. Vermijd dat het bluswater in het milieu terechtkomt."
     },
     {
-     "soort": "alinea",
-     "tekst": "Additional provisions: Act in accordance with the Internal Emergency Plan and the Information Sheets on actions to take after an accident or other emergencies. Destroy any source of ignition. In case of fire, refrigerate the storage containers and tanks for products susceptible to inflammation, explosion or BLEVE as a result of high temperatures. Avoid spillage of the products used to extinguish the fire into an aqueous medium."
+     "soort": "veld",
+     "kopje": "Bescherming tijdens brandbestrijding",
+     "tekst": "Brandzone niet betreden zonder geschikte veiligheidsuitrusting, inclusief ademhalingsbescherming."
     }
    ],
    "13": [
     {
      "soort": "kop",
-     "tekst": "13.1 Waste treatment methods"
+     "tekst": "13.1 Afvalverwerkingsmethoden"
     },
     {
-     "soort": "alinea",
-     "tekst": "As under of the code and because the container has been in direct contact with the product, it will be processed the same way as the actual product."
+     "soort": "veld",
+     "kopje": "Regionale wetgeving (afval)",
+     "tekst": "Afvalverwijdering conform de wettelijke bepalingen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Aanbevelingen voor afvoer van producten/verpakkingen",
+     "tekst": "Dit product en de verpakking ervan moeten op een veilige manier verwijderd worden in overeenstemming met de lokale wetgeving. Product als zodanig: Chemisch afval, Verwijderen als gevaarlijk afval. Lege verpakkingen kunnen na reiniging als afval verwijderd worden in overeenstemming met de plaatselijke voorschriften. Recycling heeft de voorkeur boven verwijdering of verbranding. De verpakkingen volledig legen alvorens ze te verwijderen. Restanten wegspoelen met overvloedig water."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Aanvullende informatie",
+     "tekst": "Lege houders/verpakkingen voorzichtig hanteren, aangezien de achtergebleven dampen ontvlambaar zijn."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Ecologie - afvalstoffen",
+     "tekst": "Voorkom lozing in het milieu."
+    },
+    {
+     "soort": "veld",
+     "kopje": "EURAL-code",
+     "tekst": "20 01 99 - niet elders genoemde fracties"
     }
    ]
   }
@@ -13019,129 +13417,334 @@ const VIB_PRODUCTEN = [
   ],
   "foto": "https://storage.googleapis.com/stocky-project-production-managed/images/product/47686/careline-lavendel.png",
   "unNummers": [
-   "UN0000"
+   "UN1170"
   ],
-  "vibDatum": "13-04-2022",
+  "vibDatum": "02-05-2023",
   "verlopen": false,
-  "taal": "en",
+  "taal": "nl",
   "vibPdf": "vib/47686.pdf",
   "alleVibs": [
    {
     "pdf": "vib/47686.pdf",
-    "datum": "13-04-2022",
+    "datum": "02-05-2023",
     "verlopen": false,
-    "taal": "en"
+    "taal": "nl"
    }
   ],
-  "status": "onzeker",
-  "problemen": [
-   "VIB lijkt niet Nederlands (Engels)"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
    "8": [
     {
      "soort": "kop",
-     "tekst": "8.2 Exposure controls"
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
+    },
+    {
+     "soort": "kop",
+     "tekst": "8.2.1 Passende technische maatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Ensure efficient ventilation. Avoid contact with eyes and skin."
+     "tekst": "Geen aanvullende informatie beschikbaar"
+    },
+    {
+     "soort": "kop",
+     "tekst": "8.2.2 Persoonlijke beschermingsmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Persoonlijke beschermingsuitrusting: Vermijd contact met de huid, ogen of kleding. Vermijd onnodige blootstelling. Bescherming van de handen. Handschoenen. Bescherming van de ogen. Bescherm ogen, gelaat en huid tegen vloeistofspatten. Oogbescherming. Symbo(o)l(en) voor persoonlijke beschermingsmiddelen:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "8.2.2.1. Bescherming van de ogen en het gezicht"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ogen: Draag een oog-/gezichtsbescherming. Chemische stofbril of veiligheidsbril. Norm. ISO 16321-1. Een oogbescherming is enkel nodig wanneer vloeistof kan opspatten of verstuiven"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "8.2.2.2. Bescherming van de huid"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Huid en lichaam bescherming: Onder normale gebruiksomstandigheden wordt geen speciale kleding/huidbescherming aanbevolen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen: Beschermende handschoenen. Chemisch resistente handschoenen (volgens de Europese standaardnorm NF ISO 374-1 of equivalent). Bij"
+    },
+    {
+     "soort": "veld",
+     "kopje": "langdurige blootstelling",
+     "tekst": "Herbruikbare handschoenen. Blootstelling op de korte termijn. Bij het risico op het spatten van de vloeistof:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Wegwerphandschoenen / Herbruikbare handschoenen. De doorbraaktijd van het handschoenmateriaal dient in overleg met de fabrikant vastgesteld te worden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Type",
+       "Materiaal",
+       "permeatie",
+       "Dikte (mm)",
+       "Penetratie",
+       "Norm"
+      ],
+      [
+       "Herbruikbare",
+       "Nitrilrubber (NBR),",
+       "6 (> 480 minuten)",
+       ">0.35 mm (NBR);",
+       "",
+       "EN 374-3"
+      ],
+      [
+       "handschoenen",
+       "Neopreen rubber (HNBR)",
+       "",
+       ">0.7 mm (HNBR)",
+       "",
+       ""
+      ],
+      [
+       "Wegwerphandschoenen /",
+       "Nitrilrubber (NBR),",
+       "2 (> 30 minuten)",
+       "> 0.1 mm",
+       "",
+       "EN 374-3"
+      ]
+     ]
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Herbruikbare Neopreen rubber (HNBR) handschoenen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "8.2.2.3. Bescherming van de ademhalingswegen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ademhalingswegen: Geen speciale bescherming vereist zolang er sprake is van voldoende ventilatie"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "8.2.2.4. Thermische gevaren Geen aanvullende informatie beschikbaar"
+    },
+    {
+     "soort": "kop",
+     "tekst": "8.2.3 Beperking en controle van de blootstelling van het milieu"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Overige informatie: Niet eten, drinken of roken tijdens het gebruik. De informatie in deze rubriek geldt voor het onverdunde product."
     }
    ],
    "4": [
     {
      "soort": "kop",
-     "tekst": "4.1 Description of first aid measures"
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
     },
     {
-     "soort": "alinea",
-     "tekst": "By inhalation Take the patient to fresh air. In case of nausea, contact doctor."
+     "soort": "veld",
+     "kopje": "EHBO algemeen",
+     "tekst": "Nooit bij een bewusteloze persoon iets toedienen via de mond. Bij onwel voelen een arts raadplegen (deze indien mogelijk dit etiket tonen)."
     },
     {
-     "soort": "alinea",
-     "tekst": "By skin contact Wash with abundant water and soap. In case of skin irritation, contact doctor."
+     "soort": "veld",
+     "kopje": "EHBO na inademing",
+     "tekst": "Laat de getroffen persoon frisse lucht inademen. Laat het slachtoffer rusten."
     },
     {
-     "soort": "alinea",
-     "tekst": "By eye contact Rinse cautiously with water for several minutes. Remove contact lenses, if present and easy to do. Continue rising. Contact doctor."
+     "soort": "veld",
+     "kopje": "EHBO na contact met de huid",
+     "tekst": "Huid met water afspoelen/afdouchen. Verontreinigde kleding onmiddellijk uittrekken. Bij huidirritatie of uitslag: een arts raadplegen."
     },
     {
-     "soort": "alinea",
-     "tekst": "By ingestion/aspiration Rinse mouth. Do NOT induce vomiting. Get medical advice/attention."
+     "soort": "veld",
+     "kopje": "EHBO na contact met de ogen",
+     "tekst": "Voorzichtig afspoelen met water gedurende een aantal minuten. Contactlenzen verwijderen, indien mogelijk. Blijven spoelen. Bij aanhoudende oogirritatie: Een arts raadplegen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "EHBO na opname door de mond",
+     "tekst": "De mond spoelen. GEEN braken opwekken. Dringend een arts raadplegen."
     },
     {
      "soort": "kop",
-     "tekst": "4.2 Most important symptoms and effects, both acute and delayed"
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
     },
     {
-     "soort": "alinea",
-     "tekst": "Eye irritating."
+     "soort": "veld",
+     "kopje": "Symptomen/effecten na inademing",
+     "tekst": "Overmatige blootstelling kan leiden tot: Pijnlijke keel. Hoest."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Symptomen/effecten na contact met de huid",
+     "tekst": "Veroorzaakt huidirritatie. Kan een allergische huidreactie veroorzaken. Roodheid, pijn. Jeuk."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Symptomen/effecten na contact met de ogen",
+     "tekst": "Veroorzaakt ernstige oogirritatie. Vage visie. Branderig gevoel. Tranen. Roodheid."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Symptomen/effecten na opname door de mond",
+     "tekst": "Kan een geringe irritatie van de mondwand, de keel en het maag-darmkanaal veroorzaken."
     },
     {
      "soort": "kop",
-     "tekst": "4.3 Indication of any immediate medical attention and special treatment needed"
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij een ongeval of indien men zich onwel voelt, onmiddellijk een arts raadplegen (indien mogelijk hem dit etiket tonen)."
     }
    ],
    "6": [
     {
      "soort": "kop",
-     "tekst": "6.1 Personal precautions, protective equipment and emergency procedures"
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
     },
     {
-     "soort": "alinea",
-     "tekst": "Use protective gloves. If the ventilation is not sufficient, use breathing protection. Avoid contact with skin, eyes and clothing. Ensure adequate ventilation."
-    },
-    {
-     "soort": "kop",
-     "tekst": "6.2 Environmental precautions"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "Avoid releasing to natural waters in bigger amounts."
+     "soort": "veld",
+     "kopje": "Algemene maatregelen",
+     "tekst": "Zie rubriek 8 voor wat betreft het gebruik van de persoonlijke beschermingsuitrusting. Gemorst product op een hard oppervlak kan een ernstig slip-/valrisico inhouden."
     },
     {
      "soort": "kop",
-     "tekst": "6.3 Methods and material for containment and cleaning up"
+     "tekst": "6.1.1 Voor andere personen dan de hulpdiensten"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Noodprocedures",
+     "tekst": "Overbodig personeel weg laten gaan. Contact met de huid en de ogen vermijden. Inademing van stof/rook/gas/nevel/damp/spuitnevel vermijden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.1.2 Voor de hulpdiensten"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Beschermingsmiddelen",
+     "tekst": "Schoonmaakpersoneel uitrusten met aangepaste bescherming."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Noodprocedures",
+     "tekst": "De ruimte ventileren."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Absorbed in proper dope. The waste is discharged according to Ch13."
+     "tekst": "Schadelijk voor in het water levende organismen, met langdurige gevolgen. Niet in de riolering of openbare wateren laten wegstromen. Voorkom lozing in het milieu."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Reinigingsmethodes",
+     "tekst": "Het gemorste product zo snel mogelijk opzuigen met inerte vaste stoffen zoals klei of kiezelaarde. Op een veilige manier opruimen in overeenstemming met lokale/nationale voorschriften. Verwijderen conform de van toepassing zijnde plaatselijke voorschriften. Restanten wegspoelen met overvloedig water. Zorg voor voldoende ventilatie om stof- en/of dampconcentraties tot een minimum te beperken."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Zie Rubriek 8. Maatregelen ter beheersing van blootstelling en persoonlijke bescherming."
     }
    ],
    "5": [
     {
      "soort": "kop",
-     "tekst": "5.1 Extinguishin media"
+     "tekst": "5.1 Blusmiddelen"
     },
     {
-     "soort": "alinea",
-     "tekst": "Water spray, sry extinguishing powder, BC-powder, Carbon Dioxide."
+     "soort": "veld",
+     "kopje": "Geschikte blusmiddelen",
+     "tekst": "Schuim. Droog poeder. Koolstofdioxide. Verneveld water. Zand."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Ongeschikte blusmiddelen",
+     "tekst": "Gebruik geen sterke waterstraal."
     },
     {
      "soort": "kop",
-     "tekst": "5.2 Special hazards arising from the substance or mixture"
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Brandgevaar",
+     "tekst": "Licht ontvlambare vloeistof en damp. Dampen zijn zwaarder dan lucht en kunnen zich over een aanzienlijke afstand van de ontstekingsbron verspreiden, alvorens weer in de richting van de ontstekingsbron te ontbranden."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Explosiegevaar",
+     "tekst": "Kan een ontvlambaar/ontplofbaar damp-lucht mengsel vormen."
     },
     {
      "soort": "kop",
-     "tekst": "5.3 Advice for firefighters"
+     "tekst": "5.3 Advies voor brandweerlieden"
     },
     {
-     "soort": "alinea",
-     "tekst": "Depending on the magnitude of the fire it may be necessary to use full protective clothing and individual respiratory equipment. Minimum emergency facilities and equipment should be available (fire blankets, portable first aid kit…) in accordance with Directive 89/654/EC."
+     "soort": "veld",
+     "kopje": "Blusinstructies",
+     "tekst": "Koel de blootgestelde vaten af met een waternevel of mist. Wees uiterst voorzichtig bij het bestrijden van een chemische brand. Vermijd dat het bluswater in het milieu terechtkomt."
     },
     {
-     "soort": "alinea",
-     "tekst": "Additional provisions: Act in accordance with the Internal Emergency Plan and the Information Sheets on actions to take after an accident or other emergencies. Destroy any source of ignition. In case of fire, refrigerate the storage containers and tanks for products susceptible to inflammation, explosion or BLEVE as a result of high temperatures. Avoid spillage of the products used to extinguish the fire into an aqueous medium."
+     "soort": "veld",
+     "kopje": "Bescherming tijdens brandbestrijding",
+     "tekst": "Brandzone niet betreden zonder geschikte veiligheidsuitrusting, inclusief ademhalingsbescherming."
     }
    ],
    "13": [
     {
      "soort": "kop",
-     "tekst": "13.1 Waste treatment methods"
+     "tekst": "13.1 Afvalverwerkingsmethoden"
     },
     {
-     "soort": "alinea",
-     "tekst": "As under of the code and because the container has been in direct contact with the product, it will be processed the same way as the actual product."
+     "soort": "veld",
+     "kopje": "Regionale wetgeving (afval)",
+     "tekst": "Afvalverwijdering conform de wettelijke bepalingen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Aanbevelingen voor afvoer van producten/verpakkingen",
+     "tekst": "Dit product en de verpakking ervan moeten op een veilige manier verwijderd worden in overeenstemming met de lokale wetgeving. Product als zodanig: Chemisch afval, Verwijderen als gevaarlijk afval. Lege verpakkingen kunnen na reiniging als afval verwijderd worden in overeenstemming met de plaatselijke voorschriften. Recycling heeft de voorkeur boven verwijdering of verbranding. De verpakkingen volledig legen alvorens ze te verwijderen. Restanten wegspoelen met overvloedig water."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Aanvullende informatie",
+     "tekst": "Lege houders/verpakkingen voorzichtig hanteren, aangezien de achtergebleven dampen ontvlambaar zijn."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Ecologie - afvalstoffen",
+     "tekst": "Voorkom lozing in het milieu."
+    },
+    {
+     "soort": "veld",
+     "kopje": "EURAL-code",
+     "tekst": "20 01 99 - niet elders genoemde fracties"
     }
    ]
   }
@@ -33975,14 +34578,28 @@ const VIB_PRODUCTEN = [
   "unNummers": [
    "UN1950"
   ],
-  "vibDatum": "",
-  "verlopen": false,
+  "vibDatum": "08-05-2015",
+  "verlopen": true,
   "taal": "",
-  "vibPdf": "",
-  "alleVibs": [],
-  "status": "geen-vib",
+  "vibPdf": "vib/3679.pdf",
+  "alleVibs": [
+   {
+    "pdf": "vib/3679.pdf",
+    "datum": "08-05-2015",
+    "verlopen": true,
+    "taal": ""
+   }
+  ],
+  "status": "onzeker",
   "problemen": [
-   "Geen VIB (PDF) in Stocky"
+   "Rubriek 8 niet gevonden",
+   "Rubriek 4 niet gevonden",
+   "Rubriek 6 niet gevonden",
+   "Rubriek 5 niet gevonden",
+   "Rubriek 13 niet gevonden",
+   "Tekst niet goed leesbaar",
+   "VIB lijkt niet Nederlands",
+   "VIB is verlopen"
   ],
   "rubrieken": {}
  },
@@ -45574,26 +46191,674 @@ const VIB_PRODUCTEN = [
   }
  },
  {
+  "productId": 19266,
+  "naam": "Meytec redox 475 mV vloeistof - 60 ml",
+  "sku": "STKY-00019266",
+  "ean": [
+   "5407007390274",
+   "5407007390724"
+  ],
+  "foto": "https://storage.googleapis.com/stocky-project-production-managed/images/product/19266/475mv_60ml_1.jpg",
+  "unNummers": [
+   "UN3264"
+  ],
+  "vibDatum": "15-10-2026",
+  "verlopen": false,
+  "taal": "nl",
+  "vibPdf": "vib/19266.pdf",
+  "alleVibs": [
+   {
+    "pdf": "vib/19266.pdf",
+    "datum": "15-10-2026",
+    "verlopen": false,
+    "taal": "nl"
+   }
+  ],
+  "status": "ok",
+  "problemen": [],
+  "rubrieken": {
+   "8": [
+    {
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Passende technische maatregelen",
+     "tekst": "Algemene of plaatselijke afzuiging. Oogdouche en nooddouche in de nabijheid beschikbaar houden."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Oog-/gelaatsbescherming",
+     "tekst": "Veiligheidsbril of gelaatscherm volgens EN 166 (vereist)."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Huidbescherming",
+     "tekst": "Chemisch resistente handschoenen (nitril of equivalent, EN ISO 374, minimale dikte 0,4 mm, doorbraaktijd > 480 min)."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Beschermende kleding."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Ademhalingsbescherming",
+     "tekst": "Bij aërosolvorming of onvoldoende ventilatie: filtertype P2 (EN 143)."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Beheersing van milieublootstelling",
+     "tekst": "Voorkom lozing in riolering of oppervlaktewater in grote hoeveelheden. Zie rubrieken 6 en 13."
+    }
+   ],
+   "4": [
+    {
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Algemeen",
+     "tekst": "Onmiddellijk spoelen met veel water. Bij twijfel of aanhoudende symptomen medische hulp inroepen. Dit VIB aan de arts tonen. Nooit"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "een bewusteloos persoon iets oraal toedienen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Na inademing",
+     "tekst": "De betrokkene in de frisse lucht brengen en laten rusten. Bij aanhoudende klachten medische hulp inroepen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Na huidcontact",
+     "tekst": "Onmiddellijk alle besmette kleding uittrekken. Huid spoelen met overvloedig water / douchen. Medische hulp inroepen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Na oogcontact",
+     "tekst": "Onmiddellijk voorzichtig spoelen met water gedurende minstens 15 minuten, oogleden openhouden. Contactlenzen verwijderen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "indien mogelijk. Onmiddellijk een oogarts raadplegen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Na inslikken",
+     "tekst": "De mond spoelen met water. GEEN braken opwekken. Onmiddellijk het Antigifcentrum of een arts raadplegen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Ernstige brandwonden aan huid en ogen. Pijn, roodheid, blaarvorming. Inslikken kan ernstige brandwonden in mond, keel en maag veroorzaken."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Uitgestelde effecten",
+     "tekst": "littekenvorming mogelijk bij ernstige brandwonden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van de vereiste onmiddellijke medische verzorging en speciale behandeling"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Symptomatisch behandelen. Geen specifiek tegengif bekend. Corrosieve effecten op de voorgrond. Oogcontact vereist onmiddellijke specialistische zorg."
+    }
+   ],
+   "6": [
+    {
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Draag geschikte persoonlijke beschermingsmiddelen (zie rubriek 8). Vermijd contact met huid, ogen en kleding. Zorg voor voldoende ventilatie."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Evacueer onnodig personeel. Bij grote lekken",
+     "tekst": "adembescherming overwegen indien aërosolen ontstaan."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Voorkom dat het product in riolering, oppervlaktewater of bodem terechtkomt in grote hoeveelheden. Informeer bevoegde autoriteiten bij significante lozing."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Absorbeer met inert, niet-brandbaar materiaal (zand, aarde, vermiculiet of universeel absorptiemiddel). Spoel het getroffen gebied na met veel water. Verzamel afval in geschikte, gelabelde containers voor verwijdering volgens lokale regelgeving (zie rubriek 13)."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Persoonlijke bescherming",
+     "tekst": "rubriek 8. Verwijdering: rubriek 13. Hantering: rubriek 7."
+    }
+   ],
+   "5": [
+    {
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Geschikte blusmiddelen",
+     "tekst": "Het product zelf is niet brandbaar. Blusmiddelen afstemmen op de omgeving (waternevel, schuim, droog poeder,"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "kooldioxide)."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Ongeschikte blusmiddelen",
+     "tekst": "Geen bekend. Vermijd sterke waterstralen die het product kunnen verspreiden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet brandbaar. Bij brand in de omgeving kunnen giftige of corrosieve dampen vrijkomen (zwaveloxiden, zure dampen). Containers kunnen barsten door hitte. Corrosief voor metalen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Draag volledige beschermende kleding en onafhankelijke ademhalingsapparatuur (SCBA, EN 137). Koel blootgestelde containers met water. Vermijd dat bluswater in riolering of waterlopen terechtkomt. Verzamel verontreinigd bluswater afzonderlijk."
+    }
+   ],
+   "13": [
+    {
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Product / restanten",
+     "tekst": "Verwijderen overeenkomstig lokale, regionale en nationale voorschriften. Kleine hoeveelheden kunnen na neutralisatie (indien"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "de bevoegde instantie dat toestaat) als afvalwater worden afgevoerd. Grote hoeveelheden: aanbieden aan een erkend afvalverwerkingsbedrijf voor gevaarlijk afval."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Verpakking",
+     "tekst": "Volledig legen en spoelen. Schone HDPE-flessen kunnen worden gerecycled (15 01 02). Niet-gereinigde verpakkingen als gevaarlijk"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "afval behandelen."
+    }
+   ]
+  }
+ },
+ {
   "productId": 19269,
   "naam": "Meytec volledige kalibratieset (pH 4.01/7.00/475mV/KCL/H20)",
   "sku": "STKY-00019269",
   "ean": [
-   "5407007390700"
+   "5407007390748"
   ],
   "foto": "https://storage.googleapis.com/stocky-project-production-managed/images/product/19269/849_1200_meytec-calibration-kit-a.jpg",
   "unNummers": [
-   "UN1760"
+   "UN3264"
   ],
-  "vibDatum": "",
+  "vibDatum": "15-10-2026",
   "verlopen": false,
-  "taal": "",
-  "vibPdf": "",
-  "alleVibs": [],
-  "status": "geen-vib",
-  "problemen": [
-   "Geen VIB (PDF) in Stocky"
+  "taal": "nl",
+  "vibPdf": "vib/19269.pdf",
+  "alleVibs": [
+   {
+    "pdf": "vib/19269.pdf",
+    "datum": "15-10-2026",
+    "verlopen": false,
+    "taal": "nl"
+   }
   ],
-  "rubrieken": {}
+  "status": "ok",
+  "problemen": [],
+  "rubrieken": {
+   "8": [
+    {
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Passende technische maatregelen",
+     "tekst": "Algemene of plaatselijke afzuiging. Oogdouche en nooddouche in de nabijheid beschikbaar houden."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Oog-/gelaatsbescherming",
+     "tekst": "Veiligheidsbril of gelaatscherm volgens EN 166 (vereist)."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Huidbescherming",
+     "tekst": "Chemisch resistente handschoenen (nitril of equivalent, EN ISO 374, minimale dikte 0,4 mm, doorbraaktijd > 480 min)."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Beschermende kleding."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Ademhalingsbescherming",
+     "tekst": "Bij aërosolvorming of onvoldoende ventilatie: filtertype P2 (EN 143)."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Beheersing van milieublootstelling",
+     "tekst": "Voorkom lozing in riolering of oppervlaktewater in grote hoeveelheden. Zie rubrieken 6 en 13."
+    }
+   ],
+   "4": [
+    {
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Algemeen",
+     "tekst": "Onmiddellijk spoelen met veel water. Bij twijfel of aanhoudende symptomen medische hulp inroepen. Dit VIB aan de arts tonen. Nooit"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "een bewusteloos persoon iets oraal toedienen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Na inademing",
+     "tekst": "De betrokkene in de frisse lucht brengen en laten rusten. Bij aanhoudende klachten medische hulp inroepen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Na huidcontact",
+     "tekst": "Onmiddellijk alle besmette kleding uittrekken. Huid spoelen met overvloedig water / douchen. Medische hulp inroepen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Na oogcontact",
+     "tekst": "Onmiddellijk voorzichtig spoelen met water gedurende minstens 15 minuten, oogleden openhouden. Contactlenzen verwijderen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "indien mogelijk. Onmiddellijk een oogarts raadplegen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Na inslikken",
+     "tekst": "De mond spoelen met water. GEEN braken opwekken. Onmiddellijk het Antigifcentrum of een arts raadplegen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Ernstige brandwonden aan huid en ogen. Pijn, roodheid, blaarvorming. Inslikken kan ernstige brandwonden in mond, keel en maag veroorzaken."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Uitgestelde effecten",
+     "tekst": "littekenvorming mogelijk bij ernstige brandwonden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van de vereiste onmiddellijke medische verzorging en speciale behandeling"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Symptomatisch behandelen. Geen specifiek tegengif bekend. Corrosieve effecten op de voorgrond. Oogcontact vereist onmiddellijke specialistische zorg."
+    }
+   ],
+   "6": [
+    {
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Draag geschikte persoonlijke beschermingsmiddelen (zie rubriek 8). Vermijd contact met huid, ogen en kleding. Zorg voor voldoende ventilatie."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Evacueer onnodig personeel. Bij grote lekken",
+     "tekst": "adembescherming overwegen indien aërosolen ontstaan."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Voorkom dat het product in riolering, oppervlaktewater of bodem terechtkomt in grote hoeveelheden. Informeer bevoegde autoriteiten bij significante lozing."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Absorbeer met inert, niet-brandbaar materiaal (zand, aarde, vermiculiet of universeel absorptiemiddel). Spoel het getroffen gebied na met veel water. Verzamel afval in geschikte, gelabelde containers voor verwijdering volgens lokale regelgeving (zie rubriek 13)."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Persoonlijke bescherming",
+     "tekst": "rubriek 8. Verwijdering: rubriek 13. Hantering: rubriek 7."
+    }
+   ],
+   "5": [
+    {
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Geschikte blusmiddelen",
+     "tekst": "Het product zelf is niet brandbaar. Blusmiddelen afstemmen op de omgeving (waternevel, schuim, droog poeder,"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "kooldioxide)."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Ongeschikte blusmiddelen",
+     "tekst": "Geen bekend. Vermijd sterke waterstralen die het product kunnen verspreiden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet brandbaar. Bij brand in de omgeving kunnen giftige of corrosieve dampen vrijkomen (zwaveloxiden, zure dampen). Containers kunnen barsten door hitte. Corrosief voor metalen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Draag volledige beschermende kleding en onafhankelijke ademhalingsapparatuur (SCBA, EN 137). Koel blootgestelde containers met water. Vermijd dat bluswater in riolering of waterlopen terechtkomt. Verzamel verontreinigd bluswater afzonderlijk."
+    }
+   ],
+   "13": [
+    {
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Product / restanten",
+     "tekst": "Verwijderen overeenkomstig lokale, regionale en nationale voorschriften. Kleine hoeveelheden kunnen na neutralisatie (indien"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "de bevoegde instantie dat toestaat) als afvalwater worden afgevoerd. Grote hoeveelheden: aanbieden aan een erkend afvalverwerkingsbedrijf voor gevaarlijk afval."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Verpakking",
+     "tekst": "Volledig legen en spoelen. Schone HDPE-flessen kunnen worden gerecycled (15 01 02). Niet-gereinigde verpakkingen als gevaarlijk"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "afval behandelen."
+    }
+   ]
+  }
+ },
+ {
+  "productId": 19270,
+  "naam": "Meytec volledige kalibratieset (pH 7.00/10.01/475mV/KCL/H20)",
+  "sku": "STKY-00019270",
+  "ean": [
+   "5407007390755"
+  ],
+  "foto": "https://storage.googleapis.com/stocky-project-production-managed/images/product/19270/849_1200_meytec-calibration-kitb.jpg",
+  "unNummers": [
+   "UN3264"
+  ],
+  "vibDatum": "15-10-2026",
+  "verlopen": false,
+  "taal": "nl",
+  "vibPdf": "vib/19270.pdf",
+  "alleVibs": [
+   {
+    "pdf": "vib/19270.pdf",
+    "datum": "15-10-2026",
+    "verlopen": false,
+    "taal": "nl"
+   }
+  ],
+  "status": "ok",
+  "problemen": [],
+  "rubrieken": {
+   "8": [
+    {
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Passende technische maatregelen",
+     "tekst": "Algemene of plaatselijke afzuiging. Oogdouche en nooddouche in de nabijheid beschikbaar houden."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Oog-/gelaatsbescherming",
+     "tekst": "Veiligheidsbril of gelaatscherm volgens EN 166 (vereist)."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Huidbescherming",
+     "tekst": "Chemisch resistente handschoenen (nitril of equivalent, EN ISO 374, minimale dikte 0,4 mm, doorbraaktijd > 480 min)."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Beschermende kleding."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Ademhalingsbescherming",
+     "tekst": "Bij aërosolvorming of onvoldoende ventilatie: filtertype P2 (EN 143)."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Beheersing van milieublootstelling",
+     "tekst": "Voorkom lozing in riolering of oppervlaktewater in grote hoeveelheden. Zie rubrieken 6 en 13."
+    }
+   ],
+   "4": [
+    {
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Algemeen",
+     "tekst": "Onmiddellijk spoelen met veel water. Bij twijfel of aanhoudende symptomen medische hulp inroepen. Dit VIB aan de arts tonen. Nooit"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "een bewusteloos persoon iets oraal toedienen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Na inademing",
+     "tekst": "De betrokkene in de frisse lucht brengen en laten rusten. Bij aanhoudende klachten medische hulp inroepen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Na huidcontact",
+     "tekst": "Onmiddellijk alle besmette kleding uittrekken. Huid spoelen met overvloedig water / douchen. Medische hulp inroepen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Na oogcontact",
+     "tekst": "Onmiddellijk voorzichtig spoelen met water gedurende minstens 15 minuten, oogleden openhouden. Contactlenzen verwijderen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "indien mogelijk. Onmiddellijk een oogarts raadplegen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Na inslikken",
+     "tekst": "De mond spoelen met water. GEEN braken opwekken. Onmiddellijk het Antigifcentrum of een arts raadplegen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Ernstige brandwonden aan huid en ogen. Pijn, roodheid, blaarvorming. Inslikken kan ernstige brandwonden in mond, keel en maag veroorzaken."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Uitgestelde effecten",
+     "tekst": "littekenvorming mogelijk bij ernstige brandwonden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van de vereiste onmiddellijke medische verzorging en speciale behandeling"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Symptomatisch behandelen. Geen specifiek tegengif bekend. Corrosieve effecten op de voorgrond. Oogcontact vereist onmiddellijke specialistische zorg."
+    }
+   ],
+   "6": [
+    {
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Draag geschikte persoonlijke beschermingsmiddelen (zie rubriek 8). Vermijd contact met huid, ogen en kleding. Zorg voor voldoende ventilatie."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Evacueer onnodig personeel. Bij grote lekken",
+     "tekst": "adembescherming overwegen indien aërosolen ontstaan."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Voorkom dat het product in riolering, oppervlaktewater of bodem terechtkomt in grote hoeveelheden. Informeer bevoegde autoriteiten bij significante lozing."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Absorbeer met inert, niet-brandbaar materiaal (zand, aarde, vermiculiet of universeel absorptiemiddel). Spoel het getroffen gebied na met veel water. Verzamel afval in geschikte, gelabelde containers voor verwijdering volgens lokale regelgeving (zie rubriek 13)."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Persoonlijke bescherming",
+     "tekst": "rubriek 8. Verwijdering: rubriek 13. Hantering: rubriek 7."
+    }
+   ],
+   "5": [
+    {
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Geschikte blusmiddelen",
+     "tekst": "Het product zelf is niet brandbaar. Blusmiddelen afstemmen op de omgeving (waternevel, schuim, droog poeder,"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "kooldioxide)."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Ongeschikte blusmiddelen",
+     "tekst": "Geen bekend. Vermijd sterke waterstralen die het product kunnen verspreiden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet brandbaar. Bij brand in de omgeving kunnen giftige of corrosieve dampen vrijkomen (zwaveloxiden, zure dampen). Containers kunnen barsten door hitte. Corrosief voor metalen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Draag volledige beschermende kleding en onafhankelijke ademhalingsapparatuur (SCBA, EN 137). Koel blootgestelde containers met water. Vermijd dat bluswater in riolering of waterlopen terechtkomt. Verzamel verontreinigd bluswater afzonderlijk."
+    }
+   ],
+   "13": [
+    {
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Product / restanten",
+     "tekst": "Verwijderen overeenkomstig lokale, regionale en nationale voorschriften. Kleine hoeveelheden kunnen na neutralisatie (indien"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "de bevoegde instantie dat toestaat) als afvalwater worden afgevoerd. Grote hoeveelheden: aanbieden aan een erkend afvalverwerkingsbedrijf voor gevaarlijk afval."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Verpakking",
+     "tekst": "Volledig legen en spoelen. Schone HDPE-flessen kunnen worden gerecycled (15 01 02). Niet-gereinigde verpakkingen als gevaarlijk"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "afval behandelen."
+    }
+   ]
+  }
  },
  {
   "productId": 47269,
