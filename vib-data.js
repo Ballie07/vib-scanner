@@ -51607,18 +51607,147 @@ const VIB_PRODUCTEN = [
   ],
   "foto": "https://storage.googleapis.com/stocky-project-production-managed/images/product/47658/P182583-PIC1.png",
   "unNummers": [
-   "UN0000"
+   "UN1133"
   ],
-  "vibDatum": "",
+  "vibDatum": "06-05-2025",
   "verlopen": false,
-  "taal": "",
-  "vibPdf": "",
-  "alleVibs": [],
-  "status": "geen-vib",
-  "problemen": [
-   "Geen VIB (PDF) in Stocky"
+  "taal": "nl",
+  "vibPdf": "vib/47658.pdf",
+  "alleVibs": [
+   {
+    "pdf": "vib/47658.pdf",
+    "datum": "06-05-2025",
+    "verlopen": false,
+    "taal": "nl"
+   }
   ],
-  "rubrieken": {}
+  "status": "ok",
+  "problemen": [],
+  "rubrieken": {
+   "8": [
+    {
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Persoonlijke beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen Schone en correct onderhouden persoonlijke beschermingsmiddelen gebruiken. Sla de persoonlijke beschermingsmiddelen op in een schone ruimte, buiten de werkruimte. Tijdens het gebruik niet eten, drinken of roken. Besmette kleding uittrekken en wassen voor hergebruik. Zorgen voor een goede ventilatie, vooral in gesloten ruimtes. - Bescherming van de ogen / het gezicht Vermijd contact met de ogen. Gebruik oogbeschermingen, ontworpen tegen het spatten van vloeistoffen. Voor het hanteren moet een veiligheidsbril met zijbescherming worden opgezet die voldoet aan de norm ISO 16321. Bij groter gevaar moet een gezichtsmasker worden gebruikt om het gezicht te beschermen. Het dragen van een corrigerende bril vormt geen bescherming. Het wordt dragers van contactlenzen aangeraden om een bril te gebruiken bij werkzaamheden waar zij kunnen worden blootgesteld aan irriterende dampen. Voorzie oogdouches in werkplaatsen waar het mengsel voortdurend verwerkt wordt."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "- Handbescherming. Gebruik geschikte beschermende handschoenen die bestand zijn tegen chemische stoffen en voldoen aan de norm EN ISO 374-1. De handschoenen moeten worden gekozen volgens de toepassing en de gebruiksduur op de werkplek. De beschermende handschoenen moeten gekozen worden volgens de werkplek: andere chemische producten die gebruikt kunnen worden, benodigde fysieke bescherming (snijden, prikken, thermische bescherming), vereiste behendigheid. Aanbevolen type handschoenen : - PVA (Polyvinylalcohol) - Butylrubber (Copolymeer isobutyleen-isopreen) - Nitrielrubber (Copolymeer butadien-acrylonitriel (NBR)) Aanbevolen kenmerken :"
+    },
+    {
+     "soort": "veld",
+     "kopje": "D",
+     "tekst": "0,075 mm"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "- Lichaamsbescherming Vermijd contact met de huid. Draag een gepaste werkkleding. Bij sterk spatten moet vloeistofdichte beschermende kleding worden gedragen tegen chemische risico's (type 3), volgens de norm EN14605/A1 om elk contact met de huid te voorkomen. Bij gevaar voor spatten moet beschermende kleding worden gedragen tegen chemische risico's (type 6), volgens de norm EN13034/A1 om elk contact met de huid te voorkomen. Het personeel dient regelmatig gewassen werkkleding te dragen. Na contact met het product moeten alle besmette lichaamsdelen gewassen worden. - Ademhalingsbescherming Vermijd het inademen van de dampen. Indien de ventilatie onvoldoende is, moet een geschikt ademhalingsapparaat gedragen worden. Als de arbeiders te maken krijgen met concentraties die de blootstellingsgrenzen overschrijden moeten ze een geschikte en goedgekeurd ademhalingsbeschermingsmiddel dragen. Filter(s) tegen gas en dampen (gecombineerde filters) volgens de norm EN14387 : - A1 (Bruin)"
+    }
+   ],
+   "4": [
+    {
+     "soort": "alinea",
+     "tekst": "In het algemeen, ingeval van twijfel of indien de verschijnselen aanhouden, altijd een arts waarschuwen. NOOIT iets laten inslikken door een bewusteloos persoon."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij blootstelling door inademing : In geval van inademing in grote hoeveelheden, de patiënt in de open lucht brengen en warm en rustig houden."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Als het slachtoffer buiten bewustzijn is, hem in de stabiele zijligging leggen. In elk geval een arts waarschuwen om te beslissen over een bewaking en een symptomatische behandeling in een ziekenhuis. Indien de ademhaling onregelmatig of gestopt is, kunstmatige ademhaling toepassen en een arts ontbieden. Bij spatten of contact met de ogen : Overvloedig reinigen met proper en zacht water gedurende 15 minuten terwijl de oogleden geopend zijn. Indien er pijn, roodheid plekken of gezichtshinder optreden, een oogarts raadplegen. Bij spatten of contact met de huid : De huid onmiddellijk wassen met water en zeep. De gecontamineerde kleren met inbegrip van de schoenen verwijderen, ze alleen terug aantrekken na reiniging. Medisch advies inwinnen indien de irritatie aanhoudt. Let op resten product die zich tussen de huid en kleding, horloge, schoenen kunnen bevinden... Bij contaminatie van grote huidoppervlakken en/of wanneer huidletsels tevoorschijn komen, is het noodzakelijk een arts te raadplegen of de persoon naar een ziekenhuis of kliniek te laten overbrengen. Bij inname door de mond : Na inslikken van kleine hoeveelheden (niet meer dan een slok), de mond met water uitspoelen en een arts raadplegen. Rustig houden. Niet laten braken. Een arts raadplegen en hem het etiket laten zien. Bij toevallige inname een arts raadplegen om te beslissen over een bewaking en een latere behandeling in een ziekenhuis, indien nodig. Het etiket tonen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling"
+    }
+   ],
+   "6": [
+    {
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Raadpleeg de beschermingsmaatregelen die in de rubrieken 7 en 8 vermeld staan Voor niet-EHBO-ers Door de organische oplosmiddelen die dit mengsel bevat, moeten brandbronnen verwijderd worden en de ruimte gelucht worden. Vermijd inademing van de dampen. Vermijd elk contact met de huid en de ogen. Indien de verspreide hoeveelheden groot zijn, het personeel evacueren en slechts de interventiegroep laten tussenkomen indien zij voorzien zijn van beschermingsmateriaal. Voor de EHBO-ers: De interveniënten moeten zijn uitgerust met geschikte persoonlijke beschermingsmiddelen (raadpleeg onderdeel 8)."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Het gemorste product met brandvrije absorberende materialen; bijvoorbeeld: zand, aarde, vermiculiet en diatomeeënaarde, indammen en opnemen in vaten met het oog op de eliminatie van afvalstoffen. Vermijd het binnendruipen in de rioleringen en waterlopen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij voorkeur schoonmaken met een reinigingsmiddel; het gebruik van solventen moet vermeden worden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    }
+   ],
+   "5": [
+    {
+     "soort": "alinea",
+     "tekst": "Ontvlambaar. Chemische poeders, koolstofdioxide en andere brandblusgassen zijn geschikt voor kleine brandjes."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "De verpakkingen laten afkoelen in de nabijheid van de vlammen, teneinde de ontploffingsrisico's van de verstuivers onder druk te vermijden. Geschikte brandblusapparatuur. In geval van brand, gebruiken : - verstoven water of mist - water met drijvende film vormend additief - halon - schuim - polyvalent ABC poeder - BC poeder - kooldioxide (CO2) Verhinderen dat de wegstromende vloeistoffen van de brandbestrijding in de rioleringen of de waterlopen terechtkomen. Ongeschikte brandblusapparatuur. In geval van brand, niet gebruiken : - waterspuit"
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Een brand brengt dikwijls een zwarte dikke rook voort. Blootstelling aan de afbraakproducten kan risico's voor de gezondheid inhouden. De rook niet inademen. In geval van brand, kan zich vormen : - koolmonoxide (CO) - kooldioxide (CO2)"
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Indien de gassen die bij de thermische ontbinding van het product vrijkomen, toxisch zijn, moet de interventie groep uitgerust zijn met isolerende autonome apparaten ter bescherming van de ademhaling."
+    }
+   ],
+   "13": [
+    {
+     "soort": "alinea",
+     "tekst": "Een passend beheer van het afval van het mengsel en/of de verpakking moet worden bepaald volgens de bepalingen van de richtllijn 2008/98/EC."
+    },
+    {
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet in de rioleringen of de waterlopen lozen. Afval : Het afvalbeheer vindt plaats zonder de menselijke gezondheid of het milieu te schaden, en met name zonder gevaar op te leveren voor het water, de lucht, de bodem, de fauna of flora. Volgens de geldende wetgeving laten recycleren of vernietigen door een erkende inzamelaar of onderneming. De grond of het water niet met het afval vervuilen, deze niet vernietigen in het milieu. Vuile verpakkingen : De verpakking volledig legen. Het(De) etiket(ten) bewaren. Overhandigen aan een erkende vernietiger."
+    }
+   ]
+  }
  },
  {
   "productId": 52890,
@@ -58911,18 +59040,151 @@ const VIB_PRODUCTEN = [
   ],
   "foto": "https://storage.googleapis.com/stocky-project-production-managed/images/product/47754/127297-POOL_REPARSKIMMER-125ML.jpg",
   "unNummers": [
-   "UN0000"
+   "UN1133"
   ],
-  "vibDatum": "",
+  "vibDatum": "19-09-2025",
   "verlopen": false,
-  "taal": "",
-  "vibPdf": "",
-  "alleVibs": [],
-  "status": "geen-vib",
-  "problemen": [
-   "Geen VIB (PDF) in Stocky"
+  "taal": "nl",
+  "vibPdf": "vib/47754.pdf",
+  "alleVibs": [
+   {
+    "pdf": "vib/47754.pdf",
+    "datum": "19-09-2025",
+    "verlopen": false,
+    "taal": "nl"
+   }
   ],
-  "rubrieken": {}
+  "status": "ok",
+  "problemen": [],
+  "rubrieken": {
+   "8": [
+    {
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Persoonlijke beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen Schone en correct onderhouden persoonlijke beschermingsmiddelen gebruiken. Sla de persoonlijke beschermingsmiddelen op in een schone ruimte, buiten de werkruimte. Tijdens het gebruik niet eten, drinken of roken. Besmette kleding uittrekken en wassen voor hergebruik. Zorgen voor een goede ventilatie, vooral in gesloten ruimtes. - Bescherming van de ogen / het gezicht Vermijd contact met de ogen. Gebruik oogbeschermingen, ontworpen tegen het spatten van vloeistoffen. Voor het hanteren moet een veiligheidsbril met zijbescherming worden opgezet die voldoet aan de norm ISO 16321. Bij groter gevaar moet een gezichtsmasker worden gebruikt om het gezicht te beschermen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Het dragen van een corrigerende bril vormt geen bescherming. Het wordt dragers van contactlenzen aangeraden om een bril te gebruiken bij werkzaamheden waar zij kunnen worden blootgesteld aan irriterende dampen. Voorzie oogdouches in werkplaatsen waar het mengsel voortdurend verwerkt wordt. - Handbescherming. Gebruik geschikte beschermende handschoenen die bestand zijn tegen chemische stoffen en voldoen aan de norm EN ISO 374-1. De handschoenen moeten worden gekozen volgens de toepassing en de gebruiksduur op de werkplek. De beschermende handschoenen moeten gekozen worden volgens de werkplek: andere chemische producten die gebruikt kunnen worden, benodigde fysieke bescherming (snijden, prikken, thermische bescherming), vereiste behendigheid. Aanbevolen type handschoenen : - PVA (Polyvinylalcohol) - Butylrubber (Copolymeer isobutyleen-isopreen) - Nitrielrubber (Copolymeer butadien-acrylonitriel (NBR)) Aanbevolen kenmerken :"
+    },
+    {
+     "soort": "veld",
+     "kopje": "D",
+     "tekst": "0,075 mm"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "- Lichaamsbescherming Vermijd contact met de huid. Draag een gepaste werkkleding. Geschikt soort beschermende kleding : Bij sterk spatten moet vloeistofdichte beschermende kleding worden gedragen tegen chemische risico's (type 3), volgens de norm EN14605/A1 om elk contact met de huid te voorkomen. Bij gevaar voor spatten moet beschermende kleding worden gedragen tegen chemische risico's (type 6), volgens de norm EN13034/A1 om elk contact met de huid te voorkomen. Het personeel dient regelmatig gewassen werkkleding te dragen. Na contact met het product moeten alle besmette lichaamsdelen gewassen worden. - Ademhalingsbescherming Vermijd het inademen van de dampen. Indien de ventilatie onvoldoende is, moet een geschikt ademhalingsapparaat gedragen worden. Als de arbeiders te maken krijgen met concentraties die de blootstellingsgrenzen overschrijden moeten ze een geschikte en goedgekeurd ademhalingsbeschermingsmiddel dragen. Filter(s) tegen gas en dampen (gecombineerde filters) volgens de norm EN14387 : - A1 (Bruin)"
+    }
+   ],
+   "4": [
+    {
+     "soort": "alinea",
+     "tekst": "In het algemeen, ingeval van twijfel of indien de verschijnselen aanhouden, altijd een arts waarschuwen. NOOIT iets laten inslikken door een bewusteloos persoon."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij blootstelling door inademing : In geval van inademing in grote hoeveelheden, de patiënt in de open lucht brengen en warm en rustig houden. Als het slachtoffer buiten bewustzijn is, hem in de stabiele zijligging leggen. In elk geval een arts waarschuwen om te beslissen over een bewaking en een symptomatische behandeling in een ziekenhuis. Indien de ademhaling onregelmatig of gestopt is, kunstmatige ademhaling toepassen en een arts ontbieden. Bij spatten of contact met de ogen : Overvloedig reinigen met proper en zacht water gedurende 15 minuten terwijl de oogleden geopend zijn. Indien er pijn, roodheid plekken of gezichtshinder optreden, een oogarts raadplegen. Bij spatten of contact met de huid : De huid onmiddellijk wassen met water en zeep. De gecontamineerde kleren met inbegrip van de schoenen verwijderen, ze alleen terug aantrekken na reiniging. Medisch advies inwinnen indien de irritatie aanhoudt. Let op resten product die zich tussen de huid en kleding, horloge, schoenen kunnen bevinden... Bij contaminatie van grote huidoppervlakken en/of wanneer huidletsels tevoorschijn komen, is het noodzakelijk een arts te raadplegen of de persoon naar een ziekenhuis of kliniek te laten overbrengen. Bij inname door de mond : Na inslikken van kleine hoeveelheden (niet meer dan een slok), de mond met water uitspoelen en een arts raadplegen. Rustig houden. Niet laten braken. Een arts raadplegen en hem het etiket laten zien. Bij toevallige inname een arts raadplegen om te beslissen over een bewaking en een latere behandeling in een ziekenhuis, indien nodig. Het etiket tonen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling"
+    }
+   ],
+   "6": [
+    {
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Raadpleeg de beschermingsmaatregelen die in de rubrieken 7 en 8 vermeld staan Voor niet-EHBO-ers Door de organische oplosmiddelen die dit mengsel bevat, moeten brandbronnen verwijderd worden en de ruimte gelucht worden. Vermijd inademing van de dampen. Vermijd elk contact met de huid en de ogen. Indien de verspreide hoeveelheden groot zijn, het personeel evacueren en slechts de interventiegroep laten tussenkomen indien zij voorzien zijn van beschermingsmateriaal. Voor de EHBO-ers: De interveniënten moeten zijn uitgerust met geschikte persoonlijke beschermingsmiddelen (raadpleeg onderdeel 8)."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Het gemorste product met brandvrije absorberende materialen; bijvoorbeeld: zand, aarde, vermiculiet en diatomeeënaarde, indammen en opnemen in vaten met het oog op de eliminatie van afvalstoffen. Vermijd het binnendruipen in de rioleringen en waterlopen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij voorkeur schoonmaken met een reinigingsmiddel; het gebruik van solventen moet vermeden worden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    }
+   ],
+   "5": [
+    {
+     "soort": "alinea",
+     "tekst": "Ontvlambaar. Chemische poeders, koolstofdioxide en andere brandblusgassen zijn geschikt voor kleine brandjes."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "De verpakkingen laten afkoelen in de nabijheid van de vlammen, teneinde de ontploffingsrisico's van de verstuivers onder druk te vermijden. Geschikte brandblusapparatuur. In geval van brand, gebruiken : - verstoven water of mist - water met drijvende film vormend additief - halon - schuim - polyvalent ABC poeder - BC poeder - kooldioxide (CO2) Verhinderen dat de wegstromende vloeistoffen van de brandbestrijding in de rioleringen of de waterlopen terechtkomen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Ongeschikte brandblusapparatuur. In geval van brand, niet gebruiken : - waterspuit"
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Een brand brengt dikwijls een zwarte dikke rook voort. Blootstelling aan de afbraakproducten kan risico's voor de gezondheid inhouden. De rook niet inademen. In geval van brand, kan zich vormen : - koolmonoxide (CO) - kooldioxide (CO2)"
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Indien de gassen die bij de thermische ontbinding van het product vrijkomen, toxisch zijn, moet de interventie groep uitgerust zijn met isolerende autonome apparaten ter bescherming van de ademhaling."
+    }
+   ],
+   "13": [
+    {
+     "soort": "alinea",
+     "tekst": "Een passend beheer van het afval van het mengsel en/of de verpakking moet worden bepaald volgens de bepalingen van de richtllijn 2008/98/EC."
+    },
+    {
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet in de rioleringen of de waterlopen lozen. Afval : Het afvalbeheer vindt plaats zonder de menselijke gezondheid of het milieu te schaden, en met name zonder gevaar op te leveren voor het water, de lucht, de bodem, de fauna of flora. Volgens de geldende wetgeving laten recycleren of vernietigen door een erkende inzamelaar of onderneming. De grond of het water niet met het afval vervuilen, deze niet vernietigen in het milieu."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Vuile verpakkingen : De verpakking volledig legen. Het(De) etiket(ten) bewaren. Overhandigen aan een erkende vernietiger."
+    }
+   ]
+  }
  },
  {
   "productId": 45097,
