@@ -473,24 +473,14 @@ function vibInhoud(blokken) {
     .join("");
 }
 
-// ---- Kort en krachtig: per rubriek direct alleen het onderdeel waarmee je actie neemt. ----
-// De tekst blijft letterlijk uit het VIB. De rest staat met één tik open onder "Meer uit het VIB".
+// ---- Hulpfuncties om de VIB-tekst in onderdelen en items op te delen. ----
 
-// Eigen werkinstructie (komt NIET uit het VIB). Staat bovenaan zodra er opgeruimd moet worden.
-const WERKINSTRUCTIE_ADR =
-  '<div class="instructie"><p class="instructie-kop">🛒 Werkinstructie (niet uit het VIB)</p>' +
-  "<p><b>Maak altijd gebruik van de ADR-kar.</b> Pak deze alvorens je begint met opruimen. " +
-  "En zet deze na gebruik weer terug.</p></div>";
-
-const KERN = { "8": "8.2", "4": "4.1", "6": "6.3", "5": "5.1", "13": "13.1" };
-const BESCHERMING = /(oog|ogen|gelaat|gezicht|eye|face|yeux|augen|hand|main|huid|skin|peau|haut|lichaam|body|corps|körper|adem|inhal|respir|atem|kleding|cloth|vêtement)/i;
 const ROUTES = {
   ogen: { tekst: "In de ogen", ic: "👁️", re: /(oog|ogen|eye|yeux|œil|oeil|auge)/i },
   huid: { tekst: "Op de huid", ic: "✋", re: /(huid|skin|peau|haut)/i },
   adem: { tekst: "Ingeademd", ic: "😮‍💨", re: /(inadem|ingeademd|inhal|adem|breath|einatm)/i },
   mond: { tekst: "Ingeslikt", ic: "👄", re: /(inslik|ingeslikt|mond|swallow|ingest|oral|avaler|verschluck)/i },
 };
-const ALGEMEEN = /^(algeme|general|ehbo algemeen|eerste.?hulp)/i;
 
 function isTussenkop(t) {
   return t.length < 70 && !/[.)]$/.test(t) && /^[A-ZÀ-Ý]/.test(t) && t.toLowerCase() !== "geen";
@@ -526,48 +516,6 @@ function label(i) {
   return i.kopje || String((i.blokken[0] && i.blokken[0].tekst) || "").slice(0, 40);
 }
 
-function lengte(blokken) {
-  return JSON.stringify(blokken).length;
-}
-
-// Geeft [direct tonen, meer] voor een rubriek.
-function splits(nr, route) {
-  const delen = onderdelen((product.rubrieken || {})[nr]);
-  const kern = delen.find((o) => o.nr === KERN[nr]);
-  if (!kern) return [delen.flatMap((o) => o.blokken), []]; // geen herkenbare indeling: alles tonen
-  const rest = delen.filter((o) => o !== kern).flatMap((o) => o.blokken);
-  let toon = kern.blokken;
-  let weg = [];
-  const lijst = items(kern.blokken);
-  let keuze = null;
-  if (nr === "8") keuze = lijst.filter((i) => BESCHERMING.test(label(i)));
-  if (nr === "4" && route && ROUTES[route]) {
-    keuze = lijst.filter((i) => ROUTES[route].re.test(label(i)) || (ALGEMEEN.test(label(i)) && lengte(i.blokken) < 400));
-    if (!keuze.some((i) => ROUTES[route].re.test(label(i)))) keuze = null; // route niet te vinden: heel 4.1 tonen
-  }
-  if (keuze && keuze.length) {
-    const gekozen = new Set(keuze.flatMap((i) => i.blokken));
-    toon = kern.blokken.filter((b) => b.soort === "kop" || gekozen.has(b));
-    weg = kern.blokken.filter((b) => b.soort !== "kop" && !gekozen.has(b));
-  }
-  return [toon, weg.concat(rest)];
-}
-
-function rubriekBlok(nr, stap, route) {
-  const r = product.rubrieken || {};
-  const naam = nr === "8" ? "8.2" : nr;
-  const titel = (stap ? stap + ". " : "") + RUBRIEK_TITEL[nr] + " (rubriek " + naam + ")";
-  let inhoud;
-  if (!r[nr] || !r[nr].length) {
-    inhoud = nr in r ? "<p>" + esc(NIETS_IN_VIB) + "</p>" : "<p><i>" + esc(NIET_GELEZEN + naam + ".") + "</i></p>";
-  } else {
-    const [direct, meer] = splits(nr, route);
-    inhoud = vibInhoud(direct) +
-      (meer.length ? '<details class="meer"><summary>Meer uit rubriek ' + esc(naam) + "</summary>" + vibInhoud(meer) + "</details>" : "");
-  }
-  return '<section class="blok' + (nr === "4" ? " eerst" : "") + '"><h2>' + esc(titel) + "</h2>" + inhoud + "</section>";
-}
-
 function routeScherm() {
   app.innerHTML =
     kop() +
@@ -589,6 +537,250 @@ function uitleesmelding() {
   return "";
 }
 
+// ---- Stapsgewijs: alleen de letterlijke doe-zinnen uit het VIB. ----
+// Uitleg, normen, doorbraaktijden, verwijzingen en regelgeving vallen weg.
+// Vindt de tool in een onderdeel geen enkele doe-zin, dan toont hij dat onderdeel letterlijk,
+// zodat er nooit iets ongemerkt verdwijnt. De volledige tekst staat altijd onder "Volledige VIB-tekst".
+
+const DOE = new RegExp(
+  "\\b(" +
+    // Nederlands
+    "gebruik\\w*|draag|dragen|spoel\\w*|was|wassen|verwijder\\w*|trek|uittrekken|uitdoen|verzamel\\w*|opnemen|opzuigen|opvegen|" +
+    "absorbe\\w*|indammen|afdekken|ventile\\w*|zorg|zorgen|houd|houden|breng\\w*|vervoer\\w*|raadpleeg|raadplegen|inwinnen|" +
+    "bel|bellen|laat|laten|vermijd\\w*|blus\\w*|koel\\w*|plaats\\w*|verplaats\\w*|reinig\\w*|afvoeren|voer|ontdoen|dient|" +
+    "dienen|moet|moeten|verboden|nooit|toedienen|opwekken|hanteren|zitten|liggen|afsluiten|neutralise\\w*|verdunnen|" +
+    "lopen|aanraken|inademen|toegelaten|toegestaan|allowed|permitted|" +
+    // Engels
+    "use|wear|rinse|wash|remove|take|move|call|get|seek|keep|avoid|never|collect|absorb|sweep|contain|dispose|" +
+    "ventilate|flush|place|transfer|clean|prevent|evacuate|ensure|must|should|do not|don't|" +
+    // Duits / Frans
+    "tragen|spülen|entfernen|verwenden|aufnehmen|vermeiden|bringen|utiliser|porter|rincer|enlever|éviter|ne pas|absorber|recueillir|appeler" +
+    ")\\b",
+  "i"
+);
+const GEEN_DOE =
+  /(zie rubriek|zie punt|see section|siehe abschnitt|voir (la )?section|rubriek \d|rubrieken \d|section \d|doorbraaktijd|breakthrough|\bdikte|thickness|\bafhankelijk|hangt af|\bdepend|\boverleg|fabrikant|manufacturer|reglement|regulation|wetgeving|legislation|richtlijn|voorschrift|blootstellingslimiet|exposure limit|beschermingsniveau|geschiktheid|suitab|zie ook|information|informatie)/i;
+const NORM = /\s*\((?:EN|NEN|ISO|DIN|NF)\b[^)]*\)/g;
+
+function zinnen(tekst) {
+  return String(tekst || "")
+    .replace(NORM, "")
+    .split(/(?<=[.!;])\s+(?=[A-ZÀ-Ý(•\-])|,\s*(?=(?:en )?(?:dan|daarna|vervolgens|eerst|then|afterwards)\b)|\s+[•·]\s+/)
+    .map((z) => z.replace(/^[•·\-\s]+/, "").trim())
+    .filter(Boolean)
+    .map((z) => z.charAt(0).toUpperCase() + z.slice(1));
+}
+
+function doeZinnen(tekst) {
+  return zinnen(tekst).filter(
+    (z) => z.length > 6 && (DOE.test(z) || /^(niet|geen|nooit|do not|never|no)\b/i.test(z)) && !GEEN_DOE.test(z)
+  );
+}
+
+function blokTekst(b) {
+  if (b.soort === "tabel") return b.rijen.map((r) => r.join(" ")).join(". ");
+  return b.tekst || "";
+}
+
+// Onderdeel (bijv. "6.3") van een rubriek, als blokken zonder de kop.
+function onderdeel(nr, sub) {
+  const o = onderdelen((product.rubrieken || {})[nr]).find((x) => x.nr === sub);
+  return o ? o.blokken.filter((b) => b.soort !== "kop") : [];
+}
+
+function lijst(zinnenLijst) {
+  return "<ul class='doe'>" + zinnenLijst.map((z) => "<li>" + esc(z) + "</li>").join("") + "</ul>";
+}
+
+// Doe-zinnen uit een reeks blokken; zonder doe-zinnen de letterlijke tekst.
+function doeUit(blokken) {
+  const z = blokken.flatMap((b) => doeZinnen(blokTekst(b)));
+  if (z.length) return lijst(z);
+  const tekst = blokken.map(blokTekst).filter((t) => t && t.toLowerCase() !== "geen").join(" ");
+  return tekst ? "<p>" + esc(tekst) + "</p>" : "";
+}
+
+function stap(nummer, titel, inhoud, klasse) {
+  return '<section class="stap ' + (klasse || "") + '"><h2><span class="nr">' + nummer + "</span>" + esc(titel) + "</h2>" + inhoud + "</section>";
+}
+
+// --- Bescherm jezelf (rubriek 8.2) ---
+const PBM = [
+  { ic: "🧤", re: /(handschoen|glove|gant|handschuh|\bhand)/i },
+  { ic: "🥽", re: /(oog|ogen|bril|eye|gelaat|gezicht|face|yeux|augen)/i },
+  { ic: "😷", re: /(adem|inhal|respir|masker|breath|atem)/i, masker: true },
+  { ic: "🦺", re: /(huid|skin|lichaam|body|kleding|cloth|overige|peau|haut|körper|vêtement)/i },
+];
+
+// Masker: nodig of niet? Afgeleid uit de zinnen over ademhaling in 8.2 (die zinnen worden er letterlijk bij getoond).
+// Uitgangspunt: nooit onterecht "niet nodig". Bij twijfel de veilige kant.
+const ADEM = /(adem|inhal|respir|masker|mask|breath|atem|filter|ffp|abek)/i;
+const MASKER =
+  /(masker|mask|adembescherming|ademhalingsbescherming|ademhalingstoestel|ademhalingsbeschuttings|beschermingsmiddel|bescherming|respirator|respiratory|breathing apparatus|protection|filter|ffp|abek|atemschutz|appareil respiratoire)/i;
+const NEGATIEF =
+  /(niet nodig|niet vereist|niet noodzakelijk|niet verplicht|\bgeen\b[^.]{0,50}\b(vereist|nodig|noodzakelijk)|not (required|necessary|needed)|\bno\b[^.]{0,50}(necessary|required|needed)|n'est pas nécessaire|pas nécessaire|non nécessaire|nicht erforderlich|nicht notwendig)/i;
+const VOORWAARDE =
+  /\b(in geval van|bij|indien|wanneer|zolang|als|in case of|if|when|where|en cas de|bei|falls)\s+(?!voorkeur|nodig|necessary|needed|nécessaire)/i;
+const ALS_NODIG = /(indien nodig|zo nodig|if necessary|if needed|si nécessaire|falls erforderlich|eventueel)/i;
+
+function zonderLabel(z) {
+  return z.replace(/^[^:]{0,60}:\s*/, "");
+}
+
+function voorwaarde(zin) {
+  const m = zin.match(new RegExp(VOORWAARDE.source + "([^.;:(]+)", "i"));
+  if (!m) return "";
+  let t = (m[1] + " " + m[2]).replace(/,.*$/, "").replace(/\s(een|geschikt\w*|gebruik\w*|draag|dragen|moet|wear|use|must|type)\b.*$/i, "").trim();
+  if (t.split(/\s+/).length < 2) return "";
+  if (t.length > 70) t = t.slice(0, 67).replace(/\s+\S*$/, "") + "…";
+  return t.charAt(0).toLowerCase() + t.slice(1);
+}
+
+function maskerOordeel(zinnenLijst) {
+  if (!zinnenLijst.length) return "het VIB zegt hier niets over";
+  const neg = zinnenLijst.filter((z) => NEGATIEF.test(z));
+  // Een "draag/gebruik een masker"-zin: een doe-werkwoord én een masker in de zin zelf (niet alleen in het kopje).
+  const pos = zinnenLijst.filter((z) => !NEGATIEF.test(z) && MASKER.test(zonderLabel(z)) && DOE.test(zonderLabel(z)));
+  const posMet = pos.filter((z) => voorwaarde(z) || ALS_NODIG.test(z));
+  const posZonder = pos.filter((z) => !posMet.includes(z));
+  const vw = (z) => voorwaarde(z) || "indien nodig";
+  if (posZonder.length) return "nodig";
+  if (posMet.length) return (neg.length ? "niet nodig, behalve " : "nodig ") + vw(posMet[0]);
+  if (neg.length) return "niet nodig" + (voorwaarde(neg[0]) ? " " + voorwaarde(neg[0]) : "");
+  return "bij twijfel dragen";
+}
+
+function beschermStap(nummer) {
+  const blokken = onderdeel("8", "8.2");
+  const regels = [];
+  // Masker: alle zinnen in 8.2 die over ademhaling gaan, ook als ze niet onder een eigen kopje staan.
+  const ademZinnen = blokken
+    .flatMap((b) => (b.soort === "veld" ? zinnen(b.kopje + ": " + b.tekst) : zinnen(blokTekst(b))))
+    .filter((z) => ADEM.test(z) && !GEEN_DOE.test(z) && !/(milieu|environment|hand|glove|handschoen|oog|eye)/i.test(z.slice(0, 25)));
+  if (blokken.length) {
+    const oordeel = maskerOordeel(ademZinnen);
+    // Alleen de zinnen waarop het oordeel rust: "niet nodig"-zinnen en "draag/gebruik een masker"-zinnen.
+    const bron = ademZinnen
+      .filter((z) => NEGATIEF.test(z) || (MASKER.test(zonderLabel(z)) && DOE.test(zonderLabel(z))))
+      .slice(0, 2)
+      .join(" ");
+    regels.push("<li class='pbm'><span class='ic'>😷</span><div><b>Masker: " + esc(oordeel) + "</b>" +
+      (bron ? "<p class='vibzin'>VIB: “" + esc(bron) + "”</p>" : "") + "</div></li>");
+  }
+  for (const it of items(blokken)) {
+    const tekst = it.blokken.map(blokTekst).join(" ");
+    const soort = PBM.find((p) => p.re.test(it.kopje || "")) || PBM.find((p) => p.re.test(label(it)));
+    if (!soort || soort.masker) continue;
+    const z = doeZinnen(tekst).filter((x) => !ADEM.test(x)).slice(0, 2); // per beschermingsmiddel de 2 belangrijkste
+    if (!z.length) continue;
+    const ic = /(handschoen|glove|gant|handschuh)/i.test(z.join(" ")) ? "🧤" : soort.ic;
+    regels.push("<li class='pbm'><span class='ic'>" + ic + "</span><div><b>" + esc(it.kopje || "") + "</b>" + lijst(z) + "</div></li>");
+  }
+  // Geen kopjes per beschermingsmiddel: de doe-zinnen uit 8.2 (zonder de ademhalingszinnen).
+  if (regels.length <= 1) {
+    const z = blokken.flatMap((b) => doeZinnen(blokTekst(b))).filter((x) => !ADEM.test(x)).slice(0, 5);
+    if (z.length) regels.push("<li class='pbm'><span class='ic'>🧤</span><div>" + lijst(z) + "</div></li>");
+  }
+  const inhoud = regels.length ? "<ul class='pbmlijst'>" + regels.join("") + "</ul>" : "<p><i>" + esc(NIET_GELEZEN + "8.2.") + "</i></p>";
+  return stap(nummer, "Bescherm jezelf", inhoud);
+}
+
+// --- Eerste hulp (rubriek 4.1) ---
+function eersteHulp(route) {
+  const blokken = onderdeel("4", "4.1");
+  if (!blokken.length) return "<p><i>" + esc(NIET_GELEZEN + "4.") + "</i></p>";
+  const lijstItems = items(blokken);
+  const routeVan = (it) => Object.keys(ROUTES).find((k) => ROUTES[k].re.test(label(it)));
+  const algemeen = lijstItems.filter((it) => !routeVan(it)).flatMap((it) => it.blokken.flatMap((b) => doeZinnen(blokTekst(b))));
+  const perRoute = (k) => lijstItems.filter((it) => routeVan(it) === k).flatMap((it) => it.blokken.flatMap((b) => doeZinnen(blokTekst(b))));
+  if (route && ROUTES[route]) {
+    const z = perRoute(route);
+    if (z.length) return lijst(z.concat(algemeen));
+  }
+  // Alle routes onder elkaar (of route niet te vinden).
+  const delen = Object.keys(ROUTES)
+    .map((k) => [k, perRoute(k)])
+    .filter(([, z]) => z.length)
+    .map(([k, z]) => "<p class='route'>" + ROUTES[k].ic + " " + esc(ROUTES[k].tekst) + "</p>" + lijst(z));
+  if (!delen.length) return doeUit(blokken);
+  return delen.join("") + (algemeen.length ? "<p class='route'>Altijd</p>" + lijst(algemeen) : "");
+}
+
+// --- Brand (rubriek 5.1) ---
+function brandStap(nummer) {
+  const blokken = onderdeel("5", "5.1").concat(onderdeel("5", "5.3").filter((b) => b.soort === "veld" && /(ongeschikt|te mijden|niet gebruiken|unsuitable|not be used)/i.test(b.kopje)));
+  if (!blokken.length) return stap(nummer, "Blussen", "<p><i>" + esc(NIET_GELEZEN + "5.") + "</i></p>", "brand");
+  const wel = [], niet = [], doe = [];
+  for (const b of blokken) {
+    const t = blokTekst(b).trim();
+    if (!t || /^geen\.?$/i.test(t) || /^none\.?$/i.test(t)) continue;
+    if (b.soort === "veld" && /(ongeschikt|te mijden|niet gebruiken|unsuitable|not be used)/i.test(b.kopje)) niet.push(t);
+    else if (b.soort === "veld" || !DOE.test(t)) wel.push(t);
+    else doe.push(...doeZinnen(t));
+  }
+  const inhoud =
+    (wel.length ? "<p class='blus'>🧯 <b>Blussen met:</b> " + esc(wel.join(" ")) + "</p>" : "") +
+    (niet.length ? "<p class='blus niet'>🚫 <b>Niet blussen met:</b> " + esc(niet.join(" ")) + "</p>" : "") +
+    (doe.length ? lijst(doe) : "");
+  return stap(nummer, "Blussen", inhoud || doeUit(blokken), "brand");
+}
+
+// --- Opruimen (rubriek 6) en afvoeren (rubriek 13) ---
+function opruimStap(nummer) {
+  const hoe = onderdeel("6", "6.3"), voor = onderdeel("6", "6.1"), milieu = onderdeel("6", "6.2");
+  if (!hoe.length && !voor.length) {
+    const alles = ((product.rubrieken || {})["6"] || []).filter((b) => b.soort !== "kop");
+    return stap(nummer, "Ruim op", alles.length ? doeUit(alles) : "<p><i>" + esc(NIET_GELEZEN + "6.") + "</i></p>");
+  }
+  // Eerst waarmee en hoe (6.3), dan waar je op let (6.1 en 6.2).
+  const z = (bl) => bl.flatMap((b) => doeZinnen(blokTekst(b)));
+  const hoeZ = z(hoe), letop = z(voor).concat(z(milieu));
+  const inhoud =
+    (hoeZ.length ? "<p class='route'>Waarmee en hoe</p>" + lijst(hoeZ) : hoe.length ? doeUit(hoe) : "") +
+    (letop.length ? "<p class='route'>Let op</p>" + lijst(letop) : "");
+  return stap(nummer, "Ruim op", inhoud || doeUit(hoe.concat(voor)));
+}
+
+function afvoerStap(nummer) {
+  const blokken = onderdeel("13", "13.1");
+  const alles = blokken.length ? blokken : ((product.rubrieken || {})["13"] || []).filter((b) => b.soort !== "kop");
+  return stap(nummer, "Voer af", alles.length ? doeUit(alles) : "<p><i>" + esc(NIET_GELEZEN + "13.") + "</i></p>");
+}
+
+function adrStap(nummer, terug) {
+  return stap(
+    nummer,
+    terug ? "Zet de ADR-kar terug" : "Pak de ADR-kar",
+    terug
+      ? "<p>Zet de ADR-kar na gebruik weer terug.</p><p class='bron'>Werkinstructie, niet uit het VIB</p>"
+      : "<p>Maak altijd gebruik van de ADR-kar. Pak deze alvorens je begint met opruimen.</p><p class='bron'>Werkinstructie, niet uit het VIB</p>",
+    "instructie"
+  );
+}
+
+function volledigeTekst(nummers) {
+  const r = product.rubrieken || {};
+  const delen = nummers
+    .filter((nr) => r[nr] && r[nr].length)
+    .map((nr) => "<h3 class='vibkop'>Rubriek " + (nr === "8" ? "8.2" : nr) + " – " + esc(RUBRIEK_TITEL[nr]) + "</h3>" + vibInhoud(r[nr]));
+  return delen.length ? '<details class="meer volledig"><summary>Volledige VIB-tekst</summary>' + delen.join("") + "</details>" : "";
+}
+
+// Bouwt de stappen voor een situatie, altijd in de vaste volgorde 8.2, 4, 6, 5, 13.
+function stappen(s, route) {
+  const uit = [];
+  let n = 0;
+  const opruimen = s === "gemorst" || s === "alles";
+  if (opruimen) uit.push(adrStap(++n));
+  if (s === "gemorst" || s === "alles") uit.push(beschermStap(++n));
+  if (s === "gewond" || s === "alles") uit.push(stap(++n, "Eerste hulp", eersteHulp(route), "eerst"));
+  if (opruimen) uit.push(opruimStap(++n));
+  if (s === "brand" || s === "alles") uit.push(brandStap(++n));
+  if (opruimen) uit.push(afvoerStap(++n));
+  if (opruimen) uit.push(adrStap(++n, true));
+  return uit;
+}
+
 function kies(s, route) {
   const keuzes = {
     gewond: ["Iemand is gewond of onwel", ["4"]],
@@ -596,23 +788,17 @@ function kies(s, route) {
     brand: ["Brand", ["5"]],
     alles: ["Alles in volgorde", ["8", "4", "6", "5", "13"]],
   };
-  const [titel, gekozen] = keuzes[s] || keuzes.alles;
+  if (!keuzes[s]) s = "alles";
+  const [titel, nummers] = keuzes[s];
   if (!heeftVib(product)) return geenVibScherm();
   if (s === "gewond" && route === undefined) return routeScherm();
-  const nummers = VOLGORDE.filter((nr) => gekozen.includes(nr)); // altijd in de vaste volgorde
   const sub = route && ROUTES[route] ? titel + ": " + ROUTES[route].tekst.toLowerCase() : titel;
-  const opruimen = nummers.includes("6") || nummers.includes("13");
-  toon(
-    sub,
-    [opruimen ? WERKINSTRUCTIE_ADR : "", uitleesmelding()].concat(nummers.map((nr, i) => rubriekBlok(nr, nummers.length > 1 ? i + 1 : 0, route))),
-    null,
-    opruimen
-  );
+  toon(sub, [uitleesmelding()].concat(stappen(s, route), [volledigeTekst(nummers)]));
 }
 
-function toon(titel, blokken, knoppen, metWerkinstructie) {
+function toon(titel, blokken, knoppen) {
   const voet = heeftVib(product)
-    ? "De tekst hierboven komt letterlijk uit het VIB" + (metWerkinstructie ? ", behalve de werkinstructie over de ADR-kar." : ".")
+    ? "De zinnen komen letterlijk uit het VIB. Oranje = eigen werkinstructie. De regel 'Masker' is afgeleid uit het VIB."
     : "";
   app.innerHTML =
     kop() +
