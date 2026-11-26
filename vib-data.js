@@ -1541,121 +1541,121 @@ const VIB_PRODUCTEN = [
    "8": [
     {
      "soort": "kop",
-     "tekst": "8.2 Contrôles de l’exposition"
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
      "soort": "alinea",
-     "tekst": "Protection des yeux: Lunettes de sécurité intégral selon la norme EN 166. Protection de la peau: Porter des vêtements qui garantissent une protection totale pour la peau, par ex. en coton, caoutchouc, PVC ou viton. Protection des mains: Gants de protection selon la norme EN 374-1:2003. Matériau approprié : PVC (polychlorure de vinyle). Protection respiratoire: N'est pas nécessaire en cas d'utilisation normale. Risques thermiques : Aucun Contrôles de l'exposition environnementale : Aucun Contrôles techniques appropriés Aucun"
+     "tekst": "Bescherming van de ogen: Volledige veiligheidsbril volgens reglamentation EN 166. Bescherming van de huid: Gebruik kleding die een totale bescherming van de huid garanderen, bijv. van katoen, rubber, PVC of viton. Bescherming van de handen: Beschermende handschoenen volgens de norm EN 374-1:2003. Geschikt materiaal: PVC (polyvinylchloride) Bescherming van de luchtwegen: Niet nodig bij normaal gebruik. Thermische risico's None Controles van de blootstelling van het milieu None Passende technische maatregelen: Geen"
     }
    ],
    "4": [
     {
      "soort": "kop",
-     "tekst": "4.1 Description des mesures de premiers secours"
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "En cas de contact avec la peau : Enlever immédiatement les vêtements contaminés et les éliminer de manière sûre. Laver immédiatement avec beaucoup d'eau et éventuellement du savon les parties du corps ayant été en contact avec le produit, même en cas de doute. CONSULTER IMMEDIATEMENT UN MEDECIN. Laver entièrement le corps (douche ou bain). En cas de contact avec les yeux : En cas de contact avec les yeux, les rincer à l’eau pendant un intervalle de temps adéquat et en tenant les paupières ouvertes, puis consulter immédiatement un ophtalmologue. Protéger l’œil indemne. En cas d’ingestion : Ne faire vomir en aucun cas. CONSULTER IMMEDIATEMENT UN MEDECIN. En cas d’inhalation : Transporter la victime à l’extérieur et la maintenir au chaud et au repos."
+     "tekst": "In geval van contact met de huid: Verontreiningde kleding onmiddellijk uittrekken. De lichaamsdelen die met de giftige stof in aanraking zijn gekomen, of waarvan u dat vermoedt, onmiddellijk met veel stromend water afspoelen, zo mogelijk met zeep. ONMIDDELLIJK EEN ARTS RAADPLEGEN. Het lichaam volledig wassen (douche of bad). In geval van contact met de ogen: In geval van contact met de ogen voldoende tijd spoelen met water, houd hierbij de oogleden van elkaar, en raadpleeg vervolgens onmiddellijk een oogarts. Bescherm het ongedeerde oog. In geval van inslikken: Absoluut niet proberen te braken. ONMIDDELLIJK EEN ARTS RAADPLEGEN. In geval van inademen: Breng de gewonde naar buiten in de open lucht en houd hem/haar warm en in rust."
     },
     {
      "soort": "kop",
-     "tekst": "4.2 Principaux symptômes et effets, aigus et différés"
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
     },
     {
      "soort": "alinea",
-     "tekst": "Irritation de la peau et des yeux."
+     "tekst": "Huid- en oogirritatie."
     },
     {
      "soort": "kop",
-     "tekst": "4.3 Indication des éventuels soins médicaux immédiats et traitements particuliers nécessaires"
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale"
     },
     {
      "soort": "alinea",
-     "tekst": "En cas d’incident ou de malaise, consulter immédiatement un médecin (lui montrer, si possible, les instructions pour l’utilisation ou la fiche de sécurité)."
+     "tekst": "behandeling In geval van ongeluk of onwel worden, onmiddellijk een arts raadplegen (zo mogelijk de gebruiksaanwijzing of de veiligheidsgegevens tonen)."
     },
     {
      "soort": "veld",
-     "kopje": "Traitement",
-     "tekst": "Traitement symptomatique et de soutien."
+     "kopje": "Behandeling",
+     "tekst": "Symptomatische en ondersteunende behandeling."
     }
    ],
    "6": [
     {
      "soort": "kop",
-     "tekst": "6.1 Précautions individuelles, équipement de protection et procédures d’urgence"
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
     },
     {
      "soort": "alinea",
-     "tekst": "Porter les dispositifs de protection individuelle. Emmener les personnes en lieu sûr. Consulter les mesures de protection exposées aux points 7 et 8."
+     "tekst": "De individuele beschermingsmiddelen dragen. Verplaats de personen naar een veilige plek. Raadpleeg de beschermingsmaatregelen zoals uiteengezet bij punt 7 en 8."
     },
     {
      "soort": "kop",
-     "tekst": "6.2 Précautions pour la protection de l’environnement"
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Empêcher la pénétration dans le sol/sous-sol. Empêcher l’écoulement dans les eaux superficielles ou dans le réseau des eaux usées. Retenir l’eau de lavage contaminée et l’éliminer."
+     "tekst": "Verhinder het doordringen in de grond/ondergrond. Verhinder het afvloeien in het oppervlaktewater of in het riool. Bewaar het besmette spoelwater en verwijder dit."
     },
     {
      "soort": "alinea",
-     "tekst": "En cas de fuite de gaz ou de pénétration dans les cours d’eau, le sol ou le système d’évacuation d’eau, informer les autorités responsables."
+     "tekst": "In geval van gaslek of infiltratie in waterlopen, grond of riool, de verantwoordelijke instanties op de hoogte stellen."
     },
     {
      "soort": "veld",
-     "kopje": "Matériel adapté à la collecte",
-     "tekst": "matériel absorbant, organique, sable."
+     "kopje": "Geschikt materiaal voor het verzamelen",
+     "tekst": "absorberend materiaal, organisch, zand"
     },
     {
      "soort": "kop",
-     "tekst": "6.3 Méthodes et matériel de confinement et de nettoyage"
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
     },
     {
      "soort": "alinea",
-     "tekst": "Laver à l'eau abondante."
+     "tekst": "Spoelen met overvloedig water"
     },
     {
      "soort": "kop",
-     "tekst": "6.4 Référence à d’autres rubriques"
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
     },
     {
      "soort": "alinea",
-     "tekst": "Voir également les paragraphes 8 et 13."
+     "tekst": "Zie ook paragraaf 8 en 13"
     }
    ],
    "5": [
     {
      "soort": "kop",
-     "tekst": "5.1 Moyens d’extinction"
+     "tekst": "5.1 Blusmiddelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Moyens d'extinction appropriés : Dioxyde de carbone, poudre sèche, eau pulvérisée. Moyens d’extinction qui ne doivent pas être utilisés pour des raisons de sécurité : Jet d’eau."
+     "tekst": "Geschikte blusmiddelen: Kooldioxide, droog poeder, verpulverd water. Blusmiddelen die om veiligheidsredenen niet moeten worden gebruikt: Waterstraal."
     },
     {
      "soort": "kop",
-     "tekst": "5.2 Dangers particuliers résultant de la substance ou du mélange"
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
     },
     {
      "soort": "alinea",
-     "tekst": "Ne pas inhaler les gaz produits par l’explosion et la combustion. La combustion produit de la fumée lourde."
+     "tekst": "De gassen die worden geproduceerd door de explosie of de verbranding niet inademen. De verbranding produceert zware rook."
     },
     {
      "soort": "kop",
-     "tekst": "5.3 Conseils aux pompiers"
+     "tekst": "5.3 Advies voor brandweerlieden"
     },
     {
      "soort": "alinea",
-     "tekst": "Utiliser des appareils respiratoires adaptés. Recueillir séparément l’eau contaminée utilisée pour éteindre l’incendie. Ne pas la déverser dans le réseau des eaux usées. Si cela est faisable d’un point de vue de la sécurité, déplacer de la zone de danger immédiat les conteneurs non endommagés."
+     "tekst": "Geschikte ademhalingapparatuur gebruiken. Het voor de brand gebruikte besmette bluswater afzonderlijk verzamelen. Niet in het riool lozen. De onbeschadigde containers, indien dit op een veilige manier gedaan kan worden, verplaatsen uit de gevarenzone."
     }
    ],
    "13": [
     {
      "soort": "kop",
-     "tekst": "13.1 Méthodes de traitement des déchets"
+     "tekst": "13.1 Afvalverwerkingsmethoden"
     },
     {
      "soort": "alinea",
-     "tekst": "Récupérer si possible. Envoyer à des usines de traitement autorisées ou à l'incinération dans des conditions contrôlées. Opérer en respectant les dispositions locales et nationales en vigueur. Déchets ne doivent pas être éliminés par l'égout."
+     "tekst": "Indien mogelijk hergebruiken. Naar bevoegde vuilverwerkings- of vuilverbrandingsinrichtingen sturen in gecontroleerde toestand. Handelen in overeenstemming met de geldende lokale en nationale normen."
     }
    ]
   }
@@ -1671,14 +1671,14 @@ const VIB_PRODUCTEN = [
   "unNummers": [
    "UN3082"
   ],
-  "vibDatum": "18-09-2023",
+  "vibDatum": "02-02-2022",
   "verlopen": false,
   "taal": "nl",
   "vibPdf": "vib/47482.pdf",
   "alleVibs": [
    {
     "pdf": "vib/47482.pdf",
-    "datum": "18-09-2023",
+    "datum": "02-02-2022",
     "verlopen": false,
     "taal": "nl"
    }
@@ -1689,130 +1689,121 @@ const VIB_PRODUCTEN = [
    "8": [
     {
      "soort": "kop",
-     "tekst": "8.2 Contrôles de l’exposition"
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
      "soort": "alinea",
-     "tekst": "Protection des yeux: Lunettes de sécurité intégral selon la norme EN 166. Protection de la peau:"
+     "tekst": "Bescherming van de ogen: Volledige veiligheidsbril volgens reglamentation EN 166. Bescherming van de huid:"
     },
     {
      "soort": "veld",
-     "kopje": "Vêtements de protection pour les agents chimiques. Catégorie Protection des mains:",
+     "kopje": "Kleding die beschermt tegen chemische stoffen. Categorie",
      "tekst": "III (EN 340)."
     },
     {
      "soort": "alinea",
-     "tekst": "Gants de protection selon la norme EN 374-1:2003. Matériau approprié : PVC (polychlorure de vinyle). Protection respiratoire: N'est pas nécessaire en cas d'utilisation normale. Risques thermiques : Aucun Contrôles de l'exposition environnementale : Aucun Contrôles techniques appropriés Aucun"
+     "tekst": "Bescherming van de handen: Beschermende handschoenen volgens de norm EN 374-1:2003. Geschikt materiaal: PVC (polyvinylchloride) Bescherming van de luchtwegen: Niet nodig bij normaal gebruik. Thermische risico's None Controles van de blootstelling van het milieu None Passende technische maatregelen: Geen"
     }
    ],
    "4": [
     {
      "soort": "kop",
-     "tekst": "4.1 Description des mesures de premiers secours"
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "En cas de contact avec la peau : Enlever immédiatement les vêtements contaminés et les éliminer de manière sûre. Laver immédiatement avec beaucoup d'eau et éventuellement du savon les parties du corps ayant été en contact avec le produit, même en cas de doute. CONSULTER IMMEDIATEMENT UN MEDECIN. Laver entièrement le corps (douche ou bain). En cas de contact avec les yeux : En cas de contact avec les yeux, les rincer à l’eau pendant un intervalle de temps adéquat et en tenant les paupières ouvertes, puis consulter immédiatement un ophtalmologue. Protéger l’œil indemne. En cas d’ingestion : Ne faire vomir en aucun cas. CONSULTER IMMEDIATEMENT UN MEDECIN."
-    },
-    {
-     "soort": "alinea",
-     "tekst": "En cas d’inhalation : Transporter la victime à l’extérieur et la maintenir au chaud et au repos."
+     "tekst": "In geval van contact met de huid: Verontreiningde kleding onmiddellijk uittrekken. De lichaamsdelen die met de giftige stof in aanraking zijn gekomen, of waarvan u dat vermoedt, onmiddellijk met veel stromend water afspoelen, zo mogelijk met zeep. ONMIDDELLIJK EEN ARTS RAADPLEGEN. Het lichaam volledig wassen (douche of bad). In geval van contact met de ogen: In geval van contact met de ogen voldoende tijd spoelen met water, houd hierbij de oogleden van elkaar, en raadpleeg vervolgens onmiddellijk een oogarts. Bescherm het ongedeerde oog. In geval van inslikken: Absoluut niet proberen te braken. ONMIDDELLIJK EEN ARTS RAADPLEGEN. In geval van inademen: Breng de gewonde naar buiten in de open lucht en houd hem/haar warm en in rust."
     },
     {
      "soort": "kop",
-     "tekst": "4.2 Principaux symptômes et effets, aigus et différés"
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
     },
     {
      "soort": "alinea",
-     "tekst": "Irritation de la peau et des yeux."
+     "tekst": "Huid- en oogirritatie."
     },
     {
      "soort": "kop",
-     "tekst": "4.3 Indication des éventuels soins médicaux immédiats et traitements particuliers nécessaires"
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale"
     },
     {
      "soort": "alinea",
-     "tekst": "En cas d’incident ou de malaise, consulter immédiatement un médecin (lui montrer, si possible, les instructions pour l’utilisation ou la fiche de sécurité)."
-    },
-    {
-     "soort": "veld",
-     "kopje": "Traitement",
-     "tekst": "Traitement symptomatique et de soutien."
+     "tekst": "behandeling In geval van ongeluk of onwel worden, onmiddellijk een arts raadplegen (zo mogelijk de gebruiksaanwijzing of de veiligheidsgegevens tonen). Behandeling: Symptomatische en ondersteunende behandeling."
     }
    ],
    "6": [
     {
      "soort": "kop",
-     "tekst": "6.1 Précautions individuelles, équipement de protection et procédures d’urgence"
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
     },
     {
      "soort": "alinea",
-     "tekst": "Porter les dispositifs de protection individuelle. Emmener les personnes en lieu sûr. Consulter les mesures de protection exposées aux points 7 et 8."
+     "tekst": "De individuele beschermingsmiddelen dragen. Verplaats de personen naar een veilige plek. Raadpleeg de beschermingsmaatregelen zoals uiteengezet bij punt 7 en 8."
     },
     {
      "soort": "kop",
-     "tekst": "6.2 Précautions pour la protection de l’environnement"
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Empêcher la pénétration dans le sol/sous-sol. Empêcher l’écoulement dans les eaux superficielles ou dans le réseau des eaux usées. Retenir l’eau de lavage contaminée et l’éliminer. En cas de fuite de gaz ou de pénétration dans les cours d’eau, le sol ou le système d’évacuation d’eau, informer les autorités responsables."
+     "tekst": "Verhinder het doordringen in de grond/ondergrond. Verhinder het afvloeien in het oppervlaktewater of in het riool. Bewaar het besmette spoelwater en verwijder dit. In geval van gaslek of infiltratie in waterlopen, grond of riool, de verantwoordelijke instanties op de hoogte stellen."
     },
     {
      "soort": "veld",
-     "kopje": "Matériel adapté à la collecte",
-     "tekst": "matériel absorbant, organique, sable."
+     "kopje": "Geschikt materiaal voor het verzamelen",
+     "tekst": "absorberend materiaal, organisch, zand"
     },
     {
      "soort": "kop",
-     "tekst": "6.3 Méthodes et matériel de confinement et de nettoyage"
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
     },
     {
      "soort": "alinea",
-     "tekst": "Laver à l'eau abondante."
+     "tekst": "Spoelen met overvloedig water"
     },
     {
      "soort": "kop",
-     "tekst": "6.4 Référence à d’autres rubriques"
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
     },
     {
      "soort": "alinea",
-     "tekst": "Voir également les paragraphes 8 et 13."
+     "tekst": "Zie ook paragraaf 8 en 13"
     }
    ],
    "5": [
     {
      "soort": "kop",
-     "tekst": "5.1 Moyens d’extinction"
+     "tekst": "5.1 Blusmiddelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Moyens d'extinction appropriés : Eau. CO2 ou extincteurs à poudres. Mousse anti-alcool. Moyens d’extinction qui ne doivent pas être utilisés pour des raisons de sécurité : Aucun en particulier."
+     "tekst": "Geschikte blusmiddelen: Water. Kooldioxyde (CO2) Blusmiddelen die om veiligheidsredenen niet moeten worden gebruikt: Geen enkele in het bijzonder."
     },
     {
      "soort": "kop",
-     "tekst": "5.2 Dangers particuliers résultant de la substance ou du mélange"
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
     },
     {
      "soort": "alinea",
-     "tekst": "Ne pas inhaler les gaz produits par l’explosion et la combustion. La combustion produit de la fumée lourde."
+     "tekst": "De gassen die worden geproduceerd door de explosie of de verbranding niet inademen. De verbranding produceert zware rook."
     },
     {
      "soort": "kop",
-     "tekst": "5.3 Conseils aux pompiers"
+     "tekst": "5.3 Advies voor brandweerlieden"
     },
     {
      "soort": "alinea",
-     "tekst": "Utiliser des appareils respiratoires adaptés. Recueillir séparément l’eau contaminée utilisée pour éteindre l’incendie. Ne pas la déverser dans le réseau des eaux usées. Si cela est faisable d’un point de vue de la sécurité, déplacer de la zone de danger immédiat les conteneurs non endommagés."
+     "tekst": "Geschikte ademhalingapparatuur gebruiken. Het voor de brand gebruikte besmette bluswater afzonderlijk verzamelen. Niet in het riool lozen. De onbeschadigde containers, indien dit op een veilige manier gedaan kan worden, verplaatsen uit de gevarenzone."
     }
    ],
    "13": [
     {
      "soort": "kop",
-     "tekst": "13.1 Méthodes de traitement des déchets"
+     "tekst": "13.1 Afvalverwerkingsmethoden"
     },
     {
      "soort": "alinea",
-     "tekst": "Récupérer si possible. Envoyer à des usines de traitement autorisées ou à l'incinération dans des conditions contrôlées. Opérer en respectant les dispositions locales et nationales en vigueur. Déchets ne doivent pas être éliminés par l'égout."
+     "tekst": "Indien mogelijk hergebruiken. Naar bevoegde vuilverwerkings- of vuilverbrandingsinrichtingen sturen in gecontroleerde toestand. Handelen in overeenstemming met de geldende lokale en nationale normen."
     }
    ]
   }
@@ -1846,121 +1837,121 @@ const VIB_PRODUCTEN = [
    "8": [
     {
      "soort": "kop",
-     "tekst": "8.2 Contrôles de l’exposition"
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
      "soort": "alinea",
-     "tekst": "Protection des yeux: Lunettes de sécurité intégral selon la norme EN 166. Protection de la peau:"
+     "tekst": "Bescherming van de ogen: Volledige veiligheidsbril volgens reglamentation EN 166. Bescherming van de huid:"
     },
     {
      "soort": "veld",
-     "kopje": "Vêtements de protection pour les agents chimiques. Catégorie Protection des mains:",
+     "kopje": "Kleding die beschermt tegen chemische stoffen. Categorie",
      "tekst": "III (EN 340)."
     },
     {
      "soort": "alinea",
-     "tekst": "Gants de protection selon la norme EN 374-1:2003. Matériau approprié : PVC (polychlorure de vinyle). Protection respiratoire: N'est pas nécessaire en cas d'utilisation normale. Risques thermiques : Aucun Contrôles de l'exposition environnementale : Aucun Contrôles techniques appropriés Aucun"
+     "tekst": "Bescherming van de handen: Beschermende handschoenen volgens de norm EN 374-1:2003. Geschikt materiaal: PVC (polyvinylchloride) Bescherming van de luchtwegen: Niet nodig bij normaal gebruik. Thermische risico's None Controles van de blootstelling van het milieu None Passende technische maatregelen: Geen"
     }
    ],
    "4": [
     {
      "soort": "kop",
-     "tekst": "4.1 Description des mesures de premiers secours"
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "En cas de contact avec la peau : Enlever immédiatement les vêtements contaminés et les éliminer de manière sûre. Laver immédiatement avec beaucoup d'eau et éventuellement du savon les parties du corps ayant été en contact avec le produit, même en cas de doute. Laver entièrement le corps (douche ou bain). En cas de contact avec les yeux : En cas de contact avec les yeux, laver immédiatement et abondamment avec de l'eau et consulter un spécialiste. En cas d’ingestion : Ne rien donner à manger ou à boire. En cas d’inhalation : Transporter la victime à l’extérieur et la maintenir au chaud et au repos."
+     "tekst": "In geval van contact met de huid: Verontreiningde kleding onmiddellijk uittrekken. De lichaamsdelen die met de giftige stof in aanraking zijn gekomen, of waarvan u dat vermoedt, onmiddellijk met veel stromend water afspoelen, zo mogelijk met zeep. Het lichaam volledig wassen (douche of bad). In geval van contact met de ogen: Bij aanraking met de ogen onmiddellijk met overvloedig water afspoelen en deskunding medisch advies inwinnen. In geval van inslikken: Niets te eten of te drinken geven. In geval van inademen: Breng de gewonde naar buiten in de open lucht en houd hem/haar warm en in rust."
     },
     {
      "soort": "kop",
-     "tekst": "4.2 Principaux symptômes et effets, aigus et différés"
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
     },
     {
      "soort": "alinea",
-     "tekst": "Irritation de la peau et des yeux."
+     "tekst": "Huid- en oogirritatie."
     },
     {
      "soort": "kop",
-     "tekst": "4.3 Indication des éventuels soins médicaux immédiats et traitements particuliers nécessaires"
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale"
     },
     {
      "soort": "alinea",
-     "tekst": "En cas d’incident ou de malaise, consulter immédiatement un médecin (lui montrer, si possible, les instructions pour l’utilisation ou la fiche de sécurité). Traitement : Traitement symptomatique et de soutien."
+     "tekst": "behandeling In geval van ongeluk of onwel worden, onmiddellijk een arts raadplegen (zo mogelijk de gebruiksaanwijzing of de veiligheidsgegevens tonen). Behandeling: Symptomatische en ondersteunende behandeling."
     }
    ],
    "6": [
     {
      "soort": "kop",
-     "tekst": "6.1 Précautions individuelles, équipement de protection et procédures d’urgence"
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
     },
     {
      "soort": "alinea",
-     "tekst": "Porter les dispositifs de protection individuelle. Emmener les personnes en lieu sûr. Consulter les mesures de protection exposées aux points 7 et 8."
+     "tekst": "De individuele beschermingsmiddelen dragen. Verplaats de personen naar een veilige plek. Raadpleeg de beschermingsmaatregelen zoals uiteengezet bij punt 7 en 8."
     },
     {
      "soort": "kop",
-     "tekst": "6.2 Précautions pour la protection de l’environnement"
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Empêcher la pénétration dans le sol/sous-sol. Empêcher l’écoulement dans les eaux superficielles ou dans le réseau des eaux usées. Retenir l’eau de lavage contaminée et l’éliminer. En cas de fuite de gaz ou de pénétration dans les cours d’eau, le sol ou le système d’évacuation d’eau, informer les autorités responsables."
+     "tekst": "Verhinder het doordringen in de grond/ondergrond. Verhinder het afvloeien in het oppervlaktewater of in het riool. Bewaar het besmette spoelwater en verwijder dit. In geval van gaslek of infiltratie in waterlopen, grond of riool, de verantwoordelijke instanties op de hoogte stellen."
     },
     {
      "soort": "veld",
-     "kopje": "Matériel adapté à la collecte",
-     "tekst": "matériel absorbant, organique, sable."
+     "kopje": "Geschikt materiaal voor het verzamelen",
+     "tekst": "absorberend materiaal, organisch, zand"
     },
     {
      "soort": "kop",
-     "tekst": "6.3 Méthodes et matériel de confinement et de nettoyage"
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
     },
     {
      "soort": "alinea",
-     "tekst": "Laver à l'eau abondante."
+     "tekst": "Spoelen met overvloedig water"
     },
     {
      "soort": "kop",
-     "tekst": "6.4 Référence à d’autres rubriques"
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
     },
     {
      "soort": "alinea",
-     "tekst": "Voir également les paragraphes 8 et 13."
+     "tekst": "Zie ook paragraaf 8 en 13"
     }
    ],
    "5": [
     {
      "soort": "kop",
-     "tekst": "5.1 Moyens d’extinction"
+     "tekst": "5.1 Blusmiddelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Moyens d'extinction appropriés : Eau. Dioxyde de carbone (CO2). Moyens d’extinction qui ne doivent pas être utilisés pour des raisons de sécurité : Aucun en particulier."
+     "tekst": "Geschikte blusmiddelen: Water. Kooldioxyde (CO2) Blusmiddelen die om veiligheidsredenen niet moeten worden gebruikt: Geen enkele in het bijzonder."
     },
     {
      "soort": "kop",
-     "tekst": "5.2 Dangers particuliers résultant de la substance ou du mélange"
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
     },
     {
      "soort": "alinea",
-     "tekst": "Ne pas inhaler les gaz produits par l’explosion et la combustion. La combustion produit de la fumée lourde."
+     "tekst": "De gassen die worden geproduceerd door de explosie of de verbranding niet inademen. De verbranding produceert zware rook."
     },
     {
      "soort": "kop",
-     "tekst": "5.3 Conseils aux pompiers"
+     "tekst": "5.3 Advies voor brandweerlieden"
     },
     {
      "soort": "alinea",
-     "tekst": "Utiliser des appareils respiratoires adaptés. Recueillir séparément l’eau contaminée utilisée pour éteindre l’incendie. Ne pas la déverser dans le réseau des eaux usées. Si cela est faisable d’un point de vue de la sécurité, déplacer de la zone de danger immédiat les conteneurs non endommagés."
+     "tekst": "Geschikte ademhalingapparatuur gebruiken. Het voor de brand gebruikte besmette bluswater afzonderlijk verzamelen. Niet in het riool lozen. De onbeschadigde containers, indien dit op een veilige manier gedaan kan worden, verplaatsen uit de gevarenzone."
     }
    ],
    "13": [
     {
      "soort": "kop",
-     "tekst": "13.1 Méthodes de traitement des déchets"
+     "tekst": "13.1 Afvalverwerkingsmethoden"
     },
     {
      "soort": "alinea",
-     "tekst": "Récupérer si possible. Opérer en respectant les dispositions locales et nationales en vigueur. Déchets ne doivent pas être éliminés par l'égout."
+     "tekst": "Indien mogelijk hergebruiken. Handelen in overeenstemming met de geldende plaatselijke en nationale voorschriften."
     }
    ]
   }
@@ -4221,14 +4212,14 @@ const VIB_PRODUCTEN = [
   "unNummers": [
    "UN0000"
   ],
-  "vibDatum": "15-12-2022",
+  "vibDatum": "25-11-2026",
   "verlopen": false,
   "taal": "nl",
   "vibPdf": "vib/47601.pdf",
   "alleVibs": [
    {
     "pdf": "vib/47601.pdf",
-    "datum": "15-12-2022",
+    "datum": "25-11-2026",
     "verlopen": false,
     "taal": "nl"
    }
@@ -4239,121 +4230,121 @@ const VIB_PRODUCTEN = [
    "8": [
     {
      "soort": "kop",
-     "tekst": "8.2 Contrôles de l’exposition"
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
      "soort": "alinea",
-     "tekst": "Protection des yeux: Utiliser des visières de sécurité fermées, ne pas utiliser de lentilles oculaires. Protection de la peau: Porter des vêtements qui garantissent une protection totale pour la peau, par ex. en coton, caoutchouc, PVC ou viton. Protection des mains: Gants de protection selon la norme EN 374-1:2003. Protection respiratoire: N'est pas nécessaire en cas d'utilisation normale. Risques thermiques : Aucun Contrôles de l'exposition environnementale : Aucun Contrôles techniques appropriés Aucun"
+     "tekst": "Bescherming van de ogen: Gebruik gesloten veiligheidsbrillen, gebruik geen contactlenzen. Bescherming van de huid: Gebruik kleding die een totale bescherming van de huid garanderen, bijv. van katoen, rubber, PVC of viton. Bescherming van de handen: Beschermende handschoenen volgens de norm EN 374-1:2003. Bescherming van de luchtwegen: Niet nodig bij normaal gebruik. Thermische risico's None Controles van de blootstelling van het milieu None Passende technische maatregelen: Geen"
     }
    ],
    "4": [
     {
      "soort": "kop",
-     "tekst": "4.1 Description des mesures de premiers secours"
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "En cas de contact avec la peau : Enlever immédiatement les vêtements contaminés et les éliminer de manière sûre. Laver immédiatement avec beaucoup d'eau et éventuellement du savon les parties du corps ayant été en contact avec le produit, même en cas de doute. CONSULTER IMMEDIATEMENT UN MEDECIN. Laver entièrement le corps (douche ou bain). En cas de contact avec les yeux : En cas de contact avec les yeux, les rincer à l’eau pendant un intervalle de temps adéquat et en tenant les paupières ouvertes, puis consulter immédiatement un ophtalmologue. Protéger l’œil indemne. En cas d’ingestion : Ne faire vomir en aucun cas. CONSULTER IMMEDIATEMENT UN MEDECIN. En cas d’inhalation : Transporter la victime à l’extérieur et la maintenir au chaud et au repos."
+     "tekst": "In geval van contact met de huid: Verontreiningde kleding onmiddellijk uittrekken. De lichaamsdelen die met de giftige stof in aanraking zijn gekomen, of waarvan u dat vermoedt, onmiddellijk met veel stromend water afspoelen, zo mogelijk met zeep. ONMIDDELLIJK EEN ARTS RAADPLEGEN. Het lichaam volledig wassen (douche of bad). In geval van contact met de ogen: In geval van contact met de ogen voldoende tijd spoelen met water, houd hierbij de oogleden van elkaar, en raadpleeg vervolgens onmiddellijk een oogarts. Bescherm het ongedeerde oog. In geval van inslikken: Absoluut niet proberen te braken. ONMIDDELLIJK EEN ARTS RAADPLEGEN. In geval van inademen: Breng de gewonde naar buiten in de open lucht en houd hem/haar warm en in rust."
     },
     {
      "soort": "kop",
-     "tekst": "4.2 Principaux symptômes et effets, aigus et différés"
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
     },
     {
      "soort": "alinea",
-     "tekst": "Aucun"
+     "tekst": "None"
     },
     {
      "soort": "kop",
-     "tekst": "4.3 Indication des éventuels soins médicaux immédiats et traitements particuliers nécessaires"
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale"
     },
     {
      "soort": "alinea",
-     "tekst": "En cas d’incident ou de malaise, consulter immédiatement un médecin (lui montrer, si possible, les instructions pour l’utilisation ou la fiche de sécurité)."
+     "tekst": "behandeling In geval van ongeluk of onwel worden, onmiddellijk een arts raadplegen (zo mogelijk de gebruiksaanwijzing of de veiligheidsgegevens tonen)."
     },
     {
      "soort": "veld",
-     "kopje": "Traitement",
-     "tekst": "Aucun"
+     "kopje": "Behandeling",
+     "tekst": "None"
     }
    ],
    "6": [
     {
      "soort": "kop",
-     "tekst": "6.1 Précautions individuelles, équipement de protection et procédures d’urgence"
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
     },
     {
      "soort": "alinea",
-     "tekst": "Porter les dispositifs de protection individuelle. Emmener les personnes en lieu sûr. Consulter les mesures de protection exposées aux points 7 et 8."
+     "tekst": "De individuele beschermingsmiddelen dragen. Verplaats de personen naar een veilige plek. Raadpleeg de beschermingsmaatregelen zoals uiteengezet bij punt 7 en 8."
     },
     {
      "soort": "kop",
-     "tekst": "6.2 Précautions pour la protection de l’environnement"
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Empêcher la pénétration dans le sol/sous-sol. Empêcher l’écoulement dans les eaux superficielles ou dans le réseau des eaux usées. Retenir l’eau de lavage contaminée et l’éliminer. En cas de fuite de gaz ou de pénétration dans les cours d’eau, le sol ou le système d’évacuation d’eau, informer les autorités responsables."
+     "tekst": "Verhinder het doordringen in de grond/ondergrond. Verhinder het afvloeien in het oppervlaktewater of in het riool. Bewaar het besmette spoelwater en verwijder dit. In geval van gaslek of infiltratie in waterlopen, grond of riool, de verantwoordelijke instanties op de hoogte stellen."
     },
     {
      "soort": "veld",
-     "kopje": "Matériel adapté à la collecte",
-     "tekst": "matériel absorbant, organique, sable."
+     "kopje": "Geschikt materiaal voor het verzamelen",
+     "tekst": "absorberend materiaal, organisch, zand"
     },
     {
      "soort": "kop",
-     "tekst": "6.3 Méthodes et matériel de confinement et de nettoyage"
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
     },
     {
      "soort": "alinea",
-     "tekst": "Laver à l'eau abondante."
+     "tekst": "Spoelen met overvloedig water"
     },
     {
      "soort": "kop",
-     "tekst": "6.4 Référence à d’autres rubriques"
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
     },
     {
      "soort": "alinea",
-     "tekst": "Voir également les paragraphes 8 et 13."
+     "tekst": "Zie ook paragraaf 8 en 13"
     }
    ],
    "5": [
     {
      "soort": "kop",
-     "tekst": "5.1 Moyens d’extinction"
+     "tekst": "5.1 Blusmiddelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Moyens d'extinction appropriés : Eau. Dioxyde de carbone (CO2). Moyens d’extinction qui ne doivent pas être utilisés pour des raisons de sécurité :"
+     "tekst": "Geschikte blusmiddelen: Water. Kooldioxyde (CO2) Blusmiddelen die om veiligheidsredenen niet moeten worden gebruikt:"
     },
     {
      "soort": "alinea",
-     "tekst": "Aucun en particulier."
+     "tekst": "Geen enkele in het bijzonder."
     },
     {
      "soort": "kop",
-     "tekst": "5.2 Dangers particuliers résultant de la substance ou du mélange"
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
     },
     {
      "soort": "alinea",
-     "tekst": "Ne pas inhaler les gaz produits par l’explosion et la combustion. La combustion produit de la fumée lourde."
+     "tekst": "De gassen die worden geproduceerd door de explosie of de verbranding niet inademen. De verbranding produceert zware rook."
     },
     {
      "soort": "kop",
-     "tekst": "5.3 Conseils aux pompiers"
+     "tekst": "5.3 Advies voor brandweerlieden"
     },
     {
      "soort": "alinea",
-     "tekst": "Utiliser des appareils respiratoires adaptés. Recueillir séparément l’eau contaminée utilisée pour éteindre l’incendie. Ne pas la déverser dans le réseau des eaux usées. Si cela est faisable d’un point de vue de la sécurité, déplacer de la zone de danger immédiat les conteneurs non endommagés."
+     "tekst": "Geschikte ademhalingapparatuur gebruiken. Het voor de brand gebruikte besmette bluswater afzonderlijk verzamelen. Niet in het riool lozen. De onbeschadigde containers, indien dit op een veilige manier gedaan kan worden, verplaatsen uit de gevarenzone."
     }
    ],
    "13": [
     {
      "soort": "kop",
-     "tekst": "13.1 Méthodes de traitement des déchets"
+     "tekst": "13.1 Afvalverwerkingsmethoden"
     },
     {
      "soort": "alinea",
-     "tekst": "Récupérer si possible. Envoyer à des usines de traitement autorisées ou à l'incinération dans des conditions contrôlées. Opérer en respectant les dispositions locales et nationales en vigueur. Déchets ne doivent pas être éliminés par l'égout."
+     "tekst": "Indien mogelijk hergebruiken. Naar bevoegde vuilverwerkings- of vuilverbrandingsinrichtingen sturen in gecontroleerde toestand. Handelen in overeenstemming met de geldende lokale en nationale normen."
     }
    ]
   }
@@ -15635,14 +15626,14 @@ const VIB_PRODUCTEN = [
   "unNummers": [
    "UN3267"
   ],
-  "vibDatum": "25-01-2023",
+  "vibDatum": "25-11-2026",
   "verlopen": false,
   "taal": "nl",
   "vibPdf": "vib/47605.pdf",
   "alleVibs": [
    {
     "pdf": "vib/47605.pdf",
-    "datum": "25-01-2023",
+    "datum": "25-11-2026",
     "verlopen": false,
     "taal": "nl"
    }
@@ -15653,113 +15644,121 @@ const VIB_PRODUCTEN = [
    "8": [
     {
      "soort": "kop",
-     "tekst": "8.2 Contrôles de l’exposition"
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
      "soort": "alinea",
-     "tekst": "Protection des yeux: Utiliser des visières de sécurité fermées, ne pas utiliser de lentilles oculaires. Protection de la peau: Porter des vêtements qui garantissent une protection totale pour la peau, par ex. en coton, caoutchouc, PVC ou viton. Protection des mains: Utiliser des gants de protection qui garantissent une protection totale, par ex. en PVC, néoprène ou caoutchouc. Protection respiratoire: N'est pas nécessaire en cas d'utilisation normale. Risques thermiques : Contrôles de l'exposition environnementale : Contrôles techniques appropriés"
+     "tekst": "Bescherming van de ogen: Gebruik gesloten veiligheidsbrillen, gebruik geen contactlenzen. Bescherming van de huid: Gebruik kleding die een totale bescherming van de huid garanderen, bijv. van katoen, rubber, PVC of viton. Bescherming van de handen: Gebruik veiligheidshandschoenen die een totale bescherming garanderen, bijv. van PVC, neopreen of rubber. Bescherming van de luchtwegen: Niet nodig bij normaal gebruik. Thermische risico's None Controles van de blootstelling van het milieu None Passende technische maatregelen: Geen"
     }
    ],
    "4": [
     {
      "soort": "kop",
-     "tekst": "4.1 Description des mesures de premiers secours"
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "En cas de contact avec la peau : Enlever immédiatement les vêtements contaminés et les éliminer de manière sûre. CONSULTER IMMEDIATEMENT UN MEDECIN. En cas de contact avec les yeux : En cas de contact avec les yeux, les rincer à l’eau pendant un intervalle de temps adéquat et en tenant les paupières ouvertes, puis consulter immédiatement un ophtalmologue. Protéger l’œil indemne. En cas d’ingestion : NE PAS faire vomir. En cas d’inhalation : Transporter la victime à l’extérieur et la maintenir au chaud et au repos."
+     "tekst": "In geval van contact met de huid: Verontreiningde kleding onmiddellijk uittrekken. ONMIDDELLIJK EEN ARTS RAADPLEGEN. In geval van contact met de ogen: In geval van contact met de ogen voldoende tijd spoelen met water, houd hierbij de oogleden van elkaar, en raadpleeg vervolgens onmiddellijk een oogarts. Bescherm het ongedeerde oog. In geval van inslikken: NIET braken opwekken In geval van inademen: Breng de gewonde naar buiten in de open lucht en houd hem/haar warm en in rust."
     },
     {
      "soort": "kop",
-     "tekst": "4.2 Principaux symptômes et effets, aigus et différés"
-    },
-    {
-     "soort": "kop",
-     "tekst": "4.3 Indication des éventuels soins médicaux immédiats et traitements particuliers nécessaires"
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
     },
     {
      "soort": "alinea",
-     "tekst": "En cas d’incident ou de malaise, consulter immédiatement un médecin (lui montrer, si possible, les instructions pour l’utilisation ou la fiche de sécurité)."
+     "tekst": "None"
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "behandeling In geval van ongeluk of onwel worden, onmiddellijk een arts raadplegen (zo mogelijk de gebruiksaanwijzing of de veiligheidsgegevens tonen)."
     },
     {
      "soort": "veld",
-     "kopje": "Traitement",
-     "tekst": "Aucun"
+     "kopje": "Behandeling",
+     "tekst": "None"
     }
    ],
    "6": [
     {
      "soort": "kop",
-     "tekst": "6.1 Précautions individuelles, équipement de protection et procédures d’urgence"
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
     },
     {
      "soort": "alinea",
-     "tekst": "Porter les dispositifs de protection individuelle. Emmener les personnes en lieu sûr. Consulter les mesures de protection exposées aux points 7 et 8."
+     "tekst": "De individuele beschermingsmiddelen dragen. Verplaats de personen naar een veilige plek. Raadpleeg de beschermingsmaatregelen zoals uiteengezet bij punt 7 en 8."
     },
     {
      "soort": "kop",
-     "tekst": "6.2 Précautions pour la protection de l’environnement"
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Empêcher la pénétration dans le sol/sous-sol. Empêcher l’écoulement dans les eaux superficielles ou dans le réseau des eaux usées. Retenir l’eau de lavage contaminée et l’éliminer. En cas de fuite de gaz ou de pénétration dans les cours d’eau, le sol ou le système d’évacuation d’eau, informer les autorités responsables."
+     "tekst": "Verhinder het doordringen in de grond/ondergrond. Verhinder het afvloeien in het oppervlaktewater of in het riool. Bewaar het besmette spoelwater en verwijder dit. In geval van gaslek of infiltratie in waterlopen, grond of riool, de verantwoordelijke instanties op de hoogte stellen."
     },
     {
      "soort": "veld",
-     "kopje": "Matériel adapté à la collecte",
-     "tekst": "matériel absorbant, organique, sable."
+     "kopje": "Geschikt materiaal voor het verzamelen",
+     "tekst": "absorberend materiaal, organisch, zand"
     },
     {
      "soort": "kop",
-     "tekst": "6.3 Méthodes et matériel de confinement et de nettoyage"
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
     },
     {
      "soort": "alinea",
-     "tekst": "Laver à l'eau abondante."
+     "tekst": "Spoelen met overvloedig water"
     },
     {
      "soort": "kop",
-     "tekst": "6.4 Référence à d’autres rubriques"
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
     },
     {
      "soort": "alinea",
-     "tekst": "Voir également les paragraphes 8 et 13."
+     "tekst": "Zie ook paragraaf 8 en 13"
     }
    ],
    "5": [
     {
      "soort": "kop",
-     "tekst": "5.1 Moyens d’extinction"
+     "tekst": "5.1 Blusmiddelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Moyens d'extinction appropriés : CO2 ou extincteurs à poudres. Mousse anti-alcool. Moyens d’extinction qui ne doivent pas être utilisés pour des raisons de sécurité : Jet d’eau."
+     "tekst": "Geschikte blusmiddelen: CO2 of poederblusser. Alcoholbestendig schuim. Blusmiddelen die om veiligheidsredenen niet moeten worden gebruikt:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Waterstraal."
     },
     {
      "soort": "kop",
-     "tekst": "5.2 Dangers particuliers résultant de la substance ou du mélange"
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
     },
     {
      "soort": "alinea",
-     "tekst": "Ne pas inhaler les gaz produits par l’explosion et la combustion. La combustion produit de la fumée lourde."
+     "tekst": "De gassen die worden geproduceerd door de explosie of de verbranding niet inademen. De verbranding produceert zware rook."
     },
     {
      "soort": "kop",
-     "tekst": "5.3 Conseils aux pompiers"
+     "tekst": "5.3 Advies voor brandweerlieden"
     },
     {
      "soort": "alinea",
-     "tekst": "Utiliser des appareils respiratoires adaptés. Recueillir séparément l’eau contaminée utilisée pour éteindre l’incendie. Ne pas la déverser dans le réseau des eaux usées. Si cela est faisable d’un point de vue de la sécurité, déplacer de la zone de danger immédiat les conteneurs non endommagés."
+     "tekst": "Geschikte ademhalingapparatuur gebruiken. Het voor de brand gebruikte besmette bluswater afzonderlijk verzamelen. Niet in het riool lozen. De onbeschadigde containers, indien dit op een veilige manier gedaan kan worden, verplaatsen uit de gevarenzone."
     }
    ],
    "13": [
     {
      "soort": "kop",
-     "tekst": "13.1 Méthodes de traitement des déchets"
+     "tekst": "13.1 Afvalverwerkingsmethoden"
     },
     {
      "soort": "alinea",
-     "tekst": "Récupérer si possible. Envoyer à des usines de traitement autorisées ou à l'incinération dans des conditions contrôlées. Opérer en respectant les dispositions locales et nationales en vigueur. Déchets ne doivent pas être éliminés par l'égout."
+     "tekst": "Indien mogelijk hergebruiken. Naar bevoegde vuilverwerkings- of vuilverbrandingsinrichtingen sturen in gecontroleerde toestand. Handelen in overeenstemming met de geldende lokale en nationale normen."
     }
    ]
   }
@@ -34434,14 +34433,14 @@ const VIB_PRODUCTEN = [
   "unNummers": [
    "UN3265"
   ],
-  "vibDatum": "20-12-2022",
+  "vibDatum": "25-11-2026",
   "verlopen": false,
   "taal": "nl",
   "vibPdf": "vib/47609.pdf",
   "alleVibs": [
    {
     "pdf": "vib/47609.pdf",
-    "datum": "20-12-2022",
+    "datum": "25-11-2026",
     "verlopen": false,
     "taal": "nl"
    }
@@ -34452,117 +34451,117 @@ const VIB_PRODUCTEN = [
    "8": [
     {
      "soort": "kop",
-     "tekst": "8.2 Contrôles de l’exposition"
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
      "soort": "alinea",
-     "tekst": "Protection des yeux: Lunettes avec protection latérale. Norme EN 166:2001. Protection de la peau: Porter des vêtements qui garantissent une protection totale pour la peau, par ex. en coton, caoutchouc, PVC ou viton. Protection des mains: Gants de protection selon la norme EN 374-1:2003. Protection respiratoire: N'est pas nécessaire en cas d'utilisation normale. Risques thermiques : Contrôles de l'exposition environnementale : Contrôles techniques appropriés"
+     "tekst": "Bescherming van de ogen: Bril met laterale bescherming. EN-norm 166:2001. Bescherming van de huid: Gebruik kleding die een totale bescherming van de huid garanderen, bijv. van katoen, rubber, PVC of viton. Bescherming van de handen: Beschermende handschoenen volgens de norm EN 374-1:2003. Bescherming van de luchtwegen: Niet nodig bij normaal gebruik. Thermische risico's None Controles van de blootstelling van het milieu None Passende technische maatregelen: Geen"
     }
    ],
    "4": [
     {
      "soort": "kop",
-     "tekst": "4.1 Description des mesures de premiers secours"
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "En cas de contact avec la peau : Enlever immédiatement les vêtements contaminés et les éliminer de manière sûre. CONSULTER IMMEDIATEMENT UN MEDECIN. En cas de contact avec les yeux : En cas de contact avec les yeux, les rincer à l’eau pendant un intervalle de temps adéquat et en tenant les paupières ouvertes, puis consulter immédiatement un ophtalmologue. Protéger l’œil indemne. En cas d’ingestion : NE PAS faire vomir. En cas d’inhalation : Transporter la victime à l’extérieur et la maintenir au chaud et au repos."
+     "tekst": "In geval van contact met de huid: Verontreiningde kleding onmiddellijk uittrekken. ONMIDDELLIJK EEN ARTS RAADPLEGEN. In geval van contact met de ogen: In geval van contact met de ogen voldoende tijd spoelen met water, houd hierbij de oogleden van elkaar, en raadpleeg vervolgens onmiddellijk een oogarts. Bescherm het ongedeerde oog. In geval van inslikken: NIET braken opwekken In geval van inademen: Breng de gewonde naar buiten in de open lucht en houd hem/haar warm en in rust."
     },
     {
      "soort": "kop",
-     "tekst": "4.2 Principaux symptômes et effets, aigus et différés"
-    },
-    {
-     "soort": "kop",
-     "tekst": "4.3 Indication des éventuels soins médicaux immédiats et traitements particuliers nécessaires"
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
     },
     {
      "soort": "alinea",
-     "tekst": "En cas d’incident ou de malaise, consulter immédiatement un médecin (lui montrer, si possible, les instructions pour l’utilisation ou la fiche de sécurité)."
+     "tekst": "None"
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "behandeling In geval van ongeluk of onwel worden, onmiddellijk een arts raadplegen (zo mogelijk de gebruiksaanwijzing of de veiligheidsgegevens tonen)."
     },
     {
      "soort": "veld",
-     "kopje": "Traitement",
-     "tekst": "Traitement symptomatique."
+     "kopje": "Behandeling",
+     "tekst": "Symptomatische behandeling."
     }
    ],
    "6": [
     {
      "soort": "kop",
-     "tekst": "6.1 Précautions individuelles, équipement de protection et procédures d’urgence"
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
     },
     {
      "soort": "alinea",
-     "tekst": "Porter les dispositifs de protection individuelle. Emmener les personnes en lieu sûr. Consulter les mesures de protection exposées aux points 7 et 8."
+     "tekst": "De individuele beschermingsmiddelen dragen. Verplaats de personen naar een veilige plek. Raadpleeg de beschermingsmaatregelen zoals uiteengezet bij punt 7 en 8."
     },
     {
      "soort": "kop",
-     "tekst": "6.2 Précautions pour la protection de l’environnement"
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Empêcher la pénétration dans le sol/sous-sol. Empêcher l’écoulement dans les eaux superficielles ou dans le réseau des eaux usées. Retenir l’eau de lavage contaminée et l’éliminer. En cas de fuite de gaz ou de pénétration dans les cours d’eau, le sol ou le système d’évacuation d’eau, informer les autorités responsables."
+     "tekst": "Verhinder het doordringen in de grond/ondergrond. Verhinder het afvloeien in het oppervlaktewater of in het riool. Bewaar het besmette spoelwater en verwijder dit. In geval van gaslek of infiltratie in waterlopen, grond of riool, de verantwoordelijke instanties op de hoogte stellen."
     },
     {
      "soort": "veld",
-     "kopje": "Matériel adapté à la collecte",
-     "tekst": "matériel absorbant, organique, sable."
+     "kopje": "Geschikt materiaal voor het verzamelen",
+     "tekst": "absorberend materiaal, organisch, zand"
     },
     {
      "soort": "kop",
-     "tekst": "6.3 Méthodes et matériel de confinement et de nettoyage"
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
     },
     {
      "soort": "alinea",
-     "tekst": "Laver à l'eau abondante."
+     "tekst": "Spoelen met overvloedig water"
     },
     {
      "soort": "kop",
-     "tekst": "6.4 Référence à d’autres rubriques"
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
     },
     {
      "soort": "alinea",
-     "tekst": "Voir également les paragraphes 8 et 13."
+     "tekst": "Zie ook paragraaf 8 en 13"
     }
    ],
    "5": [
     {
      "soort": "kop",
-     "tekst": "5.1 Moyens d’extinction"
+     "tekst": "5.1 Blusmiddelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Moyens d'extinction appropriés :"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "CO2 ou extincteurs à poudres. Mousse anti-alcool. Moyens d’extinction qui ne doivent pas être utilisés pour des raisons de sécurité : Jet d’eau."
+     "tekst": "Geschikte blusmiddelen: CO2 of poederblusser. Alcoholbestendig schuim. Blusmiddelen die om veiligheidsredenen niet moeten worden gebruikt: Waterstraal."
     },
     {
      "soort": "kop",
-     "tekst": "5.2 Dangers particuliers résultant de la substance ou du mélange"
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
     },
     {
      "soort": "alinea",
-     "tekst": "Ne pas inhaler les gaz produits par l’explosion et la combustion. La combustion produit de la fumée lourde."
+     "tekst": "De gassen die worden geproduceerd door de explosie of de verbranding niet inademen. De verbranding produceert zware rook."
     },
     {
      "soort": "kop",
-     "tekst": "5.3 Conseils aux pompiers"
+     "tekst": "5.3 Advies voor brandweerlieden"
     },
     {
      "soort": "alinea",
-     "tekst": "Utiliser des appareils respiratoires adaptés. Recueillir séparément l’eau contaminée utilisée pour éteindre l’incendie. Ne pas la déverser dans le réseau des eaux usées. Si cela est faisable d’un point de vue de la sécurité, déplacer de la zone de danger immédiat les conteneurs non endommagés."
+     "tekst": "Geschikte ademhalingapparatuur gebruiken. Het voor de brand gebruikte besmette bluswater afzonderlijk verzamelen. Niet in het riool lozen. De onbeschadigde containers, indien dit op een veilige manier gedaan kan worden, verplaatsen uit de gevarenzone."
     }
    ],
    "13": [
     {
      "soort": "kop",
-     "tekst": "13.1 Méthodes de traitement des déchets"
+     "tekst": "13.1 Afvalverwerkingsmethoden"
     },
     {
      "soort": "alinea",
-     "tekst": "Récupérer si possible. Envoyer à des usines de traitement autorisées ou à l'incinération dans des conditions contrôlées. Opérer en respectant les dispositions locales et nationales en vigueur. Déchets ne doivent pas être éliminés par l'égout."
+     "tekst": "Indien mogelijk hergebruiken. Naar bevoegde vuilverwerkings- of vuilverbrandingsinrichtingen sturen in gecontroleerde toestand. Handelen in overeenstemming met de geldende lokale en nationale normen."
     }
    ]
   }
@@ -34890,19 +34889,21 @@ const VIB_PRODUCTEN = [
    "UN1950"
   ],
   "vibDatum": "26-11-2021",
-  "verlopen": false,
+  "verlopen": true,
   "taal": "nl",
   "vibPdf": "vib/15867.pdf",
   "alleVibs": [
    {
     "pdf": "vib/15867.pdf",
     "datum": "26-11-2021",
-    "verlopen": false,
+    "verlopen": true,
     "taal": "nl"
    }
   ],
   "status": "ok",
-  "problemen": [],
+  "problemen": [
+   "VIB is verlopen"
+  ],
   "rubrieken": {
    "8": [
     {
@@ -68207,20 +68208,14 @@ const VIB_PRODUCTEN = [
   "unNummers": [
    "UN0000"
   ],
-  "vibDatum": "04-10-2022",
+  "vibDatum": "25-11-2026",
   "verlopen": false,
   "taal": "nl",
   "vibPdf": "vib/47607.pdf",
   "alleVibs": [
    {
     "pdf": "vib/47607.pdf",
-    "datum": "04-10-2022",
-    "verlopen": false,
-    "taal": "nl"
-   },
-   {
-    "pdf": "vib/47607-379.pdf",
-    "datum": "04-10-2022",
+    "datum": "25-11-2026",
     "verlopen": false,
     "taal": "nl"
    }
@@ -68231,113 +68226,121 @@ const VIB_PRODUCTEN = [
    "8": [
     {
      "soort": "kop",
-     "tekst": "8.2 Contrôles de l’exposition"
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
      "soort": "alinea",
-     "tekst": "Protection des yeux: Utiliser des visières de sécurité fermées, ne pas utiliser de lentilles oculaires. Protection de la peau: Porter des vêtements qui garantissent une protection totale pour la peau, par ex. en coton, caoutchouc, PVC ou viton. Protection des mains: Utiliser des gants de protection qui garantissent une protection totale, par ex. en PVC, néoprène ou caoutchouc. Protection respiratoire: Là où la ventilation est insuffisante, où l’exposition est prolongée, utiliser un dispositif de protection des voies respiratoires. Risques thermiques : Contrôles de l'exposition environnementale : Contrôles techniques appropriés"
+     "tekst": "Bescherming van de ogen: Gebruik gesloten veiligheidsbrillen, gebruik geen contactlenzen. Bescherming van de huid: Gebruik kleding die een totale bescherming van de huid garanderen, bijv. van katoen, rubber, PVC of viton. Bescherming van de handen: Gebruik veiligheidshandschoenen die een totale bescherming garanderen, bijv. van PVC, neopreen of rubber. Bescherming van de luchtwegen: Daar waar de ventilatie niet voldoende is of de blootstelling langdurig, een beschermingsmiddel voor de luchtwegen gebruiken. Thermische risico's None Controles van de blootstelling van het milieu None Passende technische maatregelen: Geen"
     }
    ],
    "4": [
     {
      "soort": "kop",
-     "tekst": "4.1 Description des mesures de premiers secours"
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "En cas de contact avec la peau : Enlever immédiatement les vêtements contaminés et les éliminer de manière sûre. Laver immédiatement avec beaucoup d'eau et éventuellement du savon les parties du corps ayant été en contact avec le produit, même en cas de doute. CONSULTER IMMEDIATEMENT UN MEDECIN. Laver entièrement le corps (douche ou bain). En cas de contact avec les yeux : En cas de contact avec les yeux, les rincer à l’eau pendant un intervalle de temps adéquat et en tenant les paupières ouvertes, puis consulter immédiatement un ophtalmologue. Protéger l’œil indemne. En cas d’ingestion : Ne rien donner à manger ou à boire. Ne faire vomir en aucun cas. CONSULTER IMMEDIATEMENT UN MEDECIN. En cas d’inhalation : En cas d’inhalation, consulter immédiatement un médecin et lui montrer l’emballage ou l’étiquette."
+     "tekst": "In geval van contact met de huid: Verontreiningde kleding onmiddellijk uittrekken. De lichaamsdelen die met de giftige stof in aanraking zijn gekomen, of waarvan u dat vermoedt, onmiddellijk met veel stromend water afspoelen, zo mogelijk met zeep. ONMIDDELLIJK EEN ARTS RAADPLEGEN. Het lichaam volledig wassen (douche of bad). In geval van contact met de ogen: In geval van contact met de ogen voldoende tijd spoelen met water, houd hierbij de oogleden van elkaar, en raadpleeg vervolgens onmiddellijk een oogarts. Bescherm het ongedeerde oog. In geval van inslikken: Niets te eten of te drinken geven. Absoluut niet proberen te braken. ONMIDDELLIJK EEN ARTS RAADPLEGEN. In geval van inademen: In geval van inademen onmiddellijk een arts raadplegen en de verpakking of het etiket tonen."
     },
     {
      "soort": "kop",
-     "tekst": "4.2 Principaux symptômes et effets, aigus et différés"
-    },
-    {
-     "soort": "kop",
-     "tekst": "4.3 Indication des éventuels soins médicaux immédiats et traitements particuliers nécessaires"
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
     },
     {
      "soort": "alinea",
-     "tekst": "En cas d’incident ou de malaise, consulter immédiatement un médecin (lui montrer, si possible, les instructions pour l’utilisation ou la fiche de sécurité)."
+     "tekst": "None"
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "behandeling"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "In geval van ongeluk of onwel worden, onmiddellijk een arts raadplegen (zo mogelijk de gebruiksaanwijzing of de veiligheidsgegevens tonen)."
     },
     {
      "soort": "veld",
-     "kopje": "Traitement",
-     "tekst": "Aucun"
+     "kopje": "Behandeling",
+     "tekst": "None"
     }
    ],
    "6": [
     {
      "soort": "kop",
-     "tekst": "6.1 Précautions individuelles, équipement de protection et procédures d’urgence"
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
     },
     {
      "soort": "alinea",
-     "tekst": "Porter les dispositifs de protection individuelle. En cas d’exposition à des vapeurs/poussières/aérosols, porter des appareils respiratoires. Fournir une ventilation adéquate. Utiliser une protection respiratoire adéquate. Consulter les mesures de protection exposées aux points 7 et 8."
+     "tekst": "De individuele beschermingsmiddelen dragen. Ademhalingsapparatuur dragen bij blootstelling aan dampen/stof/aerosol Voor een goede ventilatie zorgen Gebruik geschikte beschermingsmiddelen voor de ademhaling. Raadpleeg de beschermingsmaatregelen zoals uiteengezet bij punt 7 en 8."
     },
     {
      "soort": "kop",
-     "tekst": "6.2 Précautions pour la protection de l’environnement"
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Empêcher la pénétration dans le sol/sous-sol. Empêcher l’écoulement dans les eaux superficielles ou dans le réseau des eaux usées. Retenir l’eau de lavage contaminée et l’éliminer. En cas de fuite de gaz ou de pénétration dans les cours d’eau, le sol ou le système d’évacuation d’eau, informer les autorités responsables."
+     "tekst": "Verhinder het doordringen in de grond/ondergrond. Verhinder het afvloeien in het oppervlaktewater of in het riool. Bewaar het besmette spoelwater en verwijder dit. In geval van gaslek of infiltratie in waterlopen, grond of riool, de verantwoordelijke instanties op de hoogte stellen."
     },
     {
      "soort": "veld",
-     "kopje": "Matériel adapté à la collecte",
-     "tekst": "matériel absorbant, organique, sable."
+     "kopje": "Geschikt materiaal voor het verzamelen",
+     "tekst": "absorberend materiaal, organisch, zand"
     },
     {
      "soort": "kop",
-     "tekst": "6.3 Méthodes et matériel de confinement et de nettoyage"
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
     },
     {
      "soort": "alinea",
-     "tekst": "Laver à l'eau abondante."
+     "tekst": "Spoelen met overvloedig water"
     },
     {
      "soort": "kop",
-     "tekst": "6.4 Référence à d’autres rubriques"
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
     },
     {
      "soort": "alinea",
-     "tekst": "Voir également les paragraphes 8 et 13."
+     "tekst": "Zie ook paragraaf 8 en 13"
     }
    ],
    "5": [
     {
      "soort": "kop",
-     "tekst": "5.1 Moyens d’extinction"
+     "tekst": "5.1 Blusmiddelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Moyens d'extinction appropriés : Eau pulverisée, poudre sèche, mousse, dioxyde de carbone (CO2). Moyens d’extinction qui ne doivent pas être utilisés pour des raisons de sécurité : Jet d’eau."
+     "tekst": "Geschikte blusmiddelen: Water. CO2 of poederblusser Alcoholbestendig schuim. Blusmiddelen die om veiligheidsredenen niet moeten worden gebruikt: Waterstraal."
     },
     {
      "soort": "kop",
-     "tekst": "5.2 Dangers particuliers résultant de la substance ou du mélange"
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
     },
     {
      "soort": "alinea",
-     "tekst": "Ne pas inhaler les gaz produits par l’explosion et la combustion. La combustion produit de la fumée lourde."
+     "tekst": "De gassen die worden geproduceerd door de explosie of de verbranding niet inademen. De verbranding produceert zware rook."
     },
     {
      "soort": "kop",
-     "tekst": "5.3 Conseils aux pompiers"
+     "tekst": "5.3 Advies voor brandweerlieden"
     },
     {
      "soort": "alinea",
-     "tekst": "Utiliser des appareils respiratoires adaptés. Recueillir séparément l’eau contaminée utilisée pour éteindre l’incendie. Ne pas la déverser dans le réseau des eaux usées. Si cela est faisable d’un point de vue de la sécurité, déplacer de la zone de danger immédiat les conteneurs non endommagés."
+     "tekst": "Geschikte ademhalingapparatuur gebruiken. Het voor de brand gebruikte besmette bluswater afzonderlijk verzamelen. Niet in het riool lozen. De onbeschadigde containers, indien dit op een veilige manier gedaan kan worden, verplaatsen uit de gevarenzone."
     }
    ],
    "13": [
     {
      "soort": "kop",
-     "tekst": "13.1 Méthodes de traitement des déchets"
+     "tekst": "13.1 Afvalverwerkingsmethoden"
     },
     {
      "soort": "alinea",
-     "tekst": "Récupérer si possible. Envoyer à des usines de traitement autorisées ou à l'incinération dans des conditions contrôlées. Opérer en respectant les dispositions locales et nationales en vigueur. Déchets ne doivent pas être éliminés par l'égout."
+     "tekst": "Indien mogelijk hergebruiken. Naar bevoegde vuilverwerkings- of vuilverbrandingsinrichtingen sturen in gecontroleerde toestand. Handelen in overeenstemming met de geldende lokale en nationale normen."
     }
    ]
   }
