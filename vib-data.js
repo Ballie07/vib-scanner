@@ -2536,34 +2536,190 @@ const VIB_PRODUCTEN = [
   ],
   "vibDatum": "10-05-2022",
   "verlopen": false,
-  "taal": "",
+  "taal": "nl",
   "vibPdf": "vib/4306.pdf",
   "alleVibs": [
    {
     "pdf": "vib/4306.pdf",
     "datum": "10-05-2022",
     "verlopen": false,
-    "taal": ""
+    "taal": "nl"
    },
    {
     "pdf": "vib/4306-34.pdf",
     "datum": "10-05-2022",
     "verlopen": false,
-    "taal": ""
+    "taal": "en"
    }
   ],
   "artikelstatus": "active",
-  "status": "onzeker",
-  "problemen": [
-   "Rubriek 8 niet gevonden",
-   "Rubriek 4 niet gevonden",
-   "Rubriek 6 niet gevonden",
-   "Rubriek 5 niet gevonden",
-   "Rubriek 13 niet gevonden",
-   "Tekst niet goed leesbaar",
-   "VIB lijkt niet Nederlands"
-  ],
-  "rubrieken": {}
+  "status": "ok",
+  "problemen": [],
+  "rubrieken": {
+   "8": [
+    {
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Technische maatregelen : Ventilatie , Plaatselijke afzuiging ."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Persoonlijke beschermingsmiddelen - Inhalatiebescherming : CE-goedgekeurd stofmasker ( Filtertype P2). - Huidbescherming : Geschikte beschermingskledij . - Handbescherming : Geschikt materiaal voor veiligheidshandschoenen (EN 374): Butylrubber . - Oog-/Gezichtbescherming : Chemische stofbril ."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Beheersing van milieublootstelling : Zie rubrieken 6, 7, 12 en 13."
+    }
+   ],
+   "4": [
+    {
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Algemeen",
+     "tekst": "Bij twijfel of bij aanhoudende verschijnselen, steeds een arts raadplegen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Nooit iets toedienen langs de mond bij een bewusteloos persoon."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Eerstehulpmaatregelen bij"
+    },
+    {
+     "soort": "veld",
+     "kopje": "- Inademing",
+     "tekst": "Het slachtoffer in de frisse lucht brengen. Slachtoffer rustig houden, in"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "halfzittende houding. Bij (blijvende) irritatie, een arts raadplegen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "- Contact met de huid",
+     "tekst": "Met veel water en zeep wassen. Bij (blijvende) irritatie, een arts"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "raadplegen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "- Contact met de ogen",
+     "tekst": "Onmiddellijk grondig en langdurig (minstens 15 min.) spoelen met"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "veel water. Contactlenzen verwijderen. Bij blijvende irritatie van de ogen, oogarts consulteren."
+    },
+    {
+     "soort": "veld",
+     "kopje": "- Inslikken",
+     "tekst": "De mond spoelen met water. Indien nodig, medische hulp inroepen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Zie rubriek 11."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van de vereiste onmiddellijke medische verzorging en speciale"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "behandeling Voor specialistisch advies dient de arts contact op te nemen met het NVCI of het Belgisch Antigifcentrum."
+    }
+   ],
+   "6": [
+    {
+     "soort": "alinea",
+     "tekst": "MENGSEL"
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.1 Persoonsgebonden voorzorgsmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Ontruim onmiddellijk de besmette ruimtes en zorg voor voldoende ventilatie. Inademing van het product en aanraking met de ogen vermijden. Draag geschikte, persoonlijke veiligheidsuitrusting. (Zie rubriek 8)"
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Voorzorgsmaatregelen voor het milieu"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Verhinder dat het product in open water, riolering of de bodem terechtkomt. De overheid informeren indien het product in de riolering of in open water terechtkomt."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Methode voor reiniging/opruiming"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Het gemorst product opvegen en plaatsen in een voor verwijdering geschikte bak of vat. Restant met veel water wegspoelen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Aanvullende aanwijzingen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Voor persoonlijke bescherming, zie rubriek 8. Voor verwijdering van het afvalproduct, zie rubriek 13."
+    }
+   ],
+   "5": [
+    {
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geschikte blusmiddelen Bluspoeder, schuim, koolstofdioxide (CO2), verneveld water. Blusmiddelen die om veiligheidsredenen niet gebruikt mogen worden Geen"
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Bijzondere risico’s die ontstaan door stof, verbrandingsproducten of vrijkomende"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "gassen Bij brand kunnen koolstofoxide(o.a CO) en rook vrijkomen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bijzondere beschermingsmiddelen In de onmiddellijke nabijheid van het vuur een onafhankelijk ademhalingstoestel en beschermende kledij dragen. Andere aanwijzingen Gebruik (verneveld) water om de naburige verpakkingen en constructies af te koelen. Vermijd dat bluswater in het milieu terechtkomt."
+    }
+   ],
+   "13": [
+    {
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "* Productverwijdering : Het gebruikte product moet vernietigd worden volgens de nationale en lokale wettelijke bepalingen. * Europese afvalstoffenlijst : XXXXXX - Europese afvalstoffencode. Deze code wordt toegewezen op basis van de meest courante toepassingen en kunnen niet representatief zijn voor de verontreinigingen die bij het effectief gebruik van het product ontstaan. De producent van het afval moet zelf zijn proces evalueren en de gepaste afval codering toekennen. Zie Beschikking 2001/118/EG."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Verwijdering van de verpakking : De gebruikte verpakking is uitsluitend bedoeld voor het verpakken van dit product. Na gebruik de verpakking goed leegmaken en afsluiten."
+    }
+   ]
+  }
  },
  {
   "productId": 47601,
@@ -10843,28 +10999,130 @@ const VIB_PRODUCTEN = [
   ],
   "vibDatum": "01-03-2022",
   "verlopen": false,
-  "taal": "",
+  "taal": "nl",
   "vibPdf": "vib/4080.pdf",
   "alleVibs": [
    {
     "pdf": "vib/4080.pdf",
     "datum": "01-03-2022",
     "verlopen": false,
-    "taal": ""
+    "taal": "nl"
    }
   ],
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Rubriek 8 niet gevonden",
-   "Rubriek 4 niet gevonden",
-   "Rubriek 6 niet gevonden",
-   "Rubriek 5 niet gevonden",
-   "Rubriek 13 niet gevonden",
-   "Tekst niet goed leesbaar",
-   "VIB lijkt niet Nederlands"
+   "Onderdeel 8.2 niet gevonden"
   ],
-  "rubrieken": {}
+  "rubrieken": {
+   "8": [
+    {
+     "soort": "veld",
+     "kopje": "Blootstelling",
+     "tekst": "Normale ventilatie is gewoonlijk voldoende. Om luchtverontreiniging binnen de gestelde blootstelling normen te houden, kan het in sommige gevallen nodig zijn plaatselijke afzuiging toe te passen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Persoonlijke bescherming:"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Ademhaling",
+     "tekst": "Bij voldoende ventilatie is het gebruik van adembescherming niet noodzakelijk"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Hand en huid",
+     "tekst": "Rubber handschoenen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Ogen",
+     "tekst": "Veiligheidsbril."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Algemeen",
+     "tekst": "Besmette kleding moet gewassen worden alvorens deze opnieuw gebruikt wordt."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Arbeidshygiënische blootstellings- MAC 950 mg/m3, 200 ppm (nafta, zwaar gehydrogeneerd) grenzen"
+    }
+   ],
+   "4": [
+    {
+     "soort": "veld",
+     "kopje": "Inademing",
+     "tekst": "Patiënt in open lucht brengen. Bij klachten een arts waarschuwen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Huid",
+     "tekst": "Verontreinigde kleding onmiddellijk uittrekken. Was de aangetaste plek met veel water en zeep. Als irritatie niet verdwijnt, een arts raadplegen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Ogen",
+     "tekst": "Als de stof in de ogen komt, onmiddellijk gedurende minstens 15 minuten met veel water uitspoelen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "In/verslikken Bij inslikken niet het braken opwekken: direct een arts raadplegen en de verpakking of het etiket tonen."
+    }
+   ],
+   "6": [
+    {
+     "soort": "veld",
+     "kopje": "Mors beheersing",
+     "tekst": "Wanneer er gemorst wordt, dit in inert materiaal absorberen, dan opvegen of opscheppen en naar een veilige plaats overbrengen. Het overstroom gedeelte met veel water schoonspoelen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Persoonlijke voorzorgsmaatregelen",
+     "tekst": "Draag beschermende kleding zoals in Sectie 8 beschreven wordt."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Milieubescherming",
+     "tekst": "Voorkom dat het materiaal in de afvoer, het oppervlaktewater of over de grond wegloopt."
+    }
+   ],
+   "5": [
+    {
+     "soort": "veld",
+     "kopje": "Brandblusmiddel",
+     "tekst": "Geen speciale vereisten."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Speciale waarschuwing",
+     "tekst": "Draag geschikte beschermende kleding."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Speciale gevaren",
+     "tekst": "Bevat brandbaar oplosmiddel."
+    }
+   ],
+   "13": [
+    {
+     "soort": "veld",
+     "kopje": "Product afvalverwerking",
+     "tekst": "Vernietiging moet gebeuren in overeenstemming met de plaatselijke, provinciale of landelijke wetsbepalingen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Container afvalverwerking",
+     "tekst": "Vernietiging moet gebeuren in overeenstemming met de plaatselijke, provinciale of landelijke wetsbepalingen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Algemeen",
+     "tekst": "Let op: voor de afvalverwerking van dit materiaal kunnen er locale regels van kracht zijn."
+    }
+   ]
+  }
  },
  {
   "productId": 58,
@@ -14249,101 +14507,108 @@ const VIB_PRODUCTEN = [
     "taal": "nl"
    },
    {
-    "pdf": "vib/26-230.pdf",
+    "pdf": "vib/26-229.pdf",
     "datum": "16-02-2023",
     "verlopen": false,
     "taal": "nl"
    }
   ],
   "artikelstatus": "active",
-  "status": "onzeker",
-  "problemen": [
-   "Onderdeel 8.2 niet gevonden"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "· 8.1 Controleparameters · Bestanddelen met grenswaarden die m.b.t. de werkruimte in acht genomen moeten worden: Het produkt bevat geen relevante hoeveelheden van stoffen, die met betrekking tot de werkplaatsen, qua grenswaarden gecontroleerd moeten worden."
-    },
-    {
-     "soort": "veld",
-     "kopje": "· Aanvullende gegevens",
-     "tekst": "Als basis dienden lijsten die bij opstelling geldig waren."
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
      "soort": "alinea",
-     "tekst": "· 8.2 Maatregelen ter beheersing van blootstelling · Passende technische maatregelen Geen aanvullende gegevens. Zie 7. · Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen · Algemene beschermings- en gezondheidsmaatregelen: Niet eten, drinken of roken tijdens gebruik. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Langdurig en intensief huidcontact vermijden. · Bescherming van de ademhalingswegen Bij goede ventilatie niet noodzakelijk. Bij onvoldoende ventilatie ademhalingsbescherming. · Bescherming van de handen Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie. · Handschoenmateriaal De keuze van een geschikte handschoen is niet alleen afhankelijk van het materiaal, maar ook van andere kwaliteitskenmerken en verschilt van fabrikant tot fabrikant. Aangezien het product uit meerdere stoffen is samengesteld, is de duurzaamheid van de handschoenmaterialen niet vooraf berekenbaar en moet derhalve vóór het gebruik worden getest. · Doordringingstijd van het handschoenmateriaal De precieze penetratietijd kunt u te weten komen bij de handschoenfabrikant; houd er rekening mee. · Bescherming van de ogen/het gezicht Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen."
-    },
-    {
-     "soort": "veld",
-     "kopje": "· Lichaamsbescherming",
-     "tekst": "Niet-doorlatende beschermingskleding"
+     "tekst": "Persoonlijke beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen Schone en correct onderhouden persoonlijke beschermingsmiddelen gebruiken. Sla de persoonlijke beschermingsmiddelen op in een schone ruimte, buiten de werkruimte. Tijdens het gebruik niet eten, drinken of roken. Besmette kleding uittrekken en wassen voor hergebruik. Zorgen voor een goede ventilatie, vooral in gesloten ruimtes. - Bescherming van de ogen / het gezicht Vermijd contact met de ogen. Voor het hanteren van poeder of stofuitstoot moet een integraalbril worden opgezet die voldoet aan de norm EN166. Het dragen van een corrigerende bril vormt geen bescherming. Voorzie oogdouches in werkplaatsen waar het mengsel voortdurend verwerkt wordt. |> - Handbescherming. Draag geschikte beschermende handschoenen bij langdurig of herhaald contact met de huid. Gebruik geschikte beschermende handschoenen die bestand zijn tegen chemische stoffen en voldoen aan de norm EN ISO 374-1. De handschoenen moeten worden gekozen volgens de toepassing en de gebruiksduur op de werkplek. De beschermende handschoenen moeten gekozen worden volgens de werkplek: andere chemische producten die gebruikt kunnen worden, benodigde fysieke bescherming (snijden, prikken, thermische bescherming), vereiste behendigheid. Aanbevolen type handschoenen : - Natuurlijk latex - Nitrielrubber (Copolymeer butadien-acrylonitriel (NBR)) - Lichaamsbescherming Het personeel dient regelmatig gewassen werkkleding te dragen. Na contact met het product moeten alle besmette lichaamsdelen gewassen worden. |> - Ademhalingsbescherming Vermijd het inademen van stof. Soort FFP masker : Draag een halfgelaats-filtermasker tegen stof voor eenmalig gebruik volgens de norm EN149/A1. Wanneer de werknemers met hogere concentraties dan de tentoonstellingsgrenzen worden geconfronteerd, moeten zij aangewezen en erkende maskers dragen."
     }
    ],
    "4": [
     {
      "soort": "alinea",
-     "tekst": "· 4.1 Beschrijving van de eerstehulpmaatregelen"
+     "tekst": "In het algemeen, ingeval van twijfel of indien de verschijnselen aanhouden, altijd een arts waarschuwen. NOOIT iets laten inslikken door een bewusteloos persoon."
     },
     {
-     "soort": "veld",
-     "kopje": "· Na het inademen",
-     "tekst": "Frisse lucht toedienen; bij klachten arts ontbieden."
-    },
-    {
-     "soort": "veld",
-     "kopje": "· Na huidcontact · Na oogcontact:",
-     "tekst": "Onmiddellijk met water afwassen."
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Controleer en verwijder eventuele contactlenzen. Ogen met open ooglid een aantal minuten onder stromend water afspoelen en dokter raadplegen. · Na inslikken: Mond spoelen en overvloedig water drinken. Geen braken teweegbrengen en onmiddellijk medische hulp raadplegen. Indien spontaan braken optreedt, houd het hoofd onder de heupen om aspiratie te voorkomen."
+     "tekst": "|> Bij blootstelling door inademing : Niet betroffen onder de normale omstandigheden voor gebruik. Bij spatten of contact met de ogen : Overvloedig reinigen met proper en zacht water gedurende 15 minuten terwijl de oogleden geopend zijn. Hoe de oorspronkelijke toestand ook is, de persoon systematisch bij een oogarts brengen waarbij u aan laatstgenoemde het etiket laat zien. Indien er pijn, roodheid plekken of gezichtshinder optreden, een oogarts raadplegen. |> Bij spatten of contact met de huid : Let op resten product die zich tussen de huid en kleding, horloge, schoenen kunnen bevinden... Medische hulp inroepen als irritatie optreedt. Was grondig met water. Bij inname door de mond : Een arts raadplegen en hem het etiket laten zien. Bij inslikken van een kleine hoeveelheid (niet meer dan een slok), de mond met water spoelen en een arts raadplegen. In geval van een inslikken per ongeluk, een arts ontbieden om een oordeel te geven over de noodzakelijkheid van een toezicht en indien nodig een latere behandeling in een ziekenhuis of kliniek. Het etiket laten zien. Hou je rustig. GEEN braken opwekken. |> 4.2. Belangrijkste acute en uitgestelde symptomen en effecten Zie rubriek 11 voor meer informatie over gezondheidseffecten en symptomen."
     },
     {
-     "soort": "veld",
-     "kopje": "· Informatie voor de arts",
-     "tekst": "Behandel symptomatisch en ondersteunend."
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling"
     },
     {
      "soort": "alinea",
-     "tekst": "· 4.2 Belangrijkste acute en uitgestelde symptomen en effecten Geen verdere relevante informatie verkrijgbaar. · 4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling Geen verdere relevante informatie verkrijgbaar."
+     "tekst": "Behandel symptomatisch."
     }
    ],
    "6": [
     {
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures Voor voldoende ventilatie zorgen. · 6.2 Milieuvoorzorgsmaatregelen: Niet in de ondergrond/bodem laten terechtkomen. Het product mag niet in onverdunde vorm in het riool of in waterlopen terechtkomen. · 6.3 Insluitings- en reinigingsmethoden en -materiaal: Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. In speciale tanks voor terugwinning of berging verzamelen. · 6.4 Verwijzing naar andere rubrieken Informatie inzake veilig gebruik - zie hoofdstuk 7. Informatie inzake persoonlijke beschermingsuitrusting - zie hoofdstuk 8. Informatie inzake berging - zie hoofdstuk 13."
+     "tekst": "Raadpleeg de beschermingsmaatregelen die in de rubrieken 7 en 8 vermeld staan Voor niet-EHBO-ers Vermijd elk contact met de huid en de ogen. Vermijd inademen van stof. Voor de EHBO-ers: De interveniënten moeten zijn uitgerust met geschikte persoonlijke beschermingsmiddelen (raadpleeg onderdeel 8)."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Vermijd het binnendruipen in de rioleringen en waterlopen. |> 6.3. Insluitings- en reinigingsmethoden en -materiaal Verzamel het product met mechanische middelen (vegen/stofzuiger)."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Voor informatie over persoonlijke beschermingsmiddelen, zie hoofdstuk 8. Voor informatie over verwijdering, zie hoofdstuk 13."
     }
    ],
    "5": [
     {
      "soort": "alinea",
-     "tekst": "· 5.1 Blusmiddelen"
+     "tekst": "Niet ontbrandbaar."
     },
     {
-     "soort": "veld",
-     "kopje": "· Geschikte blusmiddelen",
-     "tekst": "Brandblusmaatregelen op omgeving afstemmen."
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
     },
     {
      "soort": "alinea",
-     "tekst": "· 5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt Bij verhitting of brand is het ontstaan van giftige gassen mogelijk. · 5.3 Advies voor brandweerlieden · Speciale beschermende kleding: Adembeschermingsapparaat dragen dat niet afhankelijk is van de omgevingslucht. Volledig beschermende overall aantrekken. Ontploffings- en brandgassen niet inademen. · Verdere gegevens De aan gevaar blootgestelde tanks met watersproeistraal koelen."
+     "tekst": "Geschikte brandblusapparatuur. In geval van brand, gebruiken : - verstoven water of mist - schuim - poeder - kooldioxide (CO2) |> Ongeschikte brandblusapparatuur. In geval van brand, niet gebruiken : - waterspuit"
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Een brand brengt dikwijls een zwarte dikke rook voort. Blootstelling aan de afbraakproducten kan risico's voor de gezondheid inhouden. De rook niet inademen. In geval van brand, kan zich vormen : - koolmonoxide (CO) - kooldioxide (CO2) |> 5.3. Advies voor brandweerlieden Indien de gassen die bij de thermische ontbinding van het product vrijkomen, toxisch zijn, moet de interventie groep uitgerust zijn met isolerende autonome apparaten ter bescherming van de ademhaling. Verzamel verontreinigd bluswater apart. Niet in de riolering lozen. Koel tanks en onderdelen die aan de warmtestroom zijn blootgesteld en niet in de vlammen zijn gekomen af met water. Verwijder alle ontstekingsbronnen."
     }
    ],
    "13": [
     {
      "soort": "alinea",
-     "tekst": "· 13.1 Afvalverwerkingsmethoden · Aanbeveling: Aanbevolen hiërarchie van controles: - Minimaliseer afval; - Hergebruik indien niet verontreinigd; - Recyclen, indien mogelijk; of - Veilige verwijdering (als al het andere faalt). Vanwege recycling met afvalverwerkers contact opnemen. Gebruikte, aangetaste of verontreinigde producten kunnen als gevaarlijk afval worden ingedeeld. Wie gevaarlijk afval indeelt en het lot ervan bepaalt, moet gekwalificeerd zijn volgens de nationale en internationale wetgeving."
+     "tekst": "Een passend beheer van het afval van het mengsel en/of de verpakking moet worden bepaald volgens de bepalingen van de richtllijn 2008/98/EC."
+    },
+    {
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
     },
     {
      "soort": "alinea",
-     "tekst": "· Niet gereinigde verpakkingen: · Aanbeveling: Container blijft gevaarlijk als hij leeg is. Blijf alle voorzorgsmaatregelen in acht nemen. Containers, zelfs als ze \"leeg\" zijn, kunnen resten bevatten die bij verhitting gevaarlijke gassen en dampen kunnen ontwikkelen. Niet snijden, boren, slijpen, lassen of soortgelijke bewerkingen uitvoeren op of in de buurt van lege containers."
-    },
-    {
-     "soort": "veld",
-     "kopje": "· Aanbevolen reinigingsmiddel",
-     "tekst": "Water, eventueel met toevoeging van reinigingsmiddelen."
+     "tekst": "Niet in de rioleringen of de waterlopen lozen. Afval : Het afvalbeheer vindt plaats zonder de menselijke gezondheid of het milieu te schaden, en met name zonder gevaar op te leveren voor het water, de lucht, de bodem, de fauna of flora. Volgens de geldende wetgeving laten recycleren of vernietigen, bij voorkeur door een erkende inzamelaar of onderneming. De grond of het water niet met het afval vervuilen, deze niet vernietigen in het milieu. Vuile verpakkingen : De verpakking volledig legen. Het(De) etiket(ten) bewaren. Overhandigen aan een erkende vernietiger."
     }
    ]
   }
@@ -14361,26 +14626,96 @@ const VIB_PRODUCTEN = [
   ],
   "vibDatum": "31-08-2022",
   "verlopen": false,
-  "taal": "fr",
+  "taal": "nl",
   "vibPdf": "vib/1502.pdf",
   "alleVibs": [
    {
     "pdf": "vib/1502.pdf",
     "datum": "31-08-2022",
     "verlopen": false,
-    "taal": "fr"
+    "taal": "nl"
    }
   ],
   "artikelstatus": "active",
-  "status": "onzeker",
-  "problemen": [
-   "Rubriek 8 niet gevonden",
-   "Rubriek 4 niet gevonden",
-   "Rubriek 6 niet gevonden",
-   "Rubriek 5 niet gevonden",
-   "VIB lijkt niet Nederlands (Frans)"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
+   "8": [
+    {
+     "soort": "kop",
+     "tekst": "8.2 Contrôles de l’exposition"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Mesures de protection individuelle, telles que les équipements de protection individuelle Utiliser des équipements de protection individuelle propres et correctement entretenus. Stocker les équipements de protection individuelle dans un endroit propre, à l'écart de la zone de travail. Lors de l'utilisation, ne pas manger, boire ou fumer. Enlever et laver les vêtements contaminés avant réutilisation. Assurer une ventilation adéquate, surtout dans les endroits clos. - Protection des yeux / du visage Eviter le contact avec les yeux. Avant toute manipulation de poudres ou émission de poussières, il est nécessaire de porter des lunettes masque conformes à la norme NF EN166. Le port de lunettes correctrices ne constitue pas une protection. Prévoir des fontaines oculaires dans les ateliers où le produit est manipulé de façon constante. |> - Protection des mains Utiliser des gants de protection appropriés résistants aux agents chimiques conformes à la norme EN ISO 374-1. La sélection des gants doit être faite en fonction de l'application et de la durée d'utilisation au poste de travail. Les gants de protection doivent être choisis en fonction du poste de travail : autres produits chimiques pouvant être manipulés, protections physiques nécessaires (coupure, piqûre, protection thermique), dextérité demandée. Type de gants conseillés : - Latex naturel |> - Protection du corps Eviter le contact avec la peau. Porter des vêtements de protection appropriés. Type de vêtement de protection approprié : Porter des vêtements de protection chimique contre les produits chimiques solides, particules en suspension dans l'air (type 5) conformes à la norme NF EN13982-1/A1 pour éviter tout contact avec la peau. Le personnel portera un vêtement de travail régulièrement lavé. Après contact avec le produit, toutes les parties du corps souillées devront être lavées. |> - Protection respiratoire Eviter l'inhalation des poussières. Type de masque FFP : Porter un demi-masque filtrant contre les poussières à usage unique conforme à la norme NF EN149/A1. Ne pas utiliser en espace clos et non ventilé."
+    }
+   ],
+   "4": [
+    {
+     "soort": "alinea",
+     "tekst": "D'une manière générale, en cas de doute ou si des symptômes persistent, toujours faire appel à un médecin. NE JAMAIS rien faire ingérer à une personne inconsciente."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.1 Description des mesures de premiers secours"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "En cas d'inhalation : En cas d'inhalation massive, transporter le patient à l'air libre et le garder au chaud et au repos. Ne rien faire absorber par la bouche. Consulter un médecin en cas de troubles. En cas de contact avec les yeux : Laver abondamment avec de l'eau douce et propre durant 15 minutes en maintenant les paupières écartées. Quelque soit l'état initial, adresser systématiquement le sujet chez un ophtalmologiste, en lui montrant l'étiquette. S'il apparaît une douleur, une rougeur ou une gêne visuelle, consulter un ophtalmologiste. En cas de contact avec la peau : Enlever les vêtements imprégnés et laver soigneusement la peau avec de l'eau et du savon ou utiliser un nettoyant connu. Prendre garde au produit pouvant subsister entre la peau et les vêtements, la montre, les chaussures, ..."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Lorsque la zone contaminée est étendue et/ou s'il apparaît des lésions cutanées, il est nécessaire de consulter un médecin ou de faire transférer en milieu hospitalier. En cas d'ingestion : Ne rien faire absorber par la bouche. En cas d'ingestion, si la quantité est peu importante, (pas plus d'une gorgée), rincer la bouche avec de l'eau et consulter un médecin. Faire immédiatement appel à un médecin et lui montrer l'étiquette. NE PAS faire vomir. Garder au repos. En cas d'ingestion accidentelle appeler un médecin pour juger de l'opportunité d'une surveillance et d'un traitement ultérieur en milieu hospitalier, si besoin est. Montrer l'étiquette |> 4.2. Principaux symptômes et effets, aigus et différés Voir la rubrique 11. |> 4.3. Indication des éventuels soins médicaux immédiats et traitements particuliers nécessaires Traiter de façon symptomatique."
+    }
+   ],
+   "6": [
+    {
+     "soort": "kop",
+     "tekst": "6.1 Précautions individuelles, équipement de protection et procédures d’urgence"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Se référer aux mesures de protection énumérées dans les rubriques 7 et 8. |> Pour les non-secouristes Eviter tout contact avec la peau et les yeux. Eviter l'inhalation des poussières. Prévoir une ventilation suffisante. Pour les secouristes Les intervenants seront munis d'équipements de protections individuelles appropriés (Se référer à la rubrique 8)."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Précautions pour la protection de l’environnement"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Empêcher toute pénétration dans les égouts ou cours d'eau. |> 6.3. Méthodes et matériel de confinement et de nettoyage Récupérer le produit par moyen mécanique (balayage/aspirateur). L'élimination devra être effectuée par un récupérateur agréé."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Référence à d’autres rubriques"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Afin d'obtenir des informations sur les équipements de protection personnels, consulter le chapitre 8. Afin d'obtenir des informations sur l'élimination, consulter le chapitre 13."
+    }
+   ],
+   "5": [
+    {
+     "soort": "alinea",
+     "tekst": "Non inflammable."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.1 Moyens d’extinction"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Moyens d’extinction appropriés En cas d'incendie, utiliser : - eau pulvérisée ou brouillard d'eau - mousse - poudres - dioxyde de carbone (CO2) Moyens d’extinction inappropriés En cas d'incendie, ne pas utiliser : - jet d'eau |> 5.2. Dangers particuliers résultant de la substance ou du mélange Un incendie produira souvent une épaisse fumée noire. L'exposition aux produits de décomposition peut comporter des risques pour la santé. Ne pas respirer les fumées. En cas d'incendie, peut se former : - monoxyde de carbone (CO) - dioxyde de carbone (CO2) - dioxyde de soufre (SO2) - cyanure d'hydrogène (HCN) - oxydes d'azote (NOx)"
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Conseils aux pompiers"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "En raison de la toxicité des gaz émis lors de la décomposition thermique des produits, les intervenants seront équipés d'appareils de protection respiratoire autonomes isolants."
+    }
+   ],
    "13": [
     {
      "soort": "alinea",
@@ -14877,9 +15212,25 @@ const VIB_PRODUCTEN = [
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Rubriek 8 niet gevonden"
+   "Onderdeel 8.2 niet gevonden"
   ],
   "rubrieken": {
+   "8": [
+    {
+     "soort": "alinea",
+     "tekst": "bescherming · 8.1 Controleparameters · Bestanddelen met grenswaarden die m.b.t. de werkruimte in acht genomen moeten worden: 78-93-3 Butanon WGW Korte termijn waarde: 900 mg/m³, 300 ppm Lange termijn waarde: 590 mg/m³, 197 ppm · DNEL’s 78-93-3 Butanon"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Oraal Dermaal Worker, dermal, longterm exposition           1161 mg/kg bw/day Inhalatief Worker, inhalative, shortterm exposition   900 mg/m³ · PNEC’s 78-93-3 Butanon Oraal Secondary Poisoning    1000 mg/kg · Aanvullende gegevens: Als basis dienden lijsten die bij opstelling geldig waren. · 8.2 Maatregelen ter beheersing van blootstelling · Passende technische maatregelen Geen aanvullende gegevens. Zie 7. · Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen · Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden. · Bescherming van de ademhalingswegen Bij onvoldoende ventilatie ademhalingsbescherming. · Aanbevolen filter voor kortstondig gebruik: Filter A · Bescherming van de handen Handschoenen / bestand tegen oplosmiddelen Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie. · Handschoenmateriaal Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm · Doordringingstijd van het handschoenmateriaal Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4). · Bescherming van de ogen/het gezicht Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen. · Lichaamsbescherming: Tegen oplosmiddelen bestande beschermingskleding",
+       "Consumer, oral, longterm exposition Consumer, dermal, longterm exposition      412 mg/kg bw/day Worker, inhalative, longterm exposition    600 mg/m³ Consumer, inhalative, shortterm exposition 450 mg/m³ Consumer, inhalative, longterm exposition 106 mg/m³ Fresh water            55,8 mg/l Fresh water sediment 284,7 mg/kg dry weight Marine water           55,8 mg/l Marine sediment        284,7 mg/kg dry weight Soil                   22,5 mg/kg Sewage treatment plant 709 mg/l Sporadic release       55,8 mg/l Veiligheidshandschoenen Nauw aansluitende veiligheidsbril",
+       "31 mg/kg bw/day"
+      ]
+     ]
+    }
+   ],
    "4": [
     {
      "soort": "alinea",
@@ -14939,9 +15290,29 @@ const VIB_PRODUCTEN = [
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Rubriek 8 niet gevonden"
+   "Onderdeel 8.2 niet gevonden"
   ],
   "rubrieken": {
+   "8": [
+    {
+     "soort": "alinea",
+     "tekst": "bescherming · 8.1 Controleparameters · Bestanddelen met grenswaarden die m.b.t. de werkruimte in acht genomen moeten worden: 78-93-3 butanon WGW Korte termijn waarde: 900 mg/m³, 300 ppm Lange termijn waarde: 590 mg/m³, 200 ppm"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "· DNEL’s 78-93-3 butanon"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Oraal Dermaal Consumer, dermal, longterm exposition        412 mg/kg bw/day Inhalatief Consumer, inhalation, longterm exposition 106 mg/m³ · PNEC’s 78-93-3 butanon Fresh water 55,8 mg/l Marine water 55,8 mg/l Soil         22,5 mg/kg · Aanvullende gegevens: Als basis dienden lijsten die bij opstelling geldig waren. · 8.2 Maatregelen ter beheersing van blootstelling · Passende technische maatregelen Geen aanvullende gegevens. Zie 7. · Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen · Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden. · Bescherming van de ademhalingswegen Bij onvoldoende ventilatie ademhalingsbescherming. · Aanbevolen filter voor kortstondig gebruik: Filter A · Bescherming van de handen Handschoenen / bestand tegen oplosmiddelen Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie. · Handschoenmateriaal Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm · Doordringingstijd van het handschoenmateriaal Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4). · Bescherming van de ogen/het gezicht Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen. · Lichaamsbescherming: Tegen oplosmiddelen bestande beschermingskleding",
+       "Consumer, oral, longterm exposition Nauw aansluitende veiligheidsbril",
+       "31 mg/kg bw/day"
+      ]
+     ]
+    }
+   ],
    "4": [
     {
      "soort": "alinea",
@@ -15021,19 +15392,6 @@ const VIB_PRODUCTEN = [
        "31 mg/kg bw/day"
       ]
      ]
-    },
-    {
-     "soort": "veld",
-     "kopje": "* RUBRIEK 9",
-     "tekst": "Fysische en chemische eigenschappen"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "· 9.1 Informatie over fysische en chemische basiseigenschappen · Algemene gegevens · Fysische toestand Vloeibaar · Kleur: Volgens de productbeschrijving · Geur: Karakteristiek · Geurdrempelwaarde: Niet bepaald · Smeltpunt/vriespunt Niet bepaald · Kookpunt of beginkookpunt en kooktraject 65,5 °C · Ontvlambaarheid Licht ontvlambaar. · Onderste en bovenste explosiegrens · Onderste: 1,5 Vol % · Bovenste: 12 Vol % · Vlampunt: -21 °C · Zelfontbrandingstemperatuur: 230 °C · Ontledingstemperatuur: Niet bepaald · pH Niet bepaald · Viscositeit · Kinematische viscositeit Niet bepaald · Dynamisch bij 20 °C: 675 mPas · Oplosbaarheid · Water: Niet of nauwelijks mengbaar. · Verdelingscoëfficiënt n-octanol/water (logwaarde) Niet bepaald · Dampspanning bij 20 °C: 200 hPa · Dampspanning bij 50 °C: 550 hPa · Dichtheid en/of relatieve dichtheid · Dichtheid bij 20 °C: 0,965-0,966 g/cm³ · Relatieve dichtheid Niet bepaald · Dampdichtheid Niet bepaald · 9.2 Overige informatie All e relev ante f ysi sche gegev ens werden bepaald voor het mengsel. Alle niet bepaalde gegevens zijn niet meetbaar of niet relevant voor de karakterisering van het mengsel. · Voorkomen: · Vorm: Vloeibaar"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "· Belangrijke gegevens over de gezondheids- en milieubescherming en over de veiligheid · Ontstekingstemperatuur: Het product ontbrandt niet uit zichzelf. · Explosieve eigenschappen: Het product is niet explosief, maar er kunnen explosieve damp/luchtmengsels ontstaan. · Oplosmiddelgehalte: · Organische oplosmiddelen: 82,9 % · VOC (EG) 82,92 % · Gehalte aan vaste bestanddelen: 16,9 % · Toestandsverandering · Verdampingssnelheid Niet bepaald · Informatie inzake fysische gevarenklassen · Ontplofbare stoffen Niet van toepassing · Ontvlambare gassen Niet van toepassing · Aerosolen Niet van toepassing · Oxiderende gassen Niet van toepassing · Gassen onder druk Niet van toepassing · Ontvlambare vloeistoffen Licht ontvlambare vloeistof en damp. · Ontvlambare vaste stoffen Niet van toepassing · Zelfontledende stoffen en mengsels Niet van toepassing · Pyrofore vloeistoffen Niet van toepassing · Pyrofore vaste stoffen Niet van toepassing · Voor zelfverhitting vatbare stoffen en mengsels Niet van toepassing · Stoffen en mengsels die in contact met water ontvlambare gassen ontwikkelen Niet van toepassing · Oxiderende vloeistoffen Niet van toepassing · Oxiderende vaste stoffen Niet van toepassing · Organische peroxiden Niet van toepassing · Bijtend voor metalen Niet van toepassing · Ongevoelig gemaakte ontplofbare stoffen Niet van toepassing"
     }
    ],
    "4": [
@@ -15115,19 +15473,6 @@ const VIB_PRODUCTEN = [
        "31 mg/kg bw/day"
       ]
      ]
-    },
-    {
-     "soort": "veld",
-     "kopje": "* RUBRIEK 9",
-     "tekst": "Fysische en chemische eigenschappen"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "· 9.1 Informatie over fysische en chemische basiseigenschappen · Algemene gegevens · Fysische toestand Vloeibaar · Kleur: Volgens de productbeschrijving · Geur: Karakteristiek · Geurdrempelwaarde: Niet bepaald · Smeltpunt/vriespunt Niet bepaald · Kookpunt of beginkookpunt en kooktraject 65,5 °C · Ontvlambaarheid Licht ontvlambaar. · Onderste en bovenste explosiegrens · Onderste: 1,5 Vol % · Bovenste: 12 Vol % · Vlampunt: -21 °C · Zelfontbrandingstemperatuur: 230 °C · Ontledingstemperatuur: Niet bepaald · pH Niet bepaald · Viscositeit · Kinematische viscositeit Niet bepaald · Dynamisch bij 20 °C: 675 mPas · Oplosbaarheid · Water: Niet of nauwelijks mengbaar. · Verdelingscoëfficiënt n-octanol/water (logwaarde) Niet bepaald · Dampspanning bij 20 °C: 200 hPa · Dampspanning bij 50 °C: 550 hPa · Dichtheid en/of relatieve dichtheid · Dichtheid bij 20 °C: 0,965-0,966 g/cm³ · Relatieve dichtheid Niet bepaald · Dampdichtheid Niet bepaald · 9.2 Overige informatie All e relev ante f ysi sche gegev ens werden bepaald voor het mengsel. Alle niet bepaalde gegevens zijn niet meetbaar of niet relevant voor de karakterisering van het mengsel. · Voorkomen: · Vorm: Vloeibaar"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "· Belangrijke gegevens over de gezondheids- en milieubescherming en over de veiligheid · Ontstekingstemperatuur: Het product ontbrandt niet uit zichzelf. · Explosieve eigenschappen: Het product is niet explosief, maar er kunnen explosieve damp/luchtmengsels ontstaan. · Oplosmiddelgehalte: · Organische oplosmiddelen: 82,9 % · VOC (EG) 82,92 % · Gehalte aan vaste bestanddelen: 16,9 % · Toestandsverandering · Verdampingssnelheid Niet bepaald · Informatie inzake fysische gevarenklassen · Ontplofbare stoffen Niet van toepassing · Ontvlambare gassen Niet van toepassing · Aerosolen Niet van toepassing · Oxiderende gassen Niet van toepassing · Gassen onder druk Niet van toepassing · Ontvlambare vloeistoffen Licht ontvlambare vloeistof en damp. · Ontvlambare vaste stoffen Niet van toepassing · Zelfontledende stoffen en mengsels Niet van toepassing · Pyrofore vloeistoffen Niet van toepassing · Pyrofore vaste stoffen Niet van toepassing · Voor zelfverhitting vatbare stoffen en mengsels Niet van toepassing · Stoffen en mengsels die in contact met water ontvlambare gassen ontwikkelen Niet van toepassing · Oxiderende vloeistoffen Niet van toepassing · Oxiderende vaste stoffen Niet van toepassing · Organische peroxiden Niet van toepassing · Bijtend voor metalen Niet van toepassing · Ongevoelig gemaakte ontplofbare stoffen Niet van toepassing"
     }
    ],
    "4": [
@@ -20151,7 +20496,7 @@ const VIB_PRODUCTEN = [
     "pdf": "vib/461-551.pdf",
     "datum": "29-09-2023",
     "verlopen": false,
-    "taal": ""
+    "taal": "nl"
    }
   ],
   "artikelstatus": "active",
@@ -25120,7 +25465,7 @@ const VIB_PRODUCTEN = [
     "pdf": "vib/6481-71.pdf",
     "datum": "03-06-2024",
     "verlopen": false,
-    "taal": ""
+    "taal": "nl"
    }
   ],
   "artikelstatus": "active",
@@ -32140,7 +32485,7 @@ const VIB_PRODUCTEN = [
     "pdf": "vib/47290-331.pdf",
     "datum": "03-06-2024",
     "verlopen": false,
-    "taal": ""
+    "taal": "nl"
    }
   ],
   "artikelstatus": "active",
@@ -35406,9 +35751,25 @@ const VIB_PRODUCTEN = [
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Rubriek 8 niet gevonden"
+   "Onderdeel 8.2 niet gevonden"
   ],
   "rubrieken": {
+   "8": [
+    {
+     "soort": "alinea",
+     "tekst": "bescherming · 8.1 Controleparameters · Bestanddelen met grenswaarden die m.b.t. de werkruimte in acht genomen moeten worden: 78-93-3 Butanon WGW Korte termijn waarde: 900 mg/m³, 300 ppm Lange termijn waarde: 590 mg/m³, 197 ppm · DNEL’s 78-93-3 Butanon"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Oraal Dermaal Worker, dermal, longterm exposition           1161 mg/kg bw/day Inhalatief Worker, inhalative, shortterm exposition   900 mg/m³ · PNEC’s 78-93-3 Butanon Oraal Secondary Poisoning    1000 mg/kg · Aanvullende gegevens: Als basis dienden lijsten die bij opstelling geldig waren. · 8.2 Maatregelen ter beheersing van blootstelling · Passende technische maatregelen Geen aanvullende gegevens. Zie 7. · Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen · Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden. · Bescherming van de ademhalingswegen Bij onvoldoende ventilatie ademhalingsbescherming. · Aanbevolen filter voor kortstondig gebruik: Filter A · Bescherming van de handen Handschoenen / bestand tegen oplosmiddelen Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie. · Handschoenmateriaal Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm · Doordringingstijd van het handschoenmateriaal Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4). · Bescherming van de ogen/het gezicht Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen. · Lichaamsbescherming: Tegen oplosmiddelen bestande beschermingskleding",
+       "Consumer, oral, longterm exposition Consumer, dermal, longterm exposition      412 mg/kg bw/day Worker, inhalative, longterm exposition    600 mg/m³ Consumer, inhalative, shortterm exposition 450 mg/m³ Consumer, inhalative, longterm exposition 106 mg/m³ Fresh water            55,8 mg/l Fresh water sediment 284,7 mg/kg dry weight Marine water           55,8 mg/l Marine sediment        284,7 mg/kg dry weight Soil                   22,5 mg/kg Sewage treatment plant 709 mg/l Sporadic release       55,8 mg/l Veiligheidshandschoenen Nauw aansluitende veiligheidsbril",
+       "31 mg/kg bw/day"
+      ]
+     ]
+    }
+   ],
    "4": [
     {
      "soort": "alinea",
@@ -35467,9 +35828,25 @@ const VIB_PRODUCTEN = [
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Rubriek 8 niet gevonden"
+   "Onderdeel 8.2 niet gevonden"
   ],
   "rubrieken": {
+   "8": [
+    {
+     "soort": "alinea",
+     "tekst": "bescherming · 8.1 Controleparameters · Bestanddelen met grenswaarden die m.b.t. de werkruimte in acht genomen moeten worden: 78-93-3 Butanon WGW Korte termijn waarde: 900 mg/m³, 300 ppm Lange termijn waarde: 590 mg/m³, 197 ppm · DNEL’s 78-93-3 Butanon"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Oraal Dermaal Worker, dermal, longterm exposition           1161 mg/kg bw/day Inhalatief Worker, inhalative, shortterm exposition   900 mg/m³ · PNEC’s 78-93-3 Butanon Oraal Secondary Poisoning    1000 mg/kg · Aanvullende gegevens: Als basis dienden lijsten die bij opstelling geldig waren. · 8.2 Maatregelen ter beheersing van blootstelling · Passende technische maatregelen Geen aanvullende gegevens. Zie 7. · Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen · Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden. · Bescherming van de ademhalingswegen Bij onvoldoende ventilatie ademhalingsbescherming. · Aanbevolen filter voor kortstondig gebruik: Filter A · Bescherming van de handen Handschoenen / bestand tegen oplosmiddelen Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie. · Handschoenmateriaal Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm · Doordringingstijd van het handschoenmateriaal Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4). · Bescherming van de ogen/het gezicht Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen. · Lichaamsbescherming: Tegen oplosmiddelen bestande beschermingskleding",
+       "Consumer, oral, longterm exposition Consumer, dermal, longterm exposition      412 mg/kg bw/day Worker, inhalative, longterm exposition    600 mg/m³ Consumer, inhalative, shortterm exposition 450 mg/m³ Consumer, inhalative, longterm exposition 106 mg/m³ Fresh water            55,8 mg/l Fresh water sediment 284,7 mg/kg dry weight Marine water           55,8 mg/l Marine sediment        284,7 mg/kg dry weight Soil                   22,5 mg/kg Sewage treatment plant 709 mg/l Sporadic release       55,8 mg/l Veiligheidshandschoenen Nauw aansluitende veiligheidsbril",
+       "31 mg/kg bw/day"
+      ]
+     ]
+    }
+   ],
    "4": [
     {
      "soort": "alinea",
@@ -35550,19 +35927,6 @@ const VIB_PRODUCTEN = [
        "31 mg/kg bw/day"
       ]
      ]
-    },
-    {
-     "soort": "veld",
-     "kopje": "* RUBRIEK 9",
-     "tekst": "Fysische en chemische eigenschappen"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "· 9.1 Informatie over fysische en chemische basiseigenschappen · Algemene gegevens · Fysische toestand Vloeibaar · Kleur: Volgens de productbeschrijving · Geur: Karakteristiek · Geurdrempelwaarde: Niet bepaald · Smeltpunt/vriespunt Niet bepaald · Kookpunt of beginkookpunt en kooktraject 65,5 °C · Ontvlambaarheid Licht ontvlambaar. · Onderste en bovenste explosiegrens · Onderste: 1,5 Vol % · Bovenste: 12 Vol % · Vlampunt: -21 °C · Zelfontbrandingstemperatuur: 230 °C · Ontledingstemperatuur: Niet bepaald · pH Niet bepaald · Viscositeit · Kinematische viscositeit Niet bepaald · Dynamisch bij 20 °C: 675 mPas · Oplosbaarheid · Water: Niet of nauwelijks mengbaar. · Verdelingscoëfficiënt n-octanol/water (logwaarde) Niet bepaald · Dampspanning bij 20 °C: 200 hPa · Dampspanning bij 50 °C: 550 hPa · Dichtheid en/of relatieve dichtheid · Dichtheid bij 20 °C: 0,965-0,966 g/cm³ · Relatieve dichtheid Niet bepaald · Dampdichtheid Niet bepaald · 9.2 Overige informatie All e relev ante f ysi sche gegev ens werden bepaald voor het mengsel. Alle niet bepaalde gegevens zijn niet meetbaar of niet relevant voor de karakterisering van het mengsel. · Voorkomen: · Vorm: Vloeibaar"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "· Belangrijke gegevens over de gezondheids- en milieubescherming en over de veiligheid · Ontstekingstemperatuur: Het product ontbrandt niet uit zichzelf. · Explosieve eigenschappen: Het product is niet explosief, maar er kunnen explosieve damp/luchtmengsels ontstaan. · Oplosmiddelgehalte: · Organische oplosmiddelen: 82,9 % · VOC (EG) 82,92 % · Gehalte aan vaste bestanddelen: 16,9 % · Toestandsverandering · Verdampingssnelheid Niet bepaald · Informatie inzake fysische gevarenklassen · Ontplofbare stoffen Niet van toepassing · Ontvlambare gassen Niet van toepassing · Aerosolen Niet van toepassing · Oxiderende gassen Niet van toepassing · Gassen onder druk Niet van toepassing · Ontvlambare vloeistoffen Licht ontvlambare vloeistof en damp. · Ontvlambare vaste stoffen Niet van toepassing · Zelfontledende stoffen en mengsels Niet van toepassing · Pyrofore vloeistoffen Niet van toepassing · Pyrofore vaste stoffen Niet van toepassing · Voor zelfverhitting vatbare stoffen en mengsels Niet van toepassing · Stoffen en mengsels die in contact met water ontvlambare gassen ontwikkelen Niet van toepassing · Oxiderende vloeistoffen Niet van toepassing · Oxiderende vaste stoffen Niet van toepassing · Organische peroxiden Niet van toepassing · Bijtend voor metalen Niet van toepassing · Ongevoelig gemaakte ontplofbare stoffen Niet van toepassing"
     }
    ],
    "4": [
@@ -41123,11 +41487,32 @@ const VIB_PRODUCTEN = [
    }
   ],
   "artikelstatus": "eventuate",
-  "status": "onzeker",
-  "problemen": [
-   "Rubriek 8 niet gevonden"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
+   "8": [
+    {
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geschikte technische besturingsinrichtingen Zorg voor een goede ventilatie. Dit kan door lokale afzuiging of algemene afvoerlucht gebeuren. Indien dit niet voldoende is om de concentratie onder de arbeidshygiënische blootstellingswaarden te houden, moet er gepaste ademhalingsbescherming worden gedragen. Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Verwijderd houden van eet- en drinkwaren. Vóór de pauze en aan het einde van werktijd handen wassen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ademhalingswegen Normaliter niet nodig Voor goede ventilatie/afzuiging op de werkplaatsen zorgen. Bescherming van de handen Veiligheidshandschoenen Handschoenmateriaal Nitrilrubber"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Aanbevolen materiaaldikte [EN 374]",
+     "tekst": "≥ 0,4 mm"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Doordringingstijd van het handschoenmateriaal Waarde voor de permeatie: Level 6 (≥480min) Bescherming van de ogen/het gezicht Veiligheidsbril [EN 166]"
+    }
+   ],
    "4": [
     {
      "soort": "kop",
@@ -41275,11 +41660,32 @@ const VIB_PRODUCTEN = [
    }
   ],
   "artikelstatus": "eventuate",
-  "status": "onzeker",
-  "problemen": [
-   "Rubriek 8 niet gevonden"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
+   "8": [
+    {
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Verwijderd houden van eet- en drinkwaren. Vóór de pauze en aan het einde van werktijd handen wassen. Bescherming van de ademhalingswegen Normaliter niet nodig Bescherming van de handen Veiligheidshandschoenen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenmateriaal Nitrilrubber"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Aanbevolen materiaaldikte [EN 374]",
+     "tekst": "≥ 0,4 mm"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Doordringingstijd van het handschoenmateriaal Waarde voor de permeatie: Level 6 (≥480min) Bescherming van de ogen/het gezicht Normaliter niet nodig"
+    }
+   ],
    "4": [
     {
      "soort": "kop",
@@ -47101,10 +47507,57 @@ const VIB_PRODUCTEN = [
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Rubriek 8 niet gevonden",
+   "Onderdeel 8.2 niet gevonden",
    "VIB lijkt niet Nederlands (Engels)"
   ],
   "rubrieken": {
+   "8": [
+    {
+     "soort": "alinea",
+     "tekst": "· 8.1 Control parameters · Components with limit values that require monitoring at the workplace: WEL: workplace exposure limit OEL: Occupational Exposure Limit IOELV: Indicative Occupational Exposure Limit Values, workplace threshold value of the European Union 109-99-9 tetrahydrofuran IOELV (European Union) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Skin WEL (Great Britain) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Sk 9002-86-2 polyvinylchloride WEL (Great Britain) Long-term value: 10* 4** mg/m³ *inhalable dust **respirable dust 108-94-1 cyclohexanone IOELV (European Union) Short-term value: 81.6 mg/m³, 20 ppm Long-term value: 40.8 mg/m³, 10 ppm Skin WEL (Great Britain) Short-term value: 82 mg/m³, 20 ppm Long-term value: 41 mg/m³, 10 ppm Sk, BMGV 28553-12-0 diisononyl phthalate WEL (Great Britain) Long-term value: 5 mg/m³ · DNELs 109-99-9 tetrahydrofuran Oral DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human)"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Dermal Inhalative DNEL (worker, short-term, systemic)   96 mg/m³ (human)",
+       "DNEL (worker, long-term, systemic) DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human) DNEL (worker, long-term, systemic)    72.4 mg/m³ (human) DNEL (consumer, short-term, systemic) 52 mg/m³ (human) DNEL (consumer, long-term, systemic) 13 mg/m³ (human) DNEL (worker, short-term, local)      300 mg/m³ (human) DNEL (worker, long-term, local)       150 mg/m³ (human) DNEL (consumer, short-term, local)    150 mg/m³ (human) DNEL (consumer, long-term, local)     75 mg/m³ (human)",
+       "12.6 mg/kg bw/day (human)"
+      ]
+     ]
+    },
+    {
+     "soort": "alinea",
+     "tekst": "108-94-1 cyclohexanone Oral DNEL (consumer, short-term, systemic) 10 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 5 mg/kg bw/day (human)"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Dermal",
+       "DNEL (worker, short-term, systemic) DNEL (worker, long-term, systemic)    10 mg/kg bw/day (human) DNEL (consumer, short-term, systemic) 30 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 20 mg/kg bw/day (human)",
+       "100 mg/kg bw/day (human)"
+      ]
+     ]
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Inhalative DNEL (worker, short-term, systemic) 100 mg/m³ (human) DNEL (worker, long-term, systemic) 100 mg/m³ (human) DNEL (consumer, short-term, systemic) 50 mg/m³ (human) DNEL (consumer, long-term, systemic) 20 mg/m³ (human) DNEL (worker, short-term, local) 100 mg/m³ (human) DNEL (worker, long-term, local) 80 mg/m³ (human) DNEL (consumer, short-term, local) 50 mg/m³ (human) DNEL (consumer, long-term, local) 20 mg/m³ (human) · PNECs 109-99-9 tetrahydrofuran PNEC aqua (freshwater) 4.32 mg/L (.) PNEC aqua (marine water) 0.432 mg/L (.) PNEC STP 4.6 mg/L (.) PNEC soil 2.13 mg/kg soil dw (.) PNEC sediment (freshwater) 23.3 mg/kg sedim. dw (.) PNEC sediment (marine water) 2.33 mg/kg sedim. dw (.) PNEC aqua (intermittent releases) 21.6 mg/L (.) PNEC oral 67 mg/kg food (.) · Ingredients with biological limit values: 108-94-1 cyclohexanone BMGV (Great Britain) 2 mmol/mol creatinine Medium: urine Sampling time: post shift Parameter: cyclohexanol"
+    },
+    {
+     "soort": "veld",
+     "kopje": "· Additional information · 8.2 Exposure controls",
+     "tekst": "The lists that were valid during the compilation were used as basis."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "· Individual protection measures, such as personal protective equipment · General protective and hygienic measures Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food. · Breathing equipment: Not required. Not necessary if room is well-ventilated. · Hand protection The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "· Material of gloves Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application. · Penetration time of glove material In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed. · Eye/face protection Safety glasses"
+    }
+   ],
    "4": [
     {
      "soort": "alinea",
@@ -47175,10 +47628,57 @@ const VIB_PRODUCTEN = [
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Rubriek 8 niet gevonden",
+   "Onderdeel 8.2 niet gevonden",
    "VIB lijkt niet Nederlands (Engels)"
   ],
   "rubrieken": {
+   "8": [
+    {
+     "soort": "alinea",
+     "tekst": "· 8.1 Control parameters · Components with limit values that require monitoring at the workplace: WEL: workplace exposure limit OEL: Occupational Exposure Limit IOELV: Indicative Occupational Exposure Limit Values, workplace threshold value of the European Union 109-99-9 tetrahydrofuran IOELV (European Union) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Skin WEL (Great Britain) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Sk 9002-86-2 polyvinylchloride WEL (Great Britain) Long-term value: 10* 4** mg/m³ *inhalable dust **respirable dust 108-94-1 cyclohexanone IOELV (European Union) Short-term value: 81.6 mg/m³, 20 ppm Long-term value: 40.8 mg/m³, 10 ppm Skin WEL (Great Britain) Short-term value: 82 mg/m³, 20 ppm Long-term value: 41 mg/m³, 10 ppm Sk, BMGV 28553-12-0 diisononyl phthalate WEL (Great Britain) Long-term value: 5 mg/m³ · DNELs 109-99-9 tetrahydrofuran Oral DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human)"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Dermal Inhalative DNEL (worker, short-term, systemic)   96 mg/m³ (human)",
+       "DNEL (worker, long-term, systemic) DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human) DNEL (worker, long-term, systemic)    72.4 mg/m³ (human) DNEL (consumer, short-term, systemic) 52 mg/m³ (human) DNEL (consumer, long-term, systemic) 13 mg/m³ (human) DNEL (worker, short-term, local)      300 mg/m³ (human) DNEL (worker, long-term, local)       150 mg/m³ (human) DNEL (consumer, short-term, local)    150 mg/m³ (human) DNEL (consumer, long-term, local)     75 mg/m³ (human)",
+       "12.6 mg/kg bw/day (human)"
+      ]
+     ]
+    },
+    {
+     "soort": "alinea",
+     "tekst": "108-94-1 cyclohexanone Oral DNEL (consumer, short-term, systemic) 10 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 5 mg/kg bw/day (human)"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Dermal",
+       "DNEL (worker, short-term, systemic) DNEL (worker, long-term, systemic)    10 mg/kg bw/day (human) DNEL (consumer, short-term, systemic) 30 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 20 mg/kg bw/day (human)",
+       "100 mg/kg bw/day (human)"
+      ]
+     ]
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Inhalative DNEL (worker, short-term, systemic) 100 mg/m³ (human) DNEL (worker, long-term, systemic) 100 mg/m³ (human) DNEL (consumer, short-term, systemic) 50 mg/m³ (human) DNEL (consumer, long-term, systemic) 20 mg/m³ (human) DNEL (worker, short-term, local) 100 mg/m³ (human) DNEL (worker, long-term, local) 80 mg/m³ (human) DNEL (consumer, short-term, local) 50 mg/m³ (human) DNEL (consumer, long-term, local) 20 mg/m³ (human) · PNECs 109-99-9 tetrahydrofuran PNEC aqua (freshwater) 4.32 mg/L (.) PNEC aqua (marine water) 0.432 mg/L (.) PNEC STP 4.6 mg/L (.) PNEC soil 2.13 mg/kg soil dw (.) PNEC sediment (freshwater) 23.3 mg/kg sedim. dw (.) PNEC sediment (marine water) 2.33 mg/kg sedim. dw (.) PNEC aqua (intermittent releases) 21.6 mg/L (.) PNEC oral 67 mg/kg food (.) · Ingredients with biological limit values: 108-94-1 cyclohexanone BMGV (Great Britain) 2 mmol/mol creatinine Medium: urine Sampling time: post shift Parameter: cyclohexanol"
+    },
+    {
+     "soort": "veld",
+     "kopje": "· Additional information · 8.2 Exposure controls",
+     "tekst": "The lists that were valid during the compilation were used as basis."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "· Individual protection measures, such as personal protective equipment · General protective and hygienic measures Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food. · Breathing equipment: Not required. Not necessary if room is well-ventilated. · Hand protection The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "· Material of gloves Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application. · Penetration time of glove material In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed. · Eye/face protection Safety glasses"
+    }
+   ],
    "4": [
     {
      "soort": "alinea",
@@ -47249,10 +47749,57 @@ const VIB_PRODUCTEN = [
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Rubriek 8 niet gevonden",
+   "Onderdeel 8.2 niet gevonden",
    "VIB lijkt niet Nederlands (Engels)"
   ],
   "rubrieken": {
+   "8": [
+    {
+     "soort": "alinea",
+     "tekst": "· 8.1 Control parameters · Components with limit values that require monitoring at the workplace: WEL: workplace exposure limit OEL: Occupational Exposure Limit IOELV: Indicative Occupational Exposure Limit Values, workplace threshold value of the European Union 109-99-9 tetrahydrofuran IOELV (European Union) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Skin WEL (Great Britain) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Sk 9002-86-2 polyvinylchloride WEL (Great Britain) Long-term value: 10* 4** mg/m³ *inhalable dust **respirable dust 108-94-1 cyclohexanone IOELV (European Union) Short-term value: 81.6 mg/m³, 20 ppm Long-term value: 40.8 mg/m³, 10 ppm Skin WEL (Great Britain) Short-term value: 82 mg/m³, 20 ppm Long-term value: 41 mg/m³, 10 ppm Sk, BMGV 28553-12-0 diisononyl phthalate WEL (Great Britain) Long-term value: 5 mg/m³ · DNELs 109-99-9 tetrahydrofuran Oral DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human)"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Dermal Inhalative DNEL (worker, short-term, systemic)   96 mg/m³ (human)",
+       "DNEL (worker, long-term, systemic) DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human) DNEL (worker, long-term, systemic)    72.4 mg/m³ (human) DNEL (consumer, short-term, systemic) 52 mg/m³ (human) DNEL (consumer, long-term, systemic) 13 mg/m³ (human) DNEL (worker, short-term, local)      300 mg/m³ (human) DNEL (worker, long-term, local)       150 mg/m³ (human) DNEL (consumer, short-term, local)    150 mg/m³ (human) DNEL (consumer, long-term, local)     75 mg/m³ (human)",
+       "12.6 mg/kg bw/day (human)"
+      ]
+     ]
+    },
+    {
+     "soort": "alinea",
+     "tekst": "108-94-1 cyclohexanone Oral DNEL (consumer, short-term, systemic) 10 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 5 mg/kg bw/day (human)"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Dermal",
+       "DNEL (worker, short-term, systemic) DNEL (worker, long-term, systemic)    10 mg/kg bw/day (human) DNEL (consumer, short-term, systemic) 30 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 20 mg/kg bw/day (human)",
+       "100 mg/kg bw/day (human)"
+      ]
+     ]
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Inhalative DNEL (worker, short-term, systemic) 100 mg/m³ (human) DNEL (worker, long-term, systemic) 100 mg/m³ (human) DNEL (consumer, short-term, systemic) 50 mg/m³ (human) DNEL (consumer, long-term, systemic) 20 mg/m³ (human) DNEL (worker, short-term, local) 100 mg/m³ (human) DNEL (worker, long-term, local) 80 mg/m³ (human) DNEL (consumer, short-term, local) 50 mg/m³ (human) DNEL (consumer, long-term, local) 20 mg/m³ (human) · PNECs 109-99-9 tetrahydrofuran PNEC aqua (freshwater) 4.32 mg/L (.) PNEC aqua (marine water) 0.432 mg/L (.) PNEC STP 4.6 mg/L (.) PNEC soil 2.13 mg/kg soil dw (.) PNEC sediment (freshwater) 23.3 mg/kg sedim. dw (.) PNEC sediment (marine water) 2.33 mg/kg sedim. dw (.) PNEC aqua (intermittent releases) 21.6 mg/L (.) PNEC oral 67 mg/kg food (.) · Ingredients with biological limit values: 108-94-1 cyclohexanone BMGV (Great Britain) 2 mmol/mol creatinine Medium: urine Sampling time: post shift Parameter: cyclohexanol"
+    },
+    {
+     "soort": "veld",
+     "kopje": "· Additional information · 8.2 Exposure controls",
+     "tekst": "The lists that were valid during the compilation were used as basis."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "· Individual protection measures, such as personal protective equipment · General protective and hygienic measures Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food. · Breathing equipment: Not required. Not necessary if room is well-ventilated. · Hand protection The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "· Material of gloves Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application. · Penetration time of glove material In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed. · Eye/face protection Safety glasses"
+    }
+   ],
    "4": [
     {
      "soort": "alinea",
@@ -47323,10 +47870,57 @@ const VIB_PRODUCTEN = [
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Rubriek 8 niet gevonden",
+   "Onderdeel 8.2 niet gevonden",
    "VIB lijkt niet Nederlands (Engels)"
   ],
   "rubrieken": {
+   "8": [
+    {
+     "soort": "alinea",
+     "tekst": "· 8.1 Control parameters · Components with limit values that require monitoring at the workplace: WEL: workplace exposure limit OEL: Occupational Exposure Limit IOELV: Indicative Occupational Exposure Limit Values, workplace threshold value of the European Union 109-99-9 tetrahydrofuran IOELV (European Union) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Skin WEL (Great Britain) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Sk 9002-86-2 polyvinylchloride WEL (Great Britain) Long-term value: 10* 4** mg/m³ *inhalable dust **respirable dust 108-94-1 cyclohexanone IOELV (European Union) Short-term value: 81.6 mg/m³, 20 ppm Long-term value: 40.8 mg/m³, 10 ppm Skin WEL (Great Britain) Short-term value: 82 mg/m³, 20 ppm Long-term value: 41 mg/m³, 10 ppm Sk, BMGV 28553-12-0 diisononyl phthalate WEL (Great Britain) Long-term value: 5 mg/m³ · DNELs 109-99-9 tetrahydrofuran Oral DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human)"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Dermal Inhalative DNEL (worker, short-term, systemic)   96 mg/m³ (human)",
+       "DNEL (worker, long-term, systemic) DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human) DNEL (worker, long-term, systemic)    72.4 mg/m³ (human) DNEL (consumer, short-term, systemic) 52 mg/m³ (human) DNEL (consumer, long-term, systemic) 13 mg/m³ (human) DNEL (worker, short-term, local)      300 mg/m³ (human) DNEL (worker, long-term, local)       150 mg/m³ (human) DNEL (consumer, short-term, local)    150 mg/m³ (human) DNEL (consumer, long-term, local)     75 mg/m³ (human)",
+       "12.6 mg/kg bw/day (human)"
+      ]
+     ]
+    },
+    {
+     "soort": "alinea",
+     "tekst": "108-94-1 cyclohexanone Oral DNEL (consumer, short-term, systemic) 10 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 5 mg/kg bw/day (human)"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Dermal",
+       "DNEL (worker, short-term, systemic) DNEL (worker, long-term, systemic)    10 mg/kg bw/day (human) DNEL (consumer, short-term, systemic) 30 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 20 mg/kg bw/day (human)",
+       "100 mg/kg bw/day (human)"
+      ]
+     ]
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Inhalative DNEL (worker, short-term, systemic) 100 mg/m³ (human) DNEL (worker, long-term, systemic) 100 mg/m³ (human) DNEL (consumer, short-term, systemic) 50 mg/m³ (human) DNEL (consumer, long-term, systemic) 20 mg/m³ (human) DNEL (worker, short-term, local) 100 mg/m³ (human) DNEL (worker, long-term, local) 80 mg/m³ (human) DNEL (consumer, short-term, local) 50 mg/m³ (human) DNEL (consumer, long-term, local) 20 mg/m³ (human) · PNECs 109-99-9 tetrahydrofuran PNEC aqua (freshwater) 4.32 mg/L (.) PNEC aqua (marine water) 0.432 mg/L (.) PNEC STP 4.6 mg/L (.) PNEC soil 2.13 mg/kg soil dw (.) PNEC sediment (freshwater) 23.3 mg/kg sedim. dw (.) PNEC sediment (marine water) 2.33 mg/kg sedim. dw (.) PNEC aqua (intermittent releases) 21.6 mg/L (.) PNEC oral 67 mg/kg food (.) · Ingredients with biological limit values: 108-94-1 cyclohexanone BMGV (Great Britain) 2 mmol/mol creatinine Medium: urine Sampling time: post shift Parameter: cyclohexanol"
+    },
+    {
+     "soort": "veld",
+     "kopje": "· Additional information · 8.2 Exposure controls",
+     "tekst": "The lists that were valid during the compilation were used as basis."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "· Individual protection measures, such as personal protective equipment · General protective and hygienic measures Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food. · Breathing equipment: Not required. Not necessary if room is well-ventilated. · Hand protection The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "· Material of gloves Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application. · Penetration time of glove material In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed. · Eye/face protection Safety glasses"
+    }
+   ],
    "4": [
     {
      "soort": "alinea",
@@ -47397,10 +47991,57 @@ const VIB_PRODUCTEN = [
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Rubriek 8 niet gevonden",
+   "Onderdeel 8.2 niet gevonden",
    "VIB lijkt niet Nederlands (Engels)"
   ],
   "rubrieken": {
+   "8": [
+    {
+     "soort": "alinea",
+     "tekst": "· 8.1 Control parameters · Components with limit values that require monitoring at the workplace: WEL: workplace exposure limit OEL: Occupational Exposure Limit IOELV: Indicative Occupational Exposure Limit Values, workplace threshold value of the European Union 109-99-9 tetrahydrofuran IOELV (European Union) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Skin WEL (Great Britain) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Sk 9002-86-2 polyvinylchloride WEL (Great Britain) Long-term value: 10* 4** mg/m³ *inhalable dust **respirable dust 108-94-1 cyclohexanone IOELV (European Union) Short-term value: 81.6 mg/m³, 20 ppm Long-term value: 40.8 mg/m³, 10 ppm Skin WEL (Great Britain) Short-term value: 82 mg/m³, 20 ppm Long-term value: 41 mg/m³, 10 ppm Sk, BMGV 28553-12-0 diisononyl phthalate WEL (Great Britain) Long-term value: 5 mg/m³ · DNELs 109-99-9 tetrahydrofuran Oral DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human)"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Dermal Inhalative DNEL (worker, short-term, systemic)   96 mg/m³ (human)",
+       "DNEL (worker, long-term, systemic) DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human) DNEL (worker, long-term, systemic)    72.4 mg/m³ (human) DNEL (consumer, short-term, systemic) 52 mg/m³ (human) DNEL (consumer, long-term, systemic) 13 mg/m³ (human) DNEL (worker, short-term, local)      300 mg/m³ (human) DNEL (worker, long-term, local)       150 mg/m³ (human) DNEL (consumer, short-term, local)    150 mg/m³ (human) DNEL (consumer, long-term, local)     75 mg/m³ (human)",
+       "12.6 mg/kg bw/day (human)"
+      ]
+     ]
+    },
+    {
+     "soort": "alinea",
+     "tekst": "108-94-1 cyclohexanone Oral DNEL (consumer, short-term, systemic) 10 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 5 mg/kg bw/day (human)"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Dermal",
+       "DNEL (worker, short-term, systemic) DNEL (worker, long-term, systemic)    10 mg/kg bw/day (human) DNEL (consumer, short-term, systemic) 30 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 20 mg/kg bw/day (human)",
+       "100 mg/kg bw/day (human)"
+      ]
+     ]
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Inhalative DNEL (worker, short-term, systemic) 100 mg/m³ (human) DNEL (worker, long-term, systemic) 100 mg/m³ (human) DNEL (consumer, short-term, systemic) 50 mg/m³ (human) DNEL (consumer, long-term, systemic) 20 mg/m³ (human) DNEL (worker, short-term, local) 100 mg/m³ (human) DNEL (worker, long-term, local) 80 mg/m³ (human) DNEL (consumer, short-term, local) 50 mg/m³ (human) DNEL (consumer, long-term, local) 20 mg/m³ (human) · PNECs 109-99-9 tetrahydrofuran PNEC aqua (freshwater) 4.32 mg/L (.) PNEC aqua (marine water) 0.432 mg/L (.) PNEC STP 4.6 mg/L (.) PNEC soil 2.13 mg/kg soil dw (.) PNEC sediment (freshwater) 23.3 mg/kg sedim. dw (.) PNEC sediment (marine water) 2.33 mg/kg sedim. dw (.) PNEC aqua (intermittent releases) 21.6 mg/L (.) PNEC oral 67 mg/kg food (.) · Ingredients with biological limit values: 108-94-1 cyclohexanone BMGV (Great Britain) 2 mmol/mol creatinine Medium: urine Sampling time: post shift Parameter: cyclohexanol"
+    },
+    {
+     "soort": "veld",
+     "kopje": "· Additional information · 8.2 Exposure controls",
+     "tekst": "The lists that were valid during the compilation were used as basis."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "· Individual protection measures, such as personal protective equipment · General protective and hygienic measures Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food. · Breathing equipment: Not required. Not necessary if room is well-ventilated. · Hand protection The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "· Material of gloves Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application. · Penetration time of glove material In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed. · Eye/face protection Safety glasses"
+    }
+   ],
    "4": [
     {
      "soort": "alinea",
@@ -47494,10 +48135,57 @@ const VIB_PRODUCTEN = [
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Rubriek 8 niet gevonden",
+   "Onderdeel 8.2 niet gevonden",
    "VIB lijkt niet Nederlands (Engels)"
   ],
   "rubrieken": {
+   "8": [
+    {
+     "soort": "alinea",
+     "tekst": "· 8.1 Control parameters · Components with limit values that require monitoring at the workplace: WEL: workplace exposure limit OEL: Occupational Exposure Limit IOELV: Indicative Occupational Exposure Limit Values, workplace threshold value of the European Union 109-99-9 tetrahydrofuran IOELV (European Union) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Skin WEL (Great Britain) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Sk 9002-86-2 polyvinylchloride WEL (Great Britain) Long-term value: 10* 4** mg/m³ *inhalable dust **respirable dust 108-94-1 cyclohexanone IOELV (European Union) Short-term value: 81.6 mg/m³, 20 ppm Long-term value: 40.8 mg/m³, 10 ppm Skin WEL (Great Britain) Short-term value: 82 mg/m³, 20 ppm Long-term value: 41 mg/m³, 10 ppm Sk, BMGV 28553-12-0 diisononyl phthalate WEL (Great Britain) Long-term value: 5 mg/m³ · DNELs 109-99-9 tetrahydrofuran Oral DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human)"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Dermal Inhalative DNEL (worker, short-term, systemic)   96 mg/m³ (human)",
+       "DNEL (worker, long-term, systemic) DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human) DNEL (worker, long-term, systemic)    72.4 mg/m³ (human) DNEL (consumer, short-term, systemic) 52 mg/m³ (human) DNEL (consumer, long-term, systemic) 13 mg/m³ (human) DNEL (worker, short-term, local)      300 mg/m³ (human) DNEL (worker, long-term, local)       150 mg/m³ (human) DNEL (consumer, short-term, local)    150 mg/m³ (human) DNEL (consumer, long-term, local)     75 mg/m³ (human)",
+       "12.6 mg/kg bw/day (human)"
+      ]
+     ]
+    },
+    {
+     "soort": "alinea",
+     "tekst": "108-94-1 cyclohexanone Oral DNEL (consumer, short-term, systemic) 10 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 5 mg/kg bw/day (human)"
+    },
+    {
+     "soort": "tabel",
+     "rijen": [
+      [
+       "Dermal",
+       "DNEL (worker, short-term, systemic) DNEL (worker, long-term, systemic)    10 mg/kg bw/day (human) DNEL (consumer, short-term, systemic) 30 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 20 mg/kg bw/day (human)",
+       "100 mg/kg bw/day (human)"
+      ]
+     ]
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Inhalative DNEL (worker, short-term, systemic) 100 mg/m³ (human) DNEL (worker, long-term, systemic) 100 mg/m³ (human) DNEL (consumer, short-term, systemic) 50 mg/m³ (human) DNEL (consumer, long-term, systemic) 20 mg/m³ (human) DNEL (worker, short-term, local) 100 mg/m³ (human) DNEL (worker, long-term, local) 80 mg/m³ (human) DNEL (consumer, short-term, local) 50 mg/m³ (human) DNEL (consumer, long-term, local) 20 mg/m³ (human) · PNECs 109-99-9 tetrahydrofuran PNEC aqua (freshwater) 4.32 mg/L (.) PNEC aqua (marine water) 0.432 mg/L (.) PNEC STP 4.6 mg/L (.) PNEC soil 2.13 mg/kg soil dw (.) PNEC sediment (freshwater) 23.3 mg/kg sedim. dw (.) PNEC sediment (marine water) 2.33 mg/kg sedim. dw (.) PNEC aqua (intermittent releases) 21.6 mg/L (.) PNEC oral 67 mg/kg food (.) · Ingredients with biological limit values: 108-94-1 cyclohexanone BMGV (Great Britain) 2 mmol/mol creatinine Medium: urine Sampling time: post shift Parameter: cyclohexanol"
+    },
+    {
+     "soort": "veld",
+     "kopje": "· Additional information · 8.2 Exposure controls",
+     "tekst": "The lists that were valid during the compilation were used as basis."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "· Individual protection measures, such as personal protective equipment · General protective and hygienic measures Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food. · Breathing equipment: Not required. Not necessary if room is well-ventilated. · Hand protection The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "· Material of gloves Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application. · Penetration time of glove material In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed. · Eye/face protection Safety glasses"
+    }
+   ],
    "4": [
     {
      "soort": "alinea",
@@ -52028,7 +52716,7 @@ const VIB_PRODUCTEN = [
     "pdf": "vib/236-177.pdf",
     "datum": "31-01-2024",
     "verlopen": false,
-    "taal": ""
+    "taal": "nl"
    }
   ],
   "artikelstatus": "active",
