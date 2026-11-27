@@ -477,11 +477,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Corrosief product",
-     "tekst": "het contact met de ogen of met de huid veroorzaakt brandwonden en de opneming of inademing van het"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "product kan inwendige letsels veroorzaken. In dat geval is onmiddellijke medische hulp vereist."
+     "tekst": "het contact met de ogen of met de huid veroorzaakt brandwonden en de opneming of inademing van het product kan inwendige letsels veroorzaken. In dat geval is onmiddellijke medische hulp vereist."
     },
     {
      "soort": "alinea",
@@ -490,11 +486,11 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Schadelijk product",
-     "tekst": "langdurige blootstelling door inademing kan antistatische effecten hebben en vereist onmiddellijke medische"
+     "tekst": "langdurige blootstelling door inademing kan antistatische effecten hebben en vereist onmiddellijke medische hulp."
     },
     {
      "soort": "alinea",
-     "tekst": "hulp. Contact met de ogen kan leiden tot onherstelbare schade."
+     "tekst": "Contact met de ogen kan leiden tot onherstelbare schade."
     },
     {
      "soort": "kop",
@@ -692,11 +688,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Schadelijk product",
-     "tekst": "langdurige blootstelling door inademing kan antistatische effecten hebben en vereist onmiddellijke medische"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "hulp."
+     "tekst": "langdurige blootstelling door inademing kan antistatische effecten hebben en vereist onmiddellijke medische hulp."
     },
     {
      "soort": "kop",
@@ -925,11 +917,11 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Corrosief product",
-     "tekst": "het contact met de ogen of met de huid veroorzaakt brandwonden en de opneming of inademing van het"
+     "tekst": "het contact met de ogen of met de huid veroorzaakt brandwonden en de opneming of inademing van het product kan inwendige letsels veroorzaken. In dat geval is onmiddellijke medische hulp vereist."
     },
     {
      "soort": "alinea",
-     "tekst": "product kan inwendige letsels veroorzaken. In dat geval is onmiddellijke medische hulp vereist. Contact met de ogen kan leiden tot onherstelbare schade."
+     "tekst": "Contact met de ogen kan leiden tot onherstelbare schade."
     },
     {
      "soort": "kop",
@@ -2130,11 +2122,11 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Corrosief product",
-     "tekst": "het contact met de ogen of met de huid veroorzaakt brandwonden en de opneming of inademing van het"
+     "tekst": "het contact met de ogen of met de huid veroorzaakt brandwonden en de opneming of inademing van het product kan inwendige letsels veroorzaken. In dat geval is onmiddellijke medische hulp vereist."
     },
     {
      "soort": "alinea",
-     "tekst": "product kan inwendige letsels veroorzaken. In dat geval is onmiddellijke medische hulp vereist. Contact met de ogen kan leiden tot onherstelbare schade."
+     "tekst": "Contact met de ogen kan leiden tot onherstelbare schade."
     },
     {
      "soort": "kop",
@@ -2595,29 +2587,17 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "- Inademing",
-     "tekst": "Het slachtoffer in de frisse lucht brengen. Slachtoffer rustig houden, in"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "halfzittende houding. Bij (blijvende) irritatie, een arts raadplegen."
+     "tekst": "Het slachtoffer in de frisse lucht brengen. Slachtoffer rustig houden, in halfzittende houding. Bij (blijvende) irritatie, een arts raadplegen."
     },
     {
      "soort": "veld",
      "kopje": "- Contact met de huid",
-     "tekst": "Met veel water en zeep wassen. Bij (blijvende) irritatie, een arts"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "raadplegen."
+     "tekst": "Met veel water en zeep wassen. Bij (blijvende) irritatie, een arts raadplegen."
     },
     {
      "soort": "veld",
      "kopje": "- Contact met de ogen",
-     "tekst": "Onmiddellijk grondig en langdurig (minstens 15 min.) spoelen met"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "veel water. Contactlenzen verwijderen. Bij blijvende irritatie van de ogen, oogarts consulteren."
+     "tekst": "Onmiddellijk grondig en langdurig (minstens 15 min.) spoelen met veel water. Contactlenzen verwijderen. Bij blijvende irritatie van de ogen, oogarts consulteren."
     },
     {
      "soort": "veld",
@@ -9364,20 +9344,12 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Irriterend product",
-     "tekst": "herhaaldelijk of langdurig contact met de huid of met de slijmvliezen kan roodheid, blaren of een"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "huidontsteking veroorzaken. De inademing van spuitnevel of fijnstof kan irritatie van de luchtwegen veroorzaken. Sommige symptomen zijn niet onmiddellijk."
+     "tekst": "herhaaldelijk of langdurig contact met de huid of met de slijmvliezen kan roodheid, blaren of een huidontsteking veroorzaken. De inademing van spuitnevel of fijnstof kan irritatie van de luchtwegen veroorzaken. Sommige symptomen zijn niet onmiddellijk."
     },
     {
      "soort": "veld",
      "kopje": "Schadelijk product",
-     "tekst": "langdurige blootstelling door inademing kan antistatische effecten hebben en vereist onmiddellijke medische"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "hulp."
+     "tekst": "langdurige blootstelling door inademing kan antistatische effecten hebben en vereist onmiddellijke medische hulp."
     },
     {
      "soort": "kop",
@@ -13544,11 +13516,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "G e l e e n d e v e r p a k k i n g",
-     "tekst": "na optimale lediging direct goed gesloten en zonder reiniging aan"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "de leverancier teruggeven. U dient ervoor te zorgen dat er geen vreemde stoffen in de verpakking geraken!"
+     "tekst": "na optimale lediging direct goed gesloten en zonder reiniging aan de leverancier teruggeven. U dient ervoor te zorgen dat er geen vreemde stoffen in de verpakking geraken!"
     },
     {
      "soort": "veld",
@@ -15640,8 +15608,8 @@ const VIB_PRODUCTEN = [
     },
     {
      "soort": "veld",
-     "kopje": "Suitable extinguishing media situation)",
-     "tekst": "CO2 in small fires and water in large quantities (small amounts of water may aggravate the"
+     "kopje": "Suitable extinguishing media",
+     "tekst": "CO2 in small fires and water in large quantities (small amounts of water may aggravate the situation)"
     },
     {
      "soort": "veld",
@@ -15732,38 +15700,22 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "OGEN",
-     "tekst": "Verwijder eventuele contactlenzen als de situatie dit toelaat. Onmiddellijk minstens 15 minuten met veel water wassen, met de"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "oogleden goed open. Raadpleeg direct een arts."
+     "tekst": "Verwijder eventuele contactlenzen als de situatie dit toelaat. Onmiddellijk minstens 15 minuten met veel water wassen, met de oogleden goed open. Raadpleeg direct een arts."
     },
     {
      "soort": "veld",
      "kopje": "HUID",
-     "tekst": "Verontreinigde kleding onmiddellijk uittrekken. Onmiddellijk met veel stromend water (en mogelijkerwijs zeep) spoelen. Raadpleeg"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "direct een arts. Vermijd verder contact met besmette kleding."
+     "tekst": "Verontreinigde kleding onmiddellijk uittrekken. Onmiddellijk met veel stromend water (en mogelijkerwijs zeep) spoelen. Raadpleeg direct een arts. Vermijd verder contact met besmette kleding."
     },
     {
      "soort": "veld",
      "kopje": "INSLIKKEN",
-     "tekst": "Braken niet opwekken als de arts daartoe niet uitdrukkelijk toestemming heeft gegeven. Spoel de mondholte met stromend"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "water. Geef niets via de mond, als de persoon in kwestie niet bij bewustzijn is. Raadpleeg direct een arts."
+     "tekst": "Braken niet opwekken als de arts daartoe niet uitdrukkelijk toestemming heeft gegeven. Spoel de mondholte met stromend water. Geef niets via de mond, als de persoon in kwestie niet bij bewustzijn is. Raadpleeg direct een arts."
     },
     {
      "soort": "veld",
      "kopje": "INADEMING",
-     "tekst": "Breng het slachtoffer in de frisse lucht, zover mogelijk van de plaats van het ongeval. Houd bij ademhalingsproblemen"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "(hoesten, kortademigheid, ademhalingsmoeilijkheden, astma) het slachtoffer in een positie waarin hij beter kan ademen. Dien indien nodig zuurstof toe. Bij ademstilstand kunstmatige ademhaling toepassen. Raadpleeg direct een arts."
+     "tekst": "Breng het slachtoffer in de frisse lucht, zover mogelijk van de plaats van het ongeval. Houd bij ademhalingsproblemen (hoesten, kortademigheid, ademhalingsmoeilijkheden, astma) het slachtoffer in een positie waarin hij beter kan ademen. Dien indien nodig zuurstof toe. Bij ademstilstand kunstmatige ademhaling toepassen. Raadpleeg direct een arts."
     },
     {
      "soort": "alinea",
@@ -15784,11 +15736,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "VERTRAAGDE EFFECTEN",
-     "tekst": "Op grond van de huidige beschikbare informatie, zijn er geen gevallen van vertragingseffecten bekend na"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "blootstelling aan dit product."
+     "tekst": "Op grond van de huidige beschikbare informatie, zijn er geen gevallen van vertragingseffecten bekend na blootstelling aan dit product."
     },
     {
      "soort": "veld",
@@ -19430,11 +19378,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Passende technische maatregelen",
-     "tekst": "Algemene ruimteventilatie volstaat bij normaal laboratorium- of werkplaatsgebruik. Oogdouche in"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "de nabijheid is aanbevolen."
+     "tekst": "Algemene ruimteventilatie volstaat bij normaal laboratorium- of werkplaatsgebruik. Oogdouche in de nabijheid is aanbevolen."
     },
     {
      "soort": "veld",
@@ -19448,11 +19392,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Huidbescherming",
-     "tekst": "Niet strikt vereist bij normaal gebruik. Bij herhaald of langdurig contact: nitrilhandschoenen (EN ISO 374, minimale"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "dikte 0,11 mm, doorbraaktijd > 480 min)."
+     "tekst": "Niet strikt vereist bij normaal gebruik. Bij herhaald of langdurig contact: nitrilhandschoenen (EN ISO 374, minimale dikte 0,11 mm, doorbraaktijd > 480 min)."
     },
     {
      "soort": "veld",
@@ -19473,11 +19413,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Algemeen",
-     "tekst": "Bij twijfel of aanhoudende klachten een arts raadplegen. Dit VIB aan de arts tonen. Nooit een bewusteloos persoon iets oraal"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "toedienen."
+     "tekst": "Bij twijfel of aanhoudende klachten een arts raadplegen. Dit VIB aan de arts tonen. Nooit een bewusteloos persoon iets oraal toedienen."
     },
     {
      "soort": "veld",
@@ -19487,29 +19423,17 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Na huidcontact",
-     "tekst": "Verontreinigde kleding uittrekken. De huid spoelen met overvloedig water. Bij aanhoudende irritatie een arts"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "raadplegen."
+     "tekst": "Verontreinigde kleding uittrekken. De huid spoelen met overvloedig water. Bij aanhoudende irritatie een arts raadplegen."
     },
     {
      "soort": "veld",
      "kopje": "Na oogcontact",
-     "tekst": "Onmiddellijk voorzichtig spoelen met water gedurende minstens 15 minuten, oogleden openhouden. Contactlenzen"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "verwijderen indien mogelijk. Bij aanhoudende irritatie een oogarts raadplegen."
+     "tekst": "Onmiddellijk voorzichtig spoelen met water gedurende minstens 15 minuten, oogleden openhouden. Contactlenzen verwijderen indien mogelijk. Bij aanhoudende irritatie een oogarts raadplegen."
     },
     {
      "soort": "veld",
      "kopje": "Na inslikken",
-     "tekst": "De mond spoelen met water. Daarna kleine hoeveelheden water laten drinken. GEEN braken opwekken. Bij onwel voelen"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "het Antigifcentrum of een arts raadplegen."
+     "tekst": "De mond spoelen met water. Daarna kleine hoeveelheden water laten drinken. GEEN braken opwekken. Bij onwel voelen het Antigifcentrum of een arts raadplegen."
     },
     {
      "soort": "kop",
@@ -19518,11 +19442,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Acuut",
-     "tekst": "bij de aanwezige concentratie worden geen specifieke symptomen verwacht. Mogelijk lichte irritatie van ogen of huid bij langdurig"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "contact. Inslikken van grotere hoeveelheden kan milde maag-darmklachten veroorzaken."
+     "tekst": "bij de aanwezige concentratie worden geen specifieke symptomen verwacht. Mogelijk lichte irritatie van ogen of huid bij langdurig contact. Inslikken van grotere hoeveelheden kan milde maag-darmklachten veroorzaken."
     },
     {
      "soort": "veld",
@@ -19591,11 +19511,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Geschikte blusmiddelen",
-     "tekst": "Het product zelf is niet brandbaar. Blusmiddelen afstemmen op de omgeving (waternevel, schuim, droog"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "poeder, kooldioxide)."
+     "tekst": "Het product zelf is niet brandbaar. Blusmiddelen afstemmen op de omgeving (waternevel, schuim, droog poeder, kooldioxide)."
     },
     {
      "soort": "veld",
@@ -19627,11 +19543,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Product / restanten",
-     "tekst": "Verwijderen overeenkomstig lokale, regionale en nationale voorschriften. Het product is niet als gevaarlijk afval"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "ingedeeld. Kleine hoeveelheden mogen, na verdere verdunning met water en indien de bevoegde instantie dat toestaat, via het"
+     "tekst": "Verwijderen overeenkomstig lokale, regionale en nationale voorschriften. Het product is niet als gevaarlijk afval ingedeeld. Kleine hoeveelheden mogen, na verdere verdunning met water en indien de bevoegde instantie dat toestaat, via het"
     },
     {
      "soort": "veld",
@@ -19641,11 +19553,11 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Verpakking",
-     "tekst": "Volledig legen. Schone HDPE-flessen: 15 01 02 (kunststofverpakking). Niet-gereinigde verpakking op dezelfde wijze"
+     "tekst": "Volledig legen. Schone HDPE-flessen: 15 01 02 (kunststofverpakking). Niet-gereinigde verpakking op dezelfde wijze behandelen als het product."
     },
     {
      "soort": "alinea",
-     "tekst": "behandelen als het product. Niet met het huisvuil weggooien indien lokale regels dat verbieden. Niet ongecontroleerd in het milieu lozen."
+     "tekst": "Niet met het huisvuil weggooien indien lokale regels dat verbieden. Niet ongecontroleerd in het milieu lozen."
     }
    ]
   }
@@ -19815,8 +19727,8 @@ const VIB_PRODUCTEN = [
     },
     {
      "soort": "veld",
-     "kopje": "Suitable extinguishing media situation)",
-     "tekst": "CO2 in small fires and water in large quantities (small amounts of water may aggravate the"
+     "kopje": "Suitable extinguishing media",
+     "tekst": "CO2 in small fires and water in large quantities (small amounts of water may aggravate the situation)"
     },
     {
      "soort": "veld",
@@ -20128,8 +20040,8 @@ const VIB_PRODUCTEN = [
     },
     {
      "soort": "veld",
-     "kopje": "Suitable extinguishing media situation)",
-     "tekst": "CO2 in small fires and water in large quantities (small amounts of water may aggravate the"
+     "kopje": "Suitable extinguishing media",
+     "tekst": "CO2 in small fires and water in large quantities (small amounts of water may aggravate the situation)"
     },
     {
      "soort": "veld",
@@ -22567,11 +22479,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Type",
-     "tekst": "ABEK-P2 (combinatiefilter voor gassen, dampen en partikels, kleurcode: bruin/grijs/geel/groen/"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "wit)."
+     "tekst": "ABEK-P2 (combinatiefilter voor gassen, dampen en partikels, kleurcode: bruin/grijs/geel/groen/ wit)."
     },
     {
      "soort": "alinea",
@@ -26934,11 +26842,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Algemeen",
-     "tekst": "Onmiddellijk spoelen met veel water. Bij twijfel of aanhoudende symptomen medische hulp inroepen. Dit VIB aan de arts tonen. Nooit"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "een bewusteloos persoon iets oraal toedienen."
+     "tekst": "Onmiddellijk spoelen met veel water. Bij twijfel of aanhoudende symptomen medische hulp inroepen. Dit VIB aan de arts tonen. Nooit een bewusteloos persoon iets oraal toedienen."
     },
     {
      "soort": "veld",
@@ -26953,11 +26857,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Na oogcontact",
-     "tekst": "Onmiddellijk voorzichtig spoelen met water gedurende minstens 15 minuten, oogleden openhouden. Contactlenzen verwijderen"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "indien mogelijk. Onmiddellijk een oogarts raadplegen."
+     "tekst": "Onmiddellijk voorzichtig spoelen met water gedurende minstens 15 minuten, oogleden openhouden. Contactlenzen verwijderen indien mogelijk. Onmiddellijk een oogarts raadplegen."
     },
     {
      "soort": "veld",
@@ -27034,11 +26934,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Geschikte blusmiddelen",
-     "tekst": "Het product zelf is niet brandbaar. Blusmiddelen afstemmen op de omgeving (waternevel, schuim, droog poeder,"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "kooldioxide)."
+     "tekst": "Het product zelf is niet brandbaar. Blusmiddelen afstemmen op de omgeving (waternevel, schuim, droog poeder, kooldioxide)."
     },
     {
      "soort": "veld",
@@ -27070,20 +26966,12 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Product / restanten",
-     "tekst": "Verwijderen overeenkomstig lokale, regionale en nationale voorschriften. Kleine hoeveelheden kunnen na neutralisatie (indien"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "de bevoegde instantie dat toestaat) als afvalwater worden afgevoerd. Grote hoeveelheden: aanbieden aan een erkend afvalverwerkingsbedrijf voor gevaarlijk afval."
+     "tekst": "Verwijderen overeenkomstig lokale, regionale en nationale voorschriften. Kleine hoeveelheden kunnen na neutralisatie (indien de bevoegde instantie dat toestaat) als afvalwater worden afgevoerd. Grote hoeveelheden: aanbieden aan een erkend afvalverwerkingsbedrijf voor gevaarlijk afval."
     },
     {
      "soort": "veld",
      "kopje": "Verpakking",
-     "tekst": "Volledig legen en spoelen. Schone HDPE-flessen kunnen worden gerecycled (15 01 02). Niet-gereinigde verpakkingen als gevaarlijk"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "afval behandelen."
+     "tekst": "Volledig legen en spoelen. Schone HDPE-flessen kunnen worden gerecycled (15 01 02). Niet-gereinigde verpakkingen als gevaarlijk afval behandelen."
     }
    ]
   }
@@ -27158,11 +27046,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Algemeen",
-     "tekst": "Onmiddellijk spoelen met veel water. Bij twijfel of aanhoudende symptomen medische hulp inroepen. Dit VIB aan de arts tonen. Nooit"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "een bewusteloos persoon iets oraal toedienen."
+     "tekst": "Onmiddellijk spoelen met veel water. Bij twijfel of aanhoudende symptomen medische hulp inroepen. Dit VIB aan de arts tonen. Nooit een bewusteloos persoon iets oraal toedienen."
     },
     {
      "soort": "veld",
@@ -27177,11 +27061,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Na oogcontact",
-     "tekst": "Onmiddellijk voorzichtig spoelen met water gedurende minstens 15 minuten, oogleden openhouden. Contactlenzen verwijderen"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "indien mogelijk. Onmiddellijk een oogarts raadplegen."
+     "tekst": "Onmiddellijk voorzichtig spoelen met water gedurende minstens 15 minuten, oogleden openhouden. Contactlenzen verwijderen indien mogelijk. Onmiddellijk een oogarts raadplegen."
     },
     {
      "soort": "veld",
@@ -27258,11 +27138,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Geschikte blusmiddelen",
-     "tekst": "Het product zelf is niet brandbaar. Blusmiddelen afstemmen op de omgeving (waternevel, schuim, droog poeder,"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "kooldioxide)."
+     "tekst": "Het product zelf is niet brandbaar. Blusmiddelen afstemmen op de omgeving (waternevel, schuim, droog poeder, kooldioxide)."
     },
     {
      "soort": "veld",
@@ -27294,20 +27170,12 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Product / restanten",
-     "tekst": "Verwijderen overeenkomstig lokale, regionale en nationale voorschriften. Kleine hoeveelheden kunnen na neutralisatie (indien"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "de bevoegde instantie dat toestaat) als afvalwater worden afgevoerd. Grote hoeveelheden: aanbieden aan een erkend afvalverwerkingsbedrijf voor gevaarlijk afval."
+     "tekst": "Verwijderen overeenkomstig lokale, regionale en nationale voorschriften. Kleine hoeveelheden kunnen na neutralisatie (indien de bevoegde instantie dat toestaat) als afvalwater worden afgevoerd. Grote hoeveelheden: aanbieden aan een erkend afvalverwerkingsbedrijf voor gevaarlijk afval."
     },
     {
      "soort": "veld",
      "kopje": "Verpakking",
-     "tekst": "Volledig legen en spoelen. Schone HDPE-flessen kunnen worden gerecycled (15 01 02). Niet-gereinigde verpakkingen als gevaarlijk"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "afval behandelen."
+     "tekst": "Volledig legen en spoelen. Schone HDPE-flessen kunnen worden gerecycled (15 01 02). Niet-gereinigde verpakkingen als gevaarlijk afval behandelen."
     }
    ]
   }
@@ -27382,11 +27250,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Algemeen",
-     "tekst": "Onmiddellijk spoelen met veel water. Bij twijfel of aanhoudende symptomen medische hulp inroepen. Dit VIB aan de arts tonen. Nooit"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "een bewusteloos persoon iets oraal toedienen."
+     "tekst": "Onmiddellijk spoelen met veel water. Bij twijfel of aanhoudende symptomen medische hulp inroepen. Dit VIB aan de arts tonen. Nooit een bewusteloos persoon iets oraal toedienen."
     },
     {
      "soort": "veld",
@@ -27401,11 +27265,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Na oogcontact",
-     "tekst": "Onmiddellijk voorzichtig spoelen met water gedurende minstens 15 minuten, oogleden openhouden. Contactlenzen verwijderen"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "indien mogelijk. Onmiddellijk een oogarts raadplegen."
+     "tekst": "Onmiddellijk voorzichtig spoelen met water gedurende minstens 15 minuten, oogleden openhouden. Contactlenzen verwijderen indien mogelijk. Onmiddellijk een oogarts raadplegen."
     },
     {
      "soort": "veld",
@@ -27482,11 +27342,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Geschikte blusmiddelen",
-     "tekst": "Het product zelf is niet brandbaar. Blusmiddelen afstemmen op de omgeving (waternevel, schuim, droog poeder,"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "kooldioxide)."
+     "tekst": "Het product zelf is niet brandbaar. Blusmiddelen afstemmen op de omgeving (waternevel, schuim, droog poeder, kooldioxide)."
     },
     {
      "soort": "veld",
@@ -27518,20 +27374,12 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Product / restanten",
-     "tekst": "Verwijderen overeenkomstig lokale, regionale en nationale voorschriften. Kleine hoeveelheden kunnen na neutralisatie (indien"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "de bevoegde instantie dat toestaat) als afvalwater worden afgevoerd. Grote hoeveelheden: aanbieden aan een erkend afvalverwerkingsbedrijf voor gevaarlijk afval."
+     "tekst": "Verwijderen overeenkomstig lokale, regionale en nationale voorschriften. Kleine hoeveelheden kunnen na neutralisatie (indien de bevoegde instantie dat toestaat) als afvalwater worden afgevoerd. Grote hoeveelheden: aanbieden aan een erkend afvalverwerkingsbedrijf voor gevaarlijk afval."
     },
     {
      "soort": "veld",
      "kopje": "Verpakking",
-     "tekst": "Volledig legen en spoelen. Schone HDPE-flessen kunnen worden gerecycled (15 01 02). Niet-gereinigde verpakkingen als gevaarlijk"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "afval behandelen."
+     "tekst": "Volledig legen en spoelen. Schone HDPE-flessen kunnen worden gerecycled (15 01 02). Niet-gereinigde verpakkingen als gevaarlijk afval behandelen."
     }
    ]
   }
@@ -27771,11 +27619,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Zie voor nadere informatie paragraaf 8",
-     "tekst": "\"Maatregelen ter beheersing van blootstelling/persoonlijke bescherming\". Zie rubriek 13 voor wat betreft de"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "afvalverwijdering na het schoonmaken."
+     "tekst": "\"Maatregelen ter beheersing van blootstelling/persoonlijke bescherming\". Zie rubriek 13 voor wat betreft de afvalverwijdering na het schoonmaken."
     }
    ],
    "5": [
@@ -28095,11 +27939,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Zie voor nadere informatie paragraaf 8",
-     "tekst": "\"Maatregelen ter beheersing van blootstelling/persoonlijke bescherming\". Zie rubriek 13 voor wat betreft de"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "afvalverwijdering na het schoonmaken."
+     "tekst": "\"Maatregelen ter beheersing van blootstelling/persoonlijke bescherming\". Zie rubriek 13 voor wat betreft de afvalverwijdering na het schoonmaken."
     }
    ],
    "5": [
@@ -28419,11 +28259,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Zie voor nadere informatie paragraaf 8",
-     "tekst": "\"Maatregelen ter beheersing van blootstelling/persoonlijke bescherming\". Zie rubriek 13 voor wat betreft de"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "afvalverwijdering na het schoonmaken."
+     "tekst": "\"Maatregelen ter beheersing van blootstelling/persoonlijke bescherming\". Zie rubriek 13 voor wat betreft de afvalverwijdering na het schoonmaken."
     }
    ],
    "5": [
@@ -33002,11 +32838,11 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Carbón activado",
-     "tekst": "La dosis más recomendada y única es de 25gr en el adulto (disuelta en 200ml"
+     "tekst": "La dosis más recomendada y única es de 25gr en el adulto (disuelta en 200ml de agua templada) y de 1gr/kg. de peso en el niño."
     },
     {
      "soort": "alinea",
-     "tekst": "de agua templada) y de 1gr/kg. de peso en el niño. En caso de ingestión, valorar la realización de endoscopia."
+     "tekst": "En caso de ingestión, valorar la realización de endoscopia."
     },
     {
      "soort": "veld",
@@ -33068,11 +32904,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "peligrosos",
-     "tekst": "monóxido de carbono, dióxido de carbono. La exposición a los productos de combustión o descomposición puede ser"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "perjudicial para la salud."
+     "tekst": "monóxido de carbono, dióxido de carbono. La exposición a los productos de combustión o descomposición puede ser perjudicial para la salud."
     },
     {
      "soort": "kop",
@@ -33355,11 +33187,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "OGEN",
-     "tekst": "Contactlenzen verwijderen. Onmiddellijk minstens 30/60 minuten met veel water wassen, met de oogleden goed open. Raadpleeg"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "direct een arts."
+     "tekst": "Contactlenzen verwijderen. Onmiddellijk minstens 30/60 minuten met veel water wassen, met de oogleden goed open. Raadpleeg direct een arts."
     },
     {
      "soort": "veld",
@@ -33369,20 +33197,12 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "INSLIKKEN",
-     "tekst": "Zoveel mogelijk water laten drinken. Raadpleeg direct een arts. Braken niet opwekken als de arts daartoe niet uitdrukkelijk"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "toestemming heeft gegeven."
+     "tekst": "Zoveel mogelijk water laten drinken. Raadpleeg direct een arts. Braken niet opwekken als de arts daartoe niet uitdrukkelijk toestemming heeft gegeven."
     },
     {
      "soort": "veld",
      "kopje": "INADEMING",
-     "tekst": "Waarschuw onmiddellijk een arts. Breng het slachtoffer in de frisse lucht, zover mogelijk van de plaats van het ongeval. Bij"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "ademstilstand kunstmatige ademhaling toepassen. Neem geschikte voorzorgsmaatregelen voor de hulpverlener."
+     "tekst": "Waarschuw onmiddellijk een arts. Breng het slachtoffer in de frisse lucht, zover mogelijk van de plaats van het ongeval. Bij ademstilstand kunstmatige ademhaling toepassen. Neem geschikte voorzorgsmaatregelen voor de hulpverlener."
     },
     {
      "soort": "kop",
@@ -38014,11 +37834,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Meestal niet nodig. Bij onvoldoende ventilatie of sproeien",
-     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
+     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
     },
     {
      "soort": "alinea",
@@ -38356,11 +38172,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Meestal niet nodig. Bij onvoldoende ventilatie of sproeien",
-     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
+     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
     },
     {
      "soort": "alinea",
@@ -38698,11 +38510,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Meestal niet nodig. Bij onvoldoende ventilatie of sproeien",
-     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
+     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
     },
     {
      "soort": "alinea",
@@ -39040,11 +38848,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Meestal niet nodig. Bij onvoldoende ventilatie of sproeien",
-     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
+     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
     },
     {
      "soort": "alinea",
@@ -39382,11 +39186,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Meestal niet nodig. Bij onvoldoende ventilatie of sproeien",
-     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
+     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
     },
     {
      "soort": "alinea",
@@ -39724,11 +39524,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Meestal niet nodig. Bij onvoldoende ventilatie of sproeien",
-     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
+     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
     },
     {
      "soort": "alinea",
@@ -40066,11 +39862,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Meestal niet nodig. Bij onvoldoende ventilatie of sproeien",
-     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
+     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
     },
     {
      "soort": "alinea",
@@ -40408,11 +40200,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Meestal niet nodig. Bij onvoldoende ventilatie of sproeien",
-     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
+     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
     },
     {
      "soort": "alinea",
@@ -40750,11 +40538,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Meestal niet nodig. Bij onvoldoende ventilatie of sproeien",
-     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
+     "tekst": "Gebruik een goedgekeurd masker met deeltjesfilter P2 (EN149). De filters hebben een beperkte levensduur (moeten worden vervangen). Lees de instructies van de fabrikant."
     },
     {
      "soort": "alinea",
@@ -42801,11 +42585,11 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "LET OP",
-     "tekst": "Omdat een aantal factoren de werking van de handschoen bepalen, moet de"
+     "tekst": "Omdat een aantal factoren de werking van de handschoen bepalen, moet de utieindelijke selectie gebaseerd zijn op gedetailleerde observatie"
     },
     {
      "soort": "alinea",
-     "tekst": "utieindelijke selectie gebaseerd zijn op gedetailleerde observatie *Wanneer handschoen voor korte periode of niet frequent wordt gebruikt dan spelen factoren zoals ‘gevoel of handigheid een grotere rol in de keuze van handschoen. Vraag raad aan gekwalificeerde arbeider."
+     "tekst": "*Wanneer handschoen voor korte periode of niet frequent wordt gebruikt dan spelen factoren zoals ‘gevoel of handigheid een grotere rol in de keuze van handschoen. Vraag raad aan gekwalificeerde arbeider."
     },
     {
      "soort": "kop",
@@ -42933,11 +42717,11 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Brand-/Ontploffingsgevaar LET OP",
-     "tekst": "Lege drums waar oplosmiddel, verf, lak en brandbare vloeistof in hebben gezeten, hebben een groot risico op explosie gevaar als ze"
+     "tekst": "Lege drums waar oplosmiddel, verf, lak en brandbare vloeistof in hebben gezeten, hebben een groot risico op explosie gevaar als ze met vlammenwerper gesneden worden of als ze worden gelast. Zelfs als de drums goed zijn schoongemaakt kunnen ze nog voldoende stof bevatten om een explosie te veroorzaken."
     },
     {
      "soort": "alinea",
-     "tekst": "met vlammenwerper gesneden worden of als ze worden gelast. Zelfs als de drums goed zijn schoongemaakt kunnen ze nog voldoende stof bevatten om een explosie te veroorzaken. WAARSCHUWING: Aërosol containers kunnen druk gerelateerde gevaren vertonen."
+     "tekst": "WAARSCHUWING: Aërosol containers kunnen druk gerelateerde gevaren vertonen."
     }
    ],
    "13": [
@@ -46565,11 +46349,11 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Storage",
-     "tekst": "Store in a cool (below 30°C), well ventilated area. Protect from direct sunlight. Make sure that surrounding"
+     "tekst": "Store in a cool (below 30°C), well ventilated area. Protect from direct sunlight. Make sure that surrounding electrical devices and switches are suitable. Check containers and valves periodically for leaks. If you keep more than"
     },
     {
      "soort": "alinea",
-     "tekst": "electrical devices and switches are suitable. Check containers and valves periodically for leaks. If you keep more than 25kg of flammable gases, you are probably required to license the premises or notify your Dangerous Goods authority. If you have any doubts, we suggest you contact your Dangerous Goods authority in order to clarify your obligations. Check packaging - there may be further storage instructions on the label."
+     "tekst": "25kg of flammable gases, you are probably required to license the premises or notify your Dangerous Goods authority. If you have any doubts, we suggest you contact your Dangerous Goods authority in order to clarify your obligations. Check packaging - there may be further storage instructions on the label."
     },
     {
      "soort": "alinea",
@@ -46607,29 +46391,17 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Ventilation",
-     "tekst": "This product should only be used in a well ventilated area. If natural ventilation is inadequate, use of a"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "fan is suggested."
+     "tekst": "This product should only be used in a well ventilated area. If natural ventilation is inadequate, use of a fan is suggested."
     },
     {
      "soort": "veld",
      "kopje": "Eye Protection",
-     "tekst": "Eye protection such as protective glasses or goggles is recommended when this product is being"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "used."
+     "tekst": "Eye protection such as protective glasses or goggles is recommended when this product is being used."
     },
     {
      "soort": "veld",
      "kopje": "Skin Protection",
-     "tekst": "Prevent skin contact by wearing impervious gloves, clothes and, preferably, apron. Make sure that"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "all skin areas are covered. See below for suitable material types."
+     "tekst": "Prevent skin contact by wearing impervious gloves, clothes and, preferably, apron. Make sure that all skin areas are covered. See below for suitable material types."
     },
     {
      "soort": "veld",
@@ -46643,11 +46415,11 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Respirator",
-     "tekst": "Usually, no respirator is necessary when using this product. However, if you have any doubts consult"
+     "tekst": "Usually, no respirator is necessary when using this product. However, if you have any doubts consult the Australian Standard mentioned above."
     },
     {
      "soort": "alinea",
-     "tekst": "the Australian Standard mentioned above. Safety deluge showers should, if practical, be provided near to where this product is being handled commercially."
+     "tekst": "Safety deluge showers should, if practical, be provided near to where this product is being handled commercially."
     }
    ],
    "4": [
@@ -46663,20 +46435,12 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Skin Contact",
-     "tekst": "Quickly and gently blot away excess liquid. Wash gently and thoroughly with warm water (use non-"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "abrasive soap if necessary) for 10-20 minutes or until product is removed. Under running water, remove contaminated clothing, shoes and leather goods (e.g. watchbands and belts) and completely decontaminate them before reuse or discard. If irritation persists, repeat flushing and seek medical attention."
+     "tekst": "Quickly and gently blot away excess liquid. Wash gently and thoroughly with warm water (use non-abrasive soap if necessary) for 10-20 minutes or until product is removed. Under running water, remove contaminated clothing, shoes and leather goods (e.g. watchbands and belts) and completely decontaminate them before reuse or discard. If irritation persists, repeat flushing and seek medical attention."
     },
     {
      "soort": "veld",
      "kopje": "Eye Contact",
-     "tekst": "Quickly and gently blot material from eyes. No effects expected. If irritation does occur, flush"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "contaminated eye(s) with lukewarm, gently flowing water for 5 minutes or until the product is removed. Obtain medical advice if irritation becomes painful or lasts more than a few minutes. Take special care if exposed person is wearing contact lenses."
+     "tekst": "Quickly and gently blot material from eyes. No effects expected. If irritation does occur, flush contaminated eye(s) with lukewarm, gently flowing water for 5 minutes or until the product is removed. Obtain medical advice if irritation becomes painful or lasts more than a few minutes. Take special care if exposed person is wearing contact lenses."
     },
     {
      "soort": "veld",
@@ -46692,40 +46456,28 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Accidental release",
-     "tekst": "This product is sold in small packages, and the accidental release from one of these is not"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "usually a cause for concern. For minor spills, clean up, rinsing to sewer and put empty container in garbage. Although no special protective clothing is normally necessary because of occasional minor contact with this product, it is good practice to wear impermeable gloves when handling chemical products. In the event of a major spill, prevent spillage from entering drains or water courses and call emergency services."
+     "tekst": "This product is sold in small packages, and the accidental release from one of these is not usually a cause for concern. For minor spills, clean up, rinsing to sewer and put empty container in garbage. Although no special protective clothing is normally necessary because of occasional minor contact with this product, it is good practice to wear impermeable gloves when handling chemical products. In the event of a major spill, prevent spillage from entering drains or water courses and call emergency services."
     }
    ],
    "5": [
     {
      "soort": "veld",
      "kopje": "Fire and Explosion Hazards",
-     "tekst": "The major hazard in fires is usually inhalation of heated and toxic or oxygen"
+     "tekst": "The major hazard in fires is usually inhalation of heated and toxic or oxygen deficient (or both), fire gases. There is a moderate risk of an explosion from this product if commercial quantities are involved in a fire. Firefighters should take care and appropriate precautions. Vapours from this product are heavier than air and may accumulate in sumps, pits and other low-lying spaces, forming potentially explosive mixtures. They may also flash back considerable distances."
     },
     {
      "soort": "alinea",
-     "tekst": "deficient (or both), fire gases. There is a moderate risk of an explosion from this product if commercial quantities are involved in a fire. Firefighters should take care and appropriate precautions. Vapours from this product are heavier than air and may accumulate in sumps, pits and other low-lying spaces, forming potentially explosive mixtures. They may also flash back considerable distances. Fire decomposition products from this product may be toxic if inhaled. Take appropriate protective measures."
+     "tekst": "Fire decomposition products from this product may be toxic if inhaled. Take appropriate protective measures."
     },
     {
      "soort": "veld",
      "kopje": "Extinguishing Media",
-     "tekst": "In case of fire, use carbon dioxide, dry chemical, foam, water fog. Water fog or fine spray is"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "the preferred medium for large fires. Try to contain spills, minimise spillage entering drains or water courses."
+     "tekst": "In case of fire, use carbon dioxide, dry chemical, foam, water fog. Water fog or fine spray is the preferred medium for large fires. Try to contain spills, minimise spillage entering drains or water courses."
     },
     {
      "soort": "veld",
      "kopje": "Fire Fighting",
-     "tekst": "If a significant quantity of this product is involved in a fire, call the fire brigade. There is a danger of a"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "violent reaction or explosion if significant quantities of this product are involved in a fire. Recommended personal protective equipment is full fire kit and breathing apparatus."
+     "tekst": "If a significant quantity of this product is involved in a fire, call the fire brigade. There is a danger of a violent reaction or explosion if significant quantities of this product are involved in a fire. Recommended personal protective equipment is full fire kit and breathing apparatus."
     },
     {
      "soort": "veld",
@@ -46737,11 +46489,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Disposal",
-     "tekst": "Dispose of small quantities and empty containers by wrapping with paper and putting in garbage. For"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "larger quantities, if recycling or reclaiming is not possible, use a commercial waste disposal service. Do not puncture or incinerate aerosol cans, even when empty."
+     "tekst": "Dispose of small quantities and empty containers by wrapping with paper and putting in garbage. For larger quantities, if recycling or reclaiming is not possible, use a commercial waste disposal service. Do not puncture or incinerate aerosol cans, even when empty."
     }
    ]
   }
@@ -48300,8 +48048,8 @@ const VIB_PRODUCTEN = [
     },
     {
      "soort": "veld",
-     "kopje": "Overige bescherming Beheersing van milieublootstelling Technische maatregelen:",
-     "tekst": "Geen Voldoe aan de relevante milieureglementeringen die het lozen in lucht, water en grond beperken. Bescherm het milieu door juiste controlemaatregelen toe te passen om uitstoot te voorkomen of te beperken. Voor meer informatie, zie rubrieken 6 en 13. Het beschermingsniveau en soorten van maatregelen zijn afhankelijk van de omstandigheden op de werkplek. Er moet voor adequate ventilatie gezorgd worden zodat de blootstellingslimieten niet overschreden worden. Voor meer informatie, zie rubriek 7."
+     "kopje": "Overige bescherming Beheersing van Technische maatregelen:",
+     "tekst": "Geen Voldoe aan de relevante milieureglementeringen die het lozen in lucht, water en grond beperken. Bescherm het milieu door juiste controlemaatregelen toe te passen om uitstoot milieublootstelling: te voorkomen of te beperken. Voor meer informatie, zie rubrieken 6 en 13. Het beschermingsniveau en soorten van maatregelen zijn afhankelijk van de omstandigheden op de werkplek. Er moet voor adequate ventilatie gezorgd worden zodat de blootstellingslimieten niet overschreden worden. Voor meer informatie, zie rubriek 7."
     }
    ],
    "4": [
@@ -48487,8 +48235,8 @@ const VIB_PRODUCTEN = [
     },
     {
      "soort": "veld",
-     "kopje": "Overige bescherming Beheersing van milieublootstelling Technische maatregelen:",
-     "tekst": "Geen Voldoe aan de relevante milieureglementeringen die het lozen in lucht, water en grond beperken. Bescherm het milieu door juiste controlemaatregelen toe te passen om uitstoot te voorkomen of te beperken. Voor meer informatie, zie rubrieken 6 en 13. Het beschermingsniveau en soorten van maatregelen zijn afhankelijk van de omstandigheden op de werkplek. Er moet voor adequate ventilatie gezorgd worden zodat de blootstellingslimieten niet overschreden worden. Voor meer informatie, zie rubriek 7."
+     "kopje": "Overige bescherming Beheersing van Technische maatregelen:",
+     "tekst": "Geen Voldoe aan de relevante milieureglementeringen die het lozen in lucht, water en grond beperken. Bescherm het milieu door juiste controlemaatregelen toe te passen om uitstoot milieublootstelling: te voorkomen of te beperken. Voor meer informatie, zie rubrieken 6 en 13. Het beschermingsniveau en soorten van maatregelen zijn afhankelijk van de omstandigheden op de werkplek. Er moet voor adequate ventilatie gezorgd worden zodat de blootstellingslimieten niet overschreden worden. Voor meer informatie, zie rubriek 7."
     }
    ],
    "4": [
@@ -56906,11 +56654,7 @@ const VIB_PRODUCTEN = [
     {
      "soort": "veld",
      "kopje": "Schadelijk product",
-     "tekst": "langdurige blootstelling door inademing kan antistatische effecten hebben en vereist onmiddellijke medische"
-    },
-    {
-     "soort": "alinea",
-     "tekst": "hulp."
+     "tekst": "langdurige blootstelling door inademing kan antistatische effecten hebben en vereist onmiddellijke medische hulp."
     },
     {
      "soort": "kop",
