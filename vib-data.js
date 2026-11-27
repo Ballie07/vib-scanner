@@ -19948,29 +19948,198 @@ const VIB_PRODUCTEN = [
   ],
   "vibDatum": "08-05-2015",
   "verlopen": true,
-  "taal": "",
+  "taal": "nl",
   "vibPdf": "vib/3679.pdf",
   "alleVibs": [
    {
     "pdf": "vib/3679.pdf",
     "datum": "08-05-2015",
     "verlopen": true,
-    "taal": ""
+    "taal": "nl"
    }
   ],
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Rubriek 8 niet gevonden",
-   "Rubriek 4 niet gevonden",
-   "Rubriek 6 niet gevonden",
-   "Rubriek 5 niet gevonden",
-   "Rubriek 13 niet gevonden",
-   "Tekst niet goed leesbaar",
-   "VIB lijkt niet Nederlands",
+   "Tekst gelezen via tekstherkenning (OCR): kleine kans op leesfouten, controleer bij twijfel de PDF",
    "VIB is verlopen"
   ],
-  "rubrieken": {}
+  "rubrieken": {
+   "8": [
+    {
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
+    }
+   ],
+   "4": [
+    {
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Eerste hulp maatregelen"
+    },
+    {
+     "soort": "veld",
+     "kopje": "- Inademing",
+     "tekst": "In frisse lucht laten ademen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "- Contact met de huid",
+     "tekst": "Huid wassen met zachte zeep en water."
+    },
+    {
+     "soort": "veld",
+     "kopje": "- Contact met de ogen",
+     "tekst": "Onmiddellijk spoelen met veel water. Medische hulp inroepen indien pijn, knipperen, tranen of roodheid aanhoudt."
+    },
+    {
+     "soort": "veld",
+     "kopje": "- Inslikken",
+     "tekst": "De mond spoelen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen enkel bekend."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van de vereiste onmiddellijke medische verzorging en speciale behandeling"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na de EHBO, is geen verdere behandeling vereist, tenzij de symptomen herverschijnen."
+    }
+   ],
+   "6": [
+    {
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermde uitrusting en noodprocedures"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Persoonlijke voorzorgsmaatregelen",
+     "tekst": "Opruimpersoneel uitrusten met aangepaste bescherming."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Voorzorgsmaatregelen voor het",
+     "tekst": "De overheid informeren indien dit produkt een riolering of open water binnendringt."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "milieu Niet in riolering of openbare wateren laten wegstromen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Reinigingsmethoden",
+     "tekst": "De ontstekingsbronnen uitschakelen. Gemorst produkt zo snel mogelijk opruimen d.m.v. een absorberend produkt. Afvalmengsels die propaan/butaan bevatten mogen nooit in een afvoer of riolering worden geloosd waar dampen zich kunnen ophopen die kunnen ontvlammen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Matrix | VEILIGHEIDSINFORMATIEBLAD [— zee uien"
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Zie Rubrieken 7 en 8."
+    }
+   ],
+   "5": [
+    {
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Speciale gevaren die door de stof of |",
+     "tekst": "Alcoholschuim."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Blusmiddelen",
+     "tekst": "Het water verstuiven. Droog poeder. Koolstofdioxyde. Schuim."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Specifieke risico's",
+     "tekst": "Dampen mengen zich goed met lucht, explosieve mengsels vormend."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Brandklasse",
+     "tekst": "Zeer licht ontvlambaar."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Brand- en explosiebeveiliging",
+     "tekst": "Brandzone niet betreden zonder aangepaste veiligheidsuitrusting, inclusief ademhalingsbescherming."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Preventie",
+     "tekst": "Geen open vuur. Rookverbod."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Speciale procedures",
+     "tekst": "Wees uiterst voorzichtig wanneer een scheikundige brand bestreden wordt."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Vermijden dat (gebruikt) bluswater in het milieu terechtkomt."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Aangrenzende branden",
+     "tekst": "Een verpulvering of een waternevel gebruiken om de naburige uitrusting af te koelen."
+    }
+   ],
+   "13": [
+    {
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
+    },
+    {
+     "soort": "veld",
+     "kopje": "Algemeen",
+     "tekst": "Voorkom lozing in het milieu."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Houder onder druk - Ook na gebruik, niet doorboren of verbranden. Eenmaal volledig leeg, zijn de containers recycleerbaar zoals elke andere verpakking. Indien niet leeg verpakking naar inzamelpunt voor gevaarlijk of bijzonder afval brengen. Op een veilige manier opruimen in overeenstemming met lokale/nationale voorschriften. Deze stof en de verpakking naar inzamelpunt voor gevaarlijk of bijzonder afval brengen."
+    }
+   ]
+  }
  },
  {
   "productId": 46218,
@@ -26568,7 +26737,7 @@ const VIB_PRODUCTEN = [
     "pdf": "vib/6476-70.pdf",
     "datum": "22-12-2023",
     "verlopen": false,
-    "taal": ""
+    "taal": "nl"
    }
   ],
   "artikelstatus": "active",
@@ -49653,7 +49822,7 @@ const VIB_PRODUCTEN = [
     "taal": "en"
    }
   ],
-  "artikelstatus": "active",
+  "artikelstatus": "eventuate",
   "status": "onzeker",
   "problemen": [
    "VIB lijkt niet Nederlands (Engels)"
