@@ -774,10 +774,56 @@ function blusDelen(tekst) {
     .filter((d) => !/^(5\.1\.?\s*)?(blusmiddelen|extinguishing media|löschmittel|moyens d['’]extinction|medios de extinción)\.?$/i.test(d.tekst));
 }
 
-function brandStap(nummer) {
+// Alleen door Toppy goedgekeurde brandstappen worden ingedeeld getoond (brand-gecontroleerd.js).
+// Een nieuw of gewijzigd VIB: de letterlijke tekst van 5.1, met "nog niet gecontroleerd".
+const BRAND_GOED = typeof BRAND_GECONTROLEERD !== "undefined" ? BRAND_GECONTROLEERD : {};
+
+function brandBlokken() {
   const niet53 = onderdeel("5", "5.3").filter((b) => b.soort === "veld" && BLUS_NIET.test(b.kopje));
-  const blokken = onderdeel("5", "5.1").concat(niet53);
+  return onderdeel("5", "5.1").concat(niet53);
+}
+
+function brandSleutel(blokken) {
+  return blokken
+    .map((b) => (b.soort === "veld" ? b.kopje + ": " + b.tekst : blokTekst(b)))
+    .join(" ")
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function brandStap(nummer) {
+  const blokken = brandBlokken();
   if (!blokken.length) return stap(nummer, "Blussen", "<p><i>" + esc(NIET_GELEZEN + "5.") + "</i></p>", "brand");
+  const goed = BRAND_GOED[brandSleutel(blokken)];
+  if (goed) return stap(nummer, "Blussen", goed, "brand");
+  const letterlijk = blokken.map((b) => (b.soort === "veld" ? b.kopje + ": " + b.tekst : blokTekst(b))).join(" ");
+  return stap(
+    nummer,
+    "Blussen",
+    "<p class='blus'>⚠️ <b>Nog niet gecontroleerd. Volg de tekst uit het VIB:</b></p><p>" + esc(letterlijk) + "</p>",
+    "brand"
+  );
+}
+
+// Voor een nieuwe controleronde: brandstappen die nog niet zijn goedgekeurd, met het voorstel van de tool.
+function brandTeControleren() {
+  const groep = new Map();
+  const bewaar = product;
+  for (const p of PRODUCTEN.filter((x) => x.vibPdf)) {
+    product = p;
+    const blokken = brandBlokken();
+    const sleutel = brandSleutel(blokken);
+    if (!blokken.length || BRAND_GOED[sleutel]) continue;
+    if (!groep.has(sleutel)) groep.set(sleutel, { sleutel, voorstel: brandVoorstel(blokken), producten: [], pdf: p.vibPdf });
+    groep.get(sleutel).producten.push(p.naam);
+  }
+  product = bewaar;
+  return [...groep.values()];
+}
+
+// Het voorstel van de tool: geschikte en ongeschikte blusmiddelen uit elkaar gehaald.
+function brandVoorstel(blokken) {
   // Een veld waarvan het kopje meer bevat dan alleen "(On)geschikte blusmiddelen" (door elkaar gelopen opmaak
   // in de PDF) kan de tool niet betrouwbaar indelen: dat wordt letterlijk en neutraal getoond.
   const onduidelijk = [];
@@ -812,7 +858,7 @@ function brandStap(nummer) {
     (onduidelijk.length
       ? "<p class='blus'>⚠️ <b>Onduidelijk in het VIB, lees rubriek 5 in de PDF.</b></p><p class='vibzin'>VIB: “" + onduidelijk.map(regel).join(" ") + "”</p>"
       : "");
-  return stap(nummer, "Blussen", inhoud || doeUit(blokken), "brand");
+  return inhoud || doeUit(blokken);
 }
 
 // --- Opruimen (rubriek 6) en afvoeren (rubriek 13) ---
