@@ -951,8 +951,19 @@ function afvoerStap(nummer) {
   return stap(nummer, "Voer af", alles.length ? doeUit(alles) : "<p><i>" + esc(NIET_GELEZEN + "13.") + "</i></p>");
 }
 
+// UN0000 in Stocky: geen gevaarlijke stof voor vervoer. Afspraak Toppy: restafval, geen ADR-kar.
+function geenUN() {
+  const un = (product.unNummers || []).filter(Boolean);
+  return un.length > 0 && un.every((u) => /^UN0+$/i.test(u));
+}
+
 // Eigen werkinstructie onderaan elke opruimstap (niet uit het VIB), met het UN-nummer uit Stocky.
 function lekbakInstructie() {
+  if (geenUN())
+    return (
+      "<div class='intern'><p>Dit product heeft geen UN-/VN-nummer (UN0000 in Stocky): het opgeruimde materiaal mag bij het restafval. " +
+      "De ADR-kar is niet nodig.</p><p class='bron'>Werkinstructie, niet uit het VIB</p></div>"
+    );
   const un = (product.unNummers || []).filter(Boolean);
   const echt = un.filter((u) => !/^UN0+$/i.test(u));
   const regel = echt.length
@@ -970,10 +981,13 @@ function lekbakInstructie() {
 const AFVOER_INSTRUCTIE =
   "<div class='intern'><p>Afvoeren volgens interne regels.</p><p class='bron'>Werkinstructie, niet uit het VIB</p></div>";
 
+const AFVOER_RESTAFVAL =
+  "<div class='intern'><p>Mag bij het restafval (geen UN-/VN-nummer, UN0000).</p><p class='bron'>Werkinstructie, niet uit het VIB</p></div>";
+
 function afvoerTekst(nummer) {
   const vib = stapGoedgekeurd("13") ? afvoerStap(nummer) : stap(nummer, "Voer af", nietGecontroleerd("13"));
   // De werkinstructie direct onder de titel van de stap.
-  return vib.replace("</h2>", "</h2>" + AFVOER_INSTRUCTIE);
+  return vib.replace("</h2>", "</h2>" + (geenUN() ? AFVOER_RESTAFVAL : AFVOER_INSTRUCTIE));
 }
 
 function adrStap(nummer, terug) {
@@ -1040,7 +1054,8 @@ function stappen(s, route) {
   const uit = [];
   let n = 0;
   const opruimen = s === "gemorst" || s === "alles";
-  if (opruimen) uit.push(adrStap(++n));
+  const adr = opruimen && !geenUN(); // UN0000: de ADR-kar is niet nodig
+  if (adr) uit.push(adrStap(++n));
   if (s === "gemorst" || s === "alles") uit.push(beschermStap(++n));
   if (s === "gewond" || s === "alles")
     uit.push(stap(++n, "Eerste hulp", stapGoedgekeurd("4") ? eersteHulp(route) : nietGecontroleerd("4"), "eerst"));
@@ -1050,7 +1065,7 @@ function stappen(s, route) {
     );
   if (s === "brand" || s === "alles") uit.push(brandStap(++n));
   if (opruimen) uit.push(afvoerTekst(++n));
-  if (opruimen) uit.push(adrStap(++n, true));
+  if (adr) uit.push(adrStap(++n, true));
   return uit;
 }
 
