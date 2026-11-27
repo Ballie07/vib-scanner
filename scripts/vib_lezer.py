@@ -28,7 +28,7 @@ TITELS = {
 # "RUBRIEK 4", ook in andere talen ("SECTION 4", "ABSCHNITT 4", ...) en met een nummer ervoor ("4 RUBRIEK 4:").
 KOPWOORDEN = r"(?:RUBRIEK|SECTIE|SECTION|ABSCHNITT|RUBRIQUE|SECCI[OÓ]N|SEZIONE|SEC[CÇ][AÃ]O|AFSNIT|AVSNITT|PUNKT|SEKCJA|ODD[IÍ]L|KOHTA|OSA)"
 # Tekens die soms vóór een kop staan: een sterretje (gewijzigd), "|>", een opsommingsteken.
-VOORTEKEN = r"[*!•|>#\-–]*\s*"
+VOORTEKEN = r"[*!•·▪|>#\-–]*\s*"
 RUBRIEK_KOP = re.compile(r"^\s*" + VOORTEKEN + r"(?:\d{1,2}\.?\s+)?" + KOPWOORDEN + r"\s+(\d{1,2})\b\s*[:.\-–—]?\s*(.*)$", re.IGNORECASE)
 # Koppen zonder kopwoord, zoals "4 Eerstehulpmaatregelen" of "5. Brandbestrijdingsmaatregelen".
 GENUMMERDE_KOP = re.compile(r"^\s{0,12}" + VOORTEKEN + r"(\d{1,2})\.?\s+([A-ZÀ-Ý][A-Za-zÀ-ÿ /,\-–()'’]{6,})$")
@@ -40,7 +40,8 @@ TALEN = {
     "es": {"el", "la", "los", "las", "y", "de", "con", "no", "para", "por", "una", "en"},
 }
 TAALNAAM = {"nl": "Nederlands", "en": "Engels", "de": "Duits", "fr": "Frans", "es": "Spaans"}
-SUBKOP = re.compile(r"^\s*(\d{1,2}\.\d{1,2}(?:\.\d{1,2})?)\.?\s+(\S.*)$")
+SUBKOP = re.compile(r"^\s*[·•▪]?\s*(\d{1,2}\.\d{1,2}(?:\.\d{1,2})?)\.?\s+(\S.*)$")
+OPSOMMING = re.compile(r"^\s*[·•▪]\s+\S")
 VELD = re.compile(r"^(\s*)(\S[^:]{0,60}?)\s*:\s+(\S.*)$")
 
 
@@ -251,6 +252,12 @@ def ontleed_bovenaan(groep, twijfel):
                 continue
             veld = None
         tekst = re.sub(r"\s+", " ", r.strip())
+        # Een regel die met een opsommingsteken begint ("· After inhalation") start een nieuw stuk tekst.
+        if OPSOMMING.match(r):
+            tekst = re.sub(r"^[·•▪]\s*", "", tekst)
+            kopje = len(tekst) < 70 and not re.search(r"[.!?:;]$", tekst)
+            blokken.append({"soort": "alinea", "tekst": tekst, "open": not kopje})  # een kopje staat op zichzelf
+            continue
         if blokken and blokken[-1]["soort"] == "alinea" and blokken[-1].get("open"):
             blokken[-1]["tekst"] = plak(blokken[-1]["tekst"], tekst)
         else:
