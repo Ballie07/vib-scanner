@@ -657,8 +657,14 @@ function maskerOordeel(zinnenLijst) {
 // Al het andere, ook een nieuw of gewijzigd VIB, wordt "bij twijfel altijd gebruiken".
 const GOEDGEKEURD = typeof MASKER_GECONTROLEERD !== "undefined" ? MASKER_GECONTROLEERD : {};
 
+// Sleutel voor een goedgekeurd oordeel: alleen letters en cijfers, zodat spaties, leestekens en
+// hoe de lezer de tekst opknipt geen verschil maken.
+function tekstSleutel(t) {
+  return String(t || "").toLowerCase().replace(/[^0-9a-zà-ÿ]+/g, "");
+}
+
 function maskerSleutel(ademZinnen) {
-  return ademZinnen.join(" ").toLowerCase().replace(/\s+/g, " ").trim();
+  return tekstSleutel(ademZinnen.join(" "));
 }
 
 function gecontroleerdOordeel(ademZinnen) {
@@ -784,12 +790,7 @@ function brandBlokken() {
 }
 
 function brandSleutel(blokken) {
-  return blokken
-    .map((b) => (b.soort === "veld" ? b.kopje + ": " + b.tekst : blokTekst(b)))
-    .join(" ")
-    .toLowerCase()
-    .replace(/\s+/g, " ")
-    .trim();
+  return tekstSleutel(blokken.map((b) => (b.soort === "veld" ? b.kopje + ": " + b.tekst : blokTekst(b))).join(" "));
 }
 
 function brandStap(nummer) {

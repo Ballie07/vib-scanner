@@ -229,6 +229,16 @@ def ontleed_bovenaan(groep, twijfel):
         if veld and blokken and blokken[-1]["soort"] == "veld":
             start, dp = veld
             links, rechts = r[:dp].strip(), r[dp:].strip().lstrip(":").strip()
+            # Zin die doorloopt op een minder ver ingesprongen regel ("..., in" / "halfzittende houding."):
+            # de vorige tekst eindigt niet met een leesteken en deze regel begint met een kleine letter.
+            vorig = blokken[-1]["tekst"].rstrip()
+            # Niet bij een kopje dat in de linkerkolom doorloopt ("Bescherming van de" / "ademhalingswegen"):
+            # dan eindigt de tekst links vóór de kolom met de dubbele punt.
+            # Een losse regel links die met een punt eindigt ("raadplegen.") is ook doorlopende tekst: een kopje eindigt niet zo.
+            loopt_door = len(r[:dp].rstrip()) > dp - 2 or (not rechts and re.search(r"[.!?)]$", links or ""))
+            if vorig and not re.search(r"[.!?:;]$", vorig) and re.match(r"\s*[a-zà-ÿ(]", r) and not VELD.match(r) and loopt_door:
+                blokken[-1]["tekst"] = plak(vorig, re.sub(r"\s+", " ", r.strip()))
+                continue
             if inspring(r) >= start - 2:
                 blokken[-1]["tekst"] = plak(blokken[-1]["tekst"], re.sub(r"\s+", " ", r.strip()))
                 continue
