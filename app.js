@@ -71,12 +71,20 @@ function miniFoto(p) {
     : '<span class="mini leeg">📦</span>';
 }
 
+// UN-code op de productkaart (uit Stocky). UN0000 of niets: "Artikel kent geen UN-code".
+function unRegel(p) {
+  const echt = (p.unNummers || []).filter((u) => u && !/^UN0+$/i.test(u));
+  return echt.length
+    ? '<p class="un">' + echt.map((u) => '<span class="unbord">' + esc(u.replace(/^UN\s*/i, "UN ")) + "</span>").join(" ") + "</p>"
+    : '<p class="un geen">Artikel kent geen UN-code</p>';
+}
+
 function kop(groot) {
   const klasse = groot ? " groot" : "";
   const foto = product.foto
     ? `<img class="foto${klasse}" src="${esc(product.foto)}" alt="${esc(product.naam)}" onerror="this.style.display='none'">`
     : `<div class="foto leeg${klasse}">📦</div>`;
-  return `<div class="productkaart${groot ? " gestapeld" : ""}">${foto}<div><h1>${esc(toonNaam(product))}</h1>${product.taal && product.taal !== "nl" ? '<p class="klein">Taal van het VIB: ' + esc(TAAL[product.taal] || product.taal) + "</p>" : ""}</div></div>`;
+  return `<div class="productkaart${groot ? " gestapeld" : ""}">${foto}<div><h1>${esc(toonNaam(product))}</h1>${unRegel(product)}${product.taal && product.taal !== "nl" ? '<p class="klein">Taal van het VIB: ' + esc(TAAL[product.taal] || product.taal) + "</p>" : ""}</div></div>`;
 }
 
 function bhvBlok() {
