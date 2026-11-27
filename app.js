@@ -553,6 +553,7 @@ const DOE = new RegExp(
     "bel|bellen|laat|laten|vermijd\\w*|blus\\w*|koel\\w*|plaats\\w*|verplaats\\w*|reinig\\w*|afvoeren|voer|ontdoen|dient|" +
     "dienen|moet|moeten|verboden|nooit|toedienen|opwekken|hanteren|zitten|liggen|afsluiten|neutralise\\w*|verdunnen|" +
     "lopen|aanraken|inademen|toegelaten|toegestaan|allowed|permitted|" +
+    "waarschuw\\w*|alarmeer\\w*|inschakelen|tonen|toon|drinken|drink|uitdoen|afdekken|afzetten|wegnemen|" +
     // Engels
     "use|wear|rinse|wash|remove|take|move|call|get|seek|keep|avoid|never|collect|absorb|sweep|contain|dispose|blot|flush|" +
     "contact (a|the|your)|obtain|induce|" +
