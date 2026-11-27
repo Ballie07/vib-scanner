@@ -27,9 +27,11 @@ TITELS = {
 }
 # "RUBRIEK 4", ook in andere talen ("SECTION 4", "ABSCHNITT 4", ...) en met een nummer ervoor ("4 RUBRIEK 4:").
 KOPWOORDEN = r"(?:RUBRIEK|SECTIE|SECTION|ABSCHNITT|RUBRIQUE|SECCI[OÓ]N|SEZIONE|SEC[CÇ][AÃ]O|AFSNIT|AVSNITT|PUNKT|SEKCJA|ODD[IÍ]L|KOHTA|OSA)"
-RUBRIEK_KOP = re.compile(r"^\s*(?:\d{1,2}\.?\s+)?" + KOPWOORDEN + r"\s+(\d{1,2})\b\s*[:.\-–—]?\s*(.*)$", re.IGNORECASE)
+# Tekens die soms vóór een kop staan: een sterretje (gewijzigd), "|>", een opsommingsteken.
+VOORTEKEN = r"[*!•|>#\-–]*\s*"
+RUBRIEK_KOP = re.compile(r"^\s*" + VOORTEKEN + r"(?:\d{1,2}\.?\s+)?" + KOPWOORDEN + r"\s+(\d{1,2})\b\s*[:.\-–—]?\s*(.*)$", re.IGNORECASE)
 # Koppen zonder kopwoord, zoals "4 Eerstehulpmaatregelen" of "5. Brandbestrijdingsmaatregelen".
-GENUMMERDE_KOP = re.compile(r"^\s{0,6}(\d{1,2})\.?\s+([A-ZÀ-Ý][A-Za-zÀ-ÿ /,\-–()]{6,})$")
+GENUMMERDE_KOP = re.compile(r"^\s{0,12}" + VOORTEKEN + r"(\d{1,2})\.?\s+([A-ZÀ-Ý][A-Za-zÀ-ÿ /,\-–()'’]{6,})$")
 TALEN = {
     "nl": {"de", "het", "een", "en", "van", "niet", "met", "bij", "voor", "worden", "is", "op", "in"},
     "en": {"the", "and", "of", "with", "not", "for", "be", "is", "on", "in", "if", "use"},
@@ -80,14 +82,19 @@ def schone_regels(paginas):
 
 
 def _genummerde_koppen(regels):
-    """Zoekt koppen als "4 Eerstehulpmaatregelen". Alleen bruikbaar als ze netjes oplopen (1, 2, 3, ...)."""
-    gevonden, verwacht = {}, 1
+    """Zoekt koppen als "4 Eerstehulpmaatregelen" of "4. EERSTEHULPMAATREGELEN".
+    Alleen bruikbaar als ze oplopen (1, 2, 3, ...; een overgeslagen nummer mag) en er genoeg zijn."""
+    gevonden, laatst = {}, 0
     for i, r in enumerate(regels):
         m = GENUMMERDE_KOP.match(r)
-        if m and int(m.group(1)) == verwacht and not re.search(r"\s{3,}\S", r.strip()):
-            gevonden[i] = str(verwacht)
-            verwacht += 1
-    return gevonden if verwacht > 13 else {}
+        if not m or re.search(r"\s{3,}\S", r.strip()):
+            continue
+        nr = int(m.group(1))
+        if laatst < nr <= laatst + 3 and nr <= 16:
+            gevonden[i] = str(nr)
+            laatst = nr
+    nummers = set(gevonden.values())
+    return gevonden if len(nummers) >= 10 and {"4", "5", "13"} <= nummers else {}
 
 
 def knip_rubrieken(regels):
