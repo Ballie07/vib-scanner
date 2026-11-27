@@ -603,7 +603,13 @@ const HOOFDONDERDEEL = { "4": "4.1", "5": "5.1", "8": "8.2", "13": "13.1" };
 function onderdeel(nr, sub) {
   const delen = onderdelen((product.rubrieken || {})[nr]);
   const o = delen.find((x) => x.nr === sub);
-  if (o) return o.blokken.filter((b) => b.soort !== "kop");
+  if (o) {
+    const inhoud = o.blokken.filter((b) => b.soort !== "kop");
+    // Staat er onder 8.2 (vrijwel) niets, terwijl de beschermingsmiddelen elders in 8 staan: hele rubriek.
+    if (sub === "8.2" && inhoud.map(blokTekst).join("").replace(/\s+/g, "").length < 25)
+      return delen.flatMap((x) => x.blokken).filter((b) => b.soort !== "kop");
+    return inhoud;
+  }
   const genummerd = delen.some((x) => x.nr && x.nr.startsWith(nr + "."));
   if (!genummerd && HOOFDONDERDEEL[nr] === sub && delen.length) return delen.flatMap((x) => x.blokken).filter((b) => b.soort !== "kop");
   return [];
