@@ -746,21 +746,72 @@ function eersteHulp(route) {
 }
 
 // --- Brand (rubriek 5.1) ---
-function brandStap(nummer) {
-  const blokken = onderdeel("5", "5.1").concat(onderdeel("5", "5.3").filter((b) => b.soort === "veld" && /(ongeschikt|te mijden|niet gebruiken|unsuitable|not be used)/i.test(b.kopje)));
-  if (!blokken.length) return stap(nummer, "Blussen", "<p><i>" + esc(NIET_GELEZEN + "5.") + "</i></p>", "brand");
-  const wel = [], niet = [], doe = [];
-  for (const b of blokken) {
-    const t = blokTekst(b).trim();
-    if (!t || /^geen\.?$/i.test(t) || /^none\.?$/i.test(t)) continue;
-    if (b.soort === "veld" && /(ongeschikt|te mijden|niet gebruiken|unsuitable|not be used)/i.test(b.kopje)) niet.push(t);
-    else if (b.soort === "veld" || !DOE.test(t)) wel.push(t);
-    else doe.push(...doeZinnen(t));
+// Alleen wat het VIB zelf geschikt noemt komt onder "Blussen met"; wat het ongeschikt noemt onder "Niet blussen met".
+// De tekst wordt opgeknipt op de kopjes ("Geschikte blusmiddelen", "Ongeschikte blusmiddelen", ...),
+// of die nu als eigen regel, als veld of midden in een alinea staan.
+const BLUS_NIET =
+  /(ongeschikte blusmiddelen|niet[- ]geschikte blusmiddelen|te mijden blusmiddelen|blusmiddelen die (om veiligheidsredenen |uit veiligheidsoogpunt |uit veiligheidsoverwegingen )?niet (mogen|moeten|kunnen) worden gebruikt|blusmiddelen die (om veiligheidsredenen |uit veiligheidsoogpunt |uit veiligheidsoverwegingen )?niet geschikt zijn|niet te gebruiken blusmiddelen|unsuitable extinguishing media|extinguishing media (which|that) (must|should) not be used|ungeeignete löschmittel|nicht geeignete löschmittel|aus sicherheitsgründen ungeeignete löschmittel|moyens d['’]extinction (inappropriés|inadaptés|déconseillés|à éviter|non appropriés)|\bniet geschikt\s*:|\bunsuitable\s*:|medios de extinción no (adecuados|apropiados))/i;
+const BLUS_WEL =
+  /((?<![a-z])(geschikte|aanbevolen|passende) blusmiddelen|(?<!un)suitable extinguishing media|(?<!un)geeignete löschmittel|moyens d['’]extinction appropriés|(?<!niet )(?<!un)\b(geschikt|suitable)\s*:|medios de extinción (adecuados|apropiados))/i;
+
+function blusDelen(tekst) {
+  const merk = new RegExp("(" + BLUS_NIET.source + "|" + BLUS_WEL.source + ")", "gi");
+  const delen = [];
+  let soort = "begin", vanaf = 0, m;
+  while ((m = merk.exec(tekst))) {
+    delen.push({ soort, tekst: tekst.slice(vanaf, m.index) });
+    soort = BLUS_NIET.test(m[0]) ? "niet" : "wel";
+    vanaf = m.index + m[0].length;
   }
+  delen.push({ soort, tekst: tekst.slice(vanaf) });
+  return delen
+    .map((d) => ({ soort: d.soort, tekst: d.tekst.replace(/^[\s:.\-–]+|[\s:\-–]+$/g, "") }))
+    .map((d) => ({ soort: d.soort, tekst: d.soort === "niet"
+      ? d.tekst.replace(/^(geen|none|keine|aucun|ninguno)( bekend| known| bekannt| connu)?(,? (voor zover|so far as|as far as)[^.]*)?[.,]?\s*/i, "")
+      : d.tekst }))
+    .filter((d) => d.tekst && !/^(geen|none|keine|aucun|ninguno)\.?$/i.test(d.tekst))
+    // Een los kopje ("Blusmiddelen", "Extinguishing media") is geen blusmiddel.
+    .filter((d) => !/^(5\.1\.?\s*)?(blusmiddelen|extinguishing media|löschmittel|moyens d['’]extinction|medios de extinción)\.?$/i.test(d.tekst));
+}
+
+function brandStap(nummer) {
+  const niet53 = onderdeel("5", "5.3").filter((b) => b.soort === "veld" && BLUS_NIET.test(b.kopje));
+  const blokken = onderdeel("5", "5.1").concat(niet53);
+  if (!blokken.length) return stap(nummer, "Blussen", "<p><i>" + esc(NIET_GELEZEN + "5.") + "</i></p>", "brand");
+  // Een veld waarvan het kopje meer bevat dan alleen "(On)geschikte blusmiddelen" (door elkaar gelopen opmaak
+  // in de PDF) kan de tool niet betrouwbaar indelen: dat wordt letterlijk en neutraal getoond.
+  const onduidelijk = [];
+  const helder = blokken.filter((b) => {
+    if (b.soort !== "veld") return true;
+    const m = b.kopje.match(BLUS_NIET) || b.kopje.match(BLUS_WEL);
+    if (!m || b.kopje.replace(/[\s:.\-–]+$/, "").trim().length <= m[0].length + 3) return true;
+    onduidelijk.push(b.kopje + ": " + b.tekst);
+    return false;
+  });
+  const tekst = helder.map((b) => (b.soort === "veld" ? b.kopje + ": " + b.tekst : blokTekst(b))).join(" \n ");
+  const wel = [], niet = [], los = [];
+  const NEE = /\b(niet|geen|nooit|not|never|no|avoid|vermijd\w*|nicht|kein\w*|pas|ne)\b/i;
+  for (const d of blusDelen(tekst)) {
+    if (d.soort === "wel") {
+      // Een verbod tussen de geschikte middelen ("Geen water gebruiken.") komt op een eigen regel.
+      const z = d.tekst.split(/(?<=[.!])\s+/);
+      const goed = z.filter((x) => !NEE.test(x)).join(" ").trim();
+      if (goed) wel.push(goed);
+      los.push(...z.filter((x) => NEE.test(x)));
+    }
+    else if (d.soort === "niet") niet.push(d.tekst);
+    // Tekst onder het kopje "5.1 Blusmiddelen" zonder eigen kopje: alleen "blussen met" als er geen ontkenning in staat.
+    else if (!NEE.test(d.tekst)) wel.push(d.tekst);
+    else los.push(d.tekst);
+  }
+  const regel = (t) => esc(t.replace(/\s*\n\s*/g, " "));
   const inhoud =
-    (wel.length ? "<p class='blus'>🧯 <b>Blussen met:</b> " + esc(wel.join(" ")) + "</p>" : "") +
-    (niet.length ? "<p class='blus niet'>🚫 <b>Niet blussen met:</b> " + esc(niet.join(" ")) + "</p>" : "") +
-    (doe.length ? lijst(doe) : "");
+    (wel.length ? "<p class='blus'>🧯 <b>Blussen met:</b> " + wel.map(regel).join("; ") + "</p>" : "") +
+    (niet.length ? "<p class='blus niet'>🚫 <b>Niet blussen met:</b> " + niet.map(regel).join("; ") + "</p>" : "") +
+    (los.length ? "<p class='blus niet'>🚫 " + los.map(regel).join(" ") + "</p>" : "") +
+    (onduidelijk.length
+      ? "<p class='blus'>⚠️ <b>Onduidelijk in het VIB, lees rubriek 5 in de PDF.</b></p><p class='vibzin'>VIB: “" + onduidelijk.map(regel).join(" ") + "”</p>"
+      : "");
   return stap(nummer, "Blussen", inhoud || doeUit(blokken), "brand");
 }
 
