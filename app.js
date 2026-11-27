@@ -791,6 +791,7 @@ function beschermStap(nummer) {
   }
   // Doe-zinnen zonder herkenbaar beschermingsmiddel: niet weglaten, maar onder "Overig".
   if (overig.length) regels.push("<li class='pbm'><span class='ic'>📋</span><div><b>Overig</b>" + lijst([...new Set(overig)]) + "</div></li>");
+  if (blokken.length && !stapGoedgekeurd("8")) return stap(nummer, "Bescherm jezelf", "<ul class='pbmlijst'>" + regels[0] + "</ul>" + nietGecontroleerd("8"));
   const inhoud =
     "<ul class='pbmlijst'>" + regels.join("") + "</ul>" + (blokken.length ? "" : "<p><i>" + esc(NIET_GELEZEN + "8.2.") + "</i></p>");
   return stap(nummer, "Bescherm jezelf", inhoud);
@@ -822,9 +823,9 @@ function eersteHulp(route) {
 // De tekst wordt opgeknipt op de kopjes ("Geschikte blusmiddelen", "Ongeschikte blusmiddelen", ...),
 // of die nu als eigen regel, als veld of midden in een alinea staan.
 const BLUS_NIET =
-  /(ongeschikte blusmiddelen|niet[- ]geschikte blusmiddelen|te mijden blusmiddelen|blusmiddelen die (om veiligheidsredenen |uit veiligheidsoogpunt |uit veiligheidsoverwegingen )?niet (mogen|moeten|kunnen) worden gebruikt|blusmiddelen die (om veiligheidsredenen |uit veiligheidsoogpunt |uit veiligheidsoverwegingen )?niet geschikt zijn|niet te gebruiken blusmiddelen|unsuitable extinguishing media|extinguishing media (which|that) (must|should) not be used|ungeeignete löschmittel|nicht geeignete löschmittel|aus sicherheitsgründen ungeeignete löschmittel|moyens d['’]extinction (inappropriés|inadaptés|déconseillés|à éviter|non appropriés)|\bniet geschikt\s*:|\bunsuitable\s*:|medios de extinción no (adecuados|apropiados))/i;
+  /(ongeschikte blusmiddelen|niet[- ]geschikte blusmiddelen|te mijden blusmiddelen|blusmiddelen die (om veiligheidsredenen |uit veiligheidsoogpunt |uit veiligheidsoverwegingen )?niet (mogen|moeten|kunnen) worden gebruikt|blusmiddelen die (om veiligheidsredenen |uit veiligheidsoogpunt |uit veiligheidsoverwegingen )?niet geschikt zijn|niet te gebruiken blusmiddelen|(for safety reasons )?unsuitable extinguishing (media|agents?)|extinguishing (media|agents?) (which|that) (must|should) not be used|ungeeignete löschmittel|nicht geeignete löschmittel|aus sicherheitsgründen ungeeignete löschmittel|moyens d['’]extinction (inappropriés|inadaptés|déconseillés|à éviter|non appropriés)|\bniet geschikt\s*:|\bunsuitable\s*:|medios de extinción no (adecuados|apropiados))/i;
 const BLUS_WEL =
-  /((?<![a-z])(geschikte|aanbevolen|passende) blusmiddelen|(?<!un)suitable extinguishing media|(?<!un)geeignete löschmittel|moyens d['’]extinction appropriés|(?<!niet )(?<!un)\b(geschikt|suitable)\s*:|medios de extinción (adecuados|apropiados))/i;
+  /((?<![a-z])(geschikte|aanbevolen|passende) blusmiddelen|(?<!un)suitable extinguishing (media|agents?)|(?<!un)geeignete löschmittel|moyens d['’]extinction appropriés|(?<!niet )(?<!un)\b(geschikt|suitable)\s*:|medios de extinción (adecuados|apropiados))/i;
 
 function blusDelen(tekst) {
   const merk = new RegExp("(" + BLUS_NIET.source + "|" + BLUS_WEL.source + ")", "gi");
@@ -950,6 +951,16 @@ function afvoerStap(nummer) {
   return stap(nummer, "Voer af", alles.length ? doeUit(alles) : "<p><i>" + esc(NIET_GELEZEN + "13.") + "</i></p>");
 }
 
+// Eigen afspraken voor afvoeren (niet uit het VIB), per VIB-tekst van rubriek 13.
+const AFVOER_INTERN = typeof AFVOEREN_WERKINSTRUCTIE !== "undefined" ? AFVOEREN_WERKINSTRUCTIE : {};
+
+function afvoerTekst(nummer) {
+  const intern = AFVOER_INTERN[stapSleutel("13")];
+  if (intern)
+    return stap(nummer, "Voer af", "<p>" + esc(intern) + "</p><p class='bron'>Werkinstructie, niet uit het VIB</p>", "instructie");
+  return stapGoedgekeurd("13") ? afvoerStap(nummer) : stap(nummer, "Voer af", nietGecontroleerd("13"));
+}
+
 function adrStap(nummer, terug) {
   return stap(
     nummer,
@@ -969,6 +980,46 @@ function volledigeTekst(nummers) {
   return delen.length ? '<details class="meer volledig"><summary>Volledige VIB-tekst</summary>' + delen.join("") + "</details>" : "";
 }
 
+// ---- Goedkeuring per stap (stappen-gecontroleerd.js) ----
+// Alleen stappen waarvan Toppy de uitwerking voor precies deze VIB-tekst heeft goedgekeurd, worden ingekort getoond.
+// Een nieuw of gewijzigd VIB: de letterlijke tekst van dat onderdeel, met "Nog niet gecontroleerd".
+const STAPPEN_GOED = typeof STAPPEN_GECONTROLEERD !== "undefined" ? STAPPEN_GECONTROLEERD : {};
+
+function hash(t) {
+  let h = 2166136261;
+  for (let i = 0; i < t.length; i++) h = Math.imul(h ^ t.charCodeAt(i), 16777619) >>> 0;
+  return h.toString(16) + "-" + t.length;
+}
+
+function stapBron(sectie) {
+  if (sectie === "4") return onderdeel("4", "4.1");
+  if (sectie === "8") return onderdeel("8", "8.2");
+  if (sectie === "6") {
+    const delen = ["6.1", "6.2", "6.3"].flatMap((x) => onderdeel("6", x));
+    return delen.length ? delen : ((product.rubrieken || {})["6"] || []).filter((b) => b.soort !== "kop");
+  }
+  if (sectie === "13") {
+    const o = onderdeel("13", "13.1");
+    return o.length ? o : ((product.rubrieken || {})["13"] || []).filter((b) => b.soort !== "kop");
+  }
+  return [];
+}
+
+function stapSleutel(sectie) {
+  const t = tekstSleutel(stapBron(sectie).map((b) => (b.soort === "veld" ? b.kopje + ": " + b.tekst : blokTekst(b))).join(" "));
+  return t ? hash(t) : "";
+}
+
+function stapGoedgekeurd(sectie) {
+  const k = stapSleutel(sectie);
+  return !k || Boolean((STAPPEN_GOED[sectie] || {})[k]); // zonder tekst: de stap meldt zelf dat er niets te lezen is
+}
+
+function nietGecontroleerd(sectie) {
+  const tekst = stapBron(sectie).map((b) => (b.soort === "veld" ? b.kopje + ": " + b.tekst : blokTekst(b))).join(" ");
+  return "<p class='blus'>⚠️ <b>Nog niet gecontroleerd. Volg de tekst uit het VIB:</b></p><p>" + esc(tekst) + "</p>";
+}
+
 // Bouwt de stappen voor een situatie, altijd in de vaste volgorde 8.2, 4, 6, 5, 13.
 function stappen(s, route) {
   const uit = [];
@@ -976,10 +1027,11 @@ function stappen(s, route) {
   const opruimen = s === "gemorst" || s === "alles";
   if (opruimen) uit.push(adrStap(++n));
   if (s === "gemorst" || s === "alles") uit.push(beschermStap(++n));
-  if (s === "gewond" || s === "alles") uit.push(stap(++n, "Eerste hulp", eersteHulp(route), "eerst"));
-  if (opruimen) uit.push(opruimStap(++n));
+  if (s === "gewond" || s === "alles")
+    uit.push(stap(++n, "Eerste hulp", stapGoedgekeurd("4") ? eersteHulp(route) : nietGecontroleerd("4"), "eerst"));
+  if (opruimen) uit.push(stapGoedgekeurd("6") ? opruimStap(++n) : stap(++n, "Ruim op", nietGecontroleerd("6")));
   if (s === "brand" || s === "alles") uit.push(brandStap(++n));
-  if (opruimen) uit.push(afvoerStap(++n));
+  if (opruimen) uit.push(afvoerTekst(++n));
   if (opruimen) uit.push(adrStap(++n, true));
   return uit;
 }
