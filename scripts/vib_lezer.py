@@ -53,6 +53,32 @@ def pdf_naar_paginas(pad):
     return uit.split("\f")
 
 
+def ocr_paginas(pad):
+    """Leest de pagina's als plaatje (tekstherkenning). Voor PDF's met een kapot lettertype of scans."""
+    import shutil, tempfile, glob, os
+    if not (shutil.which("pdftoppm") and shutil.which("tesseract")):
+        return None
+    with tempfile.TemporaryDirectory() as map_:
+        subprocess.run(["pdftoppm", "-r", "300", "-png", pad, os.path.join(map_, "p")], check=True, capture_output=True)
+        paginas = []
+        for beeld in sorted(glob.glob(os.path.join(map_, "p-*.png")), key=lambda f: int(re.findall(r"(\d+)\.png$", f)[0])):
+            uit = subprocess.run(["tesseract", beeld, "stdout", "-l", "nld+eng", "--psm", "4"],
+                                 capture_output=True, text=True)
+            paginas.append(uit.stdout)
+    return paginas
+
+
+def tekst_bruikbaar(paginas):
+    """Is de tekstlaag te lezen? Een kapot lettertype geeft tekst zonder klinkers of zonder rubriekkoppen."""
+    tekst = "\n".join(paginas)
+    letters = [c for c in tekst.lower() if c.isalpha()]
+    if len(letters) < 500:
+        return False
+    klinkers = sum(c in "aeiouy" for c in letters) / len(letters)
+    koppen = len({m.group(1) for m in (RUBRIEK_KOP.match(r) for r in tekst.splitlines()) if m})
+    return klinkers > 0.25 and (koppen >= 5 or len(_genummerde_koppen(tekst.splitlines())) >= 10)
+
+
 def normaliseer(regel):
     return re.sub(r"\d+", "#", re.sub(r"\s+", " ", regel.strip())).lower()
 
@@ -338,6 +364,15 @@ def blok_tekst(blokken):
 
 def lees_vib(pad):
     paginas = pdf_naar_paginas(pad)
+    via_ocr = False
+    if not tekst_bruikbaar(paginas):
+        # Alleen overstappen op tekstherkenning als die duidelijk meer van de rubrieken oplevert.
+        def gevonden(p):
+            r = knip_rubrieken(schone_regels(p))
+            return sum(1 for nr in VOLGORDE if any(x.strip() for x in r.get(nr, [])))
+        ocr = ocr_paginas(pad)
+        if ocr and tekst_bruikbaar(ocr) and gevonden(ocr) > gevonden(paginas):
+            paginas, via_ocr = ocr, True
     regels = schone_regels(paginas)
     rubrieken = knip_rubrieken(regels)
     problemen, uit = [], []
@@ -364,6 +399,8 @@ def lees_vib(pad):
         uit.append({"rubriek": nr, "titel": TITELS[nr], "blokken": blokken})
     if not regels or not leesbaar(alle_tekst):
         problemen.append("Tekst niet goed leesbaar")
+    if via_ocr:
+        problemen.append("Tekst gelezen via tekstherkenning (OCR): kleine kans op leesfouten, controleer bij twijfel de PDF")
     taal = "nl" if lijkt_nederlands(alle_tekst) else taal_van(alle_tekst)
     if taal != "nl":
         problemen.append("VIB lijkt niet Nederlands" + (f" ({TAALNAAM[taal]})" if taal else ""))

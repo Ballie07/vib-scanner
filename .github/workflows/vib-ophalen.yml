@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: PDF-lezer installeren
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-nld
 
       - name: VIB's ophalen en uitlezen
         env:
