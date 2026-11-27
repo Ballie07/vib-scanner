@@ -554,6 +554,7 @@ const DOE = new RegExp(
     "dienen|moet|moeten|verboden|nooit|toedienen|opwekken|hanteren|zitten|liggen|afsluiten|neutralise\\w*|verdunnen|" +
     "lopen|aanraken|inademen|toegelaten|toegestaan|allowed|permitted|" +
     "waarschuw\\w*|alarmeer\\w*|inschakelen|tonen|toon|drinken|drink|uitdoen|afdekken|afzetten|wegnemen|" +
+    "inroepen|roep|opzoeken|zoek|raadpleeg\\w*|consulteren|consulteer|verlaten|verlaat|" +
     // Engels
     "use|wear|rinse|wash|remove|take|move|call|get|seek|keep|avoid|never|collect|absorb|sweep|contain|dispose|blot|flush|" +
     "contact (a|the|your)|obtain|induce|" +
