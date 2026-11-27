@@ -653,16 +653,50 @@ function maskerOordeel(zinnenLijst) {
   return "bij twijfel dragen";
 }
 
+// Alleen door Toppy goedgekeurde oordelen worden getoond (masker-gecontroleerd.js).
+// Al het andere, ook een nieuw of gewijzigd VIB, wordt "bij twijfel altijd gebruiken".
+const GOEDGEKEURD = typeof MASKER_GECONTROLEERD !== "undefined" ? MASKER_GECONTROLEERD : {};
+
+function maskerSleutel(ademZinnen) {
+  return ademZinnen.join(" ").toLowerCase().replace(/\s+/g, " ").trim();
+}
+
+function gecontroleerdOordeel(ademZinnen) {
+  const sleutel = maskerSleutel(ademZinnen);
+  return (sleutel && GOEDGEKEURD[sleutel]) || GEEN_INFO_MASKER;
+}
+
+function ademZinnenVan(blokken) {
+  return blokken
+    .flatMap((b) => (b.soort === "veld" ? zinnen(b.kopje + ": " + b.tekst) : zinnen(blokTekst(b))))
+    .filter((z) => ADEM.test(z) && !GEEN_DOE.test(z) && !/(milieu|environment|hand|glove|handschoen|oog|eye)/i.test(z.slice(0, 25)));
+}
+
+// Voor een nieuwe controleronde: de VIB's met tekst over ademhaling die nog niet zijn goedgekeurd,
+// met het voorstel van de tool. Aan te roepen in de browserconsole: maskerTeControleren()
+function maskerTeControleren() {
+  const groep = new Map();
+  const bewaar = product;
+  for (const p of PRODUCTEN.filter((x) => x.vibPdf)) {
+    product = p;
+    const adem = ademZinnenVan(onderdeel("8", "8.2"));
+    const sleutel = maskerSleutel(adem);
+    if (!sleutel || GOEDGEKEURD[sleutel]) continue;
+    if (!groep.has(sleutel)) groep.set(sleutel, { voorstel: maskerOordeel(adem), tekst: adem.join(" "), producten: [], pdf: p.vibPdf });
+    groep.get(sleutel).producten.push(p.naam);
+  }
+  product = bewaar;
+  return [...groep.values()];
+}
+
 function beschermStap(nummer) {
   const blokken = onderdeel("8", "8.2");
   const regels = [];
   // Masker: alle zinnen in 8.2 die over ademhaling gaan, ook als ze niet onder een eigen kopje staan.
-  const ademZinnen = blokken
-    .flatMap((b) => (b.soort === "veld" ? zinnen(b.kopje + ": " + b.tekst) : zinnen(blokTekst(b))))
-    .filter((z) => ADEM.test(z) && !GEEN_DOE.test(z) && !/(milieu|environment|hand|glove|handschoen|oog|eye)/i.test(z.slice(0, 25)));
+  const ademZinnen = ademZinnenVan(blokken);
   {
     // Ook als rubriek 8.2 niet uit te lezen is, staat de masker-regel er (dan: bij twijfel altijd gebruiken).
-    const oordeel = maskerOordeel(ademZinnen);
+    const oordeel = gecontroleerdOordeel(ademZinnen);
     // Alleen de zinnen waarop het oordeel rust: "niet nodig"-zinnen en "draag/gebruik een masker"-zinnen.
     const bron = ademZinnen
       .filter((z) => NEGATIEF.test(z) || (MASKER.test(zonderLabel(z)) && DOE.test(zonderLabel(z))))
