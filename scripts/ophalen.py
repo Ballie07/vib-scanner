@@ -28,6 +28,8 @@ from stocky import haal  # noqa: E402
 PRODUCT_PAD = os.environ.get("STOCKY_PRODUCT_PAD", "/products/{id}")
 MAP = Path(os.environ.get("VIB_MAP", Path(__file__).resolve().parent.parent))
 # Artikelen met deze status in Stocky (veld stateStrategy) komen niet in de scanner.
+# Afspraak Toppy (27-11-2026): alleen "inactive" overslaan. "on_hold" en "eventuate" (uitlopend)
+# blijven erin, omdat daar soms nog voorraad van in het magazijn ligt. (vib-controle slaat on_hold wel over.)
 # Hoofdletters, spaties, _ en - tellen niet mee: "On Hold", "on_hold" en "onHold" zijn gelijk.
 NEGEER_STATUSSEN = {s for s in (os.environ.get("NEGEER_STATUSSEN") or "inactive").replace(";", ",").split(",") if s.strip()}
 
