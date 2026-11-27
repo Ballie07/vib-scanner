@@ -19968,6 +19968,38 @@ const VIB_PRODUCTEN = [
    "8": [
     {
      "soort": "kop",
+     "tekst": "8.1 Controleparameters"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Persoonlijke bescherming"
+    },
+    {
+     "soort": "veld",
+     "kopje": "- Ademhalingsbescherming",
+     "tekst": "Geen speciale ademhalingsbescherming is aanbevolen in normale gebruiksomstandigheden, voorzien van een aangepaste ventilatie."
+    },
+    {
+     "soort": "veld",
+     "kopje": "- Huidbescherming",
+     "tekst": "Handschoenen."
+    },
+    {
+     "soort": "veld",
+     "kopje": "- Oogbescherming",
+     "tekst": "Bril."
+    },
+    {
+     "soort": "veld",
+     "kopje": "Industriéle hygiéne",
+     "tekst": "Een voldoende ventilatie voorzien om stof- en/of dampconcentraties tot een"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "minimum te beperken."
+    },
+    {
+     "soort": "kop",
      "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     }
    ],
