@@ -383,9 +383,13 @@ def lees_vib(pad):
             problemen.append(f"Rubriek {nr} niet gevonden")
             continue
         if nr == "8":
+            heel = r
             r, gevonden = alleen_8_2(r)
             if not gevonden:
                 problemen.append("Onderdeel 8.2 niet gevonden")
+            elif len(re.sub(r"\s+", "", "".join(r[1:]))) < 60 and re.search(r"(bescherming|handschoen|bril|protection|glove)", " ".join(heel), re.I):
+                # Onder 8.2 staat vrijwel niets ("Niet vastgesteld."), de beschermingsmiddelen staan elders in 8: hele rubriek.
+                r = heel
         twijfel = []
         blokken = naar_blokken(r, twijfel)
         verschil = (tekens(" ".join(r)) - tekens(blok_tekst(blokken))) + (tekens(blok_tekst(blokken)) - tekens(" ".join(r)))
