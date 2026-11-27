@@ -84,7 +84,7 @@ function kop(groot) {
   const foto = product.foto
     ? `<img class="foto${klasse}" src="${esc(product.foto)}" alt="${esc(product.naam)}" onerror="this.style.display='none'">`
     : `<div class="foto leeg${klasse}">📦</div>`;
-  return `<div class="productkaart${groot ? " gestapeld" : ""}">${foto}<div><h1>${esc(toonNaam(product))}</h1>${unRegel(product)}${product.taal && product.taal !== "nl" ? '<p class="klein">Taal van het VIB: ' + esc(TAAL[product.taal] || product.taal) + "</p>" : ""}</div></div>`;
+  return `<div class="productkaart${groot ? " gestapeld" : ""}">${foto}<div><h1>${esc(toonNaam(product))}</h1>${unRegel(product)}</div></div>`;
 }
 
 function bhvBlok() {
