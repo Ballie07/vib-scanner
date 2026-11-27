@@ -15178,43 +15178,199 @@ const VIB_PRODUCTEN = [
    }
   ],
   "artikelstatus": "active",
-  "status": "onzeker",
-  "problemen": [
-   "Onderdeel 8.2 niet gevonden"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "bescherming · 8.1 Controleparameters · Bestanddelen met grenswaarden die m.b.t. de werkruimte in acht genomen moeten worden: 78-93-3 Butanon WGW Korte termijn waarde: 900 mg/m³, 300 ppm Lange termijn waarde: 590 mg/m³, 197 ppm · DNEL’s 78-93-3 Butanon"
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Oraal Dermaal Worker, dermal, longterm exposition           1161 mg/kg bw/day Inhalatief Worker, inhalative, shortterm exposition   900 mg/m³ · PNEC’s 78-93-3 Butanon Oraal Secondary Poisoning    1000 mg/kg · Aanvullende gegevens: Als basis dienden lijsten die bij opstelling geldig waren. · 8.2 Maatregelen ter beheersing van blootstelling · Passende technische maatregelen Geen aanvullende gegevens. Zie 7. · Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen · Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden. · Bescherming van de ademhalingswegen Bij onvoldoende ventilatie ademhalingsbescherming. · Aanbevolen filter voor kortstondig gebruik: Filter A · Bescherming van de handen Handschoenen / bestand tegen oplosmiddelen Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie. · Handschoenmateriaal Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm · Doordringingstijd van het handschoenmateriaal Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4). · Bescherming van de ogen/het gezicht Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen. · Lichaamsbescherming: Tegen oplosmiddelen bestande beschermingskleding",
-       "Consumer, oral, longterm exposition Consumer, dermal, longterm exposition      412 mg/kg bw/day Worker, inhalative, longterm exposition    600 mg/m³ Consumer, inhalative, shortterm exposition 450 mg/m³ Consumer, inhalative, longterm exposition 106 mg/m³ Fresh water            55,8 mg/l Fresh water sediment 284,7 mg/kg dry weight Marine water           55,8 mg/l Marine sediment        284,7 mg/kg dry weight Soil                   22,5 mg/kg Sewage treatment plant 709 mg/l Sporadic release       55,8 mg/l Veiligheidshandschoenen Nauw aansluitende veiligheidsbril",
-       "31 mg/kg bw/day"
-      ]
-     ]
+     "soort": "alinea",
+     "tekst": "Passende technische maatregelen Geen aanvullende gegevens. Zie 7."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ademhalingswegen Bij onvoldoende ventilatie ademhalingsbescherming."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbevolen filter voor kortstondig gebruik: Filter A"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenen / bestand tegen oplosmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Veiligheidshandschoenen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Doordringingstijd van het handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4)."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ogen/het gezicht"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Nauw aansluitende veiligheidsbril"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Lichaamsbescherming: Tegen oplosmiddelen bestande beschermingskleding"
     }
    ],
    "4": [
     {
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 4.1 Beschrijving van de eerstehulpmaatregelen · Algemene informatie: Geen speciale maatregelen noodzakelijk. · Na het inademen: Frisse lucht toedienen; bij klachten arts ontbieden. Geen speciale maatregelen noodzakelijk. · Na huidcontact: Over het algemeen is het produkt niet prikkelend voor de huid · Na oogcontact: De ogen gedurende verscheidene minuten onder stromend water afspoelen terwijl de oogspleet geopend blijft. Bij aanhoudende klachten een dokter raadplegen. · Na inslikken: Als de klachten niet minderen, een arts raadplegen · 4.2 Belangrijkste acute en uitgestelde symptomen en effecten Geen verdere relevante informatie verkrijgbaar. · 4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling Geen verdere relevante informatie verkrijgbaar."
+     "tekst": "Algemene informatie: Geen speciale maatregelen noodzakelijk."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na het inademen: Frisse lucht toedienen; bij klachten arts ontbieden. Geen speciale maatregelen noodzakelijk."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na huidcontact: Over het algemeen is het produkt niet prikkelend voor de huid"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na oogcontact: De ogen gedurende verscheidene minuten onder stromend water afspoelen terwijl de oogspleet geopend blijft. Bij aanhoudende klachten een dokter raadplegen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na inslikken: Als de klachten niet minderen, een arts raadplegen"
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "behandeling Geen verdere relevante informatie verkrijgbaar."
     }
    ],
    "6": [
     {
      "soort": "alinea",
-     "tekst": "mengsel · 6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures Beschermende kleding aantrekken. Niet beschermde personen op afstand houden. · 6.2 Milieuvoorzorgsmaatregelen: Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen. · 6.3 Insluitings- en reinigingsmethoden en -materiaal: In speciale tanks voor terugwinning of berging verzamelen. Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. Voor voldoende ventilatie zorgen. · 6.4 Verwijzing naar andere rubrieken Informatie inzake veilig gebruik - zie hoofdstuk 7. Informatie inzake persoonlijke beschermingsuitrusting - zie hoofdstuk 8. Informatie inzake berging - zie hoofdstuk 13."
+     "tekst": "mengsel"
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Beschermende kleding aantrekken. Niet beschermde personen op afstand houden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "In speciale tanks voor terugwinning of berging verzamelen. Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. Voor voldoende ventilatie zorgen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Informatie inzake veilig gebruik - zie hoofdstuk 7. Informatie inzake persoonlijke beschermingsuitrusting - zie hoofdstuk 8. Informatie inzake berging - zie hoofdstuk 13."
     }
    ],
    "5": [
     {
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 5.1 Blusmiddelen · Geschikte blusmiddelen: Waternevel Alcoholbestendig schuim Bluspoeder Kooldioxyde · Blusmiddelen die uit veiligheidsoogpunt niet geschikt zijn: Krachtige waterstraal · 5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt Geen verdere relevante informatie verkrijgbaar. · 5.3 Advies voor brandweerlieden · Speciale beschermende kleding: Geen bijzondere maatregelen nodig. · Verdere gegevens De aan gevaar blootgestelde tanks met watersproeistraal koelen."
+     "tekst": "Geschikte blusmiddelen: Waternevel Alcoholbestendig schuim Bluspoeder Kooldioxyde"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Blusmiddelen die uit veiligheidsoogpunt niet geschikt zijn: Krachtige waterstraal"
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Speciale beschermende kleding: Geen bijzondere maatregelen nodig."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Verdere gegevens"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "De aan gevaar blootgestelde tanks met watersproeistraal koelen."
     },
     {
      "soort": "alinea",
@@ -15223,8 +15379,20 @@ const VIB_PRODUCTEN = [
    ],
    "13": [
     {
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 13.1 Afvalverwerkingsmethoden · Aanbeveling: Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen. Afvalverwijdering volgens overheidsbepalingen. · Niet gereinigde verpakkingen: · Aanbeveling: Verpakkingen die niet meer gereinigd kunnen worden, moeten zoals de stof zelf verwijderd worden."
+     "tekst": "Aanbeveling: Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen. Afvalverwijdering volgens overheidsbepalingen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet gereinigde verpakkingen:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbeveling: Verpakkingen die niet meer gereinigd kunnen worden, moeten zoals de stof zelf verwijderd worden."
     }
    ]
   }
@@ -15256,47 +15424,191 @@ const VIB_PRODUCTEN = [
    }
   ],
   "artikelstatus": "active",
-  "status": "onzeker",
-  "problemen": [
-   "Onderdeel 8.2 niet gevonden"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "bescherming · 8.1 Controleparameters · Bestanddelen met grenswaarden die m.b.t. de werkruimte in acht genomen moeten worden: 78-93-3 butanon WGW Korte termijn waarde: 900 mg/m³, 300 ppm Lange termijn waarde: 590 mg/m³, 200 ppm"
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
      "soort": "alinea",
-     "tekst": "· DNEL’s 78-93-3 butanon"
+     "tekst": "Passende technische maatregelen Geen aanvullende gegevens. Zie 7."
     },
     {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Oraal Dermaal Consumer, dermal, longterm exposition        412 mg/kg bw/day Inhalatief Consumer, inhalation, longterm exposition 106 mg/m³ · PNEC’s 78-93-3 butanon Fresh water 55,8 mg/l Marine water 55,8 mg/l Soil         22,5 mg/kg · Aanvullende gegevens: Als basis dienden lijsten die bij opstelling geldig waren. · 8.2 Maatregelen ter beheersing van blootstelling · Passende technische maatregelen Geen aanvullende gegevens. Zie 7. · Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen · Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden. · Bescherming van de ademhalingswegen Bij onvoldoende ventilatie ademhalingsbescherming. · Aanbevolen filter voor kortstondig gebruik: Filter A · Bescherming van de handen Handschoenen / bestand tegen oplosmiddelen Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie. · Handschoenmateriaal Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm · Doordringingstijd van het handschoenmateriaal Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4). · Bescherming van de ogen/het gezicht Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen. · Lichaamsbescherming: Tegen oplosmiddelen bestande beschermingskleding",
-       "Consumer, oral, longterm exposition Nauw aansluitende veiligheidsbril",
-       "31 mg/kg bw/day"
-      ]
-     ]
+     "soort": "alinea",
+     "tekst": "Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ademhalingswegen Bij onvoldoende ventilatie ademhalingsbescherming."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbevolen filter voor kortstondig gebruik: Filter A"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenen / bestand tegen oplosmiddelen Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Doordringingstijd van het handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4)."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ogen/het gezicht"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Nauw aansluitende veiligheidsbril"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Lichaamsbescherming: Tegen oplosmiddelen bestande beschermingskleding"
     }
    ],
    "4": [
     {
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 4.1 Beschrijving van de eerstehulpmaatregelen · Algemene informatie: Geen speciale maatregelen noodzakelijk. · Na het inademen: Frisse lucht toedienen; bij klachten arts ontbieden. Geen speciale maatregelen noodzakelijk. · Na huidcontact: Over het algemeen is het produkt niet prikkelend voor de huid · Na oogcontact: De ogen gedurende verscheidene minuten onder stromend water afspoelen terwijl de oogspleet geopend blijft. Bij aanhoudende klachten een dokter raadplegen. · Na inslikken: Als de klachten niet minderen, een arts raadplegen · 4.2 Belangrijkste acute en uitgestelde symptomen en effecten Geen verdere relevante informatie verkrijgbaar. · 4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling Geen verdere relevante informatie verkrijgbaar."
+     "tekst": "Algemene informatie: Geen speciale maatregelen noodzakelijk."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na het inademen: Frisse lucht toedienen; bij klachten arts ontbieden. Geen speciale maatregelen noodzakelijk."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na huidcontact: Over het algemeen is het produkt niet prikkelend voor de huid"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na oogcontact: De ogen gedurende verscheidene minuten onder stromend water afspoelen terwijl de oogspleet geopend blijft. Bij aanhoudende klachten een dokter raadplegen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na inslikken: Als de klachten niet minderen, een arts raadplegen"
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "behandeling Geen verdere relevante informatie verkrijgbaar."
     }
    ],
    "6": [
     {
      "soort": "alinea",
-     "tekst": "mengsel · 6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures Beschermende kleding aantrekken. Niet beschermde personen op afstand houden. · 6.2 Milieuvoorzorgsmaatregelen: Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen. · 6.3 Insluitings- en reinigingsmethoden en -materiaal: In speciale tanks voor terugwinning of berging verzamelen. Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. Voor voldoende ventilatie zorgen. · 6.4 Verwijzing naar andere rubrieken Informatie inzake veilig gebruik - zie hoofdstuk 7. Informatie inzake persoonlijke beschermingsuitrusting - zie hoofdstuk 8. Informatie inzake berging - zie hoofdstuk 13."
+     "tekst": "mengsel"
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Beschermende kleding aantrekken. Niet beschermde personen op afstand houden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "In speciale tanks voor terugwinning of berging verzamelen. Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. Voor voldoende ventilatie zorgen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Informatie inzake veilig gebruik - zie hoofdstuk 7. Informatie inzake persoonlijke beschermingsuitrusting - zie hoofdstuk 8. Informatie inzake berging - zie hoofdstuk 13."
     }
    ],
    "5": [
     {
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 5.1 Blusmiddelen · Geschikte blusmiddelen: Waternevel Alcoholbestendig schuim Bluspoeder Kooldioxyde · Blusmiddelen die uit veiligheidsoogpunt niet geschikt zijn: Krachtige waterstraal · 5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt Geen verdere relevante informatie verkrijgbaar. · 5.3 Advies voor brandweerlieden · Speciale beschermende kleding: Geen bijzondere maatregelen nodig. · Verdere gegevens De aan gevaar blootgestelde tanks met watersproeistraal koelen."
+     "tekst": "Geschikte blusmiddelen: Waternevel Alcoholbestendig schuim Bluspoeder Kooldioxyde"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Blusmiddelen die uit veiligheidsoogpunt niet geschikt zijn: Krachtige waterstraal"
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Speciale beschermende kleding: Geen bijzondere maatregelen nodig."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Verdere gegevens"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "De aan gevaar blootgestelde tanks met watersproeistraal koelen."
     },
     {
      "soort": "alinea",
@@ -15305,8 +15617,20 @@ const VIB_PRODUCTEN = [
    ],
    "13": [
     {
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 13.1 Afvalverwerkingsmethoden · Aanbeveling: Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen. Afvalverwijdering volgens overheidsbepalingen. · Niet gereinigde verpakkingen: · Aanbeveling: Verpakkingen die niet meer gereinigd kunnen worden, moeten zoals de stof zelf verwijderd worden."
+     "tekst": "Aanbeveling: Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen. Afvalverwijdering volgens overheidsbepalingen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet gereinigde verpakkingen:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbeveling: Verpakkingen die niet meer gereinigd kunnen worden, moeten zoals de stof zelf verwijderd worden."
     }
    ]
   }
@@ -15336,58 +15660,221 @@ const VIB_PRODUCTEN = [
    }
   ],
   "artikelstatus": "active",
-  "status": "onzeker",
-  "problemen": [
-   "Onderdeel 8.2 niet gevonden"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "bescherming · 8.1 Controleparameters · Bestanddelen met werkplekgerelateerde grenswaarden die moeten worden gecontroleerd: 109-99-9 Tetrahydrofuraan WGW Korte termijn waarde: 600 mg/m³, 200 ppm Lange termijn waarde: 300 mg/m³, 100 ppm 78-93-3 Butanon WGW Korte termijn waarde: 900 mg/m³, 300 ppm Lange termijn waarde: 590 mg/m³, 197 ppm · DNEL’s 109-99-9 Tetrahydrofuraan"
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Oraal Dermaal Werknemer, huid, langdurige blootstelling            12,6 mg/kg bw/day Inhalatief Werknemer, inhalatief, kortstondige blootstelling 96 mg/m³ 78-93-3 Butanon",
-       "Consument, oraal, langdurige blootstelling Consument, dermaal, langdurige blootstelling      1,5 mg/kg bw/day Werknemer, inhalatief, langdurige blootstelling 72,4 mg/m³ DNEL voor consumenten, acute inademing            52 mg/m³ Consument, inhalatief, langdurige blootstelling 13 mg/m³",
-       "1,5 mg/kg bw/day"
-      ],
-      [
-       "Oraal Dermaal Werknemer, huid, langdurige blootstelling            1161 mg/kg bw/day Inhalatief Werknemer, inhalatief, kortstondige blootstelling 900 mg/m³ · PNEC’s 109-99-9 Tetrahydrofuraan Oraal Secundaire vergiftiging         67 mg/kg 78-93-3 Butanon Oraal Secundaire vergiftiging         1000 mg/kg Zoetwatersediment               284,7 mg/kg dry weight Zeewater                        55,8 mg/l Marien sediment                 284,7 mg/kg dry weight Bodem                           22,5 mg/kg Rioolwaterzuiveringsinstallatie 709 mg/l Sporadische vrijlating          55,8 mg/l · Aanvullende gegevens: Als basis dienden lijsten die bij opstelling geldig waren. · 8.2 Maatregelen ter beheersing van blootstelling · Passende technische maatregelen Geen aanvullende gegevens. Zie sectie 7. · Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen · Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Uit de buurt houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden. · Bescherming van de ademhalingswegen Ademhalingsbescherming aanbevolen. Bij kortstondige of geringe blootstelling ademfilterapparaat gebruiken; bij intensieve of langdurige blootstelling ademhalingsapparaat gebruiken dat onafhankelijk is van de omgevingslucht. Bij onvoldoende ventilatie ademhalingsbescherming. · Aanbevolen filter voor kortstondig gebruik: Filter A · Bescherming van de handen Handschoenen / bestand tegen oplosmiddelen Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie. · Handschoenmateriaal Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm · Doordringingstijd van het handschoenmateriaal Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4). · Bescherming van de ogen/het gezicht Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen. · Lichaamsbescherming: Oplosmiddelbestendige beschermende kleding",
-       "Consument, oraal, langdurige blootstelling Consument, dermaal, langdurige blootstelling      412 mg/kg bw/day Werknemer, inhalatief, langdurige blootstelling 600 mg/m³ DNEL voor consumenten, acute inademing            450 mg/m³ Consument, inhalatief, langdurige blootstelling 106 mg/m³ Zoet water                      4,32 mg/l Zoetwatersediment               23,3 mg/kg dry weight Zeewater                        0,432 mg/l Marien sediment                 2,33 mg/kg dry weight Bodem                           2,13 mg/kg Rioolwaterzuiveringsinstallatie 4,6 mg/l Sporadische vrijlating          21,6 mg/l Zoet water                      55,8 mg/l Veiligheidshandschoenen Nauw aansluitende veiligheidsbril",
-       "31 mg/kg bw/day"
-      ]
-     ]
+     "soort": "alinea",
+     "tekst": "Passende technische maatregelen Geen aanvullende gegevens. Zie sectie 7."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Uit de buurt houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ademhalingswegen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Ademhalingsbescherming aanbevolen. Bij kortstondige of geringe blootstelling ademfilterapparaat gebruiken; bij intensieve of langdurige blootstelling ademhalingsapparaat gebruiken dat onafhankelijk is van de omgevingslucht. Bij onvoldoende ventilatie ademhalingsbescherming."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbevolen filter voor kortstondig gebruik: Filter A"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenen / bestand tegen oplosmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Veiligheidshandschoenen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Doordringingstijd van het handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4)."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ogen/het gezicht"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Nauw aansluitende veiligheidsbril"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Lichaamsbescherming: Oplosmiddelbestendige beschermende kleding"
     }
    ],
    "4": [
     {
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 4.1 Beschrijving van de eerstehulpmaatregelen · Algemene informatie: Geen speciale maatregelen noodzakelijk. · Na het inademen: Frisse lucht toedienen; bij klachten arts ontbieden. Geen speciale maatregelen noodzakelijk. · Na huidcontact: Over het algemeen is het produkt niet prikkelend voor de huid · Na oogcontact: De ogen gedurende verscheidene minuten onder stromend water afspoelen terwijl de oogspleet geopend blijft. Bij aanhoudende klachten een dokter raadplegen. · Na inslikken: Als de klachten niet minderen, een arts raadplegen · 4.2 Belangrijkste acute en uitgestelde symptomen en effecten Geen verdere relevante informatie verkrijgbaar. · 4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling Geen verdere relevante informatie verkrijgbaar."
+     "tekst": "Algemene informatie: Geen speciale maatregelen noodzakelijk."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na het inademen: Frisse lucht toedienen; bij klachten arts ontbieden. Geen speciale maatregelen noodzakelijk."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na huidcontact: Over het algemeen is het produkt niet prikkelend voor de huid"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na oogcontact: De ogen gedurende verscheidene minuten onder stromend water afspoelen terwijl de oogspleet geopend blijft. Bij aanhoudende klachten een dokter raadplegen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na inslikken: Als de klachten niet minderen, een arts raadplegen"
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "behandeling Geen verdere relevante informatie verkrijgbaar."
     }
    ],
    "6": [
     {
      "soort": "alinea",
-     "tekst": "mengsel · 6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures Beschermende kleding aantrekken. Niet beschermde personen op afstand houden. · 6.2 Milieuvoorzorgsmaatregelen: Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen. · 6.3 Insluitings- en reinigingsmethoden en -materiaal: In geschikte vaten afvoeren voor terugwinning of verwijdering. Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. Besmet materiaal zoals afval volgens sectie 13 verwijderen. Voor voldoende ventilatie zorgen. · 6.4 Verwijzing naar andere rubrieken Informatie inzake veilig gebruik - zie sectie 7. Informatie inzake persoonlijke beschermingsuitrusting - zie sectie 8. Informatie inzake berging - zie sectie 13."
+     "tekst": "mengsel"
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Beschermende kleding aantrekken. Niet beschermde personen op afstand houden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "In geschikte vaten afvoeren voor terugwinning of verwijdering. Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. Besmet materiaal zoals afval volgens sectie 13 verwijderen. Voor voldoende ventilatie zorgen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Informatie inzake veilig gebruik - zie sectie 7. Informatie inzake persoonlijke beschermingsuitrusting - zie sectie 8. Informatie inzake berging - zie sectie 13."
     }
    ],
    "5": [
     {
-     "soort": "alinea",
-     "tekst": "· 5.1 Blusmiddelen · Geschikte blusmiddelen: Waternevel Alcoholbestendig schuim Bluspoeder Kooldioxyde · Blusmiddelen die uit veiligheidsoogpunt niet geschikt zijn: Krachtige waterstraal"
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
     },
     {
      "soort": "alinea",
-     "tekst": "· 5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt Geen verdere relevante informatie verkrijgbaar. · 5.3 Advies voor brandweerlieden · Speciale beschermende kleding: Geen bijzondere maatregelen nodig. · Verdere gegevens Gevaarlijke vaten met waternevel koelen. Het besmette bluswater afzonderlijk verzamelen, mag niet in de riolering terechtkomen."
+     "tekst": "Geschikte blusmiddelen: Waternevel Alcoholbestendig schuim Bluspoeder Kooldioxyde"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Blusmiddelen die uit veiligheidsoogpunt niet geschikt zijn: Krachtige waterstraal"
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Speciale beschermende kleding: Geen bijzondere maatregelen nodig."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Verdere gegevens"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Gevaarlijke vaten met waternevel koelen. Het besmette bluswater afzonderlijk verzamelen, mag niet in de riolering terechtkomen."
     }
    ],
    "13": [
     {
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 13.1 Afvalverwerkingsmethoden · Aanbeveling: Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen. Afvalverwijdering volgens overheidsbepalingen. · Niet gereinigde verpakkingen: · Aanbeveling: Verpakkingen die niet meer gereinigd kunnen worden, moeten zoals de stof zelf verwijderd worden."
+     "tekst": "Aanbeveling: Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen. Afvalverwijdering volgens overheidsbepalingen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet gereinigde verpakkingen:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbeveling: Verpakkingen die niet meer gereinigd kunnen worden, moeten zoals de stof zelf verwijderd worden."
     }
    ]
   }
@@ -15417,58 +15904,221 @@ const VIB_PRODUCTEN = [
    }
   ],
   "artikelstatus": "active",
-  "status": "onzeker",
-  "problemen": [
-   "Onderdeel 8.2 niet gevonden"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "bescherming · 8.1 Controleparameters · Bestanddelen met werkplekgerelateerde grenswaarden die moeten worden gecontroleerd: 109-99-9 Tetrahydrofuraan WGW Korte termijn waarde: 600 mg/m³, 200 ppm Lange termijn waarde: 300 mg/m³, 100 ppm 78-93-3 Butanon WGW Korte termijn waarde: 900 mg/m³, 300 ppm Lange termijn waarde: 590 mg/m³, 197 ppm · DNEL’s 109-99-9 Tetrahydrofuraan"
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Oraal Dermaal Werknemer, huid, langdurige blootstelling            12,6 mg/kg bw/day Inhalatief Werknemer, inhalatief, kortstondige blootstelling 96 mg/m³ 78-93-3 Butanon",
-       "Consument, oraal, langdurige blootstelling Consument, dermaal, langdurige blootstelling      1,5 mg/kg bw/day Werknemer, inhalatief, langdurige blootstelling 72,4 mg/m³ DNEL voor consumenten, acute inademing            52 mg/m³ Consument, inhalatief, langdurige blootstelling 13 mg/m³",
-       "1,5 mg/kg bw/day"
-      ],
-      [
-       "Oraal Dermaal Werknemer, huid, langdurige blootstelling            1161 mg/kg bw/day Inhalatief Werknemer, inhalatief, kortstondige blootstelling 900 mg/m³ · PNEC’s 109-99-9 Tetrahydrofuraan Oraal Secundaire vergiftiging         67 mg/kg 78-93-3 Butanon Oraal Secundaire vergiftiging         1000 mg/kg Zoetwatersediment               284,7 mg/kg dry weight Zeewater                        55,8 mg/l Marien sediment                 284,7 mg/kg dry weight Bodem                           22,5 mg/kg Rioolwaterzuiveringsinstallatie 709 mg/l Sporadische vrijlating          55,8 mg/l · Aanvullende gegevens: Als basis dienden lijsten die bij opstelling geldig waren. · 8.2 Maatregelen ter beheersing van blootstelling · Passende technische maatregelen Geen aanvullende gegevens. Zie sectie 7. · Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen · Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Uit de buurt houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden. · Bescherming van de ademhalingswegen Ademhalingsbescherming aanbevolen. Bij kortstondige of geringe blootstelling ademfilterapparaat gebruiken; bij intensieve of langdurige blootstelling ademhalingsapparaat gebruiken dat onafhankelijk is van de omgevingslucht. Bij onvoldoende ventilatie ademhalingsbescherming. · Aanbevolen filter voor kortstondig gebruik: Filter A · Bescherming van de handen Handschoenen / bestand tegen oplosmiddelen Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie. · Handschoenmateriaal Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm · Doordringingstijd van het handschoenmateriaal Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4). · Bescherming van de ogen/het gezicht Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen. · Lichaamsbescherming: Oplosmiddelbestendige beschermende kleding",
-       "Consument, oraal, langdurige blootstelling Consument, dermaal, langdurige blootstelling      412 mg/kg bw/day Werknemer, inhalatief, langdurige blootstelling 600 mg/m³ DNEL voor consumenten, acute inademing            450 mg/m³ Consument, inhalatief, langdurige blootstelling 106 mg/m³ Zoet water                      4,32 mg/l Zoetwatersediment               23,3 mg/kg dry weight Zeewater                        0,432 mg/l Marien sediment                 2,33 mg/kg dry weight Bodem                           2,13 mg/kg Rioolwaterzuiveringsinstallatie 4,6 mg/l Sporadische vrijlating          21,6 mg/l Zoet water                      55,8 mg/l Veiligheidshandschoenen Nauw aansluitende veiligheidsbril",
-       "31 mg/kg bw/day"
-      ]
-     ]
+     "soort": "alinea",
+     "tekst": "Passende technische maatregelen Geen aanvullende gegevens. Zie sectie 7."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Uit de buurt houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ademhalingswegen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Ademhalingsbescherming aanbevolen. Bij kortstondige of geringe blootstelling ademfilterapparaat gebruiken; bij intensieve of langdurige blootstelling ademhalingsapparaat gebruiken dat onafhankelijk is van de omgevingslucht. Bij onvoldoende ventilatie ademhalingsbescherming."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbevolen filter voor kortstondig gebruik: Filter A"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenen / bestand tegen oplosmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Veiligheidshandschoenen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Doordringingstijd van het handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4)."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ogen/het gezicht"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Nauw aansluitende veiligheidsbril"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Lichaamsbescherming: Oplosmiddelbestendige beschermende kleding"
     }
    ],
    "4": [
     {
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 4.1 Beschrijving van de eerstehulpmaatregelen · Algemene informatie: Geen speciale maatregelen noodzakelijk. · Na het inademen: Frisse lucht toedienen; bij klachten arts ontbieden. Geen speciale maatregelen noodzakelijk. · Na huidcontact: Over het algemeen is het produkt niet prikkelend voor de huid · Na oogcontact: De ogen gedurende verscheidene minuten onder stromend water afspoelen terwijl de oogspleet geopend blijft. Bij aanhoudende klachten een dokter raadplegen. · Na inslikken: Als de klachten niet minderen, een arts raadplegen · 4.2 Belangrijkste acute en uitgestelde symptomen en effecten Geen verdere relevante informatie verkrijgbaar. · 4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling Geen verdere relevante informatie verkrijgbaar."
+     "tekst": "Algemene informatie: Geen speciale maatregelen noodzakelijk."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na het inademen: Frisse lucht toedienen; bij klachten arts ontbieden. Geen speciale maatregelen noodzakelijk."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na huidcontact: Over het algemeen is het produkt niet prikkelend voor de huid"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na oogcontact: De ogen gedurende verscheidene minuten onder stromend water afspoelen terwijl de oogspleet geopend blijft. Bij aanhoudende klachten een dokter raadplegen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na inslikken: Als de klachten niet minderen, een arts raadplegen"
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "behandeling Geen verdere relevante informatie verkrijgbaar."
     }
    ],
    "6": [
     {
      "soort": "alinea",
-     "tekst": "mengsel · 6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures Beschermende kleding aantrekken. Niet beschermde personen op afstand houden. · 6.2 Milieuvoorzorgsmaatregelen: Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen. · 6.3 Insluitings- en reinigingsmethoden en -materiaal: In geschikte vaten afvoeren voor terugwinning of verwijdering. Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. Besmet materiaal zoals afval volgens sectie 13 verwijderen. Voor voldoende ventilatie zorgen. · 6.4 Verwijzing naar andere rubrieken Informatie inzake veilig gebruik - zie sectie 7. Informatie inzake persoonlijke beschermingsuitrusting - zie sectie 8. Informatie inzake berging - zie sectie 13."
+     "tekst": "mengsel"
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Beschermende kleding aantrekken. Niet beschermde personen op afstand houden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "In geschikte vaten afvoeren voor terugwinning of verwijdering. Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. Besmet materiaal zoals afval volgens sectie 13 verwijderen. Voor voldoende ventilatie zorgen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Informatie inzake veilig gebruik - zie sectie 7. Informatie inzake persoonlijke beschermingsuitrusting - zie sectie 8. Informatie inzake berging - zie sectie 13."
     }
    ],
    "5": [
     {
-     "soort": "alinea",
-     "tekst": "· 5.1 Blusmiddelen · Geschikte blusmiddelen: Waternevel Alcoholbestendig schuim Bluspoeder Kooldioxyde · Blusmiddelen die uit veiligheidsoogpunt niet geschikt zijn: Krachtige waterstraal"
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
     },
     {
      "soort": "alinea",
-     "tekst": "· 5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt Geen verdere relevante informatie verkrijgbaar. · 5.3 Advies voor brandweerlieden · Speciale beschermende kleding: Geen bijzondere maatregelen nodig. · Verdere gegevens Gevaarlijke vaten met waternevel koelen. Het besmette bluswater afzonderlijk verzamelen, mag niet in de riolering terechtkomen."
+     "tekst": "Geschikte blusmiddelen: Waternevel Alcoholbestendig schuim Bluspoeder Kooldioxyde"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Blusmiddelen die uit veiligheidsoogpunt niet geschikt zijn: Krachtige waterstraal"
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Speciale beschermende kleding: Geen bijzondere maatregelen nodig."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Verdere gegevens"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Gevaarlijke vaten met waternevel koelen. Het besmette bluswater afzonderlijk verzamelen, mag niet in de riolering terechtkomen."
     }
    ],
    "13": [
     {
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 13.1 Afvalverwerkingsmethoden · Aanbeveling: Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen. Afvalverwijdering volgens overheidsbepalingen. · Niet gereinigde verpakkingen: · Aanbeveling: Verpakkingen die niet meer gereinigd kunnen worden, moeten zoals de stof zelf verwijderd worden."
+     "tekst": "Aanbeveling: Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen. Afvalverwijdering volgens overheidsbepalingen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet gereinigde verpakkingen:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbeveling: Verpakkingen die niet meer gereinigd kunnen worden, moeten zoals de stof zelf verwijderd worden."
     }
    ]
   }
@@ -20405,7 +21055,7 @@ const VIB_PRODUCTEN = [
     "taal": "nl"
    },
    {
-    "pdf": "vib/461-551.pdf",
+    "pdf": "vib/461-46.pdf",
     "datum": "29-09-2023",
     "verlopen": false,
     "taal": "nl"
@@ -20422,27 +21072,71 @@ const VIB_PRODUCTEN = [
     },
     {
      "soort": "alinea",
-     "tekst": "Technische maatregelen Zorg dat er voldoende ventilatie in het gebied is."
+     "tekst": "Passende technische maatregelen Geen aanvullende gegevens. Zie 7."
     },
     {
-     "soort": "veld",
-     "kopje": "Bescherming van ademhaling",
-     "tekst": "Onafhankelijk ademhalingsapparaat moet beschikbaar zijn in geval van nood."
+     "soort": "alinea",
+     "tekst": "Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen"
     },
     {
-     "soort": "veld",
-     "kopje": "Bescherming van de handen",
-     "tekst": "Beschermende handschoenen."
+     "soort": "alinea",
+     "tekst": "Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Niet eten of drinken tijdens gebruik. Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Aanraking met de ogen en de huid vermijden. Zorg ervoor dat oogwasstations en veiligheidsdouches zich dicht bij de werkplek bevinden."
     },
     {
-     "soort": "veld",
-     "kopje": "Bescherming van de ogen",
-     "tekst": "Goed gesloten veiligheidsbril. Zorg dat er een oogdouche aanwezig is."
+     "soort": "alinea",
+     "tekst": "Bescherming van de ademhalingswegen Bij onvoldoende ventilatie ademhalingsbescherming."
     },
     {
-     "soort": "veld",
-     "kopje": "Bescherming van de huid",
-     "tekst": "Beschermende kleding."
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Beschermende handschoenen conform EN374."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "De keuze van een geschikte handschoen is niet alleen afhankelijk van het materiaal, maar ook van andere kwaliteitskenmerken en verschilt van fabrikant tot fabrikant. Aangezien het product uit meerdere stoffen is samengesteld, is de duurzaamheid van de handschoenmaterialen niet vooraf berekenbaar en moet derhalve vóór het gebruik worden getest."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Doordringingstijd van het handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "De precieze penetratietijd kunt u te weten komen bij de handschoenfabrikant; houd er rekening mee."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ogen/het gezicht"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Veiligheidsbril met zijkapjes die voldoen aan EN166 Gebruik apparatuur voor oogbescherming die is getest en goedgekeurd volgens passende overheidsnormen zoals NIOSH (VS) of EN 166 (EU)."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Lichaamsbescherming:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Loogbestendige beschermingskleding"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "De lichaamsbescherming moet worden gekozen afhankelijk van de producteigenschappen, de activiteit en de mogelijke blootstelling."
     }
    ],
    "4": [
@@ -20452,7 +21146,27 @@ const VIB_PRODUCTEN = [
     },
     {
      "soort": "alinea",
-     "tekst": "Kontact met huid: Verwijder alle vervuilde kleding en schoeisel onmiddellijk tenzij zij aan de huid vastgeplakt zitten. Onmiddellijk wassen met veel zeep en water. Kontact met ogen: Het oog gedurende 15 minuten met stromend water bespoelen. Naar ziekenhuis brengen voor onderzoek door specialist. Raadpleeg een arts. Inslikken: Mond met water spoelen. Niet laten braken. Indien de patiënt bij het bewustzijn is dient men hem/haar onmiddellijk een halve liter water te laten drinken. Raadpleeg een arts. Inademen: Verwijder de patiënt van de blootstelling, zonder uw eigen veiligheid in gevaar te brengen."
+     "tekst": "Algemene informatie: Verontreinigde kleding onmiddellijk uittrekken."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na het inademen: Frisse lucht toedienen; bij klachten arts ontbieden."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na huidcontact: Onmiddellijk met water en zeep afwassen en goed naspoelen. Wanneer de huid geïrriteerd blijft, een dokter raadplegen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na oogcontact: Controleer en verwijder eventuele contactlenzen. Ogen met open ooglid een aantal minuten onder stromend water afspoelen en dokter raadplegen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na inslikken: Mond spoelen en overvloedig water drinken. Geen braken teweegbrengen en onmiddellijk medische hulp raadplegen. Indien spontaan braken optreedt, houd het hoofd onder de heupen om aspiratie te voorkomen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Informatie voor de arts: Behandel symptomatisch en ondersteunend."
     },
     {
      "soort": "kop",
@@ -20460,59 +21174,49 @@ const VIB_PRODUCTEN = [
     },
     {
      "soort": "alinea",
-     "tekst": "Kontact met huid: Op de plek waar het kontact plaats vond kunnen zich irritatie en roodheid voordoen. Kontact met ogen: Er kunnen zich pijn en roodheid voordoen. De ogen kunnen overvloedig tranen. De patiënt kan hevige pijn lijden. Het gezicht kan vertroebeld worden. Kan permanente schade veroorzaken. Inslikken: De mond en de keel kunnen pijnlijke en rode plekken vertonen. Er kunnen zich misselijkheid en maagpijn voordoen. Inademen: De patiënt kan over irritatie van de keel en een bedrukt gevoel in de borst klagen."
-    },
-    {
-     "soort": "veld",
-     "kopje": "Uitgestelde/onmiddellijke effecten",
-     "tekst": "Onmiddellijke effecten kunnen na kortdurende blootstelling worden verwacht."
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
     },
     {
      "soort": "kop",
-     "tekst": "4.3 Vermelding van de vereiste onmiddellijke medische verzorging en speciale behandeling"
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling"
     },
     {
-     "soort": "veld",
-     "kopje": "Onmiddellijke/spec. behandeling",
-     "tekst": "Uitrusting voor oogbaden moet in het gebouw aanwezig zijn."
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
     }
    ],
    "6": [
     {
      "soort": "kop",
-     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermde uitrusting en noodprocedures"
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
     },
     {
-     "soort": "veld",
-     "kopje": "Pers. voorzorgsmaatregelen",
-     "tekst": "De verontreinigde plek met waarschuwingstekens markeren en toegang door niet bevoegd personeel voorkomen. Zonder geschikte beschermende kleding niet proberen in te grijpen - zie paragraaf 8 van VIB. Lekkende houders omdraaien zodat de lekkende zijde bovenaan is om ontsnappen van vloeistof te voorkomen."
+     "soort": "alinea",
+     "tekst": "Bijzonder slipgevaar als gevolg van het uitgelopen/gemorste produkt. Beschermende kleding aantrekken. Niet beschermde personen op afstand houden."
     },
     {
      "soort": "kop",
      "tekst": "6.2 Milieuvoorzorgsmaatregelen"
     },
     {
-     "soort": "veld",
-     "kopje": "Milieu voorzorgsmaatregelen",
-     "tekst": "Produkt niet in riolering of oppervlaktewater lozen. De gemorste stof indammen."
+     "soort": "alinea",
+     "tekst": "Niet in de ondergrond/bodem laten terechtkomen. Het product mag niet in onverdunde vorm in het riool of in waterlopen terechtkomen. Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen."
     },
     {
      "soort": "kop",
      "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
     },
     {
-     "soort": "veld",
-     "kopje": "Reinigingsprocedures",
-     "tekst": "In droge aarde of zand absorberen. Naar een afgesloten geëtiketteerde container overpompen en op een gepaste manier afvoeren."
+     "soort": "alinea",
+     "tekst": "Verzamel gemorst product met onbrandbaar, absorberend materiaal zoals zand, aarde, vermiculiet of diatomeeënaarde en doe dit in een container voor verwijdering volgens de plaatselijke voorschriften. Voor voldoende ventilatie zorgen."
     },
     {
      "soort": "kop",
-     "tekst": "6.4 Verwijzing naar andere Rubrieken"
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
     },
     {
-     "soort": "veld",
-     "kopje": "Verwijzing naar andere Rubrieken",
-     "tekst": "Raadpleeg paragraaf 8 van VIB."
+     "soort": "alinea",
+     "tekst": "Informatie inzake veilig gebruik - zie hoofdstuk 7. Informatie inzake persoonlijke beschermingsuitrusting - zie hoofdstuk 8. Informatie inzake berging - zie hoofdstuk 13."
     }
    ],
    "5": [
@@ -20522,25 +21226,31 @@ const VIB_PRODUCTEN = [
     },
     {
      "soort": "alinea",
-     "tekst": "Blusmiddelen: Blusmiddelen passend voor de omgevingsbrand gebruiken. Gebruik waterspray om houders af te koelen."
+     "tekst": "Geschikte blusmiddelen: CO2, bluspoeder of waterstraal. Grotere brand met waterstraal bestrijden. Brandblusmaatregelen op omgeving afstemmen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Blusmiddelen die uit veiligheidsoogpunt niet geschikt zijn: Krachtige waterstraal"
     },
     {
      "soort": "kop",
      "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
     },
     {
-     "soort": "veld",
-     "kopje": "Blootstellingsgevaren",
-     "tekst": "Bij verbranding worden giftige dampen afgegeven."
+     "soort": "alinea",
+     "tekst": "Bij verhitting of brand is het ontstaan van giftige gassen mogelijk."
     },
     {
      "soort": "kop",
      "tekst": "5.3 Advies voor brandweerlieden"
     },
     {
-     "soort": "veld",
-     "kopje": "Advies voor brandweerlieden",
-     "tekst": "Onafhankelijke ademhalingsapparatuur dragen. Beschermende kleding dragen om aanraking met huid en ogen te vermijden."
+     "soort": "alinea",
+     "tekst": "Speciale beschermende kleding: Adembeschermingsapparaat dragen dat niet afhankelijk is van de omgevingslucht. Ontploffings- en brandgassen niet inademen. Volledig beschermende overall aantrekken."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Verdere gegevens De aan gevaar blootgestelde tanks met watersproeistraal koelen."
     }
    ],
    "13": [
@@ -20549,13 +21259,20 @@ const VIB_PRODUCTEN = [
      "tekst": "13.1 Afvalverwerkingsmethoden"
     },
     {
-     "soort": "veld",
-     "kopje": "Verwijderingshandelingen",
-     "tekst": "In een geschikte houder doen en laat afval door een gespecialiseerd afvalverwerkingsbedrijf verwijderen."
+     "soort": "alinea",
+     "tekst": "Aanbeveling: Aanbevolen hiërarchie van controles: - Minimaliseer afval; - Hergebruik indien niet verontreinigd; - Recyclen, indien mogelijk; of - Veilige verwijdering (als al het andere faalt). Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen. Vanwege recycling met afvalverwerkers contact opnemen. Gebruikte, aangetaste of verontreinigde producten kunnen als gevaarlijk afval worden ingedeeld. Wie gevaarlijk afval indeelt en het lot ervan bepaalt, moet gekwalificeerd zijn volgens de nationale en internationale wetgeving."
     },
     {
      "soort": "alinea",
-     "tekst": "Opmerking: De gebruiker wordt opmerkzaam gemaakt op de mogelijke regionale of nationale voorschriften met betrekking tot verwijdering."
+     "tekst": "Niet gereinigde verpakkingen:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbeveling: Afvalverwijdering volgens overheidsbepalingen. Containers, zelfs als ze \"leeg\" zijn, kunnen residuen bevatten die bij verhitting brandbare en/of gevaarlijke dampen kunnen ontwikkelen. Niet snijden, boren, slijpen, lassen of soortgelijke bewerkingen uitvoeren op of in de buurt van lege houders."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbevolen reinigingsmiddel: Water, eventueel met toevoeging van reinigingsmiddelen."
     }
    ]
   }
@@ -20582,37 +21299,37 @@ const VIB_PRODUCTEN = [
    }
   ],
   "artikelstatus": "active",
-  "status": "onzeker",
-  "problemen": [
-   "Onderdeel 8.2 niet gevonden"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "· 8.1 Controleparameters · Bestanddelen met grenswaarden die m.b.t. de werkruimte in acht genomen moeten worden: 7664-38-2 fosforzuur"
-    },
-    {
-     "soort": "veld",
-     "kopje": "WGW Korte termijn waarde",
-     "tekst": "2 mg/m³"
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
      "soort": "alinea",
-     "tekst": "Lange termijn waarde: 1 mg/m³"
-    },
-    {
-     "soort": "veld",
-     "kopje": "· Aanvullende gegevens",
-     "tekst": "Als basis dienden lijsten die bij opstelling geldig waren."
+     "tekst": "Passende technische maatregelen Geen aanvullende gegevens. Zie 7."
     },
     {
      "soort": "alinea",
-     "tekst": "· 8.2 Maatregelen ter beheersing van blootstelling · Passende technische maatregelen Geen aanvullende gegevens. Zie 7. · Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen · Algemene beschermings- en gezondheidsmaatregelen: Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Aanraking met de ogen en de huid vermijden."
+     "tekst": "Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Gassen/dampen/aërosol niet inademen. · Bescherming van de ademhalingswegen Bij onvoldoende ventilatie ademhalingsbescherming. · Bescherming van de handen"
+     "tekst": "Algemene beschermings- en gezondheidsmaatregelen: Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Aanraking met de ogen en de huid vermijden."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Gassen/dampen/aërosol niet inademen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ademhalingswegen Bij onvoldoende ventilatie ademhalingsbescherming."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen"
     },
     {
      "soort": "alinea",
@@ -20620,7 +21337,27 @@ const VIB_PRODUCTEN = [
     },
     {
      "soort": "alinea",
-     "tekst": "Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie. · Handschoenmateriaal De keuze van een geschikte handschoen is niet alleen afhankelijk van het materiaal, maar ook van andere kwaliteitskenmerken en verschilt van fabrikant tot fabrikant. Aangezien het product uit meerdere stoffen is samengesteld, is de duurzaamheid van de handschoenmaterialen niet vooraf berekenbaar en moet derhalve vóór het gebruik worden getest. · Doordringingstijd van het handschoenmateriaal De precieze penetratietijd kunt u te weten komen bij de handschoenfabrikant; houd er rekening mee. · Bescherming van de ogen/het gezicht"
+     "tekst": "Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "De keuze van een geschikte handschoen is niet alleen afhankelijk van het materiaal, maar ook van andere kwaliteitskenmerken en verschilt van fabrikant tot fabrikant. Aangezien het product uit meerdere stoffen is samengesteld, is de duurzaamheid van de handschoenmaterialen niet vooraf berekenbaar en moet derhalve vóór het gebruik worden getest."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Doordringingstijd van het handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "De precieze penetratietijd kunt u te weten komen bij de handschoenfabrikant; houd er rekening mee."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ogen/het gezicht"
     },
     {
      "soort": "alinea",
@@ -20634,8 +21371,8 @@ const VIB_PRODUCTEN = [
    ],
    "4": [
     {
-     "soort": "alinea",
-     "tekst": "· 4.1 Beschrijving van de eerstehulpmaatregelen"
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
     },
     {
      "soort": "veld",
@@ -20649,38 +21386,109 @@ const VIB_PRODUCTEN = [
     },
     {
      "soort": "alinea",
-     "tekst": "Onmiddellijk met water en zeep afwassen en goed naspoelen. Wanneer de huid geïrriteerd blijft, een dokter raadplegen. · Na oogcontact: Ogen met open ooglid een aantal minuten onder stromend water afspoelen en dokter raadplegen. · Na inslikken: Mond spoelen en overvloedig water drinken. Geen braken teweegbrengen en onmiddellijk medische hulp raadplegen. · 4.2 Belangrijkste acute en uitgestelde symptomen en effecten Geen verdere relevante informatie verkrijgbaar. · 4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling Geen verdere relevante informatie verkrijgbaar."
+     "tekst": "Onmiddellijk met water en zeep afwassen en goed naspoelen. Wanneer de huid geïrriteerd blijft, een dokter raadplegen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na oogcontact: Ogen met open ooglid een aantal minuten onder stromend water afspoelen en dokter raadplegen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na inslikken: Mond spoelen en overvloedig water drinken. Geen braken teweegbrengen en onmiddellijk medische hulp raadplegen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
     }
    ],
    "6": [
     {
-     "soort": "alinea",
-     "tekst": "· 6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures Voor voldoende ventilatie zorgen. Beschermende kleding aantrekken. Niet beschermde personen op afstand houden."
-    },
-    {
-     "soort": "veld",
-     "kopje": "· 6.2 Milieuvoorzorgsmaatregelen",
-     "tekst": "Niet in de ondergrond/bodem laten terechtkomen."
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
     },
     {
      "soort": "alinea",
-     "tekst": "· 6.3 Insluitings- en reinigingsmethoden en -materiaal: Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. In speciale tanks voor terugwinning of berging verzamelen. Voor voldoende ventilatie zorgen. · 6.4 Verwijzing naar andere rubrieken Informatie inzake veilig gebruik - zie hoofdstuk 7. Informatie inzake persoonlijke beschermingsuitrusting - zie hoofdstuk 8. Informatie inzake berging - zie hoofdstuk 13."
+     "tekst": "Voor voldoende ventilatie zorgen. Beschermende kleding aantrekken. Niet beschermde personen op afstand houden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen: Niet in de ondergrond/bodem laten terechtkomen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. In speciale tanks voor terugwinning of berging verzamelen. Voor voldoende ventilatie zorgen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Informatie inzake veilig gebruik - zie hoofdstuk 7. Informatie inzake persoonlijke beschermingsuitrusting - zie hoofdstuk 8. Informatie inzake berging - zie hoofdstuk 13."
     }
    ],
    "5": [
     {
-     "soort": "alinea",
-     "tekst": "· 5.1 Blusmiddelen · Geschikte blusmiddelen: CO2, bluspoeder of waterstraal. Grotere brand met waterstraal bestrijden of met schuim, dat tegen alcohol bestand is. · 5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt Bij verhitting of brand ontstaan vergiftige gassen. · 5.3 Advies voor brandweerlieden · Speciale beschermende kleding: Ontploffings- en brandgassen niet inademen. Adembeschermingsapparaat dragen dat niet afhankelijk is van de omgevingslucht."
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
     },
     {
      "soort": "alinea",
-     "tekst": "Volledig beschermende overall aantrekken. · Verdere gegevens De aan gevaar blootgestelde tanks met watersproeistraal koelen."
+     "tekst": "Geschikte blusmiddelen: CO2, bluspoeder of waterstraal. Grotere brand met waterstraal bestrijden of met schuim, dat tegen alcohol bestand is."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij verhitting of brand ontstaan vergiftige gassen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Speciale beschermende kleding: Ontploffings- en brandgassen niet inademen. Adembeschermingsapparaat dragen dat niet afhankelijk is van de omgevingslucht."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Volledig beschermende overall aantrekken."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Verdere gegevens De aan gevaar blootgestelde tanks met watersproeistraal koelen."
     }
    ],
    "13": [
     {
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 13.1 Afvalverwerkingsmethoden · Aanbeveling: Vanwege recycling met afvalverwerkers contact opnemen. Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen. · Niet gereinigde verpakkingen:"
+     "tekst": "Aanbeveling: Vanwege recycling met afvalverwerkers contact opnemen. Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet gereinigde verpakkingen:"
     },
     {
      "soort": "veld",
@@ -35569,43 +36377,199 @@ const VIB_PRODUCTEN = [
    }
   ],
   "artikelstatus": "active",
-  "status": "onzeker",
-  "problemen": [
-   "Onderdeel 8.2 niet gevonden"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "bescherming · 8.1 Controleparameters · Bestanddelen met grenswaarden die m.b.t. de werkruimte in acht genomen moeten worden: 78-93-3 Butanon WGW Korte termijn waarde: 900 mg/m³, 300 ppm Lange termijn waarde: 590 mg/m³, 197 ppm · DNEL’s 78-93-3 Butanon"
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Oraal Dermaal Worker, dermal, longterm exposition           1161 mg/kg bw/day Inhalatief Worker, inhalative, shortterm exposition   900 mg/m³ · PNEC’s 78-93-3 Butanon Oraal Secondary Poisoning    1000 mg/kg · Aanvullende gegevens: Als basis dienden lijsten die bij opstelling geldig waren. · 8.2 Maatregelen ter beheersing van blootstelling · Passende technische maatregelen Geen aanvullende gegevens. Zie 7. · Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen · Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden. · Bescherming van de ademhalingswegen Bij onvoldoende ventilatie ademhalingsbescherming. · Aanbevolen filter voor kortstondig gebruik: Filter A · Bescherming van de handen Handschoenen / bestand tegen oplosmiddelen Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie. · Handschoenmateriaal Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm · Doordringingstijd van het handschoenmateriaal Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4). · Bescherming van de ogen/het gezicht Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen. · Lichaamsbescherming: Tegen oplosmiddelen bestande beschermingskleding",
-       "Consumer, oral, longterm exposition Consumer, dermal, longterm exposition      412 mg/kg bw/day Worker, inhalative, longterm exposition    600 mg/m³ Consumer, inhalative, shortterm exposition 450 mg/m³ Consumer, inhalative, longterm exposition 106 mg/m³ Fresh water            55,8 mg/l Fresh water sediment 284,7 mg/kg dry weight Marine water           55,8 mg/l Marine sediment        284,7 mg/kg dry weight Soil                   22,5 mg/kg Sewage treatment plant 709 mg/l Sporadic release       55,8 mg/l Veiligheidshandschoenen Nauw aansluitende veiligheidsbril",
-       "31 mg/kg bw/day"
-      ]
-     ]
+     "soort": "alinea",
+     "tekst": "Passende technische maatregelen Geen aanvullende gegevens. Zie 7."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ademhalingswegen Bij onvoldoende ventilatie ademhalingsbescherming."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbevolen filter voor kortstondig gebruik: Filter A"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenen / bestand tegen oplosmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Veiligheidshandschoenen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Doordringingstijd van het handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4)."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ogen/het gezicht"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Nauw aansluitende veiligheidsbril"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Lichaamsbescherming: Tegen oplosmiddelen bestande beschermingskleding"
     }
    ],
    "4": [
     {
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 4.1 Beschrijving van de eerstehulpmaatregelen · Algemene informatie: Geen speciale maatregelen noodzakelijk. · Na het inademen: Frisse lucht toedienen; bij klachten arts ontbieden. Geen speciale maatregelen noodzakelijk. · Na huidcontact: Over het algemeen is het produkt niet prikkelend voor de huid · Na oogcontact: De ogen gedurende verscheidene minuten onder stromend water afspoelen terwijl de oogspleet geopend blijft. Bij aanhoudende klachten een dokter raadplegen. · Na inslikken: Als de klachten niet minderen, een arts raadplegen · 4.2 Belangrijkste acute en uitgestelde symptomen en effecten Geen verdere relevante informatie verkrijgbaar. · 4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling Geen verdere relevante informatie verkrijgbaar."
+     "tekst": "Algemene informatie: Geen speciale maatregelen noodzakelijk."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na het inademen: Frisse lucht toedienen; bij klachten arts ontbieden. Geen speciale maatregelen noodzakelijk."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na huidcontact: Over het algemeen is het produkt niet prikkelend voor de huid"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na oogcontact: De ogen gedurende verscheidene minuten onder stromend water afspoelen terwijl de oogspleet geopend blijft. Bij aanhoudende klachten een dokter raadplegen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na inslikken: Als de klachten niet minderen, een arts raadplegen"
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "behandeling Geen verdere relevante informatie verkrijgbaar."
     }
    ],
    "6": [
     {
      "soort": "alinea",
-     "tekst": "mengsel · 6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures Beschermende kleding aantrekken. Niet beschermde personen op afstand houden. · 6.2 Milieuvoorzorgsmaatregelen: Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen. · 6.3 Insluitings- en reinigingsmethoden en -materiaal: In speciale tanks voor terugwinning of berging verzamelen. Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. Voor voldoende ventilatie zorgen. · 6.4 Verwijzing naar andere rubrieken Informatie inzake veilig gebruik - zie hoofdstuk 7. Informatie inzake persoonlijke beschermingsuitrusting - zie hoofdstuk 8. Informatie inzake berging - zie hoofdstuk 13."
+     "tekst": "mengsel"
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Beschermende kleding aantrekken. Niet beschermde personen op afstand houden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "In speciale tanks voor terugwinning of berging verzamelen. Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. Voor voldoende ventilatie zorgen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Informatie inzake veilig gebruik - zie hoofdstuk 7. Informatie inzake persoonlijke beschermingsuitrusting - zie hoofdstuk 8. Informatie inzake berging - zie hoofdstuk 13."
     }
    ],
    "5": [
     {
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 5.1 Blusmiddelen · Geschikte blusmiddelen: Waternevel Alcoholbestendig schuim Bluspoeder Kooldioxyde · Blusmiddelen die uit veiligheidsoogpunt niet geschikt zijn: Krachtige waterstraal · 5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt Geen verdere relevante informatie verkrijgbaar. · 5.3 Advies voor brandweerlieden · Speciale beschermende kleding: Geen bijzondere maatregelen nodig. · Verdere gegevens De aan gevaar blootgestelde tanks met watersproeistraal koelen."
+     "tekst": "Geschikte blusmiddelen: Waternevel Alcoholbestendig schuim Bluspoeder Kooldioxyde"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Blusmiddelen die uit veiligheidsoogpunt niet geschikt zijn: Krachtige waterstraal"
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Speciale beschermende kleding: Geen bijzondere maatregelen nodig."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Verdere gegevens"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "De aan gevaar blootgestelde tanks met watersproeistraal koelen."
     },
     {
      "soort": "alinea",
@@ -35614,8 +36578,20 @@ const VIB_PRODUCTEN = [
    ],
    "13": [
     {
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 13.1 Afvalverwerkingsmethoden · Aanbeveling: Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen. Afvalverwijdering volgens overheidsbepalingen. · Niet gereinigde verpakkingen: · Aanbeveling: Verpakkingen die niet meer gereinigd kunnen worden, moeten zoals de stof zelf verwijderd worden."
+     "tekst": "Aanbeveling: Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen. Afvalverwijdering volgens overheidsbepalingen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet gereinigde verpakkingen:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbeveling: Verpakkingen die niet meer gereinigd kunnen worden, moeten zoals de stof zelf verwijderd worden."
     }
    ]
   }
@@ -35646,43 +36622,199 @@ const VIB_PRODUCTEN = [
    }
   ],
   "artikelstatus": "active",
-  "status": "onzeker",
-  "problemen": [
-   "Onderdeel 8.2 niet gevonden"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "bescherming · 8.1 Controleparameters · Bestanddelen met grenswaarden die m.b.t. de werkruimte in acht genomen moeten worden: 78-93-3 Butanon WGW Korte termijn waarde: 900 mg/m³, 300 ppm Lange termijn waarde: 590 mg/m³, 197 ppm · DNEL’s 78-93-3 Butanon"
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Oraal Dermaal Worker, dermal, longterm exposition           1161 mg/kg bw/day Inhalatief Worker, inhalative, shortterm exposition   900 mg/m³ · PNEC’s 78-93-3 Butanon Oraal Secondary Poisoning    1000 mg/kg · Aanvullende gegevens: Als basis dienden lijsten die bij opstelling geldig waren. · 8.2 Maatregelen ter beheersing van blootstelling · Passende technische maatregelen Geen aanvullende gegevens. Zie 7. · Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen · Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden. · Bescherming van de ademhalingswegen Bij onvoldoende ventilatie ademhalingsbescherming. · Aanbevolen filter voor kortstondig gebruik: Filter A · Bescherming van de handen Handschoenen / bestand tegen oplosmiddelen Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie. · Handschoenmateriaal Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm · Doordringingstijd van het handschoenmateriaal Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4). · Bescherming van de ogen/het gezicht Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen. · Lichaamsbescherming: Tegen oplosmiddelen bestande beschermingskleding",
-       "Consumer, oral, longterm exposition Consumer, dermal, longterm exposition      412 mg/kg bw/day Worker, inhalative, longterm exposition    600 mg/m³ Consumer, inhalative, shortterm exposition 450 mg/m³ Consumer, inhalative, longterm exposition 106 mg/m³ Fresh water            55,8 mg/l Fresh water sediment 284,7 mg/kg dry weight Marine water           55,8 mg/l Marine sediment        284,7 mg/kg dry weight Soil                   22,5 mg/kg Sewage treatment plant 709 mg/l Sporadic release       55,8 mg/l Veiligheidshandschoenen Nauw aansluitende veiligheidsbril",
-       "31 mg/kg bw/day"
-      ]
-     ]
+     "soort": "alinea",
+     "tekst": "Passende technische maatregelen Geen aanvullende gegevens. Zie 7."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ademhalingswegen Bij onvoldoende ventilatie ademhalingsbescherming."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbevolen filter voor kortstondig gebruik: Filter A"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenen / bestand tegen oplosmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Veiligheidshandschoenen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Doordringingstijd van het handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4)."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ogen/het gezicht"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Nauw aansluitende veiligheidsbril"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Lichaamsbescherming: Tegen oplosmiddelen bestande beschermingskleding"
     }
    ],
    "4": [
     {
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 4.1 Beschrijving van de eerstehulpmaatregelen · Algemene informatie: Geen speciale maatregelen noodzakelijk. · Na het inademen: Frisse lucht toedienen; bij klachten arts ontbieden. Geen speciale maatregelen noodzakelijk. · Na huidcontact: Over het algemeen is het produkt niet prikkelend voor de huid · Na oogcontact: De ogen gedurende verscheidene minuten onder stromend water afspoelen terwijl de oogspleet geopend blijft. Bij aanhoudende klachten een dokter raadplegen. · Na inslikken: Als de klachten niet minderen, een arts raadplegen · 4.2 Belangrijkste acute en uitgestelde symptomen en effecten Geen verdere relevante informatie verkrijgbaar. · 4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling Geen verdere relevante informatie verkrijgbaar."
+     "tekst": "Algemene informatie: Geen speciale maatregelen noodzakelijk."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na het inademen: Frisse lucht toedienen; bij klachten arts ontbieden. Geen speciale maatregelen noodzakelijk."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na huidcontact: Over het algemeen is het produkt niet prikkelend voor de huid"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na oogcontact: De ogen gedurende verscheidene minuten onder stromend water afspoelen terwijl de oogspleet geopend blijft. Bij aanhoudende klachten een dokter raadplegen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na inslikken: Als de klachten niet minderen, een arts raadplegen"
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "behandeling Geen verdere relevante informatie verkrijgbaar."
     }
    ],
    "6": [
     {
      "soort": "alinea",
-     "tekst": "mengsel · 6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures Beschermende kleding aantrekken. Niet beschermde personen op afstand houden. · 6.2 Milieuvoorzorgsmaatregelen: Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen. · 6.3 Insluitings- en reinigingsmethoden en -materiaal: In speciale tanks voor terugwinning of berging verzamelen. Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. Voor voldoende ventilatie zorgen. · 6.4 Verwijzing naar andere rubrieken Informatie inzake veilig gebruik - zie hoofdstuk 7. Informatie inzake persoonlijke beschermingsuitrusting - zie hoofdstuk 8. Informatie inzake berging - zie hoofdstuk 13."
+     "tekst": "mengsel"
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Beschermende kleding aantrekken. Niet beschermde personen op afstand houden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "In speciale tanks voor terugwinning of berging verzamelen. Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. Voor voldoende ventilatie zorgen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Informatie inzake veilig gebruik - zie hoofdstuk 7. Informatie inzake persoonlijke beschermingsuitrusting - zie hoofdstuk 8. Informatie inzake berging - zie hoofdstuk 13."
     }
    ],
    "5": [
     {
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 5.1 Blusmiddelen · Geschikte blusmiddelen: Waternevel Alcoholbestendig schuim Bluspoeder Kooldioxyde · Blusmiddelen die uit veiligheidsoogpunt niet geschikt zijn: Krachtige waterstraal · 5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt Geen verdere relevante informatie verkrijgbaar. · 5.3 Advies voor brandweerlieden · Speciale beschermende kleding: Geen bijzondere maatregelen nodig. · Verdere gegevens De aan gevaar blootgestelde tanks met watersproeistraal koelen."
+     "tekst": "Geschikte blusmiddelen: Waternevel Alcoholbestendig schuim Bluspoeder Kooldioxyde"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Blusmiddelen die uit veiligheidsoogpunt niet geschikt zijn: Krachtige waterstraal"
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Speciale beschermende kleding: Geen bijzondere maatregelen nodig."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Verdere gegevens"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "De aan gevaar blootgestelde tanks met watersproeistraal koelen."
     },
     {
      "soort": "alinea",
@@ -35691,8 +36823,20 @@ const VIB_PRODUCTEN = [
    ],
    "13": [
     {
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 13.1 Afvalverwerkingsmethoden · Aanbeveling: Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen. Afvalverwijdering volgens overheidsbepalingen. · Niet gereinigde verpakkingen: · Aanbeveling: Verpakkingen die niet meer gereinigd kunnen worden, moeten zoals de stof zelf verwijderd worden."
+     "tekst": "Aanbeveling: Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen. Afvalverwijdering volgens overheidsbepalingen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet gereinigde verpakkingen:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbeveling: Verpakkingen die niet meer gereinigd kunnen worden, moeten zoals de stof zelf verwijderd worden."
     }
    ]
   }
@@ -35723,58 +36867,221 @@ const VIB_PRODUCTEN = [
    }
   ],
   "artikelstatus": "active",
-  "status": "onzeker",
-  "problemen": [
-   "Onderdeel 8.2 niet gevonden"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "bescherming · 8.1 Controleparameters · Bestanddelen met werkplekgerelateerde grenswaarden die moeten worden gecontroleerd: 109-99-9 Tetrahydrofuraan WGW Korte termijn waarde: 600 mg/m³, 200 ppm Lange termijn waarde: 300 mg/m³, 100 ppm 78-93-3 Butanon WGW Korte termijn waarde: 900 mg/m³, 300 ppm Lange termijn waarde: 590 mg/m³, 197 ppm · DNEL’s 109-99-9 Tetrahydrofuraan"
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Oraal Dermaal Werknemer, huid, langdurige blootstelling            12,6 mg/kg bw/day Inhalatief Werknemer, inhalatief, kortstondige blootstelling 96 mg/m³ 78-93-3 Butanon",
-       "Consument, oraal, langdurige blootstelling Consument, dermaal, langdurige blootstelling      1,5 mg/kg bw/day Werknemer, inhalatief, langdurige blootstelling 72,4 mg/m³ DNEL voor consumenten, acute inademing            52 mg/m³ Consument, inhalatief, langdurige blootstelling 13 mg/m³",
-       "1,5 mg/kg bw/day"
-      ],
-      [
-       "Oraal Dermaal Werknemer, huid, langdurige blootstelling            1161 mg/kg bw/day Inhalatief Werknemer, inhalatief, kortstondige blootstelling 900 mg/m³ · PNEC’s 109-99-9 Tetrahydrofuraan Oraal Secundaire vergiftiging         67 mg/kg 78-93-3 Butanon Oraal Secundaire vergiftiging         1000 mg/kg Zoetwatersediment               284,7 mg/kg dry weight Zeewater                        55,8 mg/l Marien sediment                 284,7 mg/kg dry weight Bodem                           22,5 mg/kg Rioolwaterzuiveringsinstallatie 709 mg/l Sporadische vrijlating          55,8 mg/l · Aanvullende gegevens: Als basis dienden lijsten die bij opstelling geldig waren. · 8.2 Maatregelen ter beheersing van blootstelling · Passende technische maatregelen Geen aanvullende gegevens. Zie sectie 7. · Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen · Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Uit de buurt houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden. · Bescherming van de ademhalingswegen Ademhalingsbescherming aanbevolen. Bij kortstondige of geringe blootstelling ademfilterapparaat gebruiken; bij intensieve of langdurige blootstelling ademhalingsapparaat gebruiken dat onafhankelijk is van de omgevingslucht. Bij onvoldoende ventilatie ademhalingsbescherming. · Aanbevolen filter voor kortstondig gebruik: Filter A · Bescherming van de handen Handschoenen / bestand tegen oplosmiddelen Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie. · Handschoenmateriaal Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm · Doordringingstijd van het handschoenmateriaal Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4). · Bescherming van de ogen/het gezicht Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen. · Lichaamsbescherming: Oplosmiddelbestendige beschermende kleding",
-       "Consument, oraal, langdurige blootstelling Consument, dermaal, langdurige blootstelling      412 mg/kg bw/day Werknemer, inhalatief, langdurige blootstelling 600 mg/m³ DNEL voor consumenten, acute inademing            450 mg/m³ Consument, inhalatief, langdurige blootstelling 106 mg/m³ Zoet water                      4,32 mg/l Zoetwatersediment               23,3 mg/kg dry weight Zeewater                        0,432 mg/l Marien sediment                 2,33 mg/kg dry weight Bodem                           2,13 mg/kg Rioolwaterzuiveringsinstallatie 4,6 mg/l Sporadische vrijlating          21,6 mg/l Zoet water                      55,8 mg/l Veiligheidshandschoenen Nauw aansluitende veiligheidsbril",
-       "31 mg/kg bw/day"
-      ]
-     ]
+     "soort": "alinea",
+     "tekst": "Passende technische maatregelen Geen aanvullende gegevens. Zie sectie 7."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Algemene beschermings- en gezondheidsmaatregelen: De gebruikelijke voorzorgsmaatregelen bij de omgang met chemicaliën moeten in acht genomen worden. Uit de buurt houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Gassen/dampen/aërosol niet inademen. Aanraking met de ogen vermijden. Aanraking met de ogen en de huid vermijden."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ademhalingswegen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Ademhalingsbescherming aanbevolen. Bij kortstondige of geringe blootstelling ademfilterapparaat gebruiken; bij intensieve of langdurige blootstelling ademhalingsapparaat gebruiken dat onafhankelijk is van de omgevingslucht. Bij onvoldoende ventilatie ademhalingsbescherming."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbevolen filter voor kortstondig gebruik: Filter A"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenen / bestand tegen oplosmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Veiligheidshandschoenen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbevolen materiaaldikte : > 0,12 mm Butylrubber Nitrilrubber Aanbevolen materiaaldikte : > 0,7 mm"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Doordringingstijd van het handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 10 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 1). Voor het mengsel van de hieronder vermelde chemicaliën moet de penetratietijd minstens 120 minuten bedragen (permeatie volgens EN 374 Deel 3: Level 4)."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ogen/het gezicht"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Nauw aansluitende veiligheidsbril"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij het omgieten is het gebruik van een veiligheidsbril aan te bevelen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Lichaamsbescherming: Oplosmiddelbestendige beschermende kleding"
     }
    ],
    "4": [
     {
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 4.1 Beschrijving van de eerstehulpmaatregelen · Algemene informatie: Geen speciale maatregelen noodzakelijk. · Na het inademen: Frisse lucht toedienen; bij klachten arts ontbieden. Geen speciale maatregelen noodzakelijk. · Na huidcontact: Over het algemeen is het produkt niet prikkelend voor de huid · Na oogcontact: De ogen gedurende verscheidene minuten onder stromend water afspoelen terwijl de oogspleet geopend blijft. Bij aanhoudende klachten een dokter raadplegen. · Na inslikken: Als de klachten niet minderen, een arts raadplegen · 4.2 Belangrijkste acute en uitgestelde symptomen en effecten Geen verdere relevante informatie verkrijgbaar. · 4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling Geen verdere relevante informatie verkrijgbaar."
+     "tekst": "Algemene informatie: Geen speciale maatregelen noodzakelijk."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na het inademen: Frisse lucht toedienen; bij klachten arts ontbieden. Geen speciale maatregelen noodzakelijk."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na huidcontact: Over het algemeen is het produkt niet prikkelend voor de huid"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na oogcontact: De ogen gedurende verscheidene minuten onder stromend water afspoelen terwijl de oogspleet geopend blijft. Bij aanhoudende klachten een dokter raadplegen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Na inslikken: Als de klachten niet minderen, een arts raadplegen"
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "behandeling Geen verdere relevante informatie verkrijgbaar."
     }
    ],
    "6": [
     {
      "soort": "alinea",
-     "tekst": "mengsel · 6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures Beschermende kleding aantrekken. Niet beschermde personen op afstand houden. · 6.2 Milieuvoorzorgsmaatregelen: Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen. · 6.3 Insluitings- en reinigingsmethoden en -materiaal: In geschikte vaten afvoeren voor terugwinning of verwijdering. Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. Besmet materiaal zoals afval volgens sectie 13 verwijderen. Voor voldoende ventilatie zorgen. · 6.4 Verwijzing naar andere rubrieken Informatie inzake veilig gebruik - zie sectie 7. Informatie inzake persoonlijke beschermingsuitrusting - zie sectie 8. Informatie inzake berging - zie sectie 13."
+     "tekst": "mengsel"
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Beschermende kleding aantrekken. Niet beschermde personen op afstand houden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "In geschikte vaten afvoeren voor terugwinning of verwijdering. Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. Besmet materiaal zoals afval volgens sectie 13 verwijderen. Voor voldoende ventilatie zorgen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Informatie inzake veilig gebruik - zie sectie 7. Informatie inzake persoonlijke beschermingsuitrusting - zie sectie 8. Informatie inzake berging - zie sectie 13."
     }
    ],
    "5": [
     {
-     "soort": "alinea",
-     "tekst": "· 5.1 Blusmiddelen · Geschikte blusmiddelen: Waternevel Alcoholbestendig schuim Bluspoeder Kooldioxyde · Blusmiddelen die uit veiligheidsoogpunt niet geschikt zijn: Krachtige waterstraal"
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
     },
     {
      "soort": "alinea",
-     "tekst": "· 5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt Geen verdere relevante informatie verkrijgbaar. · 5.3 Advies voor brandweerlieden · Speciale beschermende kleding: Geen bijzondere maatregelen nodig. · Verdere gegevens Gevaarlijke vaten met waternevel koelen. Het besmette bluswater afzonderlijk verzamelen, mag niet in de riolering terechtkomen."
+     "tekst": "Geschikte blusmiddelen: Waternevel Alcoholbestendig schuim Bluspoeder Kooldioxyde"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Blusmiddelen die uit veiligheidsoogpunt niet geschikt zijn: Krachtige waterstraal"
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Speciale beschermende kleding: Geen bijzondere maatregelen nodig."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Verdere gegevens"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Gevaarlijke vaten met waternevel koelen. Het besmette bluswater afzonderlijk verzamelen, mag niet in de riolering terechtkomen."
     }
    ],
    "13": [
     {
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 13.1 Afvalverwerkingsmethoden · Aanbeveling: Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen. Afvalverwijdering volgens overheidsbepalingen. · Niet gereinigde verpakkingen: · Aanbeveling: Verpakkingen die niet meer gereinigd kunnen worden, moeten zoals de stof zelf verwijderd worden."
+     "tekst": "Aanbeveling: Mag niet tesamen met huisvuil gestort worden of in de riolering terechtkomen. Afvalverwijdering volgens overheidsbepalingen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet gereinigde verpakkingen:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Aanbeveling: Verpakkingen die niet meer gereinigd kunnen worden, moeten zoals de stof zelf verwijderd worden."
     }
    ]
   }
@@ -41754,24 +43061,37 @@ const VIB_PRODUCTEN = [
    }
   ],
   "artikelstatus": "active",
-  "status": "onzeker",
-  "problemen": [
-   "Onderdeel 8.2 niet gevonden"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "• 8.1 Controleparameters • Bestanddelen met grenswaarden die m.b.t. de werkruimte in acht genomen moeten worden: Het produkt bevat geen relevante hoeveelheden van stoffen, die met betrekking tot de werkplaatsen, qua grenswaarden gecontroleerd moeten worden."
-    },
-    {
-     "soort": "veld",
-     "kopje": "• Aanvullende gegevens",
-     "tekst": "Als basis dienden lijsten die bij opstelling geldig waren."
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
      "soort": "alinea",
-     "tekst": "• 8.2 Maatregelen ter beheersing van blootstelling • Passende technische maatregelen Geen aanvullende gegevens. Zie 7. • Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen • Algemene beschermings- en gezondheidsmaatregelen: Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Aanraking met de ogen en de huid vermijden. • Bescherming van de ademhalingswegen Bij korte of geringe belasting ademfiltertoestel; bij intensieve resp. langdurige expositie een van de omringende lucht onafhankelijk ademhalingstoestel gebruiken. • Bescherming van de handen"
+     "tekst": "Passende technische maatregelen Geen aanvullende gegevens. Zie 7."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Algemene beschermings- en gezondheidsmaatregelen: Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Aanraking met de ogen en de huid vermijden."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ademhalingswegen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij korte of geringe belasting ademfiltertoestel; bij intensieve resp. langdurige expositie een van de omringende lucht onafhankelijk ademhalingstoestel gebruiken."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen"
     },
     {
      "soort": "alinea",
@@ -41779,11 +43099,27 @@ const VIB_PRODUCTEN = [
     },
     {
      "soort": "alinea",
-     "tekst": "Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Op grond van falende testen kan geen aanbeveling voor handschoenmateriaal voor het product / de bereiding / het chemicaliënmengsel afgegeven worden. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie. • Handschoenmateriaal De keuze van een geschikte handschoen is niet alleen afhankelijk van het materiaal, maar ook van andere kwaliteitskenmerken en verschilt van fabrikant tot fabrikant. Aangezien het product uit meerdere stoffen is samengesteld, is de duurzaamheid van de handschoenmaterialen niet vooraf berekenbaar en moet derhalve vóór het gebruik worden getest. • Doordringingstijd van het handschoenmateriaal De precieze penetratietijd kunt u te weten komen bij de handschoenfabrikant; houd er rekening mee."
+     "tekst": "Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Op grond van falende testen kan geen aanbeveling voor handschoenmateriaal voor het product / de bereiding / het chemicaliënmengsel afgegeven worden. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie."
     },
     {
      "soort": "alinea",
-     "tekst": "• Bescherming van de ogen/het gezicht"
+     "tekst": "Handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "De keuze van een geschikte handschoen is niet alleen afhankelijk van het materiaal, maar ook van andere kwaliteitskenmerken en verschilt van fabrikant tot fabrikant. Aangezien het product uit meerdere stoffen is samengesteld, is de duurzaamheid van de handschoenmaterialen niet vooraf berekenbaar en moet derhalve vóór het gebruik worden getest."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Doordringingstijd van het handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "De precieze penetratietijd kunt u te weten komen bij de handschoenfabrikant; houd er rekening mee."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ogen/het gezicht"
     },
     {
      "soort": "alinea",
@@ -41792,8 +43128,8 @@ const VIB_PRODUCTEN = [
    ],
    "4": [
     {
-     "soort": "alinea",
-     "tekst": "• 4.1 Beschrijving van de eerstehulpmaatregelen"
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
     },
     {
      "soort": "veld",
@@ -41821,24 +43157,60 @@ const VIB_PRODUCTEN = [
      "tekst": "Drink zeer veel water en voer verse lucht aan. Onmiddellijk een dokter waarschuwen."
     },
     {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling"
+    },
+    {
      "soort": "alinea",
-     "tekst": "• 4.2 Belangrijkste acute en uitgestelde symptomen en effecten Geen verdere relevante informatie verkrijgbaar. • 4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling Geen verdere relevante informatie verkrijgbaar."
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
     }
    ],
    "6": [
     {
-     "soort": "alinea",
-     "tekst": "• 6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures Beschermende kleding aantrekken. Niet beschermde personen op afstand houden. • 6.2 Milieuvoorzorgsmaatregelen: Met veel water verdunnen. Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen. • 6.3 Insluitings- en reinigingsmethoden en -materiaal: Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen."
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
     },
     {
      "soort": "alinea",
-     "tekst": "Neutralisatiemiddel gebruiken. Besmet materiaal zoals afval volgens punt 13 verwijderen. Voor voldoende ventilatie zorgen. • 6.4 Verwijzing naar andere rubrieken Informatie inzake veilig gebruik - zie hoofdstuk 7. Informatie inzake persoonlijke beschermingsuitrusting - zie hoofdstuk 8. Informatie inzake berging - zie hoofdstuk 13."
+     "tekst": "Beschermende kleding aantrekken. Niet beschermde personen op afstand houden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Met veel water verdunnen. Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Neutralisatiemiddel gebruiken. Besmet materiaal zoals afval volgens punt 13 verwijderen. Voor voldoende ventilatie zorgen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Informatie inzake veilig gebruik - zie hoofdstuk 7. Informatie inzake persoonlijke beschermingsuitrusting - zie hoofdstuk 8. Informatie inzake berging - zie hoofdstuk 13."
     }
    ],
    "5": [
     {
-     "soort": "alinea",
-     "tekst": "• 5.1 Blusmiddelen"
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
     },
     {
      "soort": "veld",
@@ -41851,8 +43223,16 @@ const VIB_PRODUCTEN = [
      "tekst": "Krachtige waterstraal"
     },
     {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
      "soort": "alinea",
-     "tekst": "• 5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt Geen verdere relevante informatie verkrijgbaar. • 5.3 Advies voor brandweerlieden"
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
     },
     {
      "soort": "veld",
@@ -41862,8 +43242,8 @@ const VIB_PRODUCTEN = [
    ],
    "13": [
     {
-     "soort": "alinea",
-     "tekst": "• 13.1 Afvalverwerkingsmethoden"
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
     },
     {
      "soort": "veld",
@@ -41872,7 +43252,15 @@ const VIB_PRODUCTEN = [
     },
     {
      "soort": "alinea",
-     "tekst": "• Europese afvalcatalogus 16 03 05* organisch afval dat gevaarlijke stoffen bevat • Niet gereinigde verpakkingen:"
+     "tekst": "Europese afvalcatalogus"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "16 03 05* organisch afval dat gevaarlijke stoffen bevat"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet gereinigde verpakkingen:"
     },
     {
      "soort": "veld",
@@ -41909,44 +43297,37 @@ const VIB_PRODUCTEN = [
    }
   ],
   "artikelstatus": "eventuate",
-  "status": "onzeker",
-  "problemen": [
-   "Onderdeel 8.2 niet gevonden"
-  ],
+  "status": "ok",
+  "problemen": [],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "• 8.1 Controleparameters • Bestanddelen met grenswaarden die m.b.t. de werkruimte in acht genomen moeten worden: 34590-94-8 (2-methoxymethylethoxy)propanol (10 – 25%)"
-    },
-    {
-     "soort": "veld",
-     "kopje": "WGW (NL) Lange termijn waarde",
-     "tekst": "300 mg/m³, 48,7 ppm"
-    },
-    {
-     "soort": "veld",
-     "kopje": "VL (BE) Lange termijn waarde D; • Regelgeving",
-     "tekst": "308 mg/m³, 50 ppm"
-    },
-    {
-     "soort": "veld",
-     "kopje": "WGW (NL)",
-     "tekst": "Grenswaarden gezondheidsschadelijke stoffen"
-    },
-    {
-     "soort": "veld",
-     "kopje": "VL (BE)",
-     "tekst": "Moniteur belge no 313, 04.12.2023"
-    },
-    {
-     "soort": "veld",
-     "kopje": "• Aanvullende gegevens",
-     "tekst": "Als basis dienden lijsten die bij opstelling geldig waren."
+     "soort": "kop",
+     "tekst": "8.2 Maatregelen ter beheersing van blootstelling"
     },
     {
      "soort": "alinea",
-     "tekst": "• 8.2 Maatregelen ter beheersing van blootstelling • Passende technische maatregelen Geen aanvullende gegevens. Zie 7. • Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen • Algemene beschermings- en gezondheidsmaatregelen: Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Aanraking met de ogen en de huid vermijden. • Bescherming van de ademhalingswegen Bij korte of geringe belasting ademfiltertoestel; bij intensieve resp. langdurige expositie een van de omringende lucht onafhankelijk ademhalingstoestel gebruiken. • Bescherming van de handen"
+     "tekst": "Passende technische maatregelen Geen aanvullende gegevens. Zie 7."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Individuele beschermingsmaatregelen, zoals persoonlijke beschermingsmiddelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Algemene beschermings- en gezondheidsmaatregelen: Verwijderd houden van eet- en drinkwaren. Verontreinigde kleding onmiddellijk uittrekken. Vóór de pauze en aan het einde van werktijd handen wassen. Aanraking met de ogen en de huid vermijden."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ademhalingswegen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bij korte of geringe belasting ademfiltertoestel; bij intensieve resp. langdurige expositie een van de omringende lucht onafhankelijk ademhalingstoestel gebruiken."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de handen"
     },
     {
      "soort": "alinea",
@@ -41954,11 +43335,27 @@ const VIB_PRODUCTEN = [
     },
     {
      "soort": "alinea",
-     "tekst": "Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Op grond van falende testen kan geen aanbeveling voor handschoenmateriaal voor het product / de bereiding / het chemicaliënmengsel afgegeven worden. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie. • Handschoenmateriaal De keuze van een geschikte handschoen is niet alleen afhankelijk van het materiaal, maar ook van andere kwaliteitskenmerken en verschilt van fabrikant tot fabrikant. Aangezien het product uit meerdere stoffen is samengesteld, is de duurzaamheid van de handschoenmaterialen niet vooraf berekenbaar en moet derhalve vóór het gebruik worden getest."
+     "tekst": "Het handschoenmateriaal moet ondoorlatend en bestand zijn tegen het product / de stof / de bereiding. Op grond van falende testen kan geen aanbeveling voor handschoenmateriaal voor het product / de bereiding / het chemicaliënmengsel afgegeven worden. Kies handschoenmateriaal rekening houdend met de penetratietijden, de permeatiegraden en de degradatie."
     },
     {
      "soort": "alinea",
-     "tekst": "• Doordringingstijd van het handschoenmateriaal De precieze penetratietijd kunt u te weten komen bij de handschoenfabrikant; houd er rekening mee. • Bescherming van de ogen/het gezicht"
+     "tekst": "Handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "De keuze van een geschikte handschoen is niet alleen afhankelijk van het materiaal, maar ook van andere kwaliteitskenmerken en verschilt van fabrikant tot fabrikant. Aangezien het product uit meerdere stoffen is samengesteld, is de duurzaamheid van de handschoenmaterialen niet vooraf berekenbaar en moet derhalve vóór het gebruik worden getest."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Doordringingstijd van het handschoenmateriaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "De precieze penetratietijd kunt u te weten komen bij de handschoenfabrikant; houd er rekening mee."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Bescherming van de ogen/het gezicht"
     },
     {
      "soort": "alinea",
@@ -41967,8 +43364,8 @@ const VIB_PRODUCTEN = [
    ],
    "4": [
     {
-     "soort": "alinea",
-     "tekst": "• 4.1 Beschrijving van de eerstehulpmaatregelen"
+     "soort": "kop",
+     "tekst": "4.1 Beschrijving van de eerstehulpmaatregelen"
     },
     {
      "soort": "veld",
@@ -41996,24 +43393,60 @@ const VIB_PRODUCTEN = [
      "tekst": "Drink zeer veel water en voer verse lucht aan. Onmiddellijk een dokter waarschuwen."
     },
     {
+     "soort": "kop",
+     "tekst": "4.2 Belangrijkste acute en uitgestelde symptomen en effecten Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling"
+    },
+    {
      "soort": "alinea",
-     "tekst": "• 4.2 Belangrijkste acute en uitgestelde symptomen en effecten Geen verdere relevante informatie verkrijgbaar. • 4.3 Vermelding van eventueel noodzakelijke onmiddellijke medische verzorging en speciale behandeling Geen verdere relevante informatie verkrijgbaar."
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
     }
    ],
    "6": [
     {
-     "soort": "alinea",
-     "tekst": "• 6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures Beschermende kleding aantrekken. Niet beschermde personen op afstand houden. • 6.2 Milieuvoorzorgsmaatregelen: Met veel water verdunnen. Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen. • 6.3 Insluitings- en reinigingsmethoden en -materiaal: Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. Neutralisatiemiddel gebruiken. Besmet materiaal zoals afval volgens punt 13 verwijderen."
+     "soort": "kop",
+     "tekst": "6.1 Persoonlijke voorzorgsmaatregelen, beschermingsmiddelen en noodprocedures"
     },
     {
      "soort": "alinea",
-     "tekst": "Voor voldoende ventilatie zorgen. • 6.4 Verwijzing naar andere rubrieken Informatie inzake veilig gebruik - zie hoofdstuk 7. Informatie inzake persoonlijke beschermingsuitrusting - zie hoofdstuk 8. Informatie inzake berging - zie hoofdstuk 13."
+     "tekst": "Beschermende kleding aantrekken. Niet beschermde personen op afstand houden."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Milieuvoorzorgsmaatregelen"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Met veel water verdunnen. Niet in de riolering/het oppervlaktewater/het grondwater laten terechtkomen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Insluitings- en reinigingsmethoden en -materiaal"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Met vloeistofbindend materiaal (zand, bergmeel, zuurbinder, universele binder, zaagmeel) opnemen. Neutralisatiemiddel gebruiken. Besmet materiaal zoals afval volgens punt 13 verwijderen."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Voor voldoende ventilatie zorgen."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Verwijzing naar andere rubrieken"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Informatie inzake veilig gebruik - zie hoofdstuk 7. Informatie inzake persoonlijke beschermingsuitrusting - zie hoofdstuk 8. Informatie inzake berging - zie hoofdstuk 13."
     }
    ],
    "5": [
     {
-     "soort": "alinea",
-     "tekst": "• 5.1 Blusmiddelen"
+     "soort": "kop",
+     "tekst": "5.1 Blusmiddelen"
     },
     {
      "soort": "veld",
@@ -42026,8 +43459,16 @@ const VIB_PRODUCTEN = [
      "tekst": "Krachtige waterstraal"
     },
     {
+     "soort": "kop",
+     "tekst": "5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt"
+    },
+    {
      "soort": "alinea",
-     "tekst": "• 5.2 Speciale gevaren die door de stof of het mengsel worden veroorzaakt Geen verdere relevante informatie verkrijgbaar. • 5.3 Advies voor brandweerlieden"
+     "tekst": "Geen verdere relevante informatie verkrijgbaar."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advies voor brandweerlieden"
     },
     {
      "soort": "veld",
@@ -42037,8 +43478,8 @@ const VIB_PRODUCTEN = [
    ],
    "13": [
     {
-     "soort": "alinea",
-     "tekst": "• 13.1 Afvalverwerkingsmethoden"
+     "soort": "kop",
+     "tekst": "13.1 Afvalverwerkingsmethoden"
     },
     {
      "soort": "veld",
@@ -42047,7 +43488,15 @@ const VIB_PRODUCTEN = [
     },
     {
      "soort": "alinea",
-     "tekst": "• Europese afvalcatalogus 16 03 05* organisch afval dat gevaarlijke stoffen bevat • Niet gereinigde verpakkingen:"
+     "tekst": "Europese afvalcatalogus"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "16 03 05* organisch afval dat gevaarlijke stoffen bevat"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Niet gereinigde verpakkingen:"
     },
     {
      "soort": "veld",
@@ -47255,86 +48704,179 @@ const VIB_PRODUCTEN = [
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Onderdeel 8.2 niet gevonden",
    "VIB lijkt niet Nederlands (Engels)"
   ],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "· 8.1 Control parameters · Components with limit values that require monitoring at the workplace: WEL: workplace exposure limit OEL: Occupational Exposure Limit IOELV: Indicative Occupational Exposure Limit Values, workplace threshold value of the European Union 109-99-9 tetrahydrofuran IOELV (European Union) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Skin WEL (Great Britain) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Sk 9002-86-2 polyvinylchloride WEL (Great Britain) Long-term value: 10* 4** mg/m³ *inhalable dust **respirable dust 108-94-1 cyclohexanone IOELV (European Union) Short-term value: 81.6 mg/m³, 20 ppm Long-term value: 40.8 mg/m³, 10 ppm Skin WEL (Great Britain) Short-term value: 82 mg/m³, 20 ppm Long-term value: 41 mg/m³, 10 ppm Sk, BMGV 28553-12-0 diisononyl phthalate WEL (Great Britain) Long-term value: 5 mg/m³ · DNELs 109-99-9 tetrahydrofuran Oral DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human)"
-    },
-    {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Dermal Inhalative DNEL (worker, short-term, systemic)   96 mg/m³ (human)",
-       "DNEL (worker, long-term, systemic) DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human) DNEL (worker, long-term, systemic)    72.4 mg/m³ (human) DNEL (consumer, short-term, systemic) 52 mg/m³ (human) DNEL (consumer, long-term, systemic) 13 mg/m³ (human) DNEL (worker, short-term, local)      300 mg/m³ (human) DNEL (worker, long-term, local)       150 mg/m³ (human) DNEL (consumer, short-term, local)    150 mg/m³ (human) DNEL (consumer, long-term, local)     75 mg/m³ (human)",
-       "12.6 mg/kg bw/day (human)"
-      ]
-     ]
+     "soort": "kop",
+     "tekst": "8.2 Exposure controls"
     },
     {
      "soort": "alinea",
-     "tekst": "108-94-1 cyclohexanone Oral DNEL (consumer, short-term, systemic) 10 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 5 mg/kg bw/day (human)"
-    },
-    {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Dermal",
-       "DNEL (worker, short-term, systemic) DNEL (worker, long-term, systemic)    10 mg/kg bw/day (human) DNEL (consumer, short-term, systemic) 30 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 20 mg/kg bw/day (human)",
-       "100 mg/kg bw/day (human)"
-      ]
-     ]
+     "tekst": "Individual protection measures, such as personal protective equipment"
     },
     {
      "soort": "alinea",
-     "tekst": "Inhalative DNEL (worker, short-term, systemic) 100 mg/m³ (human) DNEL (worker, long-term, systemic) 100 mg/m³ (human) DNEL (consumer, short-term, systemic) 50 mg/m³ (human) DNEL (consumer, long-term, systemic) 20 mg/m³ (human) DNEL (worker, short-term, local) 100 mg/m³ (human) DNEL (worker, long-term, local) 80 mg/m³ (human) DNEL (consumer, short-term, local) 50 mg/m³ (human) DNEL (consumer, long-term, local) 20 mg/m³ (human) · PNECs 109-99-9 tetrahydrofuran PNEC aqua (freshwater) 4.32 mg/L (.) PNEC aqua (marine water) 0.432 mg/L (.) PNEC STP 4.6 mg/L (.) PNEC soil 2.13 mg/kg soil dw (.) PNEC sediment (freshwater) 23.3 mg/kg sedim. dw (.) PNEC sediment (marine water) 2.33 mg/kg sedim. dw (.) PNEC aqua (intermittent releases) 21.6 mg/L (.) PNEC oral 67 mg/kg food (.) · Ingredients with biological limit values: 108-94-1 cyclohexanone BMGV (Great Britain) 2 mmol/mol creatinine Medium: urine Sampling time: post shift Parameter: cyclohexanol"
-    },
-    {
-     "soort": "veld",
-     "kopje": "· Additional information · 8.2 Exposure controls",
-     "tekst": "The lists that were valid during the compilation were used as basis."
+     "tekst": "General protective and hygienic measures"
     },
     {
      "soort": "alinea",
-     "tekst": "· Individual protection measures, such as personal protective equipment · General protective and hygienic measures Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food. · Breathing equipment: Not required. Not necessary if room is well-ventilated. · Hand protection The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+     "tekst": "Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food."
     },
     {
      "soort": "alinea",
-     "tekst": "· Material of gloves Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application. · Penetration time of glove material In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed. · Eye/face protection Safety glasses"
+     "tekst": "Breathing equipment: Not required. Not necessary if room is well-ventilated."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Hand protection"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Material of gloves"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Penetration time of glove material"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Eye/face protection Safety glasses"
     }
    ],
    "4": [
     {
-     "soort": "alinea",
-     "tekst": "· 4.1 Description of first aid measures · General information Take affected persons into the open air. Remove contaminated clothing immediately. · After inhalation Take affected persons into the open air and position comfortably In case of persistent symptoms consult doctor. · After skin contact Wash with water and soap. In case of permanent aches and pains please go and see the doctor. · After eye contact Remove contact lenses if possible. Keep eye lids open and rinse them with ample amounts of clean running water for at least 15 minutes. In case of permanent aches and pains please go and see the doctor."
+     "soort": "kop",
+     "tekst": "4.1 Description of first aid measures"
     },
     {
      "soort": "alinea",
-     "tekst": "· After swallowing Rinse out mouth. In case of persistent symptoms consult doctor. · 4.2 Most important symptoms and effects, both acute and delayed No further relevant information available. · 4.3 Indication of any immediate medical attention and special treatment needed No further relevant information available."
+     "tekst": "General information"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Take affected persons into the open air. Remove contaminated clothing immediately."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After inhalation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Take affected persons into the open air and position comfortably In case of persistent symptoms consult doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After skin contact"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Wash with water and soap. In case of permanent aches and pains please go and see the doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After eye contact"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Remove contact lenses if possible. Keep eye lids open and rinse them with ample amounts of clean running water for at least 15 minutes. In case of permanent aches and pains please go and see the doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After swallowing"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Rinse out mouth. In case of persistent symptoms consult doctor."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Most important symptoms and effects, both acute and delayed"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Indication of any immediate medical attention and special treatment needed"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
     }
    ],
    "6": [
     {
-     "soort": "alinea",
-     "tekst": "· 6.1 Personal precautions, protective equipment and emergency procedures Do not inhale vapours. Keep away from sources of ignition and care for sufficient ventilation due to the content of organic solvents. Avoid contact to eyes, skin and clothes. Keep away from sources of ignition - No smoking."
-    },
-    {
-     "soort": "veld",
-     "kopje": "· 6.2 Environmental precautions",
-     "tekst": "Do not allow to enter drainage system, surface or ground water."
+     "soort": "kop",
+     "tekst": "6.1 Personal precautions, protective equipment and emergency procedures"
     },
     {
      "soort": "alinea",
-     "tekst": "· 6.3 Methods and material for containment and cleaning up: Absorb with liquid-binding material (sand, diatomite, acid binders, universal binders). · 6.4 Reference to other sections See Section 7 for information on safe handling See Section 8 for information on personal protection equipment. See Section 13 for information on disposal."
+     "tekst": "Do not inhale vapours. Keep away from sources of ignition and care for sufficient ventilation due to the content of organic solvents. Avoid contact to eyes, skin and clothes. Keep away from sources of ignition - No smoking."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Environmental precautions: Do not allow to enter drainage system, surface or ground water."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Methods and material for containment and cleaning up"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Absorb with liquid-binding material (sand, diatomite, acid binders, universal binders)."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Reference to other sections"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "See Section 7 for information on safe handling See Section 8 for information on personal protection equipment. See Section 13 for information on disposal."
     }
    ],
    "5": [
     {
+     "soort": "kop",
+     "tekst": "5.1 Extinguishing media"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 5.1 Extinguishing media · Suitable extinguishing agents Extinguishing powder, foam or water jet. Fight larger fires with water jet or alcohol-resistant foam. · For safety reasons unsuitable extinguishing agents Water with a full water jet. · 5.2 Special hazards arising from the substance or mixture No further relevant information available. · 5.3 Advice for firefighters"
+     "tekst": "Suitable extinguishing agents"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Extinguishing powder, foam or water jet. Fight larger fires with water jet or alcohol-resistant foam."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "For safety reasons unsuitable extinguishing agents Water with a full water jet."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Special hazards arising from the substance or mixture"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advice for firefighters"
     },
     {
      "soort": "veld",
@@ -47344,8 +48886,32 @@ const VIB_PRODUCTEN = [
    ],
    "13": [
     {
+     "soort": "kop",
+     "tekst": "13.1 Waste treatment methods"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 13.1 Waste treatment methods · Recommendation Must not be disposed of together with household garbage. Do not allow product to reach sewage system. The waste code numbers mentioned are recommendations based on the probable use of the product. · European waste catalogue 08 00 00 WASTES FROM THE MANUFACTURE, FORMULATION, SUPPLY AND USE (MFSU) OF COATINGS (PAINTS, VARNISHES AND VITREOUS ENAMELS), ADHESIVES, SEALANTS AND PRINTING INKS 08 04 00 wastes from MFSU of adhesives and sealants (including waterproofing products) 08 04 09* waste adhesives and sealants containing organic solvents or other hazardous substances HP3 Flammable HP4 Irritant - skin irritation and eye damage HP5 Specific Target Organ Toxicity (STOT)/Aspiration Toxicity HP7 Carcinogenic · Uncleaned packagings: · Recommendation: Dispose of packaging according to regulations on the disposal of packagings. Packagings that cannot be cleaned are to be disposed of in the same manner as the product."
+     "tekst": "Recommendation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Must not be disposed of together with household garbage. Do not allow product to reach sewage system. The waste code numbers mentioned are recommendations based on the probable use of the product."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "European waste catalogue"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "08 00 00 WASTES FROM THE MANUFACTURE, FORMULATION, SUPPLY AND USE (MFSU) OF COATINGS (PAINTS, VARNISHES AND VITREOUS ENAMELS), ADHESIVES, SEALANTS AND PRINTING INKS 08 04 00 wastes from MFSU of adhesives and sealants (including waterproofing products) 08 04 09* waste adhesives and sealants containing organic solvents or other hazardous substances HP3 Flammable HP4 Irritant - skin irritation and eye damage HP5 Specific Target Organ Toxicity (STOT)/Aspiration Toxicity HP7 Carcinogenic"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Uncleaned packagings:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Recommendation: Dispose of packaging according to regulations on the disposal of packagings. Packagings that cannot be cleaned are to be disposed of in the same manner as the product."
     }
    ]
   }
@@ -47376,86 +48942,179 @@ const VIB_PRODUCTEN = [
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Onderdeel 8.2 niet gevonden",
    "VIB lijkt niet Nederlands (Engels)"
   ],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "· 8.1 Control parameters · Components with limit values that require monitoring at the workplace: WEL: workplace exposure limit OEL: Occupational Exposure Limit IOELV: Indicative Occupational Exposure Limit Values, workplace threshold value of the European Union 109-99-9 tetrahydrofuran IOELV (European Union) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Skin WEL (Great Britain) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Sk 9002-86-2 polyvinylchloride WEL (Great Britain) Long-term value: 10* 4** mg/m³ *inhalable dust **respirable dust 108-94-1 cyclohexanone IOELV (European Union) Short-term value: 81.6 mg/m³, 20 ppm Long-term value: 40.8 mg/m³, 10 ppm Skin WEL (Great Britain) Short-term value: 82 mg/m³, 20 ppm Long-term value: 41 mg/m³, 10 ppm Sk, BMGV 28553-12-0 diisononyl phthalate WEL (Great Britain) Long-term value: 5 mg/m³ · DNELs 109-99-9 tetrahydrofuran Oral DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human)"
-    },
-    {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Dermal Inhalative DNEL (worker, short-term, systemic)   96 mg/m³ (human)",
-       "DNEL (worker, long-term, systemic) DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human) DNEL (worker, long-term, systemic)    72.4 mg/m³ (human) DNEL (consumer, short-term, systemic) 52 mg/m³ (human) DNEL (consumer, long-term, systemic) 13 mg/m³ (human) DNEL (worker, short-term, local)      300 mg/m³ (human) DNEL (worker, long-term, local)       150 mg/m³ (human) DNEL (consumer, short-term, local)    150 mg/m³ (human) DNEL (consumer, long-term, local)     75 mg/m³ (human)",
-       "12.6 mg/kg bw/day (human)"
-      ]
-     ]
+     "soort": "kop",
+     "tekst": "8.2 Exposure controls"
     },
     {
      "soort": "alinea",
-     "tekst": "108-94-1 cyclohexanone Oral DNEL (consumer, short-term, systemic) 10 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 5 mg/kg bw/day (human)"
-    },
-    {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Dermal",
-       "DNEL (worker, short-term, systemic) DNEL (worker, long-term, systemic)    10 mg/kg bw/day (human) DNEL (consumer, short-term, systemic) 30 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 20 mg/kg bw/day (human)",
-       "100 mg/kg bw/day (human)"
-      ]
-     ]
+     "tekst": "Individual protection measures, such as personal protective equipment"
     },
     {
      "soort": "alinea",
-     "tekst": "Inhalative DNEL (worker, short-term, systemic) 100 mg/m³ (human) DNEL (worker, long-term, systemic) 100 mg/m³ (human) DNEL (consumer, short-term, systemic) 50 mg/m³ (human) DNEL (consumer, long-term, systemic) 20 mg/m³ (human) DNEL (worker, short-term, local) 100 mg/m³ (human) DNEL (worker, long-term, local) 80 mg/m³ (human) DNEL (consumer, short-term, local) 50 mg/m³ (human) DNEL (consumer, long-term, local) 20 mg/m³ (human) · PNECs 109-99-9 tetrahydrofuran PNEC aqua (freshwater) 4.32 mg/L (.) PNEC aqua (marine water) 0.432 mg/L (.) PNEC STP 4.6 mg/L (.) PNEC soil 2.13 mg/kg soil dw (.) PNEC sediment (freshwater) 23.3 mg/kg sedim. dw (.) PNEC sediment (marine water) 2.33 mg/kg sedim. dw (.) PNEC aqua (intermittent releases) 21.6 mg/L (.) PNEC oral 67 mg/kg food (.) · Ingredients with biological limit values: 108-94-1 cyclohexanone BMGV (Great Britain) 2 mmol/mol creatinine Medium: urine Sampling time: post shift Parameter: cyclohexanol"
-    },
-    {
-     "soort": "veld",
-     "kopje": "· Additional information · 8.2 Exposure controls",
-     "tekst": "The lists that were valid during the compilation were used as basis."
+     "tekst": "General protective and hygienic measures"
     },
     {
      "soort": "alinea",
-     "tekst": "· Individual protection measures, such as personal protective equipment · General protective and hygienic measures Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food. · Breathing equipment: Not required. Not necessary if room is well-ventilated. · Hand protection The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+     "tekst": "Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food."
     },
     {
      "soort": "alinea",
-     "tekst": "· Material of gloves Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application. · Penetration time of glove material In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed. · Eye/face protection Safety glasses"
+     "tekst": "Breathing equipment: Not required. Not necessary if room is well-ventilated."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Hand protection"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Material of gloves"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Penetration time of glove material"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Eye/face protection Safety glasses"
     }
    ],
    "4": [
     {
-     "soort": "alinea",
-     "tekst": "· 4.1 Description of first aid measures · General information Take affected persons into the open air. Remove contaminated clothing immediately. · After inhalation Take affected persons into the open air and position comfortably In case of persistent symptoms consult doctor. · After skin contact Wash with water and soap. In case of permanent aches and pains please go and see the doctor. · After eye contact Remove contact lenses if possible. Keep eye lids open and rinse them with ample amounts of clean running water for at least 15 minutes. In case of permanent aches and pains please go and see the doctor."
+     "soort": "kop",
+     "tekst": "4.1 Description of first aid measures"
     },
     {
      "soort": "alinea",
-     "tekst": "· After swallowing Rinse out mouth. In case of persistent symptoms consult doctor. · 4.2 Most important symptoms and effects, both acute and delayed No further relevant information available. · 4.3 Indication of any immediate medical attention and special treatment needed No further relevant information available."
+     "tekst": "General information"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Take affected persons into the open air. Remove contaminated clothing immediately."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After inhalation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Take affected persons into the open air and position comfortably In case of persistent symptoms consult doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After skin contact"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Wash with water and soap. In case of permanent aches and pains please go and see the doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After eye contact"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Remove contact lenses if possible. Keep eye lids open and rinse them with ample amounts of clean running water for at least 15 minutes. In case of permanent aches and pains please go and see the doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After swallowing"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Rinse out mouth. In case of persistent symptoms consult doctor."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Most important symptoms and effects, both acute and delayed"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Indication of any immediate medical attention and special treatment needed"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
     }
    ],
    "6": [
     {
-     "soort": "alinea",
-     "tekst": "· 6.1 Personal precautions, protective equipment and emergency procedures Do not inhale vapours. Keep away from sources of ignition and care for sufficient ventilation due to the content of organic solvents. Avoid contact to eyes, skin and clothes. Keep away from sources of ignition - No smoking."
-    },
-    {
-     "soort": "veld",
-     "kopje": "· 6.2 Environmental precautions",
-     "tekst": "Do not allow to enter drainage system, surface or ground water."
+     "soort": "kop",
+     "tekst": "6.1 Personal precautions, protective equipment and emergency procedures"
     },
     {
      "soort": "alinea",
-     "tekst": "· 6.3 Methods and material for containment and cleaning up: Absorb with liquid-binding material (sand, diatomite, acid binders, universal binders). · 6.4 Reference to other sections See Section 7 for information on safe handling See Section 8 for information on personal protection equipment. See Section 13 for information on disposal."
+     "tekst": "Do not inhale vapours. Keep away from sources of ignition and care for sufficient ventilation due to the content of organic solvents. Avoid contact to eyes, skin and clothes. Keep away from sources of ignition - No smoking."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Environmental precautions: Do not allow to enter drainage system, surface or ground water."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Methods and material for containment and cleaning up"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Absorb with liquid-binding material (sand, diatomite, acid binders, universal binders)."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Reference to other sections"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "See Section 7 for information on safe handling See Section 8 for information on personal protection equipment. See Section 13 for information on disposal."
     }
    ],
    "5": [
     {
+     "soort": "kop",
+     "tekst": "5.1 Extinguishing media"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 5.1 Extinguishing media · Suitable extinguishing agents Extinguishing powder, foam or water jet. Fight larger fires with water jet or alcohol-resistant foam. · For safety reasons unsuitable extinguishing agents Water with a full water jet. · 5.2 Special hazards arising from the substance or mixture No further relevant information available. · 5.3 Advice for firefighters"
+     "tekst": "Suitable extinguishing agents"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Extinguishing powder, foam or water jet. Fight larger fires with water jet or alcohol-resistant foam."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "For safety reasons unsuitable extinguishing agents Water with a full water jet."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Special hazards arising from the substance or mixture"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advice for firefighters"
     },
     {
      "soort": "veld",
@@ -47465,8 +49124,32 @@ const VIB_PRODUCTEN = [
    ],
    "13": [
     {
+     "soort": "kop",
+     "tekst": "13.1 Waste treatment methods"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 13.1 Waste treatment methods · Recommendation Must not be disposed of together with household garbage. Do not allow product to reach sewage system. The waste code numbers mentioned are recommendations based on the probable use of the product. · European waste catalogue 08 00 00 WASTES FROM THE MANUFACTURE, FORMULATION, SUPPLY AND USE (MFSU) OF COATINGS (PAINTS, VARNISHES AND VITREOUS ENAMELS), ADHESIVES, SEALANTS AND PRINTING INKS 08 04 00 wastes from MFSU of adhesives and sealants (including waterproofing products) 08 04 09* waste adhesives and sealants containing organic solvents or other hazardous substances HP3 Flammable HP4 Irritant - skin irritation and eye damage HP5 Specific Target Organ Toxicity (STOT)/Aspiration Toxicity HP7 Carcinogenic · Uncleaned packagings: · Recommendation: Dispose of packaging according to regulations on the disposal of packagings. Packagings that cannot be cleaned are to be disposed of in the same manner as the product."
+     "tekst": "Recommendation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Must not be disposed of together with household garbage. Do not allow product to reach sewage system. The waste code numbers mentioned are recommendations based on the probable use of the product."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "European waste catalogue"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "08 00 00 WASTES FROM THE MANUFACTURE, FORMULATION, SUPPLY AND USE (MFSU) OF COATINGS (PAINTS, VARNISHES AND VITREOUS ENAMELS), ADHESIVES, SEALANTS AND PRINTING INKS 08 04 00 wastes from MFSU of adhesives and sealants (including waterproofing products) 08 04 09* waste adhesives and sealants containing organic solvents or other hazardous substances HP3 Flammable HP4 Irritant - skin irritation and eye damage HP5 Specific Target Organ Toxicity (STOT)/Aspiration Toxicity HP7 Carcinogenic"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Uncleaned packagings:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Recommendation: Dispose of packaging according to regulations on the disposal of packagings. Packagings that cannot be cleaned are to be disposed of in the same manner as the product."
     }
    ]
   }
@@ -47497,86 +49180,179 @@ const VIB_PRODUCTEN = [
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Onderdeel 8.2 niet gevonden",
    "VIB lijkt niet Nederlands (Engels)"
   ],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "· 8.1 Control parameters · Components with limit values that require monitoring at the workplace: WEL: workplace exposure limit OEL: Occupational Exposure Limit IOELV: Indicative Occupational Exposure Limit Values, workplace threshold value of the European Union 109-99-9 tetrahydrofuran IOELV (European Union) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Skin WEL (Great Britain) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Sk 9002-86-2 polyvinylchloride WEL (Great Britain) Long-term value: 10* 4** mg/m³ *inhalable dust **respirable dust 108-94-1 cyclohexanone IOELV (European Union) Short-term value: 81.6 mg/m³, 20 ppm Long-term value: 40.8 mg/m³, 10 ppm Skin WEL (Great Britain) Short-term value: 82 mg/m³, 20 ppm Long-term value: 41 mg/m³, 10 ppm Sk, BMGV 28553-12-0 diisononyl phthalate WEL (Great Britain) Long-term value: 5 mg/m³ · DNELs 109-99-9 tetrahydrofuran Oral DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human)"
-    },
-    {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Dermal Inhalative DNEL (worker, short-term, systemic)   96 mg/m³ (human)",
-       "DNEL (worker, long-term, systemic) DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human) DNEL (worker, long-term, systemic)    72.4 mg/m³ (human) DNEL (consumer, short-term, systemic) 52 mg/m³ (human) DNEL (consumer, long-term, systemic) 13 mg/m³ (human) DNEL (worker, short-term, local)      300 mg/m³ (human) DNEL (worker, long-term, local)       150 mg/m³ (human) DNEL (consumer, short-term, local)    150 mg/m³ (human) DNEL (consumer, long-term, local)     75 mg/m³ (human)",
-       "12.6 mg/kg bw/day (human)"
-      ]
-     ]
+     "soort": "kop",
+     "tekst": "8.2 Exposure controls"
     },
     {
      "soort": "alinea",
-     "tekst": "108-94-1 cyclohexanone Oral DNEL (consumer, short-term, systemic) 10 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 5 mg/kg bw/day (human)"
-    },
-    {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Dermal",
-       "DNEL (worker, short-term, systemic) DNEL (worker, long-term, systemic)    10 mg/kg bw/day (human) DNEL (consumer, short-term, systemic) 30 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 20 mg/kg bw/day (human)",
-       "100 mg/kg bw/day (human)"
-      ]
-     ]
+     "tekst": "Individual protection measures, such as personal protective equipment"
     },
     {
      "soort": "alinea",
-     "tekst": "Inhalative DNEL (worker, short-term, systemic) 100 mg/m³ (human) DNEL (worker, long-term, systemic) 100 mg/m³ (human) DNEL (consumer, short-term, systemic) 50 mg/m³ (human) DNEL (consumer, long-term, systemic) 20 mg/m³ (human) DNEL (worker, short-term, local) 100 mg/m³ (human) DNEL (worker, long-term, local) 80 mg/m³ (human) DNEL (consumer, short-term, local) 50 mg/m³ (human) DNEL (consumer, long-term, local) 20 mg/m³ (human) · PNECs 109-99-9 tetrahydrofuran PNEC aqua (freshwater) 4.32 mg/L (.) PNEC aqua (marine water) 0.432 mg/L (.) PNEC STP 4.6 mg/L (.) PNEC soil 2.13 mg/kg soil dw (.) PNEC sediment (freshwater) 23.3 mg/kg sedim. dw (.) PNEC sediment (marine water) 2.33 mg/kg sedim. dw (.) PNEC aqua (intermittent releases) 21.6 mg/L (.) PNEC oral 67 mg/kg food (.) · Ingredients with biological limit values: 108-94-1 cyclohexanone BMGV (Great Britain) 2 mmol/mol creatinine Medium: urine Sampling time: post shift Parameter: cyclohexanol"
-    },
-    {
-     "soort": "veld",
-     "kopje": "· Additional information · 8.2 Exposure controls",
-     "tekst": "The lists that were valid during the compilation were used as basis."
+     "tekst": "General protective and hygienic measures"
     },
     {
      "soort": "alinea",
-     "tekst": "· Individual protection measures, such as personal protective equipment · General protective and hygienic measures Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food. · Breathing equipment: Not required. Not necessary if room is well-ventilated. · Hand protection The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+     "tekst": "Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food."
     },
     {
      "soort": "alinea",
-     "tekst": "· Material of gloves Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application. · Penetration time of glove material In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed. · Eye/face protection Safety glasses"
+     "tekst": "Breathing equipment: Not required. Not necessary if room is well-ventilated."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Hand protection"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Material of gloves"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Penetration time of glove material"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Eye/face protection Safety glasses"
     }
    ],
    "4": [
     {
-     "soort": "alinea",
-     "tekst": "· 4.1 Description of first aid measures · General information Take affected persons into the open air. Remove contaminated clothing immediately. · After inhalation Take affected persons into the open air and position comfortably In case of persistent symptoms consult doctor. · After skin contact Wash with water and soap. In case of permanent aches and pains please go and see the doctor. · After eye contact Remove contact lenses if possible. Keep eye lids open and rinse them with ample amounts of clean running water for at least 15 minutes. In case of permanent aches and pains please go and see the doctor."
+     "soort": "kop",
+     "tekst": "4.1 Description of first aid measures"
     },
     {
      "soort": "alinea",
-     "tekst": "· After swallowing Rinse out mouth. In case of persistent symptoms consult doctor. · 4.2 Most important symptoms and effects, both acute and delayed No further relevant information available. · 4.3 Indication of any immediate medical attention and special treatment needed No further relevant information available."
+     "tekst": "General information"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Take affected persons into the open air. Remove contaminated clothing immediately."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After inhalation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Take affected persons into the open air and position comfortably In case of persistent symptoms consult doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After skin contact"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Wash with water and soap. In case of permanent aches and pains please go and see the doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After eye contact"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Remove contact lenses if possible. Keep eye lids open and rinse them with ample amounts of clean running water for at least 15 minutes. In case of permanent aches and pains please go and see the doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After swallowing"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Rinse out mouth. In case of persistent symptoms consult doctor."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Most important symptoms and effects, both acute and delayed"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Indication of any immediate medical attention and special treatment needed"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
     }
    ],
    "6": [
     {
-     "soort": "alinea",
-     "tekst": "· 6.1 Personal precautions, protective equipment and emergency procedures Do not inhale vapours. Keep away from sources of ignition and care for sufficient ventilation due to the content of organic solvents. Avoid contact to eyes, skin and clothes. Keep away from sources of ignition - No smoking."
-    },
-    {
-     "soort": "veld",
-     "kopje": "· 6.2 Environmental precautions",
-     "tekst": "Do not allow to enter drainage system, surface or ground water."
+     "soort": "kop",
+     "tekst": "6.1 Personal precautions, protective equipment and emergency procedures"
     },
     {
      "soort": "alinea",
-     "tekst": "· 6.3 Methods and material for containment and cleaning up: Absorb with liquid-binding material (sand, diatomite, acid binders, universal binders). · 6.4 Reference to other sections See Section 7 for information on safe handling See Section 8 for information on personal protection equipment. See Section 13 for information on disposal."
+     "tekst": "Do not inhale vapours. Keep away from sources of ignition and care for sufficient ventilation due to the content of organic solvents. Avoid contact to eyes, skin and clothes. Keep away from sources of ignition - No smoking."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Environmental precautions: Do not allow to enter drainage system, surface or ground water."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Methods and material for containment and cleaning up"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Absorb with liquid-binding material (sand, diatomite, acid binders, universal binders)."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Reference to other sections"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "See Section 7 for information on safe handling See Section 8 for information on personal protection equipment. See Section 13 for information on disposal."
     }
    ],
    "5": [
     {
+     "soort": "kop",
+     "tekst": "5.1 Extinguishing media"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 5.1 Extinguishing media · Suitable extinguishing agents Extinguishing powder, foam or water jet. Fight larger fires with water jet or alcohol-resistant foam. · For safety reasons unsuitable extinguishing agents Water with a full water jet. · 5.2 Special hazards arising from the substance or mixture No further relevant information available. · 5.3 Advice for firefighters"
+     "tekst": "Suitable extinguishing agents"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Extinguishing powder, foam or water jet. Fight larger fires with water jet or alcohol-resistant foam."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "For safety reasons unsuitable extinguishing agents Water with a full water jet."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Special hazards arising from the substance or mixture"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advice for firefighters"
     },
     {
      "soort": "veld",
@@ -47586,8 +49362,32 @@ const VIB_PRODUCTEN = [
    ],
    "13": [
     {
+     "soort": "kop",
+     "tekst": "13.1 Waste treatment methods"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 13.1 Waste treatment methods · Recommendation Must not be disposed of together with household garbage. Do not allow product to reach sewage system. The waste code numbers mentioned are recommendations based on the probable use of the product. · European waste catalogue 08 00 00 WASTES FROM THE MANUFACTURE, FORMULATION, SUPPLY AND USE (MFSU) OF COATINGS (PAINTS, VARNISHES AND VITREOUS ENAMELS), ADHESIVES, SEALANTS AND PRINTING INKS 08 04 00 wastes from MFSU of adhesives and sealants (including waterproofing products) 08 04 09* waste adhesives and sealants containing organic solvents or other hazardous substances HP3 Flammable HP4 Irritant - skin irritation and eye damage HP5 Specific Target Organ Toxicity (STOT)/Aspiration Toxicity HP7 Carcinogenic · Uncleaned packagings: · Recommendation: Dispose of packaging according to regulations on the disposal of packagings. Packagings that cannot be cleaned are to be disposed of in the same manner as the product."
+     "tekst": "Recommendation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Must not be disposed of together with household garbage. Do not allow product to reach sewage system. The waste code numbers mentioned are recommendations based on the probable use of the product."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "European waste catalogue"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "08 00 00 WASTES FROM THE MANUFACTURE, FORMULATION, SUPPLY AND USE (MFSU) OF COATINGS (PAINTS, VARNISHES AND VITREOUS ENAMELS), ADHESIVES, SEALANTS AND PRINTING INKS 08 04 00 wastes from MFSU of adhesives and sealants (including waterproofing products) 08 04 09* waste adhesives and sealants containing organic solvents or other hazardous substances HP3 Flammable HP4 Irritant - skin irritation and eye damage HP5 Specific Target Organ Toxicity (STOT)/Aspiration Toxicity HP7 Carcinogenic"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Uncleaned packagings:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Recommendation: Dispose of packaging according to regulations on the disposal of packagings. Packagings that cannot be cleaned are to be disposed of in the same manner as the product."
     }
    ]
   }
@@ -47618,86 +49418,179 @@ const VIB_PRODUCTEN = [
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Onderdeel 8.2 niet gevonden",
    "VIB lijkt niet Nederlands (Engels)"
   ],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "· 8.1 Control parameters · Components with limit values that require monitoring at the workplace: WEL: workplace exposure limit OEL: Occupational Exposure Limit IOELV: Indicative Occupational Exposure Limit Values, workplace threshold value of the European Union 109-99-9 tetrahydrofuran IOELV (European Union) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Skin WEL (Great Britain) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Sk 9002-86-2 polyvinylchloride WEL (Great Britain) Long-term value: 10* 4** mg/m³ *inhalable dust **respirable dust 108-94-1 cyclohexanone IOELV (European Union) Short-term value: 81.6 mg/m³, 20 ppm Long-term value: 40.8 mg/m³, 10 ppm Skin WEL (Great Britain) Short-term value: 82 mg/m³, 20 ppm Long-term value: 41 mg/m³, 10 ppm Sk, BMGV 28553-12-0 diisononyl phthalate WEL (Great Britain) Long-term value: 5 mg/m³ · DNELs 109-99-9 tetrahydrofuran Oral DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human)"
-    },
-    {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Dermal Inhalative DNEL (worker, short-term, systemic)   96 mg/m³ (human)",
-       "DNEL (worker, long-term, systemic) DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human) DNEL (worker, long-term, systemic)    72.4 mg/m³ (human) DNEL (consumer, short-term, systemic) 52 mg/m³ (human) DNEL (consumer, long-term, systemic) 13 mg/m³ (human) DNEL (worker, short-term, local)      300 mg/m³ (human) DNEL (worker, long-term, local)       150 mg/m³ (human) DNEL (consumer, short-term, local)    150 mg/m³ (human) DNEL (consumer, long-term, local)     75 mg/m³ (human)",
-       "12.6 mg/kg bw/day (human)"
-      ]
-     ]
+     "soort": "kop",
+     "tekst": "8.2 Exposure controls"
     },
     {
      "soort": "alinea",
-     "tekst": "108-94-1 cyclohexanone Oral DNEL (consumer, short-term, systemic) 10 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 5 mg/kg bw/day (human)"
-    },
-    {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Dermal",
-       "DNEL (worker, short-term, systemic) DNEL (worker, long-term, systemic)    10 mg/kg bw/day (human) DNEL (consumer, short-term, systemic) 30 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 20 mg/kg bw/day (human)",
-       "100 mg/kg bw/day (human)"
-      ]
-     ]
+     "tekst": "Individual protection measures, such as personal protective equipment"
     },
     {
      "soort": "alinea",
-     "tekst": "Inhalative DNEL (worker, short-term, systemic) 100 mg/m³ (human) DNEL (worker, long-term, systemic) 100 mg/m³ (human) DNEL (consumer, short-term, systemic) 50 mg/m³ (human) DNEL (consumer, long-term, systemic) 20 mg/m³ (human) DNEL (worker, short-term, local) 100 mg/m³ (human) DNEL (worker, long-term, local) 80 mg/m³ (human) DNEL (consumer, short-term, local) 50 mg/m³ (human) DNEL (consumer, long-term, local) 20 mg/m³ (human) · PNECs 109-99-9 tetrahydrofuran PNEC aqua (freshwater) 4.32 mg/L (.) PNEC aqua (marine water) 0.432 mg/L (.) PNEC STP 4.6 mg/L (.) PNEC soil 2.13 mg/kg soil dw (.) PNEC sediment (freshwater) 23.3 mg/kg sedim. dw (.) PNEC sediment (marine water) 2.33 mg/kg sedim. dw (.) PNEC aqua (intermittent releases) 21.6 mg/L (.) PNEC oral 67 mg/kg food (.) · Ingredients with biological limit values: 108-94-1 cyclohexanone BMGV (Great Britain) 2 mmol/mol creatinine Medium: urine Sampling time: post shift Parameter: cyclohexanol"
-    },
-    {
-     "soort": "veld",
-     "kopje": "· Additional information · 8.2 Exposure controls",
-     "tekst": "The lists that were valid during the compilation were used as basis."
+     "tekst": "General protective and hygienic measures"
     },
     {
      "soort": "alinea",
-     "tekst": "· Individual protection measures, such as personal protective equipment · General protective and hygienic measures Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food. · Breathing equipment: Not required. Not necessary if room is well-ventilated. · Hand protection The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+     "tekst": "Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food."
     },
     {
      "soort": "alinea",
-     "tekst": "· Material of gloves Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application. · Penetration time of glove material In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed. · Eye/face protection Safety glasses"
+     "tekst": "Breathing equipment: Not required. Not necessary if room is well-ventilated."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Hand protection"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Material of gloves"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Penetration time of glove material"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Eye/face protection Safety glasses"
     }
    ],
    "4": [
     {
-     "soort": "alinea",
-     "tekst": "· 4.1 Description of first aid measures · General information Take affected persons into the open air. Remove contaminated clothing immediately. · After inhalation Take affected persons into the open air and position comfortably In case of persistent symptoms consult doctor. · After skin contact Wash with water and soap. In case of permanent aches and pains please go and see the doctor. · After eye contact Remove contact lenses if possible. Keep eye lids open and rinse them with ample amounts of clean running water for at least 15 minutes. In case of permanent aches and pains please go and see the doctor."
+     "soort": "kop",
+     "tekst": "4.1 Description of first aid measures"
     },
     {
      "soort": "alinea",
-     "tekst": "· After swallowing Rinse out mouth. In case of persistent symptoms consult doctor. · 4.2 Most important symptoms and effects, both acute and delayed No further relevant information available. · 4.3 Indication of any immediate medical attention and special treatment needed No further relevant information available."
+     "tekst": "General information"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Take affected persons into the open air. Remove contaminated clothing immediately."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After inhalation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Take affected persons into the open air and position comfortably In case of persistent symptoms consult doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After skin contact"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Wash with water and soap. In case of permanent aches and pains please go and see the doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After eye contact"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Remove contact lenses if possible. Keep eye lids open and rinse them with ample amounts of clean running water for at least 15 minutes. In case of permanent aches and pains please go and see the doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After swallowing"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Rinse out mouth. In case of persistent symptoms consult doctor."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Most important symptoms and effects, both acute and delayed"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Indication of any immediate medical attention and special treatment needed"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
     }
    ],
    "6": [
     {
-     "soort": "alinea",
-     "tekst": "· 6.1 Personal precautions, protective equipment and emergency procedures Do not inhale vapours. Keep away from sources of ignition and care for sufficient ventilation due to the content of organic solvents. Avoid contact to eyes, skin and clothes. Keep away from sources of ignition - No smoking."
-    },
-    {
-     "soort": "veld",
-     "kopje": "· 6.2 Environmental precautions",
-     "tekst": "Do not allow to enter drainage system, surface or ground water."
+     "soort": "kop",
+     "tekst": "6.1 Personal precautions, protective equipment and emergency procedures"
     },
     {
      "soort": "alinea",
-     "tekst": "· 6.3 Methods and material for containment and cleaning up: Absorb with liquid-binding material (sand, diatomite, acid binders, universal binders). · 6.4 Reference to other sections See Section 7 for information on safe handling See Section 8 for information on personal protection equipment. See Section 13 for information on disposal."
+     "tekst": "Do not inhale vapours. Keep away from sources of ignition and care for sufficient ventilation due to the content of organic solvents. Avoid contact to eyes, skin and clothes. Keep away from sources of ignition - No smoking."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Environmental precautions: Do not allow to enter drainage system, surface or ground water."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Methods and material for containment and cleaning up"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Absorb with liquid-binding material (sand, diatomite, acid binders, universal binders)."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Reference to other sections"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "See Section 7 for information on safe handling See Section 8 for information on personal protection equipment. See Section 13 for information on disposal."
     }
    ],
    "5": [
     {
+     "soort": "kop",
+     "tekst": "5.1 Extinguishing media"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 5.1 Extinguishing media · Suitable extinguishing agents Extinguishing powder, foam or water jet. Fight larger fires with water jet or alcohol-resistant foam. · For safety reasons unsuitable extinguishing agents Water with a full water jet. · 5.2 Special hazards arising from the substance or mixture No further relevant information available. · 5.3 Advice for firefighters"
+     "tekst": "Suitable extinguishing agents"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Extinguishing powder, foam or water jet. Fight larger fires with water jet or alcohol-resistant foam."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "For safety reasons unsuitable extinguishing agents Water with a full water jet."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Special hazards arising from the substance or mixture"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advice for firefighters"
     },
     {
      "soort": "veld",
@@ -47707,8 +49600,32 @@ const VIB_PRODUCTEN = [
    ],
    "13": [
     {
+     "soort": "kop",
+     "tekst": "13.1 Waste treatment methods"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 13.1 Waste treatment methods · Recommendation Must not be disposed of together with household garbage. Do not allow product to reach sewage system. The waste code numbers mentioned are recommendations based on the probable use of the product. · European waste catalogue 08 00 00 WASTES FROM THE MANUFACTURE, FORMULATION, SUPPLY AND USE (MFSU) OF COATINGS (PAINTS, VARNISHES AND VITREOUS ENAMELS), ADHESIVES, SEALANTS AND PRINTING INKS 08 04 00 wastes from MFSU of adhesives and sealants (including waterproofing products) 08 04 09* waste adhesives and sealants containing organic solvents or other hazardous substances HP3 Flammable HP4 Irritant - skin irritation and eye damage HP5 Specific Target Organ Toxicity (STOT)/Aspiration Toxicity HP7 Carcinogenic · Uncleaned packagings: · Recommendation: Dispose of packaging according to regulations on the disposal of packagings. Packagings that cannot be cleaned are to be disposed of in the same manner as the product."
+     "tekst": "Recommendation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Must not be disposed of together with household garbage. Do not allow product to reach sewage system. The waste code numbers mentioned are recommendations based on the probable use of the product."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "European waste catalogue"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "08 00 00 WASTES FROM THE MANUFACTURE, FORMULATION, SUPPLY AND USE (MFSU) OF COATINGS (PAINTS, VARNISHES AND VITREOUS ENAMELS), ADHESIVES, SEALANTS AND PRINTING INKS 08 04 00 wastes from MFSU of adhesives and sealants (including waterproofing products) 08 04 09* waste adhesives and sealants containing organic solvents or other hazardous substances HP3 Flammable HP4 Irritant - skin irritation and eye damage HP5 Specific Target Organ Toxicity (STOT)/Aspiration Toxicity HP7 Carcinogenic"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Uncleaned packagings:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Recommendation: Dispose of packaging according to regulations on the disposal of packagings. Packagings that cannot be cleaned are to be disposed of in the same manner as the product."
     }
    ]
   }
@@ -47739,86 +49656,179 @@ const VIB_PRODUCTEN = [
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Onderdeel 8.2 niet gevonden",
    "VIB lijkt niet Nederlands (Engels)"
   ],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "· 8.1 Control parameters · Components with limit values that require monitoring at the workplace: WEL: workplace exposure limit OEL: Occupational Exposure Limit IOELV: Indicative Occupational Exposure Limit Values, workplace threshold value of the European Union 109-99-9 tetrahydrofuran IOELV (European Union) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Skin WEL (Great Britain) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Sk 9002-86-2 polyvinylchloride WEL (Great Britain) Long-term value: 10* 4** mg/m³ *inhalable dust **respirable dust 108-94-1 cyclohexanone IOELV (European Union) Short-term value: 81.6 mg/m³, 20 ppm Long-term value: 40.8 mg/m³, 10 ppm Skin WEL (Great Britain) Short-term value: 82 mg/m³, 20 ppm Long-term value: 41 mg/m³, 10 ppm Sk, BMGV 28553-12-0 diisononyl phthalate WEL (Great Britain) Long-term value: 5 mg/m³ · DNELs 109-99-9 tetrahydrofuran Oral DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human)"
-    },
-    {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Dermal Inhalative DNEL (worker, short-term, systemic)   96 mg/m³ (human)",
-       "DNEL (worker, long-term, systemic) DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human) DNEL (worker, long-term, systemic)    72.4 mg/m³ (human) DNEL (consumer, short-term, systemic) 52 mg/m³ (human) DNEL (consumer, long-term, systemic) 13 mg/m³ (human) DNEL (worker, short-term, local)      300 mg/m³ (human) DNEL (worker, long-term, local)       150 mg/m³ (human) DNEL (consumer, short-term, local)    150 mg/m³ (human) DNEL (consumer, long-term, local)     75 mg/m³ (human)",
-       "12.6 mg/kg bw/day (human)"
-      ]
-     ]
+     "soort": "kop",
+     "tekst": "8.2 Exposure controls"
     },
     {
      "soort": "alinea",
-     "tekst": "108-94-1 cyclohexanone Oral DNEL (consumer, short-term, systemic) 10 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 5 mg/kg bw/day (human)"
-    },
-    {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Dermal",
-       "DNEL (worker, short-term, systemic) DNEL (worker, long-term, systemic)    10 mg/kg bw/day (human) DNEL (consumer, short-term, systemic) 30 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 20 mg/kg bw/day (human)",
-       "100 mg/kg bw/day (human)"
-      ]
-     ]
+     "tekst": "Individual protection measures, such as personal protective equipment"
     },
     {
      "soort": "alinea",
-     "tekst": "Inhalative DNEL (worker, short-term, systemic) 100 mg/m³ (human) DNEL (worker, long-term, systemic) 100 mg/m³ (human) DNEL (consumer, short-term, systemic) 50 mg/m³ (human) DNEL (consumer, long-term, systemic) 20 mg/m³ (human) DNEL (worker, short-term, local) 100 mg/m³ (human) DNEL (worker, long-term, local) 80 mg/m³ (human) DNEL (consumer, short-term, local) 50 mg/m³ (human) DNEL (consumer, long-term, local) 20 mg/m³ (human) · PNECs 109-99-9 tetrahydrofuran PNEC aqua (freshwater) 4.32 mg/L (.) PNEC aqua (marine water) 0.432 mg/L (.) PNEC STP 4.6 mg/L (.) PNEC soil 2.13 mg/kg soil dw (.) PNEC sediment (freshwater) 23.3 mg/kg sedim. dw (.) PNEC sediment (marine water) 2.33 mg/kg sedim. dw (.) PNEC aqua (intermittent releases) 21.6 mg/L (.) PNEC oral 67 mg/kg food (.) · Ingredients with biological limit values: 108-94-1 cyclohexanone BMGV (Great Britain) 2 mmol/mol creatinine Medium: urine Sampling time: post shift Parameter: cyclohexanol"
-    },
-    {
-     "soort": "veld",
-     "kopje": "· Additional information · 8.2 Exposure controls",
-     "tekst": "The lists that were valid during the compilation were used as basis."
+     "tekst": "General protective and hygienic measures"
     },
     {
      "soort": "alinea",
-     "tekst": "· Individual protection measures, such as personal protective equipment · General protective and hygienic measures Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food. · Breathing equipment: Not required. Not necessary if room is well-ventilated. · Hand protection The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+     "tekst": "Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food."
     },
     {
      "soort": "alinea",
-     "tekst": "· Material of gloves Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application. · Penetration time of glove material In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed. · Eye/face protection Safety glasses"
+     "tekst": "Breathing equipment: Not required. Not necessary if room is well-ventilated."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Hand protection"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Material of gloves"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Penetration time of glove material"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Eye/face protection Safety glasses"
     }
    ],
    "4": [
     {
-     "soort": "alinea",
-     "tekst": "· 4.1 Description of first aid measures · General information Take affected persons into the open air. Remove contaminated clothing immediately. · After inhalation Take affected persons into the open air and position comfortably In case of persistent symptoms consult doctor. · After skin contact Wash with water and soap. In case of permanent aches and pains please go and see the doctor. · After eye contact Remove contact lenses if possible. Keep eye lids open and rinse them with ample amounts of clean running water for at least 15 minutes. In case of permanent aches and pains please go and see the doctor."
+     "soort": "kop",
+     "tekst": "4.1 Description of first aid measures"
     },
     {
      "soort": "alinea",
-     "tekst": "· After swallowing Rinse out mouth. In case of persistent symptoms consult doctor. · 4.2 Most important symptoms and effects, both acute and delayed No further relevant information available. · 4.3 Indication of any immediate medical attention and special treatment needed No further relevant information available."
+     "tekst": "General information"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Take affected persons into the open air. Remove contaminated clothing immediately."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After inhalation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Take affected persons into the open air and position comfortably In case of persistent symptoms consult doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After skin contact"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Wash with water and soap. In case of permanent aches and pains please go and see the doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After eye contact"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Remove contact lenses if possible. Keep eye lids open and rinse them with ample amounts of clean running water for at least 15 minutes. In case of permanent aches and pains please go and see the doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After swallowing"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Rinse out mouth. In case of persistent symptoms consult doctor."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Most important symptoms and effects, both acute and delayed"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Indication of any immediate medical attention and special treatment needed"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
     }
    ],
    "6": [
     {
-     "soort": "alinea",
-     "tekst": "· 6.1 Personal precautions, protective equipment and emergency procedures Do not inhale vapours. Keep away from sources of ignition and care for sufficient ventilation due to the content of organic solvents. Avoid contact to eyes, skin and clothes. Keep away from sources of ignition - No smoking."
-    },
-    {
-     "soort": "veld",
-     "kopje": "· 6.2 Environmental precautions",
-     "tekst": "Do not allow to enter drainage system, surface or ground water."
+     "soort": "kop",
+     "tekst": "6.1 Personal precautions, protective equipment and emergency procedures"
     },
     {
      "soort": "alinea",
-     "tekst": "· 6.3 Methods and material for containment and cleaning up: Absorb with liquid-binding material (sand, diatomite, acid binders, universal binders). · 6.4 Reference to other sections See Section 7 for information on safe handling See Section 8 for information on personal protection equipment. See Section 13 for information on disposal."
+     "tekst": "Do not inhale vapours. Keep away from sources of ignition and care for sufficient ventilation due to the content of organic solvents. Avoid contact to eyes, skin and clothes. Keep away from sources of ignition - No smoking."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Environmental precautions: Do not allow to enter drainage system, surface or ground water."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Methods and material for containment and cleaning up"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Absorb with liquid-binding material (sand, diatomite, acid binders, universal binders)."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Reference to other sections"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "See Section 7 for information on safe handling See Section 8 for information on personal protection equipment. See Section 13 for information on disposal."
     }
    ],
    "5": [
     {
+     "soort": "kop",
+     "tekst": "5.1 Extinguishing media"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 5.1 Extinguishing media · Suitable extinguishing agents Extinguishing powder, foam or water jet. Fight larger fires with water jet or alcohol-resistant foam. · For safety reasons unsuitable extinguishing agents Water with a full water jet. · 5.2 Special hazards arising from the substance or mixture No further relevant information available. · 5.3 Advice for firefighters"
+     "tekst": "Suitable extinguishing agents"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Extinguishing powder, foam or water jet. Fight larger fires with water jet or alcohol-resistant foam."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "For safety reasons unsuitable extinguishing agents Water with a full water jet."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Special hazards arising from the substance or mixture"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advice for firefighters"
     },
     {
      "soort": "veld",
@@ -47828,8 +49838,32 @@ const VIB_PRODUCTEN = [
    ],
    "13": [
     {
+     "soort": "kop",
+     "tekst": "13.1 Waste treatment methods"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 13.1 Waste treatment methods · Recommendation Must not be disposed of together with household garbage. Do not allow product to reach sewage system. The waste code numbers mentioned are recommendations based on the probable use of the product. · European waste catalogue 08 00 00 WASTES FROM THE MANUFACTURE, FORMULATION, SUPPLY AND USE (MFSU) OF COATINGS (PAINTS, VARNISHES AND VITREOUS ENAMELS), ADHESIVES, SEALANTS AND PRINTING INKS 08 04 00 wastes from MFSU of adhesives and sealants (including waterproofing products) 08 04 09* waste adhesives and sealants containing organic solvents or other hazardous substances HP3 Flammable HP4 Irritant - skin irritation and eye damage HP5 Specific Target Organ Toxicity (STOT)/Aspiration Toxicity HP7 Carcinogenic · Uncleaned packagings: · Recommendation: Dispose of packaging according to regulations on the disposal of packagings. Packagings that cannot be cleaned are to be disposed of in the same manner as the product."
+     "tekst": "Recommendation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Must not be disposed of together with household garbage. Do not allow product to reach sewage system. The waste code numbers mentioned are recommendations based on the probable use of the product."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "European waste catalogue"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "08 00 00 WASTES FROM THE MANUFACTURE, FORMULATION, SUPPLY AND USE (MFSU) OF COATINGS (PAINTS, VARNISHES AND VITREOUS ENAMELS), ADHESIVES, SEALANTS AND PRINTING INKS 08 04 00 wastes from MFSU of adhesives and sealants (including waterproofing products) 08 04 09* waste adhesives and sealants containing organic solvents or other hazardous substances HP3 Flammable HP4 Irritant - skin irritation and eye damage HP5 Specific Target Organ Toxicity (STOT)/Aspiration Toxicity HP7 Carcinogenic"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Uncleaned packagings:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Recommendation: Dispose of packaging according to regulations on the disposal of packagings. Packagings that cannot be cleaned are to be disposed of in the same manner as the product."
     }
    ]
   }
@@ -47883,86 +49917,179 @@ const VIB_PRODUCTEN = [
   "artikelstatus": "active",
   "status": "onzeker",
   "problemen": [
-   "Onderdeel 8.2 niet gevonden",
    "VIB lijkt niet Nederlands (Engels)"
   ],
   "rubrieken": {
    "8": [
     {
-     "soort": "alinea",
-     "tekst": "· 8.1 Control parameters · Components with limit values that require monitoring at the workplace: WEL: workplace exposure limit OEL: Occupational Exposure Limit IOELV: Indicative Occupational Exposure Limit Values, workplace threshold value of the European Union 109-99-9 tetrahydrofuran IOELV (European Union) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Skin WEL (Great Britain) Short-term value: 300 mg/m³, 100 ppm Long-term value: 150 mg/m³, 50 ppm Sk 9002-86-2 polyvinylchloride WEL (Great Britain) Long-term value: 10* 4** mg/m³ *inhalable dust **respirable dust 108-94-1 cyclohexanone IOELV (European Union) Short-term value: 81.6 mg/m³, 20 ppm Long-term value: 40.8 mg/m³, 10 ppm Skin WEL (Great Britain) Short-term value: 82 mg/m³, 20 ppm Long-term value: 41 mg/m³, 10 ppm Sk, BMGV 28553-12-0 diisononyl phthalate WEL (Great Britain) Long-term value: 5 mg/m³ · DNELs 109-99-9 tetrahydrofuran Oral DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human)"
-    },
-    {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Dermal Inhalative DNEL (worker, short-term, systemic)   96 mg/m³ (human)",
-       "DNEL (worker, long-term, systemic) DNEL (consumer, long-term, systemic) 1.5 mg/kg bw/day (human) DNEL (worker, long-term, systemic)    72.4 mg/m³ (human) DNEL (consumer, short-term, systemic) 52 mg/m³ (human) DNEL (consumer, long-term, systemic) 13 mg/m³ (human) DNEL (worker, short-term, local)      300 mg/m³ (human) DNEL (worker, long-term, local)       150 mg/m³ (human) DNEL (consumer, short-term, local)    150 mg/m³ (human) DNEL (consumer, long-term, local)     75 mg/m³ (human)",
-       "12.6 mg/kg bw/day (human)"
-      ]
-     ]
+     "soort": "kop",
+     "tekst": "8.2 Exposure controls"
     },
     {
      "soort": "alinea",
-     "tekst": "108-94-1 cyclohexanone Oral DNEL (consumer, short-term, systemic) 10 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 5 mg/kg bw/day (human)"
-    },
-    {
-     "soort": "tabel",
-     "rijen": [
-      [
-       "Dermal",
-       "DNEL (worker, short-term, systemic) DNEL (worker, long-term, systemic)    10 mg/kg bw/day (human) DNEL (consumer, short-term, systemic) 30 mg/kg bw/day (human) DNEL (consumer, long-term, systemic) 20 mg/kg bw/day (human)",
-       "100 mg/kg bw/day (human)"
-      ]
-     ]
+     "tekst": "Individual protection measures, such as personal protective equipment"
     },
     {
      "soort": "alinea",
-     "tekst": "Inhalative DNEL (worker, short-term, systemic) 100 mg/m³ (human) DNEL (worker, long-term, systemic) 100 mg/m³ (human) DNEL (consumer, short-term, systemic) 50 mg/m³ (human) DNEL (consumer, long-term, systemic) 20 mg/m³ (human) DNEL (worker, short-term, local) 100 mg/m³ (human) DNEL (worker, long-term, local) 80 mg/m³ (human) DNEL (consumer, short-term, local) 50 mg/m³ (human) DNEL (consumer, long-term, local) 20 mg/m³ (human) · PNECs 109-99-9 tetrahydrofuran PNEC aqua (freshwater) 4.32 mg/L (.) PNEC aqua (marine water) 0.432 mg/L (.) PNEC STP 4.6 mg/L (.) PNEC soil 2.13 mg/kg soil dw (.) PNEC sediment (freshwater) 23.3 mg/kg sedim. dw (.) PNEC sediment (marine water) 2.33 mg/kg sedim. dw (.) PNEC aqua (intermittent releases) 21.6 mg/L (.) PNEC oral 67 mg/kg food (.) · Ingredients with biological limit values: 108-94-1 cyclohexanone BMGV (Great Britain) 2 mmol/mol creatinine Medium: urine Sampling time: post shift Parameter: cyclohexanol"
-    },
-    {
-     "soort": "veld",
-     "kopje": "· Additional information · 8.2 Exposure controls",
-     "tekst": "The lists that were valid during the compilation were used as basis."
+     "tekst": "General protective and hygienic measures"
     },
     {
      "soort": "alinea",
-     "tekst": "· Individual protection measures, such as personal protective equipment · General protective and hygienic measures Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food. · Breathing equipment: Not required. Not necessary if room is well-ventilated. · Hand protection The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+     "tekst": "Wash hands during breaks and at the end of the work. Avoid contact with the eyes and skin. Do not eat, drink or smoke while working. Keep away from foodstuffs, beverages and food."
     },
     {
      "soort": "alinea",
-     "tekst": "· Material of gloves Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application. · Penetration time of glove material In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed. · Eye/face protection Safety glasses"
+     "tekst": "Breathing equipment: Not required. Not necessary if room is well-ventilated."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Hand protection"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "The glove material has to be impermeable and resistant to the product/ the substance/ the preparation. Due to missing tests no recommendation to the glove material can be given for the product/ the preparation/ the chemical mixture. Selection of the glove material on consideration of the penetration times, rates of diffusion and the degradation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Material of gloves"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Nitrile rubber, NBR Chloroprene rubber, CR The selection of the suitable gloves does not only depend on the material, but also on further marks of quality and varies from manufacturer to manufacturer. As the product is a preparation of several substances, the resistance of the glove material can not be calculated in advance and has therefore to be checked prior to the application."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Penetration time of glove material"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "In case of a layer thickness of 0.65 mm the penetration time is longer than 180 minutes. The exact break through time has to be found out by the manufacturer of the protective gloves and has to be observed."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Eye/face protection Safety glasses"
     }
    ],
    "4": [
     {
-     "soort": "alinea",
-     "tekst": "· 4.1 Description of first aid measures · General information Take affected persons into the open air. Remove contaminated clothing immediately. · After inhalation Take affected persons into the open air and position comfortably In case of persistent symptoms consult doctor. · After skin contact Wash with water and soap. In case of permanent aches and pains please go and see the doctor. · After eye contact Remove contact lenses if possible. Keep eye lids open and rinse them with ample amounts of clean running water for at least 15 minutes. In case of permanent aches and pains please go and see the doctor."
+     "soort": "kop",
+     "tekst": "4.1 Description of first aid measures"
     },
     {
      "soort": "alinea",
-     "tekst": "· After swallowing Rinse out mouth. In case of persistent symptoms consult doctor. · 4.2 Most important symptoms and effects, both acute and delayed No further relevant information available. · 4.3 Indication of any immediate medical attention and special treatment needed No further relevant information available."
+     "tekst": "General information"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Take affected persons into the open air. Remove contaminated clothing immediately."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After inhalation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Take affected persons into the open air and position comfortably In case of persistent symptoms consult doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After skin contact"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Wash with water and soap. In case of permanent aches and pains please go and see the doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After eye contact"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Remove contact lenses if possible. Keep eye lids open and rinse them with ample amounts of clean running water for at least 15 minutes. In case of permanent aches and pains please go and see the doctor."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "After swallowing"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Rinse out mouth. In case of persistent symptoms consult doctor."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.2 Most important symptoms and effects, both acute and delayed"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
+    },
+    {
+     "soort": "kop",
+     "tekst": "4.3 Indication of any immediate medical attention and special treatment needed"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
     }
    ],
    "6": [
     {
-     "soort": "alinea",
-     "tekst": "· 6.1 Personal precautions, protective equipment and emergency procedures Do not inhale vapours. Keep away from sources of ignition and care for sufficient ventilation due to the content of organic solvents. Avoid contact to eyes, skin and clothes. Keep away from sources of ignition - No smoking."
-    },
-    {
-     "soort": "veld",
-     "kopje": "· 6.2 Environmental precautions",
-     "tekst": "Do not allow to enter drainage system, surface or ground water."
+     "soort": "kop",
+     "tekst": "6.1 Personal precautions, protective equipment and emergency procedures"
     },
     {
      "soort": "alinea",
-     "tekst": "· 6.3 Methods and material for containment and cleaning up: Absorb with liquid-binding material (sand, diatomite, acid binders, universal binders). · 6.4 Reference to other sections See Section 7 for information on safe handling See Section 8 for information on personal protection equipment. See Section 13 for information on disposal."
+     "tekst": "Do not inhale vapours. Keep away from sources of ignition and care for sufficient ventilation due to the content of organic solvents. Avoid contact to eyes, skin and clothes. Keep away from sources of ignition - No smoking."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.2 Environmental precautions: Do not allow to enter drainage system, surface or ground water."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.3 Methods and material for containment and cleaning up"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Absorb with liquid-binding material (sand, diatomite, acid binders, universal binders)."
+    },
+    {
+     "soort": "kop",
+     "tekst": "6.4 Reference to other sections"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "See Section 7 for information on safe handling See Section 8 for information on personal protection equipment. See Section 13 for information on disposal."
     }
    ],
    "5": [
     {
+     "soort": "kop",
+     "tekst": "5.1 Extinguishing media"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 5.1 Extinguishing media · Suitable extinguishing agents Extinguishing powder, foam or water jet. Fight larger fires with water jet or alcohol-resistant foam. · For safety reasons unsuitable extinguishing agents Water with a full water jet. · 5.2 Special hazards arising from the substance or mixture No further relevant information available. · 5.3 Advice for firefighters"
+     "tekst": "Suitable extinguishing agents"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Extinguishing powder, foam or water jet. Fight larger fires with water jet or alcohol-resistant foam."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "For safety reasons unsuitable extinguishing agents Water with a full water jet."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.2 Special hazards arising from the substance or mixture"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "No further relevant information available."
+    },
+    {
+     "soort": "kop",
+     "tekst": "5.3 Advice for firefighters"
     },
     {
      "soort": "veld",
@@ -47972,8 +50099,32 @@ const VIB_PRODUCTEN = [
    ],
    "13": [
     {
+     "soort": "kop",
+     "tekst": "13.1 Waste treatment methods"
+    },
+    {
      "soort": "alinea",
-     "tekst": "· 13.1 Waste treatment methods · Recommendation Must not be disposed of together with household garbage. Do not allow product to reach sewage system. The waste code numbers mentioned are recommendations based on the probable use of the product. · European waste catalogue 08 00 00 WASTES FROM THE MANUFACTURE, FORMULATION, SUPPLY AND USE (MFSU) OF COATINGS (PAINTS, VARNISHES AND VITREOUS ENAMELS), ADHESIVES, SEALANTS AND PRINTING INKS 08 04 00 wastes from MFSU of adhesives and sealants (including waterproofing products) 08 04 09* waste adhesives and sealants containing organic solvents or other hazardous substances HP3 Flammable HP4 Irritant - skin irritation and eye damage HP5 Specific Target Organ Toxicity (STOT)/Aspiration Toxicity HP7 Carcinogenic · Uncleaned packagings: · Recommendation: Dispose of packaging according to regulations on the disposal of packagings. Packagings that cannot be cleaned are to be disposed of in the same manner as the product."
+     "tekst": "Recommendation"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Must not be disposed of together with household garbage. Do not allow product to reach sewage system. The waste code numbers mentioned are recommendations based on the probable use of the product."
+    },
+    {
+     "soort": "alinea",
+     "tekst": "European waste catalogue"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "08 00 00 WASTES FROM THE MANUFACTURE, FORMULATION, SUPPLY AND USE (MFSU) OF COATINGS (PAINTS, VARNISHES AND VITREOUS ENAMELS), ADHESIVES, SEALANTS AND PRINTING INKS 08 04 00 wastes from MFSU of adhesives and sealants (including waterproofing products) 08 04 09* waste adhesives and sealants containing organic solvents or other hazardous substances HP3 Flammable HP4 Irritant - skin irritation and eye damage HP5 Specific Target Organ Toxicity (STOT)/Aspiration Toxicity HP7 Carcinogenic"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Uncleaned packagings:"
+    },
+    {
+     "soort": "alinea",
+     "tekst": "Recommendation: Dispose of packaging according to regulations on the disposal of packagings. Packagings that cannot be cleaned are to be disposed of in the same manner as the product."
     }
    ]
   }
