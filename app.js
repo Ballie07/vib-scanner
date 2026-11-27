@@ -636,8 +636,11 @@ function voorwaarde(zin) {
   return t.charAt(0).toLowerCase() + t.slice(1);
 }
 
+const GEEN_INFO_MASKER = "bij twijfel altijd gebruiken";
+
 function maskerOordeel(zinnenLijst) {
-  if (!zinnenLijst.length) return "het VIB zegt hier niets over";
+  // Gecontroleerd door Toppy (nov 2026): zegt het VIB niets over ademhaling, dan bij twijfel altijd gebruiken.
+  if (!zinnenLijst.length) return GEEN_INFO_MASKER;
   const neg = zinnenLijst.filter((z) => NEGATIEF.test(z));
   // Een "draag/gebruik een masker"-zin: een doe-werkwoord én een masker in de zin zelf (niet alleen in het kopje).
   const pos = zinnenLijst.filter((z) => !NEGATIEF.test(z) && MASKER.test(zonderLabel(z)) && DOE.test(zonderLabel(z)));
@@ -657,7 +660,8 @@ function beschermStap(nummer) {
   const ademZinnen = blokken
     .flatMap((b) => (b.soort === "veld" ? zinnen(b.kopje + ": " + b.tekst) : zinnen(blokTekst(b))))
     .filter((z) => ADEM.test(z) && !GEEN_DOE.test(z) && !/(milieu|environment|hand|glove|handschoen|oog|eye)/i.test(z.slice(0, 25)));
-  if (blokken.length) {
+  {
+    // Ook als rubriek 8.2 niet uit te lezen is, staat de masker-regel er (dan: bij twijfel altijd gebruiken).
     const oordeel = maskerOordeel(ademZinnen);
     // Alleen de zinnen waarop het oordeel rust: "niet nodig"-zinnen en "draag/gebruik een masker"-zinnen.
     const bron = ademZinnen
@@ -681,7 +685,8 @@ function beschermStap(nummer) {
     const z = blokken.flatMap((b) => doeZinnen(blokTekst(b))).filter((x) => !ADEM.test(x)).slice(0, 5);
     if (z.length) regels.push("<li class='pbm'><span class='ic'>🧤</span><div>" + lijst(z) + "</div></li>");
   }
-  const inhoud = regels.length ? "<ul class='pbmlijst'>" + regels.join("") + "</ul>" : "<p><i>" + esc(NIET_GELEZEN + "8.2.") + "</i></p>";
+  const inhoud =
+    "<ul class='pbmlijst'>" + regels.join("") + "</ul>" + (blokken.length ? "" : "<p><i>" + esc(NIET_GELEZEN + "8.2.") + "</i></p>");
   return stap(nummer, "Bescherm jezelf", inhoud);
 }
 
