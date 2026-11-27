@@ -505,6 +505,9 @@ function items(blokken) {
     if (b.soort === "kop") { open = null; continue; }
     if (b.soort === "veld") { uit.push({ kopje: b.kopje, blokken: [b] }); open = null; continue; }
     if (b.soort === "alinea" && isTussenkop(b.tekst || "")) { open = { kopje: b.tekst, blokken: [b] }; uit.push(open); continue; }
+    // "Bescherming van het lichaam Beschermende kleding ..." begint een eigen onderwerp, ook als het geen los kopje is.
+    const eigen = b.soort === "alinea" && (b.tekst || "").match(/^((bescherming van (de |het )?[\wÀ-ÿ/ ]{3,25}?|[\wÀ-ÿ-]*bescherming|(skin|eye|hand|body|respiratory) protection)\b)/i);
+    if (eigen) { uit.push({ kopje: eigen[1], blokken: [b] }); open = null; continue; } // neemt de volgende alinea niet mee
     if (open) open.blokken.push(b);
     else uit.push({ kopje: "", blokken: [b] });
   }
@@ -545,13 +548,14 @@ function uitleesmelding() {
 const DOE = new RegExp(
   "\\b(" +
     // Nederlands
-    "gebruik\\w*|draag|dragen|spoel\\w*|was|wassen|verwijder\\w*|trek|uittrekken|uitdoen|verzamel\\w*|opnemen|opzuigen|opvegen|" +
+    "gebruik\\w*|draag|dragen|\\w*spoel\\w*|was|wassen|\\w*wassen|verwijder\\w*|trek|uittrekken|uitdoen|verzamel\\w*|opnemen|opzuigen|opvegen|" +
     "absorbe\\w*|indammen|afdekken|ventile\\w*|zorg|zorgen|houd|houden|breng\\w*|vervoer\\w*|raadpleeg|raadplegen|inwinnen|" +
     "bel|bellen|laat|laten|vermijd\\w*|blus\\w*|koel\\w*|plaats\\w*|verplaats\\w*|reinig\\w*|afvoeren|voer|ontdoen|dient|" +
     "dienen|moet|moeten|verboden|nooit|toedienen|opwekken|hanteren|zitten|liggen|afsluiten|neutralise\\w*|verdunnen|" +
     "lopen|aanraken|inademen|toegelaten|toegestaan|allowed|permitted|" +
     // Engels
-    "use|wear|rinse|wash|remove|take|move|call|get|seek|keep|avoid|never|collect|absorb|sweep|contain|dispose|" +
+    "use|wear|rinse|wash|remove|take|move|call|get|seek|keep|avoid|never|collect|absorb|sweep|contain|dispose|blot|flush|" +
+    "contact (a|the|your)|obtain|induce|" +
     "ventilate|flush|place|transfer|clean|prevent|evacuate|ensure|must|should|do not|don't|" +
     // Duits / Frans
     "tragen|spülen|entfernen|verwenden|aufnehmen|vermeiden|bringen|utiliser|porter|rincer|enlever|éviter|ne pas|absorber|recueillir|appeler" +
@@ -559,21 +563,27 @@ const DOE = new RegExp(
   "i"
 );
 const GEEN_DOE =
-  /(zie rubriek|zie punt|see section|siehe abschnitt|voir (la )?section|rubriek \d|rubrieken \d|section \d|doorbraaktijd|breakthrough|\bdikte|thickness|\bafhankelijk|hangt af|\bdepend|\boverleg|fabrikant|manufacturer|reglement|regulation|wetgeving|legislation|richtlijn|voorschrift|blootstellingslimiet|exposure limit|beschermingsniveau|geschiktheid|suitab|zie ook|information|informatie)/i;
+  /(zie rubriek|zie punt|see section|siehe abschnitt|voir (la )?section|rubriek \d|rubrieken \d|section \d|doorbraaktijd|breakthrough|\bdikte|thickness|\bafhankelijk|hangt af|\bdepend|\boverleg|fabrikant|manufacturer|reglement|regulation|wetgeving|legislation|richtlijn|voorschrift|blootstellingslimiet|exposure limit|beschermingsniveau|geschiktheid|suitab|zie ook|(meer|verdere|aanvullende|more|further|additional|weitere) (informatie|information|gegevens|informationen)|deze rubriek|this section)/i;
 const NORM = /\s*\((?:EN|NEN|ISO|DIN|NF)\b[^)]*\)/g;
 
 function zinnen(tekst) {
   return String(tekst || "")
     .replace(NORM, "")
-    .split(/(?<=[.!;])\s+(?=[A-ZÀ-Ý(•\-])|,\s*(?=(?:en )?(?:dan|daarna|vervolgens|eerst|then|afterwards)\b)|\s+[•·]\s+/)
+    .split(/(?<=[.!;])\s+(?=[A-ZÀ-Ý(•\-])|,\s*(?=(?:en )?(?:dan|daarna|vervolgens|eerst|then|afterwards)\b)|\s+[•·]\s+|\s*\n\s*/)
     .map((z) => z.replace(/^[•·\-\s]+/, "").trim())
     .filter(Boolean)
     .map((z) => z.charAt(0).toUpperCase() + z.slice(1));
 }
 
+// "Niet vereist", "niet nodig": geen opdracht, maar wel wat je moet weten.
+const NIET_NODIG = /\b(niet|geen)\b[^.]{0,40}\b(vereist|nodig|noodzakelijk|verplicht)\b|not (required|necessary|needed)/i;
+
 function doeZinnen(tekst) {
   return zinnen(tekst).filter(
-    (z) => z.length > 6 && (DOE.test(z) || /^(niet|geen|nooit|do not|never|no)\b/i.test(z)) && !GEEN_DOE.test(z)
+    (z) =>
+      z.length > 6 &&
+      (DOE.test(z) || /^(niet|geen|nooit|do not|never|no)\b/i.test(z) || NIET_NODIG.test(z)) &&
+      !GEEN_DOE.test(z)
   );
 }
 
@@ -583,9 +593,17 @@ function blokTekst(b) {
 }
 
 // Onderdeel (bijv. "6.3") van een rubriek, als blokken zonder de kop.
+// Heeft de rubriek helemaal geen genummerde onderdelen (oudere VIB's: "4. Eerste hulp" met direct
+// "Inademing: ..."), dan geldt de hele rubriek als het belangrijkste onderdeel (4.1, 5.1, 8.2, 13.1).
+const HOOFDONDERDEEL = { "4": "4.1", "5": "5.1", "8": "8.2", "13": "13.1" };
+
 function onderdeel(nr, sub) {
-  const o = onderdelen((product.rubrieken || {})[nr]).find((x) => x.nr === sub);
-  return o ? o.blokken.filter((b) => b.soort !== "kop") : [];
+  const delen = onderdelen((product.rubrieken || {})[nr]);
+  const o = delen.find((x) => x.nr === sub);
+  if (o) return o.blokken.filter((b) => b.soort !== "kop");
+  const genummerd = delen.some((x) => x.nr && x.nr.startsWith(nr + "."));
+  if (!genummerd && HOOFDONDERDEEL[nr] === sub && delen.length) return delen.flatMap((x) => x.blokken).filter((b) => b.soort !== "kop");
+  return [];
 }
 
 function lijst(zinnenLijst) {
@@ -605,6 +623,25 @@ function stap(nummer, titel, inhoud, klasse) {
 }
 
 // --- Bescherm jezelf (rubriek 8.2) ---
+// Regels zonder inhoud: een los kopje, een paragraafnummer of alleen een norm.
+const LOS_KOPJE = new RegExp(
+  "^(" +
+    [
+      "(\\d+\\.)+\\d*\\.?", // paragraafnummer
+      "bescherming van (de |het )?[\\wÀ-ÿ-]+(\\/(de |het )?[\\wÀ-ÿ-]+)?( en (de |het )?[\\wÀ-ÿ-]+)?", // "Bescherming van de ogen/het gezicht"
+      "[\\wÀ-ÿ-]*bescherming", // "Oogbescherming"
+      "(huid|hand|oog|lichaams?)[\\wÀ-ÿ-]*( en [\\wÀ-ÿ-]+)? ?bescherming", // "Huid en lichaam bescherming"
+      "persoonlijke beschermingsmiddelen",
+      "individuele beschermingsmaatregelen.*",
+      "symbo\\(o\\)l\\(en\\).*",
+      "pictogram.*",
+      "norm",
+      "(en|en iso|nf en|nen|din)\\s*\\d[\\d\\s,./:-]*", // alleen een normnummer
+      "(skin|eye|hand|body) protection",
+    ].join("|") +
+    ")[\\s:.]*$",
+  "i"
+);
 const PBM = [
   { ic: "🧤", re: /(handschoen|glove|gant|handschuh|\bhand)/i },
   { ic: "🥽", re: /(oog|ogen|bril|eye|gelaat|gezicht|face|yeux|augen)/i },
@@ -711,20 +748,40 @@ function beschermStap(nummer) {
     regels.push("<li class='pbm'><span class='ic'>😷</span><div><b>Masker: " + esc(oordeel) + "</b>" +
       (bron ? "<p class='vibzin'>VIB: “" + esc(bron) + "”</p>" : "") + "</div></li>");
   }
+  const overig = [];
+  // Milieumaatregelen horen bij opruimen (rubriek 6), niet bij bescherm jezelf.
+  const GEEN_PBM = /^(milieu|beheersing van milieu|beheersing van milieublootstelling|environmental|controle van de blootstelling van het milieu)/i;
   for (const it of items(blokken)) {
-    const tekst = it.blokken.map(blokTekst).join(" ");
-    const soort = PBM.find((p) => p.re.test(it.kopje || "")) || PBM.find((p) => p.re.test(label(it)));
-    if (!soort || soort.masker) continue;
-    const z = doeZinnen(tekst).filter((x) => !ADEM.test(x)).slice(0, 2); // per beschermingsmiddel de 2 belangrijkste
-    if (!z.length) continue;
-    const ic = /(handschoen|glove|gant|handschuh)/i.test(z.join(" ")) ? "🧤" : soort.ic;
-    regels.push("<li class='pbm'><span class='ic'>" + ic + "</span><div><b>" + esc(it.kopje || "") + "</b>" + lijst(z) + "</div></li>");
+    const tekst = it.blokken.map((b) => (b.soort === "veld" ? b.tekst : blokTekst(b))).join("\n");
+    if (GEEN_PBM.test(label(it))) continue;
+    // Waar gaat dit over: het kopje, het begin van de tekst, of anders de tekst zelf.
+    let soort =
+      PBM.find((p) => p.re.test(it.kopje || "")) ||
+      PBM.find((p) => p.re.test(label(it))) ||
+      PBM.find((p) => !p.masker && p.re.test(tekst.slice(0, 200)));
+    if (soort && soort.masker) soort = null; // ademhaling staat al bij het masker; de rest gaat naar "Overig"
+    if (soort) {
+      // Bij een beschermingsmiddel telt ook een zin zonder werkwoord ("Veiligheidsbril").
+      const z = zinnen(tekst)
+        .map((x) => x.replace(/^\d+(\.\d+)+\.?\s*/, "")) // paragraafnummer ervoor ("8.2.2.1.")
+        .filter(
+          (x) =>
+            x.length > 2 &&
+            !GEEN_DOE.test(x) &&
+            !ADEM.test(x) &&
+            !LOS_KOPJE.test(x)
+        );
+      if (!z.length) continue;
+      const ic = /(handschoen|glove|gant|handschuh)/i.test(z.join(" ") + " " + (it.kopje || "")) ? "🧤" : soort.ic;
+      // Alleen een kopje dat een label is ("Bescherming van de handen") wordt vet; "Veiligheidsbril" is inhoud.
+      const label_ = LOS_KOPJE.test(it.kopje || "") ? (it.kopje || "").replace(/[\s:]+$/, "") : "";
+      regels.push("<li class='pbm'><span class='ic'>" + ic + "</span><div>" + (label_ ? "<b>" + esc(label_) + "</b>" : "") + lijst(z) + "</div></li>");
+    } else {
+      overig.push(...doeZinnen(tekst).filter((x) => !ADEM.test(x)));
+    }
   }
-  // Geen kopjes per beschermingsmiddel: de doe-zinnen uit 8.2 (zonder de ademhalingszinnen).
-  if (regels.length <= 1) {
-    const z = blokken.flatMap((b) => doeZinnen(blokTekst(b))).filter((x) => !ADEM.test(x)).slice(0, 5);
-    if (z.length) regels.push("<li class='pbm'><span class='ic'>🧤</span><div>" + lijst(z) + "</div></li>");
-  }
+  // Doe-zinnen zonder herkenbaar beschermingsmiddel: niet weglaten, maar onder "Overig".
+  if (overig.length) regels.push("<li class='pbm'><span class='ic'>📋</span><div><b>Overig</b>" + lijst([...new Set(overig)]) + "</div></li>");
   const inhoud =
     "<ul class='pbmlijst'>" + regels.join("") + "</ul>" + (blokken.length ? "" : "<p><i>" + esc(NIET_GELEZEN + "8.2.") + "</i></p>");
   return stap(nummer, "Bescherm jezelf", inhoud);
