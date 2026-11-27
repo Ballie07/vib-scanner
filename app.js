@@ -951,6 +951,21 @@ function afvoerStap(nummer) {
   return stap(nummer, "Voer af", alles.length ? doeUit(alles) : "<p><i>" + esc(NIET_GELEZEN + "13.") + "</i></p>");
 }
 
+// Eigen werkinstructie onderaan elke opruimstap (niet uit het VIB), met het UN-nummer uit Stocky.
+function lekbakInstructie() {
+  const un = (product.unNummers || []).filter(Boolean);
+  const echt = un.filter((u) => !/^UN0+$/i.test(u));
+  const regel = echt.length
+    ? "UN-/VN-nummer van dit product (uit Stocky): <b>" + esc(echt.join(", ")) + "</b>"
+    : un.length
+    ? "Stocky heeft voor dit product geen UN-/VN-nummer (" + esc(un.join(", ")) + ")."
+    : "Stocky heeft voor dit product geen UN-/VN-nummer.";
+  return (
+    "<div class='intern'><p>Leg de opgeruimde gevaarlijke stof in de juiste zuurvrije lekbak aan de hand van de UN-/VN-code.</p>" +
+    "<p>" + regel + "</p><p class='bron'>Werkinstructie, niet uit het VIB</p></div>"
+  );
+}
+
 // Eigen werkinstructie bij elke afvoerstap (niet uit het VIB), samen met wat het VIB zegt.
 const AFVOER_INSTRUCTIE =
   "<div class='intern'><p>Afvoeren volgens interne regels.</p><p class='bron'>Werkinstructie, niet uit het VIB</p></div>";
@@ -1029,7 +1044,10 @@ function stappen(s, route) {
   if (s === "gemorst" || s === "alles") uit.push(beschermStap(++n));
   if (s === "gewond" || s === "alles")
     uit.push(stap(++n, "Eerste hulp", stapGoedgekeurd("4") ? eersteHulp(route) : nietGecontroleerd("4"), "eerst"));
-  if (opruimen) uit.push(stapGoedgekeurd("6") ? opruimStap(++n) : stap(++n, "Ruim op", nietGecontroleerd("6")));
+  if (opruimen)
+    uit.push(
+      (stapGoedgekeurd("6") ? opruimStap(++n) : stap(++n, "Ruim op", nietGecontroleerd("6"))).replace(/<\/section>$/, lekbakInstructie() + "</section>")
+    );
   if (s === "brand" || s === "alles") uit.push(brandStap(++n));
   if (opruimen) uit.push(afvoerTekst(++n));
   if (opruimen) uit.push(adrStap(++n, true));

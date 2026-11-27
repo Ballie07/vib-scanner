@@ -194,7 +194,8 @@ const STAPPEN_GECONTROLEERD = {
   "7dbab731-439": true,
   "e91406ec-715": true,
   "e29039df-251": true,
-  "efbdaf3e-491": true
+  "efbdaf3e-491": true,
+  "ac007570-507": true
  },
  "8": {
   "859db6e2-3151": true,
@@ -325,7 +326,8 @@ const STAPPEN_GECONTROLEERD = {
   "a94316dc-1005": true,
   "6f7061-1313": true,
   "c895f686-1045": true,
-  "40556337-2819": true
+  "40556337-2819": true,
+  "c62ccdc1-299": true
  },
  "13": {
   "7e078bf8-913": true,
@@ -393,6 +395,7 @@ const STAPPEN_GECONTROLEERD = {
   "aa5248f9-226": true,
   "79161d4a-164": true,
   "e9dc93e0-771": true,
-  "b2e40623-101": true
+  "b2e40623-101": true,
+  "9c2d17ea-381": true
  }
 };

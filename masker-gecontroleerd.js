@@ -101,5 +101,6 @@ const MASKER_GECONTROLEERD = {
  "beschermingvandeademhalingswegennormaliternietnodigbeschermingvandehandenveiligheidshandschoenen": "niet nodig",
  "beschermingvandeademhalingswegenbijkorteofgeringebelastingademfiltertoestelbijintensieveresplangdurigeexpositieeenvandeomringendeluchtonafhankelijkademhalingstoestelgebruiken": "nodig bij korte of geringe belasting ademfiltertoestel",
  "respiratoryequipmentasnzs1715protectiveglovesas2161occupationalprotectiveclothingasnzs4501respiratorusuallynorespiratorisnecessarywhenusingthisproduct": "niet nodig when using this product",
- "breathingequipmentnotrequired": "niet nodig"
+ "breathingequipmentnotrequired": "niet nodig",
+ "ademhalingsbescherminggeenspecialeademhalingsbeschermingisaanbevoleninnormalegebruiksomstandighedenvoorzienvaneenaangepasteventilatie": "nodig"
 };
