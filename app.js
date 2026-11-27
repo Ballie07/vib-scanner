@@ -951,14 +951,14 @@ function afvoerStap(nummer) {
   return stap(nummer, "Voer af", alles.length ? doeUit(alles) : "<p><i>" + esc(NIET_GELEZEN + "13.") + "</i></p>");
 }
 
-// Eigen afspraken voor afvoeren (niet uit het VIB), per VIB-tekst van rubriek 13.
-const AFVOER_INTERN = typeof AFVOEREN_WERKINSTRUCTIE !== "undefined" ? AFVOEREN_WERKINSTRUCTIE : {};
+// Eigen werkinstructie bij elke afvoerstap (niet uit het VIB), samen met wat het VIB zegt.
+const AFVOER_INSTRUCTIE =
+  "<div class='intern'><p>Afvoeren volgens interne regels.</p><p class='bron'>Werkinstructie, niet uit het VIB</p></div>";
 
 function afvoerTekst(nummer) {
-  const intern = AFVOER_INTERN[stapSleutel("13")];
-  if (intern)
-    return stap(nummer, "Voer af", "<p>" + esc(intern) + "</p><p class='bron'>Werkinstructie, niet uit het VIB</p>", "instructie");
-  return stapGoedgekeurd("13") ? afvoerStap(nummer) : stap(nummer, "Voer af", nietGecontroleerd("13"));
+  const vib = stapGoedgekeurd("13") ? afvoerStap(nummer) : stap(nummer, "Voer af", nietGecontroleerd("13"));
+  // De werkinstructie direct onder de titel van de stap.
+  return vib.replace("</h2>", "</h2>" + AFVOER_INSTRUCTIE);
 }
 
 function adrStap(nummer, terug) {

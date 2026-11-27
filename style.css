@@ -75,3 +75,5 @@ input { width: 100%; padding: 12px; font-size: 1.1rem; border: 2px solid #999; b
 .bron { font-size: 0.8rem; color: #7a4a00; margin-top: 2px; }
 .volledig { background: #fff; border-radius: 12px; padding: 4px 14px; }
 .vibzin { color: #555; font-style: italic; font-size: 0.85rem; margin: 2px 0 0; }
+.intern { background: #fff6e0; border: 2px solid #e69500; border-radius: 8px; padding: 4px 10px; margin: 4px 0 8px; }
+.intern p { margin: 2px 0; }

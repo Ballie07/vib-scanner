@@ -1,6 +1,7 @@
 // Stappen die Toppy heeft gecontroleerd en goedgekeurd (controleronde 27-11-2026), per rubriek.
 // Sleutel: een vingerafdruk van de VIB-tekst van dat onderdeel (4.1, 8.2, 6.1-6.3, 13.1).
 // Een VIB dat hier niet in staat (nieuw of gewijzigd), toont de letterlijke tekst met "Nog niet gecontroleerd".
+// Bij afvoeren staat altijd ook de werkinstructie "Afvoeren volgens interne regels" (app.js).
 const STAPPEN_GECONTROLEERD = {
  "4": {
   "65a0c76e-1384": true,
@@ -391,11 +392,7 @@ const STAPPEN_GECONTROLEERD = {
   "da506014-1762": true,
   "aa5248f9-226": true,
   "79161d4a-164": true,
-  "e9dc93e0-771": true
+  "e9dc93e0-771": true,
+  "b2e40623-101": true
  }
-};
-
-// Eigen afspraken voor afvoeren (niet uit het VIB), per VIB-tekst van rubriek 13.
-const AFVOEREN_WERKINSTRUCTIE = {
- "b2e40623-101": "Afvoeren volgens interne regels."
 };
