@@ -27,6 +27,16 @@ from stocky import haal  # noqa: E402
 
 PRODUCT_PAD = os.environ.get("STOCKY_PRODUCT_PAD", "/products/{id}")
 MAP = Path(os.environ.get("VIB_MAP", Path(__file__).resolve().parent.parent))
+# Artikelen met deze status in Stocky (veld stateStrategy) komen niet in de scanner.
+# Hoofdletters, spaties, _ en - tellen niet mee: "On Hold", "on_hold" en "onHold" zijn gelijk.
+NEGEER_STATUSSEN = {s for s in (os.environ.get("NEGEER_STATUSSEN") or "inactive").replace(";", ",").split(",") if s.strip()}
+
+
+def status_sleutel(status):
+    return "".join(c for c in (status or "").lower() if c.isalnum())
+
+
+NEGEER = {status_sleutel(s) for s in NEGEER_STATUSSEN}
 
 
 def alle_vibs():
@@ -83,6 +93,7 @@ def verwerk(vib):
         "taal": "",
         "vibPdf": "",
         "alleVibs": [],
+        "artikelstatus": "",
         "status": "ok",
         "problemen": [],
         "rubrieken": {},
@@ -94,6 +105,10 @@ def verwerk(vib):
             uit["sku"] = p.get("sku") or uit["sku"]
             uit["ean"] = sorted({g.get("barcode") for g in p.get("GTINs") or [] if g.get("barcode")})
             uit["foto"] = p.get("imageUrl") or p.get("image") or ""
+            uit["artikelstatus"] = p.get("stateStrategy") or ""
+            if status_sleutel(uit["artikelstatus"]) in NEGEER:
+                uit["status"] = "overgeslagen"
+                return uit  # inactief artikel: geen VIB downloaden
         except Exception as fout:  # product niet op te halen: VIB wel tonen, maar zonder barcode
             uit["problemen"].append(f"Productgegevens niet opgehaald ({fout})")
 
@@ -164,6 +179,14 @@ def main():
                               "ean": [], "foto": "", "unNummers": [], "vibDatum": "", "verlopen": False, "taal": "",
                               "vibPdf": "", "alleVibs": [],
                               "status": "fout", "problemen": [f"Ophalen mislukt ({fout})"], "rubrieken": {}})
+    opgehaald = len(producten)
+    statussen = {}
+    for p in producten:
+        statussen[p.get("artikelstatus") or "onbekend"] = statussen.get(p.get("artikelstatus") or "onbekend", 0) + 1
+    print("Artikelstatus in Stocky: " + ", ".join(f"{n}x {s}" for s, n in sorted(statussen.items())))
+    overgeslagen = [p for p in producten if p["status"] == "overgeslagen"]
+    producten = [p for p in producten if p["status"] != "overgeslagen"]
+    print(f"{len(overgeslagen)} artikelen overgeslagen vanwege hun status ({', '.join(sorted(NEGEER_STATUSSEN))}).")
     producten.sort(key=lambda p: (p["naam"].lower(), str(p["productId"])))
 
     # Eerst controleren, dan pas iets wegschrijven of weghalen.
@@ -172,8 +195,8 @@ def main():
     vorig_bestand = MAP / "vib-data.js"
     if vorig_bestand.exists():
         vorig_aantal = vorig_bestand.read_text(encoding="utf-8").count('"productId":')
-        if vorig_aantal and len(producten) < vorig_aantal / 2:
-            sys.exit(f"Stocky gaf {len(producten)} producten, vorige keer {vorig_aantal}. "
+        if vorig_aantal and opgehaald < vorig_aantal / 2:
+            sys.exit(f"Stocky gaf {opgehaald} producten, vorige keer {vorig_aantal}. "
                      "Dat lijkt op een storing; de bestaande gegevens blijven staan.")
 
     # PDF's van producten die niet meer in Stocky staan, weghalen.
